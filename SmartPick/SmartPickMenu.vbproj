@@ -46,11 +46,18 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoblack.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\VisualBasic\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -72,12 +79,64 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addMenu.Designer.vb">
+      <DependentUpon>addMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMain.Designer.vb">
+      <DependentUpon>AdminMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.vb">
+      <DependentUpon>Category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelMenu.Designer.vb">
+      <DependentUpon>DelMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editMenu.Designer.vb">
+      <DependentUpon>editMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLanguage.Designer.vb">
+      <DependentUpon>FormLanguage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLanguage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenu.Designer.vb">
       <DependentUpon>FormMenu.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTTSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuTTSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTTSDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuTTSDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -94,8 +153,41 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Recuperar.Designer.vb">
+      <DependentUpon>Recuperar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recuperar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo.Designer.vb">
+      <DependentUpon>Tipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="addMenu.resx">
+      <DependentUpon>addMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMain.resx">
+      <DependentUpon>AdminMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelMenu.resx">
+      <DependentUpon>DelMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editMenu.resx">
+      <DependentUpon>editMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLanguage.resx">
+      <DependentUpon>FormLanguage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -105,8 +197,36 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Recuperar.resx">
+      <DependentUpon>Recuperar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo.resx">
+      <DependentUpon>Tipo.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="MenuTTSDataSet.xsc">
+      <DependentUpon>MenuTTSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MenuTTSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MenuTTSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MenuTTSDataSet.xss">
+      <DependentUpon>MenuTTSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MenuTTSDataSet1.xsc">
+      <DependentUpon>MenuTTSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MenuTTSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MenuTTSDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MenuTTSDataSet1.xss">
+      <DependentUpon>MenuTTSDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -129,6 +249,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoblack.ico" />
+    <Content Include="minusSign.png" />
+    <Content Include="plusSign.png" />
+    <None Include="Resources\Custom-Icon-Design-Flatastic-9-Save.ico" />
+    <None Include="SmartPick\My Project\plusSign.png" />
+    <None Include="SmartPick\My Project\minusSign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
