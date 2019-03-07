@@ -138,6 +138,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MenuTTSDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MenuTTSDataSetCate.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuTTSDataSetCate.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -226,6 +231,17 @@
     </None>
     <None Include="MenuTTSDataSet1.xss">
       <DependentUpon>MenuTTSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MenuTTSDataSetCate.xsc">
+      <DependentUpon>MenuTTSDataSetCate.xsd</DependentUpon>
+    </None>
+    <None Include="MenuTTSDataSetCate.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MenuTTSDataSetCate.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MenuTTSDataSetCate.xss">
+      <DependentUpon>MenuTTSDataSetCate.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

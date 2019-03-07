@@ -41,6 +41,8 @@ Partial Public Class MenuTTSDataSet1
     
     Private relationFK_MenuEng_MenuEsp As Global.System.Data.DataRelation
     
+    Private relationFK_Types_Categories As Global.System.Data.DataRelation
+    
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -320,6 +322,7 @@ Partial Public Class MenuTTSDataSet1
         End If
         Me.relationFK_FotosMenu_MenuEsp = Me.Relations("FK_FotosMenu_MenuEsp")
         Me.relationFK_MenuEng_MenuEsp = Me.Relations("FK_MenuEng_MenuEsp")
+        Me.relationFK_Types_Categories = Me.Relations("FK_Types_Categories")
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -346,6 +349,8 @@ Partial Public Class MenuTTSDataSet1
         Me.Relations.Add(Me.relationFK_FotosMenu_MenuEsp)
         Me.relationFK_MenuEng_MenuEsp = New Global.System.Data.DataRelation("FK_MenuEng_MenuEsp", New Global.System.Data.DataColumn() {Me.tableMenuEsp.CodPlatoColumn}, New Global.System.Data.DataColumn() {Me.tableMenuEng.NoPlatoColumn}, false)
         Me.Relations.Add(Me.relationFK_MenuEng_MenuEsp)
+        Me.relationFK_Types_Categories = New Global.System.Data.DataRelation("FK_Types_Categories", New Global.System.Data.DataColumn() {Me.tableCategories.IdCategoryColumn}, New Global.System.Data.DataColumn() {Me.tableTypes.idCategoriesColumn}, false)
+        Me.Relations.Add(Me.relationFK_Types_Categories)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1686,6 +1691,8 @@ Partial Public Class MenuTTSDataSet1
         
         Private columnTypeEng As Global.System.Data.DataColumn
         
+        Private columnidCategories As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Sub New()
@@ -1746,6 +1753,14 @@ Partial Public Class MenuTTSDataSet1
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property idCategoriesColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnidCategories
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -1782,9 +1797,12 @@ Partial Public Class MenuTTSDataSet1
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddTypesRow(ByVal TypeSpa As String, ByVal TypeEng As String) As TypesRow
+        Public Overloads Function AddTypesRow(ByVal TypeSpa As String, ByVal TypeEng As String, ByVal parentCategoriesRowByFK_Types_Categories As CategoriesRow) As TypesRow
             Dim rowTypesRow As TypesRow = CType(Me.NewRow,TypesRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, TypeSpa, TypeEng}
+            Dim columnValuesArray() As Object = New Object() {Nothing, TypeSpa, TypeEng, Nothing}
+            If (Not (parentCategoriesRowByFK_Types_Categories) Is Nothing) Then
+                columnValuesArray(3) = parentCategoriesRowByFK_Types_Categories(0)
+            End If
             rowTypesRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowTypesRow)
             Return rowTypesRow
@@ -1816,6 +1834,7 @@ Partial Public Class MenuTTSDataSet1
             Me.columnIdType = MyBase.Columns("IdType")
             Me.columnTypeSpa = MyBase.Columns("TypeSpa")
             Me.columnTypeEng = MyBase.Columns("TypeEng")
+            Me.columnidCategories = MyBase.Columns("idCategories")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1827,6 +1846,8 @@ Partial Public Class MenuTTSDataSet1
             MyBase.Columns.Add(Me.columnTypeSpa)
             Me.columnTypeEng = New Global.System.Data.DataColumn("TypeEng", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTypeEng)
+            Me.columnidCategories = New Global.System.Data.DataColumn("idCategories", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnidCategories)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIdType}, true))
             Me.columnIdType.AutoIncrement = true
             Me.columnIdType.AutoIncrementSeed = -1
@@ -2360,6 +2381,16 @@ Partial Public Class MenuTTSDataSet1
                 Me(Me.tableCategories.CategoryEngColumn) = value
             End Set
         End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function GetTypesRows() As TypesRow()
+            If (Me.Table.ChildRelations("FK_Types_Categories") Is Nothing) Then
+                Return New TypesRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Types_Categories")),TypesRow())
+            End If
+        End Function
     End Class
     
     '''<summary>
@@ -2738,6 +2769,44 @@ Partial Public Class MenuTTSDataSet1
                 Me(Me.tableTypes.TypeEngColumn) = value
             End Set
         End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property idCategories() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableTypes.idCategoriesColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'idCategories' de la tabla 'Types' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableTypes.idCategoriesColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property CategoriesRow() As CategoriesRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Types_Categories")),CategoriesRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Types_Categories"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsidCategoriesNull() As Boolean
+            Return Me.IsNull(Me.tableTypes.idCategoriesColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetidCategoriesNull()
+            Me(Me.tableTypes.idCategoriesColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -4551,34 +4620,44 @@ Namespace MenuTTSDataSet1TableAdapters
             tableMapping.ColumnMappings.Add("IdType", "IdType")
             tableMapping.ColumnMappings.Add("TypeSpa", "TypeSpa")
             tableMapping.ColumnMappings.Add("TypeEng", "TypeEng")
+            tableMapping.ColumnMappings.Add("idCategories", "idCategories")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Types] WHERE (([IdType] = @Original_IdType) AND ([TypeSpa] = @"& _ 
-                "Original_TypeSpa) AND ([TypeEng] = @Original_TypeEng))"
+                "Original_TypeSpa) AND ([TypeEng] = @Original_TypeEng) AND ((@IsNull_idCategories"& _ 
+                " = 1 AND [idCategories] IS NULL) OR ([idCategories] = @Original_idCategories)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_IdType", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "IdType", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_TypeSpa", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeSpa", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_TypeEng", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeEng", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_idCategories", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idCategories", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_idCategories", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idCategories", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Types] ([TypeSpa], [TypeEng]) VALUES (@TypeSpa, @TypeEng);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SE"& _ 
-                "LECT IdType, TypeSpa, TypeEng FROM Types WHERE (IdType = SCOPE_IDENTITY())"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Types] ([TypeSpa], [TypeEng], [idCategories]) VALUES (@TypeSpa"& _ 
+                ", @TypeEng, @idCategories);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT IdType, TypeSpa, TypeEng, idCategories FROM "& _ 
+                "Types WHERE (IdType = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@TypeSpa", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeSpa", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@TypeEng", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeEng", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idCategories", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idCategories", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Types] SET [TypeSpa] = @TypeSpa, [TypeEng] = @TypeEng WHERE (([IdTy"& _ 
-                "pe] = @Original_IdType) AND ([TypeSpa] = @Original_TypeSpa) AND ([TypeEng] = @Or"& _ 
-                "iginal_TypeEng));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT IdType, TypeSpa, TypeEng FROM Types WHERE (IdType = @I"& _ 
-                "dType)"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Types] SET [TypeSpa] = @TypeSpa, [TypeEng] = @TypeEng, [idCategorie"& _ 
+                "s] = @idCategories WHERE (([IdType] = @Original_IdType) AND ([TypeSpa] = @Origin"& _ 
+                "al_TypeSpa) AND ([TypeEng] = @Original_TypeEng) AND ((@IsNull_idCategories = 1 A"& _ 
+                "ND [idCategories] IS NULL) OR ([idCategories] = @Original_idCategories)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELE"& _ 
+                "CT IdType, TypeSpa, TypeEng, idCategories FROM Types WHERE (IdType = @IdType)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@TypeSpa", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeSpa", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@TypeEng", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeEng", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idCategories", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idCategories", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_IdType", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "IdType", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_TypeSpa", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeSpa", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_TypeEng", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "TypeEng", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_idCategories", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idCategories", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_idCategories", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idCategories", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IdType", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "IdType", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
@@ -4595,7 +4674,7 @@ Namespace MenuTTSDataSet1TableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT IdType, TypeSpa, TypeEng FROM dbo.Types"
+            Me._commandCollection(0).CommandText = "SELECT IdType, TypeSpa, TypeEng,idCategories FROM dbo.Types"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -4655,7 +4734,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_IdType As Integer, ByVal Original_TypeSpa As String, ByVal Original_TypeEng As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_IdType As Integer, ByVal Original_TypeSpa As String, ByVal Original_TypeEng As String, ByVal Original_idCategories As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_IdType,Integer)
             If (Original_TypeSpa Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_TypeSpa")
@@ -4666,6 +4745,13 @@ Namespace MenuTTSDataSet1TableAdapters
                 Throw New Global.System.ArgumentNullException("Original_TypeEng")
             Else
                 Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_TypeEng,String)
+            End If
+            If (Original_idCategories.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_idCategories.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -4686,7 +4772,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal TypeSpa As String, ByVal TypeEng As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal TypeSpa As String, ByVal TypeEng As String, ByVal idCategories As Global.System.Nullable(Of Integer)) As Integer
             If (TypeSpa Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("TypeSpa")
             Else
@@ -4696,6 +4782,11 @@ Namespace MenuTTSDataSet1TableAdapters
                 Throw New Global.System.ArgumentNullException("TypeEng")
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(TypeEng,String)
+            End If
+            If (idCategories.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(idCategories.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -4716,7 +4807,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal TypeSpa As String, ByVal TypeEng As String, ByVal Original_IdType As Integer, ByVal Original_TypeSpa As String, ByVal Original_TypeEng As String, ByVal IdType As Integer) As Integer
+        Public Overloads Overridable Function Update(ByVal TypeSpa As String, ByVal TypeEng As String, ByVal idCategories As Global.System.Nullable(Of Integer), ByVal Original_IdType As Integer, ByVal Original_TypeSpa As String, ByVal Original_TypeEng As String, ByVal Original_idCategories As Global.System.Nullable(Of Integer), ByVal IdType As Integer) As Integer
             If (TypeSpa Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("TypeSpa")
             Else
@@ -4727,18 +4818,30 @@ Namespace MenuTTSDataSet1TableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(TypeEng,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_IdType,Integer)
+            If (idCategories.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(idCategories.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_IdType,Integer)
             If (Original_TypeSpa Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_TypeSpa")
             Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_TypeSpa,String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_TypeSpa,String)
             End If
             If (Original_TypeEng Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_TypeEng")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_TypeEng,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_TypeEng,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(IdType,Integer)
+            If (Original_idCategories.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_idCategories.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(IdType,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4758,8 +4861,8 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal TypeSpa As String, ByVal TypeEng As String, ByVal Original_IdType As Integer, ByVal Original_TypeSpa As String, ByVal Original_TypeEng As String) As Integer
-            Return Me.Update(TypeSpa, TypeEng, Original_IdType, Original_TypeSpa, Original_TypeEng, Original_IdType)
+        Public Overloads Overridable Function Update(ByVal TypeSpa As String, ByVal TypeEng As String, ByVal idCategories As Global.System.Nullable(Of Integer), ByVal Original_IdType As Integer, ByVal Original_TypeSpa As String, ByVal Original_TypeEng As String, ByVal Original_idCategories As Global.System.Nullable(Of Integer)) As Integer
+            Return Me.Update(TypeSpa, TypeEng, idCategories, Original_IdType, Original_TypeSpa, Original_TypeEng, Original_idCategories, Original_IdType)
         End Function
     End Class
     
@@ -5484,21 +5587,21 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Function UpdateUpdatedRows(ByVal dataSet As MenuTTSDataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._menuEspTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.MenuEsp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._menuEspTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
             If (Not (Me._categoriesTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.Categories.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._categoriesTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._menuEspTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.MenuEsp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._menuEspTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -5548,19 +5651,19 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Function UpdateInsertedRows(ByVal dataSet As MenuTTSDataSet1, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._menuEspTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.MenuEsp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._menuEspTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
             If (Not (Me._categoriesTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.Categories.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._categoriesTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._menuEspTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.MenuEsp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._menuEspTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -5638,19 +5741,19 @@ Namespace MenuTTSDataSet1TableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._categoriesTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Categories.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._categoriesTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
             If (Not (Me._menuEspTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.MenuEsp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._menuEspTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._categoriesTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Categories.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._categoriesTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If

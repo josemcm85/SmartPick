@@ -24,10 +24,6 @@ Partial Class Tipo
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Tipo))
-        Me.MenuTTSDataSet1 = New SmartPick.MenuTTSDataSet1()
-        Me.TypesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TypesTableAdapter = New SmartPick.MenuTTSDataSet1TableAdapters.TypesTableAdapter()
-        Me.TableAdapterManager = New SmartPick.MenuTTSDataSet1TableAdapters.TableAdapterManager()
         Me.TypesBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -42,40 +38,34 @@ Partial Class Tipo
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.TypesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.TypesDataGridView = New System.Windows.Forms.DataGridView()
+        Me.idCategories = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TypesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MenuTTSDataSet1 = New SmartPick.MenuTTSDataSet1()
+        Me.TypesTableAdapter = New SmartPick.MenuTTSDataSet1TableAdapters.TypesTableAdapter()
+        Me.TableAdapterManager = New SmartPick.MenuTTSDataSet1TableAdapters.TableAdapterManager()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.MenuTTSDataSetCate1 = New SmartPick.MenuTTSDataSetCate()
+        Me.BindingSourceCate = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CategoriesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CategoriesTableAdapter = New SmartPick.MenuTTSDataSetCateTableAdapters.CategoriesTableAdapter()
+        Me.IdCategoryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CategorySpaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CategoryEngDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.TypesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TypesBindingNavigator.SuspendLayout()
         CType(Me.TypesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MenuTTSDataSetCate1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSourceCate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CategoriesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'MenuTTSDataSet1
-        '
-        Me.MenuTTSDataSet1.DataSetName = "MenuTTSDataSet1"
-        Me.MenuTTSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TypesBindingSource
-        '
-        Me.TypesBindingSource.DataMember = "Types"
-        Me.TypesBindingSource.DataSource = Me.MenuTTSDataSet1
-        '
-        'TypesTableAdapter
-        '
-        Me.TypesTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.CategoriesTableAdapter = Nothing
-        Me.TableAdapterManager.FotosMenuTableAdapter = Nothing
-        Me.TableAdapterManager.MenuEngTableAdapter = Nothing
-        Me.TableAdapterManager.MenuEspTableAdapter = Nothing
-        Me.TableAdapterManager.TypesTableAdapter = Me.TypesTableAdapter
-        Me.TableAdapterManager.UpdateOrder = SmartPick.MenuTTSDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
         'TypesBindingNavigator
         '
@@ -92,7 +82,7 @@ Partial Class Tipo
         Me.TypesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.TypesBindingNavigator.Name = "TypesBindingNavigator"
         Me.TypesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.TypesBindingNavigator.Size = New System.Drawing.Size(1067, 27)
+        Me.TypesBindingNavigator.Size = New System.Drawing.Size(1326, 27)
         Me.TypesBindingNavigator.TabIndex = 0
         Me.TypesBindingNavigator.Text = "BindingNavigator1"
         '
@@ -108,8 +98,8 @@ Partial Class Tipo
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
@@ -195,13 +185,19 @@ Partial Class Tipo
         Me.TypesDataGridView.AutoGenerateColumns = False
         Me.TypesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.TypesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.TypesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
+        Me.TypesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.idCategories})
         Me.TypesDataGridView.DataSource = Me.TypesBindingSource
-        Me.TypesDataGridView.Location = New System.Drawing.Point(0, 34)
-        Me.TypesDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TypesDataGridView.Location = New System.Drawing.Point(13, 72)
+        Me.TypesDataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.TypesDataGridView.Name = "TypesDataGridView"
-        Me.TypesDataGridView.Size = New System.Drawing.Size(1067, 519)
+        Me.TypesDataGridView.Size = New System.Drawing.Size(807, 376)
         Me.TypesDataGridView.TabIndex = 1
+        '
+        'idCategories
+        '
+        Me.idCategories.DataPropertyName = "idCategories"
+        Me.idCategories.HeaderText = "idCategories"
+        Me.idCategories.Name = "idCategories"
         '
         'DataGridViewTextBoxColumn1
         '
@@ -222,22 +218,127 @@ Partial Class Tipo
         Me.DataGridViewTextBoxColumn3.HeaderText = "TypeEng"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
+        'TypesBindingSource
+        '
+        Me.TypesBindingSource.DataMember = "Types"
+        Me.TypesBindingSource.DataSource = Me.MenuTTSDataSet1
+        '
+        'MenuTTSDataSet1
+        '
+        Me.MenuTTSDataSet1.DataSetName = "MenuTTSDataSet1"
+        Me.MenuTTSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TypesTableAdapter
+        '
+        Me.TypesTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CategoriesTableAdapter = Nothing
+        Me.TableAdapterManager.FotosMenuTableAdapter = Nothing
+        Me.TableAdapterManager.MenuEngTableAdapter = Nothing
+        Me.TableAdapterManager.MenuEspTableAdapter = Nothing
+        Me.TableAdapterManager.TypesTableAdapter = Me.TypesTableAdapter
+        Me.TableAdapterManager.UpdateOrder = SmartPick.MenuTTSDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 51)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(167, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Listado de tipos de plato:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(880, 50)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(148, 17)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Listado de categorías:"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdCategoryDataGridViewTextBoxColumn, Me.CategorySpaDataGridViewTextBoxColumn, Me.CategoryEngDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.CategoriesBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(883, 72)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(390, 376)
+        Me.DataGridView1.TabIndex = 4
+        '
+        'MenuTTSDataSetCate1
+        '
+        Me.MenuTTSDataSetCate1.DataSetName = "MenuTTSDataSetCate"
+        Me.MenuTTSDataSetCate1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BindingSourceCate
+        '
+        Me.BindingSourceCate.DataSource = Me.MenuTTSDataSetCate1
+        Me.BindingSourceCate.Position = 0
+        '
+        'CategoriesBindingSource
+        '
+        Me.CategoriesBindingSource.DataMember = "Categories"
+        Me.CategoriesBindingSource.DataSource = Me.BindingSourceCate
+        '
+        'CategoriesTableAdapter
+        '
+        Me.CategoriesTableAdapter.ClearBeforeFill = True
+        '
+        'IdCategoryDataGridViewTextBoxColumn
+        '
+        Me.IdCategoryDataGridViewTextBoxColumn.DataPropertyName = "IdCategory"
+        Me.IdCategoryDataGridViewTextBoxColumn.HeaderText = "IdCategory"
+        Me.IdCategoryDataGridViewTextBoxColumn.Name = "IdCategoryDataGridViewTextBoxColumn"
+        Me.IdCategoryDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CategorySpaDataGridViewTextBoxColumn
+        '
+        Me.CategorySpaDataGridViewTextBoxColumn.DataPropertyName = "CategorySpa"
+        Me.CategorySpaDataGridViewTextBoxColumn.HeaderText = "CategorySpa"
+        Me.CategorySpaDataGridViewTextBoxColumn.Name = "CategorySpaDataGridViewTextBoxColumn"
+        Me.CategorySpaDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CategoryEngDataGridViewTextBoxColumn
+        '
+        Me.CategoryEngDataGridViewTextBoxColumn.DataPropertyName = "CategoryEng"
+        Me.CategoryEngDataGridViewTextBoxColumn.HeaderText = "CategoryEng"
+        Me.CategoryEngDataGridViewTextBoxColumn.Name = "CategoryEngDataGridViewTextBoxColumn"
+        Me.CategoryEngDataGridViewTextBoxColumn.ReadOnly = True
+        '
         'Tipo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(1326, 554)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TypesDataGridView)
         Me.Controls.Add(Me.TypesBindingNavigator)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Tipo"
         Me.Text = "Tipo"
-        CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TypesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TypesBindingNavigator.ResumeLayout(False)
         Me.TypesBindingNavigator.PerformLayout()
         CType(Me.TypesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MenuTTSDataSetCate1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSourceCate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CategoriesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -264,4 +365,15 @@ Partial Class Tipo
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents idCategories As DataGridViewTextBoxColumn
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents MenuTTSDataSetCate1 As MenuTTSDataSetCate
+    Friend WithEvents BindingSourceCate As BindingSource
+    Friend WithEvents CategoriesBindingSource As BindingSource
+    Friend WithEvents CategoriesTableAdapter As MenuTTSDataSetCateTableAdapters.CategoriesTableAdapter
+    Friend WithEvents IdCategoryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CategorySpaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CategoryEngDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class
