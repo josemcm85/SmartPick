@@ -11,6 +11,7 @@ Public Class FormMenu
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'Makes labels to show nothing for now.
+
         lblSec.Text = ""
         LblTitle.Text = ""
 
