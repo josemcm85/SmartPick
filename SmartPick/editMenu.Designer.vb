@@ -60,7 +60,7 @@ Partial Class editMenu
         Me.DatagridMenu.AllowUserToOrderColumns = True
         Me.DatagridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DatagridMenu.Location = New System.Drawing.Point(9, 50)
-        Me.DatagridMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DatagridMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DatagridMenu.Name = "DatagridMenu"
         Me.DatagridMenu.ReadOnly = True
         Me.DatagridMenu.RowTemplate.Height = 24
@@ -80,7 +80,7 @@ Partial Class editMenu
         'txtCal
         '
         Me.txtCal.Location = New System.Drawing.Point(507, 435)
-        Me.txtCal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCal.Name = "txtCal"
         Me.txtCal.Size = New System.Drawing.Size(202, 20)
         Me.txtCal.TabIndex = 30
@@ -128,7 +128,7 @@ Partial Class editMenu
         'txtPrecio
         '
         Me.txtPrecio.Location = New System.Drawing.Point(507, 381)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(202, 20)
         Me.txtPrecio.TabIndex = 23
@@ -138,7 +138,7 @@ Partial Class editMenu
         Me.CombComida.FormattingEnabled = True
         Me.CombComida.Items.AddRange(New Object() {"Sopa", "Mariscos", "Tacos", "Carnes", "Vegetariano", "Untable", "Nachos", "Bebida Natural", "Gaseosa", "Con Alcohol", "Postre", "Para Compartir"})
         Me.CombComida.Location = New System.Drawing.Point(507, 332)
-        Me.CombComida.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CombComida.Margin = New System.Windows.Forms.Padding(2)
         Me.CombComida.Name = "CombComida"
         Me.CombComida.Size = New System.Drawing.Size(202, 21)
         Me.CombComida.TabIndex = 22
@@ -148,7 +148,7 @@ Partial Class editMenu
         Me.CombCate.FormattingEnabled = True
         Me.CombCate.Items.AddRange(New Object() {"Plato Fuerte", "Entrada", "Bebidas", "Postres", "Para Compartir"})
         Me.CombCate.Location = New System.Drawing.Point(507, 281)
-        Me.CombCate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CombCate.Margin = New System.Windows.Forms.Padding(2)
         Me.CombCate.Name = "CombCate"
         Me.CombCate.Size = New System.Drawing.Size(202, 21)
         Me.CombCate.TabIndex = 21
@@ -156,7 +156,7 @@ Partial Class editMenu
         'txtrandom
         '
         Me.txtrandom.Location = New System.Drawing.Point(496, 50)
-        Me.txtrandom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtrandom.Margin = New System.Windows.Forms.Padding(2)
         Me.txtrandom.Multiline = True
         Me.txtrandom.Name = "txtrandom"
         Me.txtrandom.ReadOnly = True
@@ -186,7 +186,7 @@ Partial Class editMenu
         'txtDesIng
         '
         Me.txtDesIng.Location = New System.Drawing.Point(744, 158)
-        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDesIng.Multiline = True
         Me.txtDesIng.Name = "txtDesIng"
         Me.txtDesIng.Size = New System.Drawing.Size(202, 98)
@@ -215,7 +215,7 @@ Partial Class editMenu
         'TxtDesEsp
         '
         Me.TxtDesEsp.Location = New System.Drawing.Point(500, 158)
-        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtDesEsp.Multiline = True
         Me.TxtDesEsp.Name = "TxtDesEsp"
         Me.TxtDesEsp.Size = New System.Drawing.Size(202, 98)
@@ -224,7 +224,7 @@ Partial Class editMenu
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(499, 112)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(202, 20)
         Me.txtNombre.TabIndex = 32
@@ -232,7 +232,7 @@ Partial Class editMenu
         'BtnIngresar
         '
         Me.BtnIngresar.Location = New System.Drawing.Point(538, 492)
-        Me.BtnIngresar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnIngresar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnIngresar.Name = "BtnIngresar"
         Me.BtnIngresar.Size = New System.Drawing.Size(130, 41)
         Me.BtnIngresar.TabIndex = 40
@@ -246,7 +246,7 @@ Partial Class editMenu
         'BtnBuscar
         '
         Me.BtnBuscar.Location = New System.Drawing.Point(843, 265)
-        Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(64, 23)
         Me.BtnBuscar.TabIndex = 29
@@ -256,7 +256,7 @@ Partial Class editMenu
         'BtnDespejar
         '
         Me.BtnDespejar.Location = New System.Drawing.Point(820, 492)
-        Me.BtnDespejar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnDespejar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnDespejar.Name = "BtnDespejar"
         Me.BtnDespejar.Size = New System.Drawing.Size(93, 41)
         Me.BtnDespejar.TabIndex = 41
@@ -286,7 +286,7 @@ Partial Class editMenu
         'txtNombreIng
         '
         Me.txtNombreIng.Location = New System.Drawing.Point(744, 112)
-        Me.txtNombreIng.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombreIng.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombreIng.Name = "txtNombreIng"
         Me.txtNombreIng.Size = New System.Drawing.Size(202, 20)
         Me.txtNombreIng.TabIndex = 43
@@ -333,7 +333,7 @@ Partial Class editMenu
         Me.Controls.Add(Me.CombCate)
         Me.Controls.Add(Me.DatagridMenu)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "editMenu"
         Me.Text = "Editar Menu"
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).EndInit()

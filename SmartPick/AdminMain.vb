@@ -23,4 +23,8 @@
         Tipo.Show()
 
     End Sub
+
+    Private Sub AdministrarMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarMenuToolStripMenuItem.Click
+
+    End Sub
 End Class

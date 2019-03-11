@@ -51,7 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -267,9 +267,15 @@
     <None Include="Resources\Close1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons8_visible_100px_3.png" />
+    <Content Include="icons8_visible_25px.png" />
     <Content Include="logoblack.ico" />
+    <Content Include="logoblack.png" />
     <Content Include="minusSign.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\logoblack.png" />
+    <None Include="Resources\icons8_visible_100px_3.png" />
+    <None Include="Resources\icons8_visible_25px.png" />
     <None Include="Resources\Custom-Icon-Design-Flatastic-9-Save.ico" />
     <None Include="SmartPick\My Project\plusSign.png" />
     <None Include="SmartPick\My Project\minusSign.png" />

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormLogin
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,136 +20,215 @@ Partial Class FormLogin
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtUser = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.BtnLogin = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ButtonMenu = New System.Windows.Forms.Button()
+        Me.txtUser = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BtnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.ButtonMenu = New System.Windows.Forms.LinkLabel()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuGradientPanel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(10, 290)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(159, 25)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "No te acuerdas de tus datos?"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(139, 37)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Username:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(139, 134)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Password: "
-        '
-        'txtUser
-        '
-        Me.txtUser.Location = New System.Drawing.Point(141, 63)
-        Me.txtUser.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(243, 20)
-        Me.txtUser.TabIndex = 3
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(367, 206)
+        Me.Label3.Location = New System.Drawing.Point(531, 184)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 4
         '
+        'txtUser
+        '
+        Me.txtUser.BackColor = System.Drawing.Color.White
+        Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtUser.HintForeColor = System.Drawing.Color.Empty
+        Me.txtUser.HintText = "Username"
+        Me.txtUser.isPassword = False
+        Me.txtUser.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.txtUser.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtUser.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtUser.LineThickness = 3
+        Me.txtUser.Location = New System.Drawing.Point(46, 59)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(201, 33)
+        Me.txtUser.TabIndex = 9
+        Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
         'txtPass
         '
-        Me.txtPass.Location = New System.Drawing.Point(141, 165)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPass.BackColor = System.Drawing.Color.White
+        Me.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtPass.HintForeColor = System.Drawing.Color.Black
+        Me.txtPass.HintText = "Password"
+        Me.txtPass.isPassword = False
+        Me.txtPass.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.txtPass.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtPass.LineThickness = 3
+        Me.txtPass.Location = New System.Drawing.Point(44, 137)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(243, 20)
-        Me.txtPass.TabIndex = 5
-        Me.txtPass.UseSystemPasswordChar = True
+        Me.txtPass.Size = New System.Drawing.Size(201, 33)
+        Me.txtPass.TabIndex = 10
+        Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton1.Image = Global.SmartPick.My.Resources.Resources.icons8_visible_100px_3
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(249, 140)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(15, 30)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 11
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
+        'BunifuGradientPanel2
+        '
+        Me.BunifuGradientPanel2.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel2.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel2.Controls.Add(Me.ButtonMenu)
+        Me.BunifuGradientPanel2.Controls.Add(Me.LinkLabel1)
+        Me.BunifuGradientPanel2.Controls.Add(Me.BtnLogin)
+        Me.BunifuGradientPanel2.Controls.Add(Me.txtPass)
+        Me.BunifuGradientPanel2.Controls.Add(Me.txtUser)
+        Me.BunifuGradientPanel2.Controls.Add(Me.BunifuImageButton1)
+        Me.BunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White
+        Me.BunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White
+        Me.BunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White
+        Me.BunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White
+        Me.BunifuGradientPanel2.Location = New System.Drawing.Point(262, 0)
+        Me.BunifuGradientPanel2.Name = "BunifuGradientPanel2"
+        Me.BunifuGradientPanel2.Quality = 10
+        Me.BunifuGradientPanel2.Size = New System.Drawing.Size(362, 376)
+        Me.BunifuGradientPanel2.TabIndex = 13
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources.logoblack
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 76)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(198, 199)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'BunifuGradientPanel1
+        '
+        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox1)
+        Me.BunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
+        Me.BunifuGradientPanel1.Quality = 10
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(265, 376)
+        Me.BunifuGradientPanel1.TabIndex = 12
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(236, 206)
-        Me.BtnLogin.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnLogin.ActiveBorderThickness = 1
+        Me.BtnLogin.ActiveCornerRadius = 20
+        Me.BtnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnLogin.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnLogin.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnLogin.BackColor = System.Drawing.Color.Transparent
+        Me.BtnLogin.BackgroundImage = CType(resources.GetObject("BtnLogin.BackgroundImage"), System.Drawing.Image)
+        Me.BtnLogin.ButtonText = "Login"
+        Me.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnLogin.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLogin.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnLogin.IdleBorderThickness = 1
+        Me.BtnLogin.IdleCornerRadius = 20
+        Me.BtnLogin.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnLogin.IdleForecolor = System.Drawing.Color.White
+        Me.BtnLogin.IdleLineColor = System.Drawing.Color.Transparent
+        Me.BtnLogin.Location = New System.Drawing.Point(44, 208)
+        Me.BtnLogin.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnLogin.Name = "BtnLogin"
-        Me.BtnLogin.Size = New System.Drawing.Size(70, 27)
-        Me.BtnLogin.TabIndex = 6
-        Me.BtnLogin.Text = "Login"
-        Me.BtnLogin.UseVisualStyleBackColor = True
+        Me.BtnLogin.Size = New System.Drawing.Size(128, 41)
+        Me.BtnLogin.TabIndex = 14
+        Me.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button2
+        'LinkLabel1
         '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(388, 164)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(19, 19)
-        Me.Button2.TabIndex = 7
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
+        Me.LinkLabel1.Location = New System.Drawing.Point(32, 288)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(166, 15)
+        Me.LinkLabel1.TabIndex = 17
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "No te acuerdas de tus datos?"
         '
         'ButtonMenu
         '
-        Me.ButtonMenu.Location = New System.Drawing.Point(422, 290)
-        Me.ButtonMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonMenu.AutoSize = True
+        Me.ButtonMenu.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.ButtonMenu.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
+        Me.ButtonMenu.Location = New System.Drawing.Point(204, 288)
         Me.ButtonMenu.Name = "ButtonMenu"
-        Me.ButtonMenu.Size = New System.Drawing.Size(119, 25)
-        Me.ButtonMenu.TabIndex = 8
-        Me.ButtonMenu.Text = "Ingresar como Cliente"
-        Me.ButtonMenu.UseVisualStyleBackColor = True
+        Me.ButtonMenu.Size = New System.Drawing.Size(125, 15)
+        Me.ButtonMenu.TabIndex = 18
+        Me.ButtonMenu.TabStop = True
+        Me.ButtonMenu.Text = "Ingresar como cliente"
         '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(562, 348)
-        Me.Controls.Add(Me.ButtonMenu)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.BtnLogin)
-        Me.Controls.Add(Me.txtPass)
+        Me.ClientSize = New System.Drawing.Size(624, 376)
+        Me.Controls.Add(Me.BunifuGradientPanel2)
+        Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtUser)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuGradientPanel2.ResumeLayout(False)
+        Me.BunifuGradientPanel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuGradientPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents txtUser As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtPass As TextBox
-    Friend WithEvents BtnLogin As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents ButtonMenu As Button
+    Friend WithEvents txtUser As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents txtPass As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuGradientPanel2 As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents BtnLogin As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents ButtonMenu As LinkLabel
 End Class
