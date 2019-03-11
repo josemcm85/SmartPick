@@ -45,38 +45,64 @@ Public Class FormMenu
         Filtro = 2
         LblFiltro.Text = "2"
 
-        'Verifica para comenzar las opeaciones de filtro'
-        If LblFiltro.Text = 2 Then
-            lblTitulo.Visible = True
-            Btnfiltrar.Visible = True
-            ComboFiltro.Visible = True
-            Try
-                connection = New SqlConnection(connectionString)
-                connection.Open()
+        If ButtonAppetizer.Text.Equals("Appetizers") Then
+            If LblFiltro.Text = 2 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
 
-                Dim Filtro As New DataTable
-                Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
-                Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEng '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
 
-                While Reader.Read()
+                    While Reader.Read()
 
-                    ComboFiltro.Items.Add(Reader.GetString(0))
+                        ComboFiltro.Items.Add(Reader.GetString(0))
 
-                End While
+                    End While
 
-                connection.Close()
+                    connection.Close()
 
 
-            Catch ex As Exception
+                Catch ex As Exception
 
-                MsgBox(ex.Message)
-            End Try
+                    MsgBox(ex.Message)
+                End Try
 
+            End If
         Else
+            If LblFiltro.Text = 2 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
 
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+
+                    While Reader.Read()
+
+                        ComboFiltro.Items.Add(Reader.GetString(0))
+
+                    End While
+
+                    connection.Close()
+
+
+                Catch ex As Exception
+
+                    MsgBox(ex.Message)
+                End Try
+
+            End If
 
         End If
-
 
 
         'Checks Which Language was selected
@@ -153,37 +179,61 @@ Public Class FormMenu
         Filtro = 1
         LblFiltro.Text = "1"
 
-        'Verifica para comenzar las opeaciones de filtro'
-        If LblFiltro.Text = 1 Then
-            lblTitulo.Visible = True
-            Btnfiltrar.Visible = True
-            ComboFiltro.Visible = True
-            Try
-                connection = New SqlConnection(connectionString)
-                connection.Open()
+        If ButtonAppetizer.Text.Equals("Appetizers") Then
+            If LblFiltro.Text = 1 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
 
-                Dim Filtro As New DataTable
-                Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
-                Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEng '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
 
-                While Reader.Read()
+                    While Reader.Read()
 
-                    ComboFiltro.Items.Add(Reader.GetString(0))
+                        ComboFiltro.Items.Add(Reader.GetString(0))
 
-                End While
+                    End While
+                    connection.Close()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
 
-                connection.Close()
-
-
-            Catch ex As Exception
-
-                MsgBox(ex.Message)
-            End Try
-
+            End If
         Else
+            If LblFiltro.Text = 1 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
 
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+
+                    While Reader.Read()
+
+                        ComboFiltro.Items.Add(Reader.GetString(0))
+
+                    End While
+
+                    connection.Close()
+
+
+                Catch ex As Exception
+
+                    MsgBox(ex.Message)
+                End Try
+
+            End If
 
         End If
+
 
 
         'Checks Which Language was selected
@@ -257,35 +307,59 @@ Public Class FormMenu
         Filtro = 3
         LblFiltro.Text = "3"
 
-        'Verifica para comenzar las opeaciones de filtro'
-        If LblFiltro.Text = 3 Then
-            lblTitulo.Visible = True
-            Btnfiltrar.Visible = True
-            ComboFiltro.Visible = True
-            Try
-                connection = New SqlConnection(connectionString)
-                connection.Open()
 
-                Dim Filtro As New DataTable
-                Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
-                Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+        If ButtonAppetizer.Text.Equals("Appetizers") Then
+            If LblFiltro.Text = 3 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
 
-                While Reader.Read()
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEng '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
 
-                    ComboFiltro.Items.Add(Reader.GetString(0))
+                    While Reader.Read()
 
-                End While
+                        ComboFiltro.Items.Add(Reader.GetString(0))
 
-                connection.Close()
+                    End While
+                    connection.Close()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
 
-
-            Catch ex As Exception
-
-                MsgBox(ex.Message)
-            End Try
-
+            End If
         Else
+            If LblFiltro.Text = 3 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
 
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+
+                    While Reader.Read()
+
+                        ComboFiltro.Items.Add(Reader.GetString(0))
+
+                    End While
+
+                    connection.Close()
+
+
+                Catch ex As Exception
+
+                    MsgBox(ex.Message)
+                End Try
+
+            End If
 
         End If
 
@@ -362,37 +436,61 @@ Public Class FormMenu
         LblFiltro.Text = "4"
 
         'Verifica para comenzar las opeaciones de filtro'
-        If LblFiltro.Text = 4 Then
-            lblTitulo.Visible = True
-            Btnfiltrar.Visible = True
-            ComboFiltro.Visible = True
-            Try
-                connection = New SqlConnection(connectionString)
-                connection.Open()
 
-                Dim Filtro As New DataTable
-                Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
-                Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+        If ButtonAppetizer.Text.Equals("Appetizers") Then
+            If LblFiltro.Text = 4 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
 
-                While Reader.Read()
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEng '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
 
-                    ComboFiltro.Items.Add(Reader.GetString(0))
+                    While Reader.Read()
 
-                End While
+                        ComboFiltro.Items.Add(Reader.GetString(0))
 
-                connection.Close()
+                    End While
+                    connection.Close()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
 
-
-            Catch ex As Exception
-
-                MsgBox(ex.Message)
-            End Try
-
+            End If
         Else
+            If LblFiltro.Text = 4 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
 
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+
+                    While Reader.Read()
+
+                        ComboFiltro.Items.Add(Reader.GetString(0))
+
+                    End While
+
+                    connection.Close()
+
+
+                Catch ex As Exception
+
+                    MsgBox(ex.Message)
+                End Try
+
+            End If
 
         End If
-
 
         'Checks Which Language was selected
         If ButtonDessert.Text.Equals("Desserts") Then
@@ -462,35 +560,59 @@ Public Class FormMenu
         Filtro = 5
         LblFiltro.Text = "5"
 
-        'Verifica para comenzar las opeaciones de filtro'
-        If LblFiltro.Text = 5 Then
-            lblTitulo.Visible = True
-            Btnfiltrar.Visible = True
-            ComboFiltro.Visible = True
-            Try
-                connection = New SqlConnection(connectionString)
-                connection.Open()
 
-                Dim Filtro As New DataTable
-                Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
-                Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+        If ButtonAppetizer.Text.Equals("Appetizers") Then
+            If LblFiltro.Text = 5 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
 
-                While Reader.Read()
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEng '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
 
-                    ComboFiltro.Items.Add(Reader.GetString(0))
+                    While Reader.Read()
 
-                End While
+                        ComboFiltro.Items.Add(Reader.GetString(0))
 
-                connection.Close()
+                    End While
+                    connection.Close()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
 
-
-            Catch ex As Exception
-
-                MsgBox(ex.Message)
-            End Try
-
+            End If
         Else
+            If LblFiltro.Text = 5 Then
+                lblTitulo.Visible = True
+                Btnfiltrar.Visible = True
+                ComboFiltro.Visible = True
+                Try
+                    connection = New SqlConnection(connectionString)
+                    connection.Open()
 
+                    Dim Filtro As New DataTable
+                    Dim commandFilter As New SqlCommand("Exec FiltrosEsp '" & LblFiltro.Text & "';", connection)
+                    Dim Reader As SqlDataReader = commandFilter.ExecuteReader()
+
+                    While Reader.Read()
+
+                        ComboFiltro.Items.Add(Reader.GetString(0))
+
+                    End While
+
+                    connection.Close()
+
+
+                Catch ex As Exception
+
+                    MsgBox(ex.Message)
+                End Try
+
+            End If
 
         End If
 
@@ -684,5 +806,73 @@ Public Class FormMenu
 
     Private Sub DataGridViewMenu_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewMenu.CellContentClick
 
+    End Sub
+
+    Private Sub Btnfiltrar_Click(sender As Object, e As EventArgs) Handles Btnfiltrar.Click
+
+
+
+        If ButtonAppetizer.Text.Equals("Appetizers") Then
+            Try
+
+                connection = New SqlConnection(connectionString)
+
+                Dim menuTable As New DataTable
+                Dim commandSelect As New SqlCommand("Exec searchEng '" & ComboFiltro.Text & "';", connection)
+
+                Dim dataAdapter As New SqlDataAdapter(commandSelect)
+                dataAdapter.Fill(menuTable)
+
+                DataGridViewMenu.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(4, 172, 209)
+
+                DataGridViewMenu.DataSource = menuTable
+
+                ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
+                ButtonMainDish.BackColor = Color.White
+                ButtonDrinks.BackColor = Color.White
+                ButtonDessert.BackColor = Color.White
+                ButtonToShare.BackColor = Color.White
+
+                'Hides Column with Picture information
+
+                DataGridViewMenu.Columns("Photo").Visible = False
+            Catch ex As Exception
+
+                MsgBox("Error en filtro")
+            End Try
+
+
+        Else
+
+            Try
+                connection = New SqlConnection(connectionString)
+
+                Dim menuTable As New DataTable
+                Dim commandSelect As New SqlCommand("Exec SearchEsp '" & ComboFiltro.Text & "';", connection)
+
+                Dim dataAdapter As New SqlDataAdapter(commandSelect)
+                dataAdapter.Fill(menuTable)
+
+                DataGridViewMenu.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(4, 172, 209)
+
+                DataGridViewMenu.DataSource = menuTable
+
+                ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
+                ButtonMainDish.BackColor = Color.White
+                ButtonDrinks.BackColor = Color.White
+                ButtonDessert.BackColor = Color.White
+                ButtonToShare.BackColor = Color.White
+
+                'Hides Column with Picture information
+
+                DataGridViewMenu.Columns("Photo").Visible = False
+
+
+            Catch ex As Exception
+
+                MsgBox("Error Filtro")
+            End Try
+
+        End If
     End Sub
 End Class
