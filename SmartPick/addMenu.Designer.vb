@@ -22,207 +22,70 @@ Partial Class addMenu
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(addMenu))
-        Me.DataGridMenu = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.selecIdiom = New System.Windows.Forms.ComboBox()
-        Me.BtnOkload = New System.Windows.Forms.Button()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.TxtDesEsp = New System.Windows.Forms.TextBox()
-        Me.CombCate = New System.Windows.Forms.ComboBox()
-        Me.CombComida = New System.Windows.Forms.ComboBox()
-        Me.txtPrecio = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtDesIng = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtCal = New System.Windows.Forms.TextBox()
-        Me.BtnIngresar = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtrandom = New System.Windows.Forms.TextBox()
-        Me.btnGenerar = New System.Windows.Forms.Button()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.BtnDespejar = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtNomEng = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.PicBox = New System.Windows.Forms.PictureBox()
-        CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnGenerar = New System.Windows.Forms.Button()
+        Me.txtDesIng = New System.Windows.Forms.TextBox()
+        Me.BtnDespejar = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtPrecio = New MetroFramework.Controls.MetroTextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtCal = New MetroFramework.Controls.MetroTextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtNombre = New MetroFramework.Controls.MetroTextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtNomENG = New MetroFramework.Controls.MetroTextBox()
+        Me.CombComida = New System.Windows.Forms.ComboBox()
+        Me.DataGridMenu = New System.Windows.Forms.DataGridView()
+        Me.txtrandom = New MetroFramework.Controls.MetroTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CombCate = New System.Windows.Forms.ComboBox()
+        Me.selecIdiom = New System.Windows.Forms.ComboBox()
+        Me.TxtDesEsp = New System.Windows.Forms.TextBox()
+        Me.BtnOkload = New System.Windows.Forms.Button()
+        Me.BtnIngresar = New System.Windows.Forms.Button()
+        Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DataGridMenu
+        'OpenFileDialog1
         '
-        Me.DataGridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridMenu.Location = New System.Drawing.Point(9, 89)
-        Me.DataGridMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridMenu.Name = "DataGridMenu"
-        Me.DataGridMenu.RowTemplate.Height = 24
-        Me.DataGridMenu.Size = New System.Drawing.Size(587, 376)
-        Me.DataGridMenu.TabIndex = 0
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'Label1
+        'BunifuElipse1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 27)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Selecciona el idioma a mostrar:"
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me.BunifuGradientPanel1
         '
-        'selecIdiom
+        'BunifuElipse2
         '
-        Me.selecIdiom.FormattingEnabled = True
-        Me.selecIdiom.Items.AddRange(New Object() {"Español", "Inglés"})
-        Me.selecIdiom.Location = New System.Drawing.Point(11, 51)
-        Me.selecIdiom.Margin = New System.Windows.Forms.Padding(2)
-        Me.selecIdiom.Name = "selecIdiom"
-        Me.selecIdiom.Size = New System.Drawing.Size(230, 21)
-        Me.selecIdiom.TabIndex = 2
+        Me.BunifuElipse2.ElipseRadius = 20
+        Me.BunifuElipse2.TargetControl = Me
         '
-        'BtnOkload
+        'BunifuDragControl1
         '
-        Me.BtnOkload.Location = New System.Drawing.Point(256, 50)
-        Me.BtnOkload.Margin = New System.Windows.Forms.Padding(2)
-        Me.BtnOkload.Name = "BtnOkload"
-        Me.BtnOkload.Size = New System.Drawing.Size(80, 20)
-        Me.BtnOkload.TabIndex = 3
-        Me.BtnOkload.Text = "Ok"
-        Me.BtnOkload.UseVisualStyleBackColor = True
-        '
-        'txtNombre
-        '
-        Me.txtNombre.Location = New System.Drawing.Point(622, 176)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(202, 20)
-        Me.txtNombre.TabIndex = 4
-        '
-        'TxtDesEsp
-        '
-        Me.TxtDesEsp.Location = New System.Drawing.Point(622, 231)
-        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(2)
-        Me.TxtDesEsp.Multiline = True
-        Me.TxtDesEsp.Name = "TxtDesEsp"
-        Me.TxtDesEsp.Size = New System.Drawing.Size(202, 98)
-        Me.TxtDesEsp.TabIndex = 5
-        '
-        'CombCate
-        '
-        Me.CombCate.FormattingEnabled = True
-        Me.CombCate.Items.AddRange(New Object() {"Plato Fuerte", "Entrada", "Bebidas", "Postres", "Para Compartir"})
-        Me.CombCate.Location = New System.Drawing.Point(629, 360)
-        Me.CombCate.Margin = New System.Windows.Forms.Padding(2)
-        Me.CombCate.Name = "CombCate"
-        Me.CombCate.Size = New System.Drawing.Size(202, 21)
-        Me.CombCate.TabIndex = 6
-        '
-        'CombComida
-        '
-        Me.CombComida.FormattingEnabled = True
-        Me.CombComida.Items.AddRange(New Object() {"Sopa", "Mariscos", "Tacos", "Carnes", "Vegetariano", "Nachos", "Bebida Natural", "Gaseosa", "Con Alcohol", "Postre", "Para Compartir"})
-        Me.CombComida.Location = New System.Drawing.Point(629, 411)
-        Me.CombComida.Margin = New System.Windows.Forms.Padding(2)
-        Me.CombComida.Name = "CombComida"
-        Me.CombComida.Size = New System.Drawing.Size(202, 21)
-        Me.CombComida.TabIndex = 7
-        '
-        'txtPrecio
-        '
-        Me.txtPrecio.Location = New System.Drawing.Point(629, 461)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(202, 20)
-        Me.txtPrecio.TabIndex = 8
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(620, 151)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(141, 13)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Nombre del item en español:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(620, 214)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(105, 13)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Descripción del item:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(627, 344)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(96, 13)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Categoría del item:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(627, 396)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(83, 13)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Tipo de comida:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(627, 444)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(79, 13)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Precio del item:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(864, 214)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(151, 13)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Descripción del item en Inglés:"
-        '
-        'txtDesIng
-        '
-        Me.txtDesIng.Location = New System.Drawing.Point(857, 231)
-        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtDesIng.Multiline = True
-        Me.txtDesIng.Name = "txtDesIng"
-        Me.txtDesIng.Size = New System.Drawing.Size(202, 98)
-        Me.txtDesIng.TabIndex = 14
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(864, 349)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(84, 13)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Imagen del item:"
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me
+        Me.BunifuDragControl1.Vertical = True
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(956, 345)
+        Me.BtnBuscar.Location = New System.Drawing.Point(973, 277)
         Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(64, 23)
@@ -233,96 +96,30 @@ Partial Class addMenu
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(627, 498)
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Location = New System.Drawing.Point(644, 430)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(86, 13)
         Me.Label9.TabIndex = 20
         Me.Label9.Text = "Calorias del item:"
         '
-        'txtCal
+        'Label8
         '
-        Me.txtCal.Location = New System.Drawing.Point(629, 514)
-        Me.txtCal.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtCal.Name = "txtCal"
-        Me.txtCal.Size = New System.Drawing.Size(202, 20)
-        Me.txtCal.TabIndex = 19
-        '
-        'BtnIngresar
-        '
-        Me.BtnIngresar.Location = New System.Drawing.Point(644, 578)
-        Me.BtnIngresar.Margin = New System.Windows.Forms.Padding(2)
-        Me.BtnIngresar.Name = "BtnIngresar"
-        Me.BtnIngresar.Size = New System.Drawing.Size(130, 41)
-        Me.BtnIngresar.TabIndex = 21
-        Me.BtnIngresar.Text = "Ingresar"
-        Me.BtnIngresar.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(623, 81)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(82, 13)
-        Me.Label10.TabIndex = 22
-        Me.Label10.Text = "Codigo del item:"
-        '
-        'txtrandom
-        '
-        Me.txtrandom.Location = New System.Drawing.Point(626, 102)
-        Me.txtrandom.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtrandom.Multiline = True
-        Me.txtrandom.Name = "txtrandom"
-        Me.txtrandom.Size = New System.Drawing.Size(119, 24)
-        Me.txtrandom.TabIndex = 23
-        '
-        'btnGenerar
-        '
-        Me.btnGenerar.Location = New System.Drawing.Point(748, 102)
-        Me.btnGenerar.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnGenerar.Name = "btnGenerar"
-        Me.btnGenerar.Size = New System.Drawing.Size(82, 23)
-        Me.btnGenerar.TabIndex = 24
-        Me.btnGenerar.Text = "Autogenerar"
-        Me.btnGenerar.UseVisualStyleBackColor = True
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'BtnDespejar
-        '
-        Me.BtnDespejar.Location = New System.Drawing.Point(895, 578)
-        Me.BtnDespejar.Margin = New System.Windows.Forms.Padding(2)
-        Me.BtnDespejar.Name = "BtnDespejar"
-        Me.BtnDespejar.Size = New System.Drawing.Size(113, 41)
-        Me.BtnDespejar.TabIndex = 25
-        Me.BtnDespejar.Text = "Despejar"
-        Me.BtnDespejar.UseVisualStyleBackColor = True
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(855, 151)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(131, 13)
-        Me.Label11.TabIndex = 27
-        Me.Label11.Text = "Nombre del item en inglés:"
-        '
-        'txtNomEng
-        '
-        Me.txtNomEng.Location = New System.Drawing.Point(857, 176)
-        Me.txtNomEng.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtNomEng.Name = "txtNomEng"
-        Me.txtNomEng.Size = New System.Drawing.Size(202, 20)
-        Me.txtNomEng.TabIndex = 26
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Location = New System.Drawing.Point(881, 281)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(84, 13)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "Imagen del item:"
         '
         'PicBox
         '
+        Me.PicBox.BackColor = System.Drawing.Color.White
         Me.PicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PicBox.Location = New System.Drawing.Point(857, 380)
+        Me.PicBox.Location = New System.Drawing.Point(874, 312)
         Me.PicBox.Margin = New System.Windows.Forms.Padding(2)
         Me.PicBox.Name = "PicBox"
         Me.PicBox.Size = New System.Drawing.Size(210, 169)
@@ -330,77 +127,470 @@ Partial Class addMenu
         Me.PicBox.TabIndex = 16
         Me.PicBox.TabStop = False
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Location = New System.Drawing.Point(640, 13)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(82, 13)
+        Me.Label10.TabIndex = 22
+        Me.Label10.Text = "Codigo del item:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Location = New System.Drawing.Point(881, 146)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(151, 13)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Descripción del item en Inglés:"
+        '
+        'btnGenerar
+        '
+        Me.btnGenerar.Location = New System.Drawing.Point(765, 34)
+        Me.btnGenerar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnGenerar.Name = "btnGenerar"
+        Me.btnGenerar.Size = New System.Drawing.Size(82, 23)
+        Me.btnGenerar.TabIndex = 24
+        Me.btnGenerar.Text = "Autogenerar"
+        Me.btnGenerar.UseVisualStyleBackColor = True
+        '
+        'txtDesIng
+        '
+        Me.txtDesIng.BackColor = System.Drawing.Color.White
+        Me.txtDesIng.Location = New System.Drawing.Point(874, 163)
+        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDesIng.Multiline = True
+        Me.txtDesIng.Name = "txtDesIng"
+        Me.txtDesIng.Size = New System.Drawing.Size(202, 98)
+        Me.txtDesIng.TabIndex = 14
+        '
+        'BtnDespejar
+        '
+        Me.BtnDespejar.Location = New System.Drawing.Point(912, 510)
+        Me.BtnDespejar.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnDespejar.Name = "BtnDespejar"
+        Me.BtnDespejar.Size = New System.Drawing.Size(113, 41)
+        Me.BtnDespejar.TabIndex = 25
+        Me.BtnDespejar.Text = "Despejar"
+        Me.BtnDespejar.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Location = New System.Drawing.Point(644, 376)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(79, 13)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Precio del item:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Location = New System.Drawing.Point(872, 83)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(131, 13)
+        Me.Label11.TabIndex = 27
+        Me.Label11.Text = "Nombre del item en inglés:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Location = New System.Drawing.Point(644, 328)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Tipo de comida:"
+        '
+        'txtPrecio
+        '
+        Me.txtPrecio.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtPrecio.CustomButton.Image = Nothing
+        Me.txtPrecio.CustomButton.Location = New System.Drawing.Point(180, 1)
+        Me.txtPrecio.CustomButton.Name = ""
+        Me.txtPrecio.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtPrecio.CustomButton.TabIndex = 1
+        Me.txtPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtPrecio.CustomButton.UseSelectable = True
+        Me.txtPrecio.CustomButton.Visible = False
+        Me.txtPrecio.DisplayIcon = True
+        Me.txtPrecio.Icon = Global.SmartPick.My.Resources.Resources.icons8_cheap_2_48px_3
+        Me.txtPrecio.IconRight = True
+        Me.txtPrecio.Lines = New String(-1) {}
+        Me.txtPrecio.Location = New System.Drawing.Point(646, 392)
+        Me.txtPrecio.MaxLength = 32767
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPrecio.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtPrecio.SelectedText = ""
+        Me.txtPrecio.SelectionLength = 0
+        Me.txtPrecio.SelectionStart = 0
+        Me.txtPrecio.ShortcutsEnabled = True
+        Me.txtPrecio.Size = New System.Drawing.Size(202, 23)
+        Me.txtPrecio.TabIndex = 37
+        Me.txtPrecio.UseSelectable = True
+        Me.txtPrecio.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtPrecio.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Location = New System.Drawing.Point(644, 276)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(96, 13)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Categoría del item:"
+        '
+        'txtCal
+        '
+        Me.txtCal.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtCal.CustomButton.Image = Nothing
+        Me.txtCal.CustomButton.Location = New System.Drawing.Point(180, 1)
+        Me.txtCal.CustomButton.Name = ""
+        Me.txtCal.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtCal.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtCal.CustomButton.TabIndex = 1
+        Me.txtCal.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtCal.CustomButton.UseSelectable = True
+        Me.txtCal.CustomButton.Visible = False
+        Me.txtCal.DisplayIcon = True
+        Me.txtCal.Icon = Global.SmartPick.My.Resources.Resources.icons8_caloric_energy_50px_11
+        Me.txtCal.IconRight = True
+        Me.txtCal.Lines = New String(-1) {}
+        Me.txtCal.Location = New System.Drawing.Point(647, 458)
+        Me.txtCal.MaxLength = 32767
+        Me.txtCal.Name = "txtCal"
+        Me.txtCal.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCal.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtCal.SelectedText = ""
+        Me.txtCal.SelectionLength = 0
+        Me.txtCal.SelectionStart = 0
+        Me.txtCal.ShortcutsEnabled = True
+        Me.txtCal.Size = New System.Drawing.Size(202, 23)
+        Me.txtCal.TabIndex = 40
+        Me.txtCal.UseSelectable = True
+        Me.txtCal.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtCal.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(637, 146)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(105, 13)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Descripción del item:"
+        '
+        'txtNombre
+        '
+        Me.txtNombre.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtNombre.CustomButton.Image = Nothing
+        Me.txtNombre.CustomButton.Location = New System.Drawing.Point(180, 1)
+        Me.txtNombre.CustomButton.Name = ""
+        Me.txtNombre.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtNombre.CustomButton.TabIndex = 1
+        Me.txtNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtNombre.CustomButton.UseSelectable = True
+        Me.txtNombre.CustomButton.Visible = False
+        Me.txtNombre.DisplayIcon = True
+        Me.txtNombre.Icon = Global.SmartPick.My.Resources.Resources.icons8_language_48px_1
+        Me.txtNombre.IconRight = True
+        Me.txtNombre.Lines = New String(-1) {}
+        Me.txtNombre.Location = New System.Drawing.Point(640, 108)
+        Me.txtNombre.MaxLength = 32767
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtNombre.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtNombre.SelectedText = ""
+        Me.txtNombre.SelectionLength = 0
+        Me.txtNombre.SelectionStart = 0
+        Me.txtNombre.ShortcutsEnabled = True
+        Me.txtNombre.Size = New System.Drawing.Size(202, 23)
+        Me.txtNombre.TabIndex = 41
+        Me.txtNombre.UseSelectable = True
+        Me.txtNombre.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtNombre.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(637, 83)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(141, 13)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "Nombre del item en español:"
+        '
+        'txtNomENG
+        '
+        Me.txtNomENG.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtNomENG.CustomButton.Image = Nothing
+        Me.txtNomENG.CustomButton.Location = New System.Drawing.Point(180, 1)
+        Me.txtNomENG.CustomButton.Name = ""
+        Me.txtNomENG.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtNomENG.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtNomENG.CustomButton.TabIndex = 1
+        Me.txtNomENG.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtNomENG.CustomButton.UseSelectable = True
+        Me.txtNomENG.CustomButton.Visible = False
+        Me.txtNomENG.DisplayIcon = True
+        Me.txtNomENG.Icon = Global.SmartPick.My.Resources.Resources.icons8_language_48px_1
+        Me.txtNomENG.IconRight = True
+        Me.txtNomENG.Lines = New String(-1) {}
+        Me.txtNomENG.Location = New System.Drawing.Point(874, 108)
+        Me.txtNomENG.MaxLength = 32767
+        Me.txtNomENG.Name = "txtNomENG"
+        Me.txtNomENG.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtNomENG.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtNomENG.SelectedText = ""
+        Me.txtNomENG.SelectionLength = 0
+        Me.txtNomENG.SelectionStart = 0
+        Me.txtNomENG.ShortcutsEnabled = True
+        Me.txtNomENG.Size = New System.Drawing.Size(202, 23)
+        Me.txtNomENG.TabIndex = 42
+        Me.txtNomENG.UseSelectable = True
+        Me.txtNomENG.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtNomENG.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'CombComida
+        '
+        Me.CombComida.BackColor = System.Drawing.Color.White
+        Me.CombComida.FormattingEnabled = True
+        Me.CombComida.Items.AddRange(New Object() {"Sopa", "Mariscos", "Tacos", "Carnes", "Vegetariano", "Nachos", "Bebida Natural", "Gaseosa", "Con Alcohol", "Postre", "Para Compartir"})
+        Me.CombComida.Location = New System.Drawing.Point(646, 343)
+        Me.CombComida.Margin = New System.Windows.Forms.Padding(2)
+        Me.CombComida.Name = "CombComida"
+        Me.CombComida.Size = New System.Drawing.Size(202, 21)
+        Me.CombComida.TabIndex = 7
+        '
+        'DataGridMenu
+        '
+        Me.DataGridMenu.BackgroundColor = System.Drawing.Color.YellowGreen
+        Me.DataGridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridMenu.Location = New System.Drawing.Point(15, 119)
+        Me.DataGridMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.DataGridMenu.Name = "DataGridMenu"
+        Me.DataGridMenu.RowTemplate.Height = 24
+        Me.DataGridMenu.Size = New System.Drawing.Size(587, 376)
+        Me.DataGridMenu.TabIndex = 0
+        '
+        'txtrandom
+        '
+        Me.txtrandom.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtrandom.CustomButton.Image = Nothing
+        Me.txtrandom.CustomButton.Location = New System.Drawing.Point(98, 1)
+        Me.txtrandom.CustomButton.Name = ""
+        Me.txtrandom.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtrandom.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtrandom.CustomButton.TabIndex = 1
+        Me.txtrandom.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtrandom.CustomButton.UseSelectable = True
+        Me.txtrandom.CustomButton.Visible = False
+        Me.txtrandom.DisplayIcon = True
+        Me.txtrandom.Icon = Global.SmartPick.My.Resources.Resources.icons8_price_tag_50px_11
+        Me.txtrandom.IconRight = True
+        Me.txtrandom.Lines = New String(-1) {}
+        Me.txtrandom.Location = New System.Drawing.Point(640, 34)
+        Me.txtrandom.MaxLength = 32767
+        Me.txtrandom.Name = "txtrandom"
+        Me.txtrandom.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtrandom.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtrandom.SelectedText = ""
+        Me.txtrandom.SelectionLength = 0
+        Me.txtrandom.SelectionStart = 0
+        Me.txtrandom.ShortcutsEnabled = True
+        Me.txtrandom.Size = New System.Drawing.Size(120, 23)
+        Me.txtrandom.TabIndex = 43
+        Me.txtrandom.UseSelectable = True
+        Me.txtrandom.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtrandom.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(13, 46)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(153, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Selecciona el idioma a mostrar:"
+        '
+        'CombCate
+        '
+        Me.CombCate.BackColor = System.Drawing.Color.White
+        Me.CombCate.FormattingEnabled = True
+        Me.CombCate.Items.AddRange(New Object() {"Plato Fuerte", "Entrada", "Bebidas", "Postres", "Para Compartir"})
+        Me.CombCate.Location = New System.Drawing.Point(646, 292)
+        Me.CombCate.Margin = New System.Windows.Forms.Padding(2)
+        Me.CombCate.Name = "CombCate"
+        Me.CombCate.Size = New System.Drawing.Size(202, 21)
+        Me.CombCate.TabIndex = 6
+        '
+        'selecIdiom
+        '
+        Me.selecIdiom.FormattingEnabled = True
+        Me.selecIdiom.Items.AddRange(New Object() {"Español", "Inglés"})
+        Me.selecIdiom.Location = New System.Drawing.Point(15, 70)
+        Me.selecIdiom.Margin = New System.Windows.Forms.Padding(2)
+        Me.selecIdiom.Name = "selecIdiom"
+        Me.selecIdiom.Size = New System.Drawing.Size(230, 21)
+        Me.selecIdiom.TabIndex = 2
+        '
+        'TxtDesEsp
+        '
+        Me.TxtDesEsp.BackColor = System.Drawing.Color.White
+        Me.TxtDesEsp.Location = New System.Drawing.Point(647, 163)
+        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(2)
+        Me.TxtDesEsp.Multiline = True
+        Me.TxtDesEsp.Name = "TxtDesEsp"
+        Me.TxtDesEsp.Size = New System.Drawing.Size(202, 98)
+        Me.TxtDesEsp.TabIndex = 44
+        '
+        'BtnOkload
+        '
+        Me.BtnOkload.Location = New System.Drawing.Point(260, 69)
+        Me.BtnOkload.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnOkload.Name = "BtnOkload"
+        Me.BtnOkload.Size = New System.Drawing.Size(80, 20)
+        Me.BtnOkload.TabIndex = 3
+        Me.BtnOkload.Text = "Ok"
+        Me.BtnOkload.UseVisualStyleBackColor = True
+        '
+        'BtnIngresar
+        '
+        Me.BtnIngresar.Location = New System.Drawing.Point(661, 510)
+        Me.BtnIngresar.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnIngresar.Name = "BtnIngresar"
+        Me.BtnIngresar.Size = New System.Drawing.Size(130, 41)
+        Me.BtnIngresar.TabIndex = 21
+        Me.BtnIngresar.Text = "Ingresar"
+        Me.BtnIngresar.UseVisualStyleBackColor = True
+        '
+        'BunifuGradientPanel1
+        '
+        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.BtnIngresar)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BtnOkload)
+        Me.BunifuGradientPanel1.Controls.Add(Me.TxtDesEsp)
+        Me.BunifuGradientPanel1.Controls.Add(Me.selecIdiom)
+        Me.BunifuGradientPanel1.Controls.Add(Me.CombCate)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label1)
+        Me.BunifuGradientPanel1.Controls.Add(Me.txtrandom)
+        Me.BunifuGradientPanel1.Controls.Add(Me.DataGridMenu)
+        Me.BunifuGradientPanel1.Controls.Add(Me.CombComida)
+        Me.BunifuGradientPanel1.Controls.Add(Me.txtNomENG)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label2)
+        Me.BunifuGradientPanel1.Controls.Add(Me.txtNombre)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label3)
+        Me.BunifuGradientPanel1.Controls.Add(Me.txtCal)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label4)
+        Me.BunifuGradientPanel1.Controls.Add(Me.txtPrecio)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label5)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label11)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label6)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BtnDespejar)
+        Me.BunifuGradientPanel1.Controls.Add(Me.txtDesIng)
+        Me.BunifuGradientPanel1.Controls.Add(Me.btnGenerar)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label7)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label10)
+        Me.BunifuGradientPanel1.Controls.Add(Me.PicBox)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label8)
+        Me.BunifuGradientPanel1.Controls.Add(Me.Label9)
+        Me.BunifuGradientPanel1.Controls.Add(Me.BtnBuscar)
+        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Transparent
+        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Transparent
+        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Transparent
+        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Transparent
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 34)
+        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
+        Me.BunifuGradientPanel1.Quality = 10
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(1121, 610)
+        Me.BunifuGradientPanel1.TabIndex = 45
+        '
         'addMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1097, 652)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.txtNomEng)
-        Me.Controls.Add(Me.BtnDespejar)
-        Me.Controls.Add(Me.btnGenerar)
-        Me.Controls.Add(Me.txtrandom)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.BtnIngresar)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.txtCal)
-        Me.Controls.Add(Me.BtnBuscar)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.PicBox)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtDesIng)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtPrecio)
-        Me.Controls.Add(Me.CombComida)
-        Me.Controls.Add(Me.CombCate)
-        Me.Controls.Add(Me.TxtDesEsp)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.BtnOkload)
-        Me.Controls.Add(Me.selecIdiom)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridMenu)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1120, 635)
+        Me.Controls.Add(Me.BunifuGradientPanel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "addMenu"
-        Me.Text = "Agregar al Menu"
-        CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = " "
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridMenu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuGradientPanel1.ResumeLayout(False)
+        Me.BunifuGradientPanel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents DataGridMenu As DataGridView
-    Friend WithEvents Label1 As Label
-    Friend WithEvents selecIdiom As ComboBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents BtnIngresar As Button
     Friend WithEvents BtnOkload As Button
-    Friend WithEvents txtNombre As TextBox
     Friend WithEvents TxtDesEsp As TextBox
+    Friend WithEvents selecIdiom As ComboBox
     Friend WithEvents CombCate As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtrandom As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents DataGridMenu As DataGridView
     Friend WithEvents CombComida As ComboBox
-    Friend WithEvents txtPrecio As TextBox
+    Friend WithEvents txtNomENG As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents txtNombre As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents txtCal As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents txtPrecio As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Label11 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents BtnDespejar As Button
     Friend WithEvents txtDesIng As TextBox
+    Friend WithEvents btnGenerar As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label10 As Label
     Friend WithEvents PicBox As PictureBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents BtnBuscar As Button
     Friend WithEvents Label9 As Label
-    Friend WithEvents txtCal As TextBox
-    Friend WithEvents BtnIngresar As Button
-    Friend WithEvents Label10 As Label
-    Friend WithEvents txtrandom As TextBox
-    Friend WithEvents btnGenerar As Button
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents BtnDespejar As Button
-    Friend WithEvents Label11 As Label
-    Friend WithEvents txtNomEng As TextBox
+    Friend WithEvents BtnBuscar As Button
 End Class

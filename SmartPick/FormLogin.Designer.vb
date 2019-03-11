@@ -28,11 +28,11 @@ Partial Class FormLogin
         Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.ButtonMenu = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.BtnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.BtnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.ButtonMenu = New System.Windows.Forms.LinkLabel()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,32 +122,31 @@ Partial Class FormLogin
         Me.BunifuGradientPanel2.Size = New System.Drawing.Size(362, 376)
         Me.BunifuGradientPanel2.TabIndex = 13
         '
-        'PictureBox1
+        'ButtonMenu
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources.logoblack
-        Me.PictureBox1.Location = New System.Drawing.Point(22, 76)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(198, 199)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.ButtonMenu.AutoSize = True
+        Me.ButtonMenu.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.ButtonMenu.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
+        Me.ButtonMenu.Location = New System.Drawing.Point(204, 288)
+        Me.ButtonMenu.Name = "ButtonMenu"
+        Me.ButtonMenu.Size = New System.Drawing.Size(125, 15)
+        Me.ButtonMenu.TabIndex = 18
+        Me.ButtonMenu.TabStop = True
+        Me.ButtonMenu.Text = "Ingresar como cliente"
         '
-        'BunifuGradientPanel1
+        'LinkLabel1
         '
-        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox1)
-        Me.BunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(12, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(12, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
-        Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(265, 376)
-        Me.BunifuGradientPanel1.TabIndex = 12
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
+        Me.LinkLabel1.Location = New System.Drawing.Point(32, 288)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(166, 15)
+        Me.LinkLabel1.TabIndex = 17
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "No te acuerdas de tus datos?"
         '
         'BtnLogin
         '
@@ -174,31 +173,32 @@ Partial Class FormLogin
         Me.BtnLogin.TabIndex = 14
         Me.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'LinkLabel1
+        'PictureBox1
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(32, 288)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(166, 15)
-        Me.LinkLabel1.TabIndex = 17
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "No te acuerdas de tus datos?"
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources.logoblack
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 76)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(198, 199)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
-        'ButtonMenu
+        'BunifuGradientPanel1
         '
-        Me.ButtonMenu.AutoSize = True
-        Me.ButtonMenu.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.ButtonMenu.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
-        Me.ButtonMenu.Location = New System.Drawing.Point(204, 288)
-        Me.ButtonMenu.Name = "ButtonMenu"
-        Me.ButtonMenu.Size = New System.Drawing.Size(125, 15)
-        Me.ButtonMenu.TabIndex = 18
-        Me.ButtonMenu.TabStop = True
-        Me.ButtonMenu.Text = "Ingresar como cliente"
+        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Controls.Add(Me.PictureBox1)
+        Me.BunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
+        Me.BunifuGradientPanel1.Quality = 10
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(265, 376)
+        Me.BunifuGradientPanel1.TabIndex = 12
         '
         'FormLogin
         '

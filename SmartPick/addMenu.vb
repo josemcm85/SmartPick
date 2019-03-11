@@ -200,5 +200,43 @@ Public Class addMenu
         txtNomEng.Text = Nothing
     End Sub
 
+    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub BunifuMetroTextbox1_OnValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TxtDesEsp_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub txtNomEng_TextChanged(sender As Object, e As EventArgs) 
+
+    End Sub
+
+    Private Sub TxtDesEsp_OnValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub txtPrecio_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub txtCal_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub txtNombre_OnValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel1.Paint
+
+    End Sub
+
+    Private Sub DataGridMenu_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridMenu.CellContentClick
+
+    End Sub
 End Class
