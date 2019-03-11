@@ -267,12 +267,14 @@
     <None Include="Resources\Close1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="14650771_10157489166520161_9089602778382653312_n.png" />
     <Content Include="icons8_visible_100px_3.png" />
     <Content Include="icons8_visible_25px.png" />
     <Content Include="logoblack.ico" />
     <Content Include="logoblack.png" />
     <Content Include="minusSign.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\14650771_10157489166520161_9089602778382653312_n.png" />
     <None Include="Resources\logoblack.png" />
     <None Include="Resources\icons8_visible_100px_3.png" />
     <None Include="Resources\icons8_visible_25px.png" />
