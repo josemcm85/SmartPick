@@ -36,10 +36,13 @@ Partial Class FormMenu
         Me.ButtonMainDish = New System.Windows.Forms.Button()
         Me.ButtonAppetizer = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.DataGridViewMenu = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.DataGridViewDescription = New System.Windows.Forms.DataGridView()
+        Me.PictureBoxItem = New System.Windows.Forms.PictureBox()
         Me.LblTitle = New System.Windows.Forms.Label()
         Me.lblSec = New System.Windows.Forms.Label()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
@@ -56,20 +59,21 @@ Partial Class FormMenu
         Me.LabelOrder = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonDelete = New System.Windows.Forms.Button()
-        Me.PictureBoxItem = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
+        Me.LblFiltro = New System.Windows.Forms.Label()
+        Me.ComboFiltro = New System.Windows.Forms.ComboBox()
+        Me.Btnfiltrar = New System.Windows.Forms.Button()
+        Me.lblTitulo = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMenu.SuspendLayout()
         CType(Me.DataGridViewMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.DataGridViewDescription, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownQuantity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonToShare
@@ -145,8 +149,28 @@ Partial Class FormMenu
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1065, 31)
+        Me.Panel2.Size = New System.Drawing.Size(1101, 31)
         Me.Panel2.TabIndex = 21
+        '
+        'PictureBoxClose
+        '
+        Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1020, 3)
+        Me.PictureBoxClose.Name = "PictureBoxClose"
+        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxClose.TabIndex = 1
+        Me.PictureBoxClose.TabStop = False
+        '
+        'PictureBoxMinimize
+        '
+        Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(990, 3)
+        Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxMinimize.TabIndex = 0
+        Me.PictureBoxMinimize.TabStop = False
         '
         'PanelMenu
         '
@@ -239,6 +263,17 @@ Partial Class FormMenu
         Me.DataGridViewDescription.RowHeadersVisible = False
         Me.DataGridViewDescription.Size = New System.Drawing.Size(321, 125)
         Me.DataGridViewDescription.TabIndex = 1
+        '
+        'PictureBoxItem
+        '
+        Me.PictureBoxItem.BackColor = System.Drawing.Color.White
+        Me.PictureBoxItem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBoxItem.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBoxItem.Name = "PictureBoxItem"
+        Me.PictureBoxItem.Size = New System.Drawing.Size(321, 409)
+        Me.PictureBoxItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxItem.TabIndex = 0
+        Me.PictureBoxItem.TabStop = False
         '
         'LblTitle
         '
@@ -418,36 +453,41 @@ Partial Class FormMenu
         Me.ButtonDelete.TabIndex = 28
         Me.ButtonDelete.UseVisualStyleBackColor = False
         '
-        'PictureBoxItem
+        'LblFiltro
         '
-        Me.PictureBoxItem.BackColor = System.Drawing.Color.White
-        Me.PictureBoxItem.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxItem.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBoxItem.Name = "PictureBoxItem"
-        Me.PictureBoxItem.Size = New System.Drawing.Size(321, 409)
-        Me.PictureBoxItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxItem.TabIndex = 0
-        Me.PictureBoxItem.TabStop = False
+        Me.LblFiltro.AutoSize = True
+        Me.LblFiltro.Location = New System.Drawing.Point(46, 752)
+        Me.LblFiltro.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblFiltro.Name = "LblFiltro"
+        Me.LblFiltro.Size = New System.Drawing.Size(39, 13)
+        Me.LblFiltro.TabIndex = 36
+        Me.LblFiltro.Text = "Label2"
         '
-        'PictureBoxClose
+        'ComboFiltro
         '
-        Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(1020, 3)
-        Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxClose.TabIndex = 1
-        Me.PictureBoxClose.TabStop = False
+        Me.ComboFiltro.FormattingEnabled = True
+        Me.ComboFiltro.Location = New System.Drawing.Point(183, 88)
+        Me.ComboFiltro.Name = "ComboFiltro"
+        Me.ComboFiltro.Size = New System.Drawing.Size(221, 21)
+        Me.ComboFiltro.TabIndex = 37
         '
-        'PictureBoxMinimize
+        'Btnfiltrar
         '
-        Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(990, 3)
-        Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxMinimize.TabIndex = 0
-        Me.PictureBoxMinimize.TabStop = False
+        Me.Btnfiltrar.Location = New System.Drawing.Point(410, 88)
+        Me.Btnfiltrar.Name = "Btnfiltrar"
+        Me.Btnfiltrar.Size = New System.Drawing.Size(30, 22)
+        Me.Btnfiltrar.TabIndex = 38
+        Me.Btnfiltrar.Text = "Ok"
+        Me.Btnfiltrar.UseVisualStyleBackColor = True
+        '
+        'lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Location = New System.Drawing.Point(180, 72)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(35, 13)
+        Me.lblTitulo.TabIndex = 39
+        Me.lblTitulo.Text = "Filtrar:"
         '
         'FormMenu
         '
@@ -455,7 +495,11 @@ Partial Class FormMenu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1065, 787)
+        Me.ClientSize = New System.Drawing.Size(1101, 765)
+        Me.Controls.Add(Me.lblTitulo)
+        Me.Controls.Add(Me.Btnfiltrar)
+        Me.Controls.Add(Me.ComboFiltro)
+        Me.Controls.Add(Me.LblFiltro)
         Me.Controls.Add(Me.LabelOrder)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.Label1)
@@ -479,16 +523,16 @@ Partial Class FormMenu
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelMenu.ResumeLayout(False)
         CType(Me.DataGridViewMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.DataGridViewDescription, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownQuantity, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -522,4 +566,8 @@ Partial Class FormMenu
     Friend WithEvents Label1 As Label
     Friend WithEvents DataGridViewOrder As DataGridView
     Friend WithEvents LabelOrder As Label
+    Friend WithEvents LblFiltro As Label
+    Friend WithEvents lblTitulo As Label
+    Friend WithEvents Btnfiltrar As Button
+    Friend WithEvents ComboFiltro As ComboBox
 End Class
