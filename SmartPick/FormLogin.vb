@@ -141,4 +141,8 @@ Public Class FormLogin
         FormLanguage.Show()
 
     End Sub
+
+    Private Sub txtUser_OnValueChanged(sender As Object, e As EventArgs) Handles txtUser.OnValueChanged
+        'Cambio test
+    End Sub
 End Class
