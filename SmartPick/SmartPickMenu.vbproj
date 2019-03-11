@@ -278,6 +278,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="14650771_10157489166520161_9089602778382653312_n.png" />
+    <Content Include="Bunifu_UI_v1.5.3.dll" />
     <Content Include="gradient-01-01.png" />
     <Content Include="gradient-01.png" />
     <Content Include="gradient.png" />
@@ -295,6 +296,7 @@
     <Content Include="icons8_visible_25px.png" />
     <Content Include="logoblack.ico" />
     <Content Include="logoblack.png" />
+    <Content Include="MetroFramework.dll" />
     <Content Include="minusSign.png" />
     <Content Include="plusSign.png" />
     <None Include="Resources\icons8_price_tag_50px_1.png" />
