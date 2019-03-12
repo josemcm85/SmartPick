@@ -6,7 +6,7 @@ Public Class addMenu
     Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
     Dim ms As MemoryStream
 
-    Private Sub BtnOkload_Click(sender As Object, e As EventArgs) Handles BtnOkload.Click
+    Private Sub BtnOkload_Click(sender As Object, e As EventArgs)
 
         'Procedimientos encargados de cargar el menu en ambos idiomas'
 
@@ -51,7 +51,7 @@ Public Class addMenu
 
     End Sub
 
-    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs)
         'Busqueda y fija la imagen deseada para el picturebox
         Try
             'Filtros de busqeda en archivos
@@ -76,7 +76,7 @@ Public Class addMenu
         Salir = 0
 
         'Verifica que ningun espacio este vacio
-        If (txtrandom.Text = Nothing) Or txtNombre.Text = Nothing Or TxtDesEsp.Text = Nothing Or txtDesIng.Text = Nothing Or txtPrecio.Text = Nothing Or txtCal.Text = Nothing Or CombCate.SelectedItem.ToString = Nothing Or CombComida.SelectedItem.ToString = Nothing Or PicBox.Image Is Nothing Or txtNomEng.Text = Nothing Then
+        If (txtrandom.Text = Nothing) Or txtNombre.Text = Nothing Or TxtDesEsp.Text = Nothing Or txtDesIng.Text = Nothing Or txtPrecio.Text = Nothing Or txtCal.Text = Nothing Or CombCate.SelectedItem.ToString = Nothing Or CombComida.SelectedItem.ToString = Nothing Or PicBox.Image Is Nothing Or txtNomENG.Text = Nothing Then
 
             MsgBox("Verifique que los espacios no esten vacíos!")
         Else
@@ -90,7 +90,7 @@ Public Class addMenu
                         'Luego, en la tabla MenuEng solo se ingresa la Descripcion en el idioma acorde. La tabla tiene la referencia de ID de la tabla MenuEsp, por ende ambas estan conectadas
                         Conn.Open()
                         Dim Table As New DataTable
-                        Dim Command As New SqlCommand("Exec addPlato '" & txtrandom.Text & "','" & txtNombre.Text & "','" & TxtDesEsp.Text & "','" & CombCate.SelectedItem.ToString & "','" & CombComida.SelectedItem.ToString & "','" & txtPrecio.Text & "','" & txtCal.Text & "','" & txtDesIng.Text & "','" & txtNomEng.Text & "';", Conn)
+                        Dim Command As New SqlCommand("Exec addPlato '" & txtrandom.Text & "','" & txtNombre.Text & "','" & TxtDesEsp.Text & "','" & CombCate.SelectedItem.ToString & "','" & CombComida.SelectedItem.ToString & "','" & txtPrecio.Text & "','" & txtCal.Text & "','" & txtDesIng.Text & "','" & txtNomENG.Text & "';", Conn)
                         Dim Adapter As New SqlDataAdapter(Command)
                         Adapter.Fill(Table)
                         DataGridMenu.DataSource = Table
@@ -157,11 +157,11 @@ Public Class addMenu
 
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnGenerar_Click(sender As Object, e As EventArgs) Handles btnGenerar.Click
+    Private Sub btnGenerar_Click(sender As Object, e As EventArgs)
         'Autogenera un texto random entre todas las letras y numeros del 1 al 9 con longitud de 5 caracteres
         Dim obj As New Random()
 
@@ -197,7 +197,7 @@ Public Class addMenu
         CombCate.Text = ""
         CombComida.Text = ""
         PicBox.Image = Nothing
-        txtNomEng.Text = Nothing
+        txtNomENG.Text = Nothing
     End Sub
 
     Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs)
@@ -212,7 +212,7 @@ Public Class addMenu
 
     End Sub
 
-    Private Sub txtNomEng_TextChanged(sender As Object, e As EventArgs) 
+    Private Sub txtNomEng_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -298,5 +298,78 @@ Public Class addMenu
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
+    End Sub
+
+    Private Sub BtnLogin_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub BtnOkloadd_Click(sender As Object, e As EventArgs) Handles BtnOkload.Click
+        'Procedimientos encargados de cargar el menu en ambos idiomas'
+
+        If selecIdiom.SelectedItem.ToString = "Español" Then
+
+
+            Conn.Open()
+            Dim menuTable As New DataTable
+            Dim Command As New SqlCommand("Exec loadMenuEsp;", Conn)
+            Dim Adapter As New SqlDataAdapter(Command)
+            Adapter.Fill(menuTable)
+            DataGridMenu.DataSource = menuTable
+
+            Conn.Close()
+        ElseIf selecIdiom.SelectedItem.ToString = "Inglés" Then
+
+            Conn.Open()
+            Dim menuTable As New DataTable
+            Dim Command As New SqlCommand("Exec loadMenuIng;", Conn)
+            Dim Adapter As New SqlDataAdapter(Command)
+            Adapter.Fill(menuTable)
+            DataGridMenu.DataSource = menuTable
+
+            Conn.Close()
+
+        End If
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles btnGenerar.Click
+        'Autogenera un texto random entre todas las letras y numeros del 1 al 9 con longitud de 5 caracteres
+        Dim obj As New Random()
+
+        Dim posibles As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+        Dim longitud As Integer = posibles.Length
+
+        Dim letra As Char
+        Dim longitudnuevacadena As Integer = 5
+
+        Dim nuevacadena As String = ""
+
+        For i As Integer = 0 To longitudnuevacadena - 1
+
+            letra = posibles(obj.[Next](longitud))
+
+            nuevacadena += letra.ToString()
+        Next
+
+        txtrandom.Text = nuevacadena
+    End Sub
+
+    Private Sub BunifuThinButton21_Click_1(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+        'Busqueda y fija la imagen deseada para el picturebox
+        Try
+            'Filtros de busqeda en archivos
+            With OpenFileDialog1.Filter = ("Images |*.png;*.bmp;*.jpg;*.jpeg;*.gif;*.ico;")
+
+            End With
+
+            OpenFileDialog1.FileName = ""
+            If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+                PicBox.Image = Image.FromFile(OpenFileDialog1.FileName)
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+        End Try
     End Sub
 End Class
