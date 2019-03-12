@@ -23,4 +23,12 @@
         Tipo.Show()
 
     End Sub
+
+    Private Sub AdministrarMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarMenuToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub AdminMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

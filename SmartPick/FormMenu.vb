@@ -136,7 +136,7 @@ Public Class FormMenu
             ButtonDessert.BackColor = Color.White
             ButtonToShare.BackColor = Color.White
 
-            'Hides Column with Picture information
+            'Hides Column with Picture information.
 
             DataGridViewMenu.Columns("Photo").Visible = False
 

@@ -52,92 +52,97 @@ Partial Class DelMenu
         '
         'txtrandom
         '
-        Me.txtrandom.Location = New System.Drawing.Point(661, 38)
-        Me.txtrandom.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtrandom.Location = New System.Drawing.Point(496, 31)
+        Me.txtrandom.Margin = New System.Windows.Forms.Padding(2)
         Me.txtrandom.Multiline = True
         Me.txtrandom.Name = "txtrandom"
         Me.txtrandom.ReadOnly = True
-        Me.txtrandom.Size = New System.Drawing.Size(157, 29)
+        Me.txtrandom.Size = New System.Drawing.Size(119, 24)
         Me.txtrandom.TabIndex = 60
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(659, 12)
+        Me.Label10.Location = New System.Drawing.Point(494, 10)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(109, 17)
+        Me.Label10.Size = New System.Drawing.Size(82, 13)
         Me.Label10.TabIndex = 59
         Me.Label10.Text = "Codigo del item:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(988, 146)
+        Me.Label7.Location = New System.Drawing.Point(741, 119)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(200, 17)
+        Me.Label7.Size = New System.Drawing.Size(151, 13)
         Me.Label7.TabIndex = 58
         Me.Label7.Text = "Descripción del item en Inglés:"
         '
         'txtDesIng
         '
-        Me.txtDesIng.Location = New System.Drawing.Point(991, 165)
-        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtDesIng.Location = New System.Drawing.Point(743, 134)
+        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDesIng.Multiline = True
         Me.txtDesIng.Name = "txtDesIng"
-        Me.txtDesIng.Size = New System.Drawing.Size(268, 120)
+        Me.txtDesIng.Size = New System.Drawing.Size(202, 98)
         Me.txtDesIng.TabIndex = 57
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(672, 146)
+        Me.Label3.Location = New System.Drawing.Point(504, 119)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(139, 17)
+        Me.Label3.Size = New System.Drawing.Size(105, 13)
         Me.Label3.TabIndex = 56
         Me.Label3.Text = "Descripción del item:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(674, 94)
+        Me.Label2.Location = New System.Drawing.Point(506, 76)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 17)
+        Me.Label2.Size = New System.Drawing.Size(86, 13)
         Me.Label2.TabIndex = 55
         Me.Label2.Text = "Nombre del item:"
         '
         'TxtDesEsp
         '
-        Me.TxtDesEsp.Location = New System.Drawing.Point(675, 165)
-        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtDesEsp.Location = New System.Drawing.Point(506, 134)
+        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtDesEsp.Multiline = True
         Me.TxtDesEsp.Name = "TxtDesEsp"
-        Me.TxtDesEsp.Size = New System.Drawing.Size(268, 120)
+        Me.TxtDesEsp.Size = New System.Drawing.Size(202, 98)
         Me.TxtDesEsp.TabIndex = 54
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(675, 113)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombre.Location = New System.Drawing.Point(506, 92)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(268, 22)
+        Me.txtNombre.Size = New System.Drawing.Size(202, 20)
         Me.txtNombre.TabIndex = 53
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(988, 302)
+        Me.Label8.Location = New System.Drawing.Point(741, 245)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(111, 17)
+        Me.Label8.Size = New System.Drawing.Size(84, 13)
         Me.Label8.TabIndex = 51
         Me.Label8.Text = "Imagen del item:"
         '
         'PicBox
         '
         Me.PicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PicBox.Location = New System.Drawing.Point(991, 321)
-        Me.PicBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PicBox.Location = New System.Drawing.Point(743, 261)
+        Me.PicBox.Margin = New System.Windows.Forms.Padding(2)
         Me.PicBox.Name = "PicBox"
-        Me.PicBox.Size = New System.Drawing.Size(279, 208)
+        Me.PicBox.Size = New System.Drawing.Size(210, 169)
         Me.PicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PicBox.TabIndex = 50
         Me.PicBox.TabStop = False
@@ -145,56 +150,59 @@ Partial Class DelMenu
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(684, 432)
+        Me.Label6.Location = New System.Drawing.Point(513, 351)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(105, 17)
+        Me.Label6.Size = New System.Drawing.Size(79, 13)
         Me.Label6.TabIndex = 49
         Me.Label6.Text = "Precio del item:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(684, 371)
+        Me.Label5.Location = New System.Drawing.Point(513, 301)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(109, 17)
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "Tipo de comida:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(684, 309)
+        Me.Label4.Location = New System.Drawing.Point(513, 251)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(126, 17)
+        Me.Label4.Size = New System.Drawing.Size(96, 13)
         Me.Label4.TabIndex = 47
         Me.Label4.Text = "Categoría del item:"
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(687, 453)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtPrecio.Location = New System.Drawing.Point(515, 368)
+        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(268, 22)
+        Me.txtPrecio.Size = New System.Drawing.Size(202, 20)
         Me.txtPrecio.TabIndex = 46
         '
         'CombComida
         '
         Me.CombComida.FormattingEnabled = True
         Me.CombComida.Items.AddRange(New Object() {"Sopa", "Mariscos", "Tacos", "Carnes", "Vegetariano", "Untable", "Nachos", "Bebida Natural", "Gaseosa", "Con Alcohol", "Postre", "Para Compartir"})
-        Me.CombComida.Location = New System.Drawing.Point(687, 392)
-        Me.CombComida.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CombComida.Location = New System.Drawing.Point(515, 318)
+        Me.CombComida.Margin = New System.Windows.Forms.Padding(2)
         Me.CombComida.Name = "CombComida"
-        Me.CombComida.Size = New System.Drawing.Size(268, 24)
+        Me.CombComida.Size = New System.Drawing.Size(202, 21)
         Me.CombComida.TabIndex = 45
         '
         'CombCate
         '
         Me.CombCate.FormattingEnabled = True
         Me.CombCate.Items.AddRange(New Object() {"Plato Fuerte", "Entrada", "Bebidas", "Postres", "Para Compartir "})
-        Me.CombCate.Location = New System.Drawing.Point(687, 330)
-        Me.CombCate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CombCate.Location = New System.Drawing.Point(515, 268)
+        Me.CombCate.Margin = New System.Windows.Forms.Padding(2)
         Me.CombCate.Name = "CombCate"
-        Me.CombCate.Size = New System.Drawing.Size(268, 24)
+        Me.CombCate.Size = New System.Drawing.Size(202, 21)
         Me.CombCate.TabIndex = 44
         '
         'DatagridMenu
@@ -203,20 +211,20 @@ Partial Class DelMenu
         Me.DatagridMenu.AllowUserToDeleteRows = False
         Me.DatagridMenu.AllowUserToOrderColumns = True
         Me.DatagridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DatagridMenu.Location = New System.Drawing.Point(12, 60)
-        Me.DatagridMenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DatagridMenu.Location = New System.Drawing.Point(9, 49)
+        Me.DatagridMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DatagridMenu.Name = "DatagridMenu"
         Me.DatagridMenu.ReadOnly = True
         Me.DatagridMenu.RowTemplate.Height = 24
-        Me.DatagridMenu.Size = New System.Drawing.Size(603, 425)
+        Me.DatagridMenu.Size = New System.Drawing.Size(452, 345)
         Me.DatagridMenu.TabIndex = 40
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(701, 564)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnEliminar.Location = New System.Drawing.Point(526, 458)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(173, 50)
+        Me.BtnEliminar.Size = New System.Drawing.Size(130, 41)
         Me.BtnEliminar.TabIndex = 63
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
@@ -224,51 +232,54 @@ Partial Class DelMenu
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(680, 487)
+        Me.Label9.Location = New System.Drawing.Point(510, 396)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(116, 17)
+        Me.Label9.Size = New System.Drawing.Size(86, 13)
         Me.Label9.TabIndex = 62
         Me.Label9.Text = "Calorias del item:"
         '
         'txtCal
         '
-        Me.txtCal.Location = New System.Drawing.Point(683, 507)
-        Me.txtCal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCal.Location = New System.Drawing.Point(512, 412)
+        Me.txtCal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCal.Name = "txtCal"
-        Me.txtCal.Size = New System.Drawing.Size(268, 22)
+        Me.txtCal.Size = New System.Drawing.Size(202, 20)
         Me.txtCal.TabIndex = 61
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(9, 41)
+        Me.Label11.Location = New System.Drawing.Point(7, 33)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(192, 17)
+        Me.Label11.Size = New System.Drawing.Size(144, 13)
         Me.Label11.TabIndex = 64
         Me.Label11.Text = "Seleccione el item a Eliminar:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(988, 94)
+        Me.Label12.Location = New System.Drawing.Point(741, 76)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(176, 17)
+        Me.Label12.Size = New System.Drawing.Size(131, 13)
         Me.Label12.TabIndex = 66
         Me.Label12.Text = "Nombre del item en inglés:"
         '
         'txtNombreIng
         '
-        Me.txtNombreIng.Location = New System.Drawing.Point(991, 113)
-        Me.txtNombreIng.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreIng.Location = New System.Drawing.Point(743, 92)
+        Me.txtNombreIng.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombreIng.Name = "txtNombreIng"
-        Me.txtNombreIng.Size = New System.Drawing.Size(268, 22)
+        Me.txtNombreIng.Size = New System.Drawing.Size(202, 20)
         Me.txtNombreIng.TabIndex = 65
         '
         'DelMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1303, 641)
+        Me.ClientSize = New System.Drawing.Size(977, 521)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.txtNombreIng)
         Me.Controls.Add(Me.Label11)
@@ -293,7 +304,7 @@ Partial Class DelMenu
         Me.Controls.Add(Me.CombCate)
         Me.Controls.Add(Me.DatagridMenu)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "DelMenu"
         Me.Text = "Borrar del Menu"
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).EndInit()

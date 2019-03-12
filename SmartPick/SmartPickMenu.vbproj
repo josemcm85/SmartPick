@@ -51,7 +51,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -255,6 +264,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\Minimize1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -267,9 +277,42 @@
     <None Include="Resources\Close1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="14650771_10157489166520161_9089602778382653312_n.png" />
+    <Content Include="Bunifu_UI_v1.5.3.dll" />
+    <Content Include="gradient-01-01.png" />
+    <Content Include="gradient-01.png" />
+    <Content Include="gradient.png" />
+    <Content Include="gradiente-01.png" />
+    <Content Include="icons8_caloric_energy_100px_3.png" />
+    <Content Include="icons8_caloric_energy_25px_2.png" />
+    <Content Include="icons8_caloric_energy_50px_1.png" />
+    <Content Include="icons8_cheap_2_24px_1.png" />
+    <Content Include="icons8_cheap_2_48px_3.png" />
+    <Content Include="icons8_language_48px_1.png" />
+    <Content Include="icons8_nonya_kueh_100px_1.png" />
+    <Content Include="icons8_street_food_100px_1.png" />
+    <Content Include="icons8_us_dollar_100px_1.png" />
+    <Content Include="icons8_visible_100px_3.png" />
+    <Content Include="icons8_visible_25px.png" />
     <Content Include="logoblack.ico" />
+    <Content Include="logoblack.png" />
+    <Content Include="MetroFramework.dll" />
     <Content Include="minusSign.png" />
+    <Content Include="plussign 3.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\icons8_price_tag_50px_1.png" />
+    <None Include="Resources\icons8_language_48px_1.png" />
+    <None Include="Resources\icons8_cheap_2_48px_3.png" />
+    <None Include="Resources\icons8_cheap_2_24px_1.png" />
+    <None Include="Resources\icons8_us_dollar_100px_1.png" />
+    <None Include="Resources\icons8_street_food_100px_1.png" />
+    <None Include="Resources\icons8_caloric_energy_25px_2.png" />
+    <None Include="Resources\icons8_caloric_energy_50px_1.png" />
+    <None Include="Resources\icons8_caloric_energy_100px_3.png" />
+    <None Include="Resources\14650771_10157489166520161_9089602778382653312_n.png" />
+    <None Include="Resources\logoblack.png" />
+    <None Include="Resources\icons8_visible_100px_3.png" />
+    <None Include="Resources\icons8_visible_25px.png" />
     <None Include="Resources\Custom-Icon-Design-Flatastic-9-Save.ico" />
     <None Include="SmartPick\My Project\plusSign.png" />
     <None Include="SmartPick\My Project\minusSign.png" />
