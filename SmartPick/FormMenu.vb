@@ -7,7 +7,7 @@ Public Class FormMenu
     Dim connectionString As String = "Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 "
     Dim connection As SqlConnection
     Dim Filtro As Integer
-    Dim ControlLeng As Integer
+
 
 
 
