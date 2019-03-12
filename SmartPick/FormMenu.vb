@@ -7,6 +7,7 @@ Public Class FormMenu
     Dim connectionString As String = "Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 "
     Dim connection As SqlConnection
     Dim Filtro As Integer
+    Dim ControlLeng As Integer
 
 
 
@@ -41,6 +42,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub ButtonAppetizer_Click(sender As Object, e As EventArgs) Handles ButtonAppetizer.Click
+        ComboFiltro.Text = ""
         ComboFiltro.Items.Clear()
         Filtro = 2
         LblFiltro.Text = "2"
@@ -175,6 +177,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub ButtonMainDish_Click(sender As Object, e As EventArgs) Handles ButtonMainDish.Click
+        ComboFiltro.Text = ""
         ComboFiltro.Items.Clear()
         Filtro = 1
         LblFiltro.Text = "1"
@@ -303,6 +306,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub ButtonDrinks_Click(sender As Object, e As EventArgs) Handles ButtonDrinks.Click
+        ComboFiltro.Text = ""
         ComboFiltro.Items.Clear()
         Filtro = 3
         LblFiltro.Text = "3"
@@ -431,6 +435,7 @@ Public Class FormMenu
 
 
     Private Sub ButtonDessert_Click(sender As Object, e As EventArgs) Handles ButtonDessert.Click
+        ComboFiltro.Text = ""
         ComboFiltro.Items.Clear()
         Filtro = 4
         LblFiltro.Text = "4"
@@ -556,6 +561,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub ButtonToShare_Click(sender As Object, e As EventArgs) Handles ButtonToShare.Click
+        ComboFiltro.Text = ""
         ComboFiltro.Items.Clear()
         Filtro = 5
         LblFiltro.Text = "5"
@@ -810,9 +816,8 @@ Public Class FormMenu
 
     Private Sub Btnfiltrar_Click(sender As Object, e As EventArgs) Handles Btnfiltrar.Click
 
+        If lblleng.Text = "2" Then
 
-
-        If ButtonAppetizer.Text.Equals("Appetizers") Then
             Try
 
                 connection = New SqlConnection(connectionString)
@@ -842,7 +847,8 @@ Public Class FormMenu
             End Try
 
 
-        Else
+        ElseIf lblleng.Text = "1" Then
+
 
             Try
                 connection = New SqlConnection(connectionString)
@@ -873,6 +879,79 @@ Public Class FormMenu
                 MsgBox("Error Filtro")
             End Try
 
+
         End If
+
+
+
+
+
+
+
+
+
+
+        'If ButtonAppetizer.Text.Equals("Appetizers") Then
+        '    Try
+
+        '        connection = New SqlConnection(connectionString)
+
+        '        Dim menuTable As New DataTable
+        '        Dim commandSelect As New SqlCommand("Exec searchEng '" & ComboFiltro.Text & "';", connection)
+
+        '        Dim dataAdapter As New SqlDataAdapter(commandSelect)
+        '        dataAdapter.Fill(menuTable)
+
+        '        DataGridViewMenu.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(4, 172, 209)
+
+        '        DataGridViewMenu.DataSource = menuTable
+
+        '        ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
+        '        ButtonMainDish.BackColor = Color.White
+        '        ButtonDrinks.BackColor = Color.White
+        '        ButtonDessert.BackColor = Color.White
+        '        ButtonToShare.BackColor = Color.White
+
+        '        'Hides Column with Picture information
+
+        '        DataGridViewMenu.Columns("Photo").Visible = False
+        '    Catch ex As Exception
+
+        '        MsgBox("Error en filtro")
+        '    End Try
+
+
+        'Else
+
+        '    Try
+        '        connection = New SqlConnection(connectionString)
+
+        '        Dim menuTable As New DataTable
+        '        Dim commandSelect As New SqlCommand("Exec SearchEsp '" & ComboFiltro.Text & "';", connection)
+
+        '        Dim dataAdapter As New SqlDataAdapter(commandSelect)
+        '        dataAdapter.Fill(menuTable)
+
+        '        DataGridViewMenu.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(4, 172, 209)
+
+        '        DataGridViewMenu.DataSource = menuTable
+
+        '        ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
+        '        ButtonMainDish.BackColor = Color.White
+        '        ButtonDrinks.BackColor = Color.White
+        '        ButtonDessert.BackColor = Color.White
+        '        ButtonToShare.BackColor = Color.White
+
+        '        'Hides Column with Picture information
+
+        '        DataGridViewMenu.Columns("Photo").Visible = False
+
+
+        '    Catch ex As Exception
+
+        '        MsgBox("Error Filtro")
+        '    End Try
+
+        'End If
     End Sub
 End Class
