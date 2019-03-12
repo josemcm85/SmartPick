@@ -69,7 +69,7 @@ Public Class addMenu
         End Try
     End Sub
 
-    Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles BtnIngresar.Click
+    Private Sub BtnIngresar_Click(sender As Object, e As EventArgs)
 
         Dim Salir As Integer
 
@@ -186,7 +186,7 @@ Public Class addMenu
 
     End Sub
 
-    Private Sub BtnDespejar_Click(sender As Object, e As EventArgs) Handles BtnDespejar.Click
+    Private Sub BtnDespejar_Click(sender As Object, e As EventArgs)
         'Limpia los espacios para ingresar datos nuevos'
         txtrandom.Text = Nothing
         txtNombre.Text = Nothing
@@ -371,5 +371,111 @@ Public Class addMenu
         Catch ex As Exception
             MsgBox(ex.ToString())
         End Try
+    End Sub
+
+    Private Sub BunifuThinButton21_Click_2(sender As Object, e As EventArgs) Handles BtnIngresar.Click
+        Dim Salir As Integer
+
+        Salir = 0
+
+        'Verifica que ningun espacio este vacio
+        If (txtrandom.Text = Nothing) Or txtNombre.Text = Nothing Or TxtDesEsp.Text = Nothing Or txtDesIng.Text = Nothing Or txtPrecio.Text = Nothing Or txtCal.Text = Nothing Or CombCate.SelectedItem.ToString = Nothing Or CombComida.SelectedItem.ToString = Nothing Or PicBox.Image Is Nothing Or txtNomENG.Text = Nothing Then
+
+            MsgBox("Verifique que los espacios no esten vacíos!")
+        Else
+
+            Try
+
+                'if para seguir el oreden logico de las consultas/Operaciones
+                If Salir = 0 Then
+                    Try
+                        'Primero se inserta la informacion en la tabla MenuEsp que es la principal
+                        'Luego, en la tabla MenuEng solo se ingresa la Descripcion en el idioma acorde. La tabla tiene la referencia de ID de la tabla MenuEsp, por ende ambas estan conectadas
+                        Conn.Open()
+                        Dim Table As New DataTable
+                        Dim Command As New SqlCommand("Exec addPlato '" & txtrandom.Text & "','" & txtNombre.Text & "','" & TxtDesEsp.Text & "','" & CombCate.SelectedItem.ToString & "','" & CombComida.SelectedItem.ToString & "','" & txtPrecio.Text & "','" & txtCal.Text & "','" & txtDesIng.Text & "','" & txtNomENG.Text & "';", Conn)
+                        Dim Adapter As New SqlDataAdapter(Command)
+                        Adapter.Fill(Table)
+                        DataGridMenu.DataSource = Table
+                        Conn.Close()
+                        Salir = Salir + 1
+
+                    Catch ex As Exception
+
+                        MsgBox("Error en almacenar el plato")
+
+                    End Try
+
+                End If
+
+                If Salir = 1 Then
+
+                    'Se realiza un comando aparte para insertar la imagen y los datos de esta 
+                    'Las imagenes se tienen que pasar a formato de Bytes para que se puedan almacenar en la base de datos
+                    Try
+                        Dim Command As New SqlCommand("insert into FotosMenu(CodPlato,Name,Photo) values(@Cod,@Nom,@Foto)", Conn)
+                        Dim ms As New MemoryStream
+                        PicBox.Image.Save(ms, PicBox.Image.RawFormat)
+                        Command.Parameters.Add("@Cod", SqlDbType.VarChar).Value = txtrandom.Text
+                        Command.Parameters.Add("@Nom", SqlDbType.VarChar).Value = txtNombre.Text
+                        Command.Parameters.Add("@Foto", SqlDbType.Image).Value = ms.ToArray()
+
+                        Conn.Open()
+
+                        If Command.ExecuteNonQuery() = 1 Then
+
+                        Else
+                            MsgBox("Error al guardar imagen")
+
+                        End If
+
+                        Conn.Close()
+
+
+                    Catch ex As Exception
+
+                    End Try
+
+                End If
+
+                MsgBox("Datos guardados con éxito!")
+
+                'Refresca el Menu despues de ingresar un dato'
+                Conn.Open()
+                Dim menuTable2 As New DataTable
+                Dim Command2 As New SqlCommand("Exec loadMenuEsp;", Conn)
+                Dim Adapter2 As New SqlDataAdapter(Command2)
+                Adapter2.Fill(menuTable2)
+                DataGridMenu.DataSource = menuTable2
+                Conn.Close()
+
+
+            Catch ex As Exception
+
+                MsgBox("Error en guardar los datos")
+
+            End Try
+
+        End If
+
+    End Sub
+
+    Private Sub BunifuThinButton21_Click_3(sender As Object, e As EventArgs) Handles BtnDespejar.Click
+        'Limpia los espacios para ingresar datos nuevos'
+        txtrandom.Text = Nothing
+        txtNombre.Text = Nothing
+        TxtDesEsp.Text = Nothing
+        txtDesIng.Text = Nothing
+        txtPrecio.Text = Nothing
+        txtCal.Text = Nothing
+        CombCate.Text = ""
+        CombComida.Text = ""
+        PicBox.Image = Nothing
+        txtNomENG.Text = Nothing
+    End Sub
+
+
+    Private Sub BunifuCustomLabel1_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel1.Click
+
     End Sub
 End Class

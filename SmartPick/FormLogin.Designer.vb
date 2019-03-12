@@ -24,19 +24,19 @@ Partial Class FormLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtUser = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.ButtonMenu = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.BtnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.txtPass = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.txtUser = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuGradientPanel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -47,59 +47,6 @@ Partial Class FormLogin
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 4
-        '
-        'txtUser
-        '
-        Me.txtUser.BackColor = System.Drawing.Color.White
-        Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtUser.HintForeColor = System.Drawing.Color.Empty
-        Me.txtUser.HintText = "Username"
-        Me.txtUser.isPassword = False
-        Me.txtUser.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtUser.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.txtUser.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.txtUser.LineThickness = 3
-        Me.txtUser.Location = New System.Drawing.Point(46, 59)
-        Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(201, 33)
-        Me.txtUser.TabIndex = 9
-        Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'txtPass
-        '
-        Me.txtPass.BackColor = System.Drawing.Color.White
-        Me.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtPass.HintForeColor = System.Drawing.Color.Black
-        Me.txtPass.HintText = "Password"
-        Me.txtPass.isPassword = False
-        Me.txtPass.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtPass.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.txtPass.LineThickness = 3
-        Me.txtPass.Location = New System.Drawing.Point(44, 137)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(201, 33)
-        Me.txtPass.TabIndex = 10
-        Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton1.Image = Global.SmartPick.My.Resources.Resources.icons8_visible_100px_3
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(249, 140)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(15, 30)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 11
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
         '
         'BunifuGradientPanel2
         '
@@ -143,10 +90,10 @@ Partial Class FormLogin
         Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.LinkLabel1.Location = New System.Drawing.Point(32, 288)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(166, 15)
+        Me.LinkLabel1.Size = New System.Drawing.Size(116, 15)
         Me.LinkLabel1.TabIndex = 17
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "No te acuerdas de tus datos?"
+        Me.LinkLabel1.Text = "Olvidaste tus datos?"
         '
         'BtnLogin
         '
@@ -166,23 +113,65 @@ Partial Class FormLogin
         Me.BtnLogin.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnLogin.IdleForecolor = System.Drawing.Color.White
         Me.BtnLogin.IdleLineColor = System.Drawing.Color.Transparent
-        Me.BtnLogin.Location = New System.Drawing.Point(44, 208)
+        Me.BtnLogin.Location = New System.Drawing.Point(59, 209)
         Me.BtnLogin.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(128, 41)
         Me.BtnLogin.TabIndex = 14
         Me.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox1
+        'txtPass
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources.logoblack
-        Me.PictureBox1.Location = New System.Drawing.Point(22, 76)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(198, 199)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.txtPass.BackColor = System.Drawing.Color.White
+        Me.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtPass.HintForeColor = System.Drawing.Color.Black
+        Me.txtPass.HintText = "Password"
+        Me.txtPass.isPassword = False
+        Me.txtPass.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.txtPass.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtPass.LineThickness = 3
+        Me.txtPass.Location = New System.Drawing.Point(59, 138)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(201, 33)
+        Me.txtPass.TabIndex = 10
+        Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'txtUser
+        '
+        Me.txtUser.BackColor = System.Drawing.Color.White
+        Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtUser.HintForeColor = System.Drawing.Color.Empty
+        Me.txtUser.HintText = "Username"
+        Me.txtUser.isPassword = False
+        Me.txtUser.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.txtUser.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtUser.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.txtUser.LineThickness = 3
+        Me.txtUser.Location = New System.Drawing.Point(61, 60)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(201, 33)
+        Me.txtUser.TabIndex = 9
+        Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton1.Image = Global.SmartPick.My.Resources.Resources.icons8_visible_100px_3
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(264, 141)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(15, 30)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 11
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
         '
         'BunifuGradientPanel1
         '
@@ -200,6 +189,17 @@ Partial Class FormLogin
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(265, 376)
         Me.BunifuGradientPanel1.TabIndex = 12
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources.logoblack
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 76)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(198, 199)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -212,11 +212,11 @@ Partial Class FormLogin
         Me.Name = "FormLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuGradientPanel2.ResumeLayout(False)
         Me.BunifuGradientPanel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuGradientPanel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
