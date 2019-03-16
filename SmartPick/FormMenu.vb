@@ -788,7 +788,7 @@ Public Class FormMenu
                 'DataGridViewOrder.Columns(1).Visible = False Nombre
                 'DataGridViewOrder.Columns(2).Visible = False precio
                 'DataGridViewOrder.Columns(4).Visible = False 'cantidad
-                'Esconde columnas excepto las de precio y nombre del item
+                'Esconde columnas excepto las de precio y nombre del item.
 
 
                 DataGridViewOrder.ColumnCount = 5
