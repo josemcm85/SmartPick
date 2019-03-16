@@ -31,4 +31,10 @@
     Private Sub AdminMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub AgregarEliminarUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarEliminarUsuarioToolStripMenuItem.Click
+
+        FormAddUser.Show()
+
+    End Sub
 End Class

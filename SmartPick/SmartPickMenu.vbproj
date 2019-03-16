@@ -118,6 +118,12 @@
     <Compile Include="editMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormAddUser.Designer.vb">
+      <DependentUpon>FormAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLanguage.Designer.vb">
       <DependentUpon>FormLanguage.vb</DependentUpon>
     </Compile>
@@ -135,6 +141,12 @@
     </Compile>
     <Compile Include="FormMenu.Designer.vb">
       <DependentUpon>FormMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserInfo.Designer.vb">
+      <DependentUpon>FormUserInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuTTSDataSet.Designer.vb">
@@ -196,6 +208,9 @@
     <EmbeddedResource Include="editMenu.resx">
       <DependentUpon>editMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLanguage.resx">
       <DependentUpon>FormLanguage.vb</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserInfo.resx">
+      <DependentUpon>FormUserInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
