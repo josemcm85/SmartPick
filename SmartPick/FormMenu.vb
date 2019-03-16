@@ -7,6 +7,13 @@ Public Class FormMenu
     Dim connectionString As String = "Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 "
     Dim connection As SqlConnection
     Dim Filtro As Integer
+    Public Property IsRepeated As Boolean
+
+
+
+
+
+
 
 
 
@@ -19,6 +26,9 @@ Public Class FormMenu
 
         lblSec.Text = ""
         LblTitle.Text = ""
+
+
+
 
 
     End Sub
@@ -121,7 +131,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Entrada'", connection)
+            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Entrada'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -153,7 +163,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price 'Precio' ,m.Calories 'Calorías Kcal', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Entrada'", connection)
+            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price 'Precio' ,m.Calories 'Calorías Kcal',m.Quantity 'Cantidad', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Entrada'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -252,7 +262,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Plato Fuerte'", connection)
+            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Plato Fuerte'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -281,7 +291,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Plato Fuerte'", connection)
+            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price  ,m.Calories 'Calorías Kcal',m.Quantity 'Cantidad', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Plato Fuerte'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -381,7 +391,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Bebidas'", connection)
+            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Bebidas'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -411,7 +421,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Bebidas'", connection)
+            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal',m.Quantity 'Cantidad', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Bebidas'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -510,7 +520,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Postres'", connection)
+            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Postres'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -537,7 +547,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories ='Postres'", connection)
+            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal',m.Quantity 'Cantidad', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories ='Postres'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -637,7 +647,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Para Compartir'", connection)
+            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Para Compartir'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -666,7 +676,7 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Para Compartir'", connection)
+            Dim commandSelect As New SqlCommand("SELECT m.TypeFood 'Tipo',m.Name ,m.Price ,m.Calories 'Calorías Kcal',m.Quantity 'Cantidad', f.Photo FROM MenuEsp m, FotosMenu f WHERE m.CodPlato = f.CodPlato AND Categories = 'Para Compartir'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -716,7 +726,7 @@ Public Class FormMenu
 
             'Pulls photo of item selected
 
-            Dim Bytes As [Byte]() = rowMenu.Cells(4).Value
+            Dim Bytes As [Byte]() = rowMenu.Cells(5).Value
             Dim ms As New MemoryStream(Bytes)
             PictureBoxItem.Image = Image.FromStream(ms)
 
@@ -743,7 +753,7 @@ Public Class FormMenu
 
             'Pulls photo of item selected
 
-            Dim Bytes As [Byte]() = rowMenu.Cells(4).Value
+            Dim Bytes As [Byte]() = rowMenu.Cells(5).Value
             Dim ms As New MemoryStream(Bytes)
             PictureBoxItem.Image = Image.FromStream(ms)
 
@@ -758,9 +768,14 @@ Public Class FormMenu
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
+
+
+
+
+
         Dim quantity As Integer
         quantity = 0
-        Do Until (quantity = NumericUpDownQuantity.Value)
+        Do Until (quantity = BunifuDropdown3.selectedIndex + 1)
 
             quantity = quantity + 1
             If DataGridViewMenu.RowCount = 0 Or Nothing Then
@@ -768,37 +783,105 @@ Public Class FormMenu
                 For Each cell As DataGridViewColumn In DataGridViewMenu.Columns
                     DataGridViewOrder.Columns.Add(DirectCast(cell.Clone, DataGridViewColumn))
                 Next
-                DataGridViewOrder.Columns(3).Visible = False
-                DataGridViewOrder.Columns(0).Visible = False
+                DataGridViewOrder.Columns(3).Visible = False 'calorias
+                DataGridViewOrder.Columns(0).Visible = False 'tipo
+                'DataGridViewOrder.Columns(1).Visible = False Nombre
+                'DataGridViewOrder.Columns(2).Visible = False precio
+                'DataGridViewOrder.Columns(4).Visible = False 'cantidad
                 'Esconde columnas excepto las de precio y nombre del item
-                DataGridViewOrder.ColumnCount = 4
+
+
+                DataGridViewOrder.ColumnCount = 5
                 DataGridViewOrder.Rows.Add(DataGridViewMenu.CurrentRow.Cells.Cast(Of DataGridViewCell).Select(Function(c) c.Value).ToArray)
+
             End If
         Loop
 
-        'suma total y lo manda al textbox
-        Dim sum As Double = 0
-        For i As Integer = 0 To DataGridViewOrder.Rows.Count() - 1 Step +1
-            sum = sum + DataGridViewOrder.Rows(i).Cells(2).Value
-        Next
-        TextBoxSum.Text = sum.ToString()
+        'Lo suguiente combina los rows del datagrid.      Cells(2) = Precio        Cells(4) = Cantidad
+        Dim t As Integer = 0
+
+        Do While (t < DataGridViewOrder.RowCount - 1)
+
+
+            Dim Row = DataGridViewOrder.Rows(t)
+            Dim abc As String = (Row.Cells(0).Value.ToString + Row.Cells(3).Value.ToString.ToUpper)
+            Dim j As Integer = (t + 1)
+
+            Do While (j < DataGridViewOrder.RowCount)
+                Dim Row2 = DataGridViewOrder.Rows(j)
+                Dim def As String = (Row2.Cells(0).Value.ToString + Row2.Cells(3).Value.ToString.ToUpper)
+
+                If (abc = def) Then
+                    Row.Cells(4).Value = (CType(Row.Cells(4).Value, Integer) + CType(Row2.Cells(4).Value, Integer))
+                    Row.Cells(2).Value = (CType(Row.Cells(2).Value, Integer) + CType(Row2.Cells(2).Value, Integer))
+                    DataGridViewOrder.Rows.Remove(Row2)
+                    j = (j - 1)
+                End If
+
+                j = (j + 1)
+            Loop
+
+            t = (t + 1)
+        Loop
+
+        'Suma y envío de precio total al textBox
+        TextBoxSum.Text = (From rowA As DataGridViewRow In DataGridViewOrder.Rows
+                           Where rowA.Cells(2).FormattedValue.ToString() <> String.Empty
+                           Select Convert.ToInt32(rowA.Cells(2).FormattedValue)).Sum().ToString()
+
+
+
+
+
+
+
+        ''suma total y lo manda al textbox
+        'Dim sum As Double = 0
+        'For i As Integer = 0 To DataGridViewOrder.Rows.Count() - 1 Step +1
+        '    sum = sum + DataGridViewOrder.Rows(i).Cells(2).Value
+        'Next
+        'TextBoxSum.Text = sum.ToString()
+
+
 
     End Sub
+
+
 
 
 
     Private Sub ButtonDelete_Click(sender As Object, e As EventArgs) Handles ButtonDelete.Click
 
         'resta al total y lo manda al textbox
+
         Dim substract As Double = CDbl(TextBoxSum.Text)
-        substract = substract - DataGridViewOrder.CurrentRow.Cells(2).Value
+        substract = substract - (DataGridViewOrder.CurrentRow.Cells(2).Value / DataGridViewOrder.CurrentRow.Cells(4).Value)
+
+        ' actualiza Cantidad y Precio en el datagrid
+        DataGridViewOrder.CurrentRow.Cells(2).Value = DataGridViewOrder.CurrentRow.Cells(2).Value - (DataGridViewOrder.CurrentRow.Cells(2).Value / DataGridViewOrder.CurrentRow.Cells(4).Value)
+        DataGridViewOrder.CurrentRow.Cells(4).Value = DataGridViewOrder.CurrentRow.Cells(4).Value - (DataGridViewOrder.CurrentRow.Cells(4).Value / DataGridViewOrder.CurrentRow.Cells(4).Value)
         TextBoxSum.Text = substract.ToString()
 
+        If (DataGridViewOrder.CurrentRow.Cells(4).Value = 0) Then
+            Dim index As Integer
+            index = DataGridViewOrder.CurrentCell.RowIndex
+            'borra fila seleccionada
+            DataGridViewOrder.Rows.RemoveAt(index)
+        End If
 
-        Dim index As Integer
-        index = DataGridViewOrder.CurrentCell.RowIndex
-        ' borra fila seleccionada
-        DataGridViewOrder.Rows.RemoveAt(index)
+
+
+
+
+        'Dim index As Integer
+        'index = DataGridViewOrder.CurrentCell.RowIndex
+        ''borra fila seleccionada
+        'DataGridViewOrder.Rows.RemoveAt(index)
+
+
+        'DataGridViewOrder.Rows.Clear()
+        'TextBoxSum.Text = 0
+
 
 
 
@@ -953,5 +1036,32 @@ Public Class FormMenu
         '    End Try
 
         'End If
+    End Sub
+
+    Private Sub DataGridViewOrder_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewOrder.CellContentClick
+
+
+
+    End Sub
+
+    Private Sub BunifuDropdown3_onItemSelected(sender As Object, e As EventArgs) Handles BunifuDropdown3.onItemSelected
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        'resta al total y lo manda al textbox
+        Dim substract As Double = CDbl(TextBoxSum.Text)
+
+        substract = substract - DataGridViewOrder.CurrentRow.Cells(2).Value
+
+        TextBoxSum.Text = substract.ToString()
+
+
+        Dim index As Integer
+            index = DataGridViewOrder.CurrentCell.RowIndex
+            'borra fila seleccionada
+            DataGridViewOrder.Rows.RemoveAt(index)
+
     End Sub
 End Class
