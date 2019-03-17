@@ -33,6 +33,7 @@ Partial Class FormLogin
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnWaiter = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuGradientPanel2.SuspendLayout()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
@@ -52,6 +53,7 @@ Partial Class FormLogin
         '
         Me.BunifuGradientPanel2.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel2.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel2.Controls.Add(Me.btnWaiter)
         Me.BunifuGradientPanel2.Controls.Add(Me.ButtonMenu)
         Me.BunifuGradientPanel2.Controls.Add(Me.LinkLabel1)
         Me.BunifuGradientPanel2.Controls.Add(Me.BtnLogin)
@@ -102,7 +104,7 @@ Partial Class FormLogin
         Me.BtnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnLogin.ActiveForecolor = System.Drawing.Color.White
         Me.BtnLogin.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.BtnLogin.BackColor = System.Drawing.Color.White
+        Me.BtnLogin.BackColor = System.Drawing.SystemColors.Control
         Me.BtnLogin.BackgroundImage = CType(resources.GetObject("BtnLogin.BackgroundImage"), System.Drawing.Image)
         Me.BtnLogin.ButtonText = "Login"
         Me.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand
@@ -124,7 +126,7 @@ Partial Class FormLogin
         '
         Me.txtPass.BackColor = System.Drawing.Color.White
         Me.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtPass.HintForeColor = System.Drawing.Color.Black
         Me.txtPass.HintText = "Password"
@@ -144,7 +146,7 @@ Partial Class FormLogin
         '
         Me.txtUser.BackColor = System.Drawing.Color.White
         Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtUser.HintForeColor = System.Drawing.Color.Empty
         Me.txtUser.HintText = "Username"
@@ -200,6 +202,40 @@ Partial Class FormLogin
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'btnWaiter
+        '
+        Me.btnWaiter.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnWaiter.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnWaiter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnWaiter.BorderRadius = 0
+        Me.btnWaiter.ButtonText = "Llamar al mesero"
+        Me.btnWaiter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnWaiter.DisabledColor = System.Drawing.Color.Gray
+        Me.btnWaiter.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnWaiter.Iconimage = CType(resources.GetObject("btnWaiter.Iconimage"), System.Drawing.Image)
+        Me.btnWaiter.Iconimage_right = Nothing
+        Me.btnWaiter.Iconimage_right_Selected = Nothing
+        Me.btnWaiter.Iconimage_Selected = Nothing
+        Me.btnWaiter.IconMarginLeft = 0
+        Me.btnWaiter.IconMarginRight = 0
+        Me.btnWaiter.IconRightVisible = True
+        Me.btnWaiter.IconRightZoom = 0R
+        Me.btnWaiter.IconVisible = True
+        Me.btnWaiter.IconZoom = 90.0R
+        Me.btnWaiter.IsTab = False
+        Me.btnWaiter.Location = New System.Drawing.Point(176, 323)
+        Me.btnWaiter.Name = "btnWaiter"
+        Me.btnWaiter.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnWaiter.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnWaiter.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnWaiter.selected = False
+        Me.btnWaiter.Size = New System.Drawing.Size(153, 32)
+        Me.btnWaiter.TabIndex = 19
+        Me.btnWaiter.Text = "Llamar al mesero"
+        Me.btnWaiter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnWaiter.Textcolor = System.Drawing.Color.White
+        Me.btnWaiter.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -231,4 +267,5 @@ Partial Class FormLogin
     Friend WithEvents BtnLogin As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents ButtonMenu As LinkLabel
+    Friend WithEvents btnWaiter As Bunifu.Framework.UI.BunifuFlatButton
 End Class

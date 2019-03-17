@@ -34,6 +34,7 @@ Partial Class FormLanguage
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.btWaiter = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,7 +99,7 @@ Partial Class FormLanguage
         Me.ButtonSpaMenu.BackgroundImage = CType(resources.GetObject("ButtonSpaMenu.BackgroundImage"), System.Drawing.Image)
         Me.ButtonSpaMenu.ButtonText = "Español"
         Me.ButtonSpaMenu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonSpaMenu.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSpaMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonSpaMenu.ForeColor = System.Drawing.Color.SeaGreen
         Me.ButtonSpaMenu.IdleBorderThickness = 1
         Me.ButtonSpaMenu.IdleCornerRadius = 20
@@ -123,7 +124,7 @@ Partial Class FormLanguage
         Me.ButtonEngMenu.BackgroundImage = CType(resources.GetObject("ButtonEngMenu.BackgroundImage"), System.Drawing.Image)
         Me.ButtonEngMenu.ButtonText = "English"
         Me.ButtonEngMenu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEngMenu.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEngMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonEngMenu.ForeColor = System.Drawing.Color.SeaGreen
         Me.ButtonEngMenu.IdleBorderThickness = 1
         Me.ButtonEngMenu.IdleCornerRadius = 20
@@ -140,32 +141,66 @@ Partial Class FormLanguage
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(514, 57)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(246, 44)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(233, 42)
         Me.BunifuCustomLabel1.TabIndex = 26
         Me.BunifuCustomLabel1.Text = "Bienvenidos!"
         '
         'BunifuCustomLabel2
         '
         Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel2.Location = New System.Drawing.Point(451, 230)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(373, 24)
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(351, 25)
         Me.BunifuCustomLabel2.TabIndex = 27
         Me.BunifuCustomLabel2.Text = "Por favor elegir el idioma del Menú."
         '
         'BunifuCustomLabel3
         '
         Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel3.Location = New System.Drawing.Point(415, 271)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(444, 24)
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(411, 25)
         Me.BunifuCustomLabel3.TabIndex = 28
         Me.BunifuCustomLabel3.Text = "Please choose the language of the Menu."
+        '
+        'btWaiter
+        '
+        Me.btWaiter.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btWaiter.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btWaiter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btWaiter.BorderRadius = 0
+        Me.btWaiter.ButtonText = "Llamar al mesero"
+        Me.btWaiter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btWaiter.DisabledColor = System.Drawing.Color.Gray
+        Me.btWaiter.Iconcolor = System.Drawing.Color.Transparent
+        Me.btWaiter.Iconimage = CType(resources.GetObject("btWaiter.Iconimage"), System.Drawing.Image)
+        Me.btWaiter.Iconimage_right = Nothing
+        Me.btWaiter.Iconimage_right_Selected = Nothing
+        Me.btWaiter.Iconimage_Selected = Nothing
+        Me.btWaiter.IconMarginLeft = 0
+        Me.btWaiter.IconMarginRight = 0
+        Me.btWaiter.IconRightVisible = True
+        Me.btWaiter.IconRightZoom = 0R
+        Me.btWaiter.IconVisible = True
+        Me.btWaiter.IconZoom = 90.0R
+        Me.btWaiter.IsTab = False
+        Me.btWaiter.Location = New System.Drawing.Point(645, 656)
+        Me.btWaiter.Name = "btWaiter"
+        Me.btWaiter.Normalcolor = System.Drawing.Color.DodgerBlue
+        Me.btWaiter.OnHovercolor = System.Drawing.Color.Yellow
+        Me.btWaiter.OnHoverTextColor = System.Drawing.Color.White
+        Me.btWaiter.selected = False
+        Me.btWaiter.Size = New System.Drawing.Size(181, 37)
+        Me.btWaiter.TabIndex = 29
+        Me.btWaiter.Text = "Llamar al mesero"
+        Me.btWaiter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btWaiter.Textcolor = System.Drawing.Color.White
+        Me.btWaiter.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormLanguage
         '
@@ -174,6 +209,7 @@ Partial Class FormLanguage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(857, 743)
+        Me.Controls.Add(Me.btWaiter)
         Me.Controls.Add(Me.BunifuCustomLabel3)
         Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.BunifuCustomLabel1)
@@ -204,4 +240,5 @@ Partial Class FormLanguage
     Friend WithEvents ButtonEngMenu As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents ButtonSpaMenu As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btWaiter As Bunifu.Framework.UI.BunifuFlatButton
 End Class
