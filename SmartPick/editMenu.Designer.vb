@@ -49,6 +49,7 @@ Partial Class editMenu
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreIng = New System.Windows.Forms.TextBox()
         Me.PicBox = New System.Windows.Forms.PictureBox()
+        Me.BtnClose3 = New Bunifu.Framework.UI.BunifuThinButton2()
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,9 +74,9 @@ Partial Class editMenu
         Me.Label9.Location = New System.Drawing.Point(505, 419)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(86, 13)
+        Me.Label9.Size = New System.Drawing.Size(90, 13)
         Me.Label9.TabIndex = 31
-        Me.Label9.Text = "Calorias del item:"
+        Me.Label9.Text = "Calorías del ítem:"
         '
         'txtCal
         '
@@ -91,9 +92,9 @@ Partial Class editMenu
         Me.Label8.Location = New System.Drawing.Point(751, 269)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(84, 13)
+        Me.Label8.Size = New System.Drawing.Size(86, 13)
         Me.Label8.TabIndex = 28
-        Me.Label8.Text = "Imagen del item:"
+        Me.Label8.Text = "Imagen del ítem:"
         '
         'Label6
         '
@@ -101,9 +102,9 @@ Partial Class editMenu
         Me.Label6.Location = New System.Drawing.Point(505, 365)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(79, 13)
+        Me.Label6.Size = New System.Drawing.Size(81, 13)
         Me.Label6.TabIndex = 26
-        Me.Label6.Text = "Precio del item:"
+        Me.Label6.Text = "Precio del ítem:"
         '
         'Label5
         '
@@ -121,9 +122,9 @@ Partial Class editMenu
         Me.Label4.Location = New System.Drawing.Point(505, 265)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(96, 13)
+        Me.Label4.Size = New System.Drawing.Size(98, 13)
         Me.Label4.TabIndex = 24
-        Me.Label4.Text = "Categoría del item:"
+        Me.Label4.Text = "Categoría del ítem:"
         '
         'txtPrecio
         '
@@ -169,9 +170,9 @@ Partial Class editMenu
         Me.Label10.Location = New System.Drawing.Point(494, 29)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(82, 13)
+        Me.Label10.Size = New System.Drawing.Size(84, 13)
         Me.Label10.TabIndex = 38
-        Me.Label10.Text = "Codigo del item:"
+        Me.Label10.Text = "Código del ítem:"
         '
         'Label7
         '
@@ -179,9 +180,9 @@ Partial Class editMenu
         Me.Label7.Location = New System.Drawing.Point(742, 141)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(151, 13)
+        Me.Label7.Size = New System.Drawing.Size(153, 13)
         Me.Label7.TabIndex = 37
-        Me.Label7.Text = "Descripción del item en Inglés:"
+        Me.Label7.Text = "Descripción del ítem en Inglés:"
         '
         'txtDesIng
         '
@@ -255,7 +256,7 @@ Partial Class editMenu
         '
         'BtnDespejar
         '
-        Me.BtnDespejar.Location = New System.Drawing.Point(820, 492)
+        Me.BtnDespejar.Location = New System.Drawing.Point(719, 492)
         Me.BtnDespejar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnDespejar.Name = "BtnDespejar"
         Me.BtnDespejar.Size = New System.Drawing.Size(93, 41)
@@ -269,9 +270,9 @@ Partial Class editMenu
         Me.Label11.Location = New System.Drawing.Point(10, 31)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(134, 13)
+        Me.Label11.Size = New System.Drawing.Size(136, 13)
         Me.Label11.TabIndex = 42
-        Me.Label11.Text = "Seleccione el item a editar:"
+        Me.Label11.Text = "Seleccione el ítem a editar:"
         '
         'Label12
         '
@@ -279,9 +280,9 @@ Partial Class editMenu
         Me.Label12.Location = New System.Drawing.Point(742, 97)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(131, 13)
+        Me.Label12.Size = New System.Drawing.Size(133, 13)
         Me.Label12.TabIndex = 44
-        Me.Label12.Text = "Nombre del item en inglés:"
+        Me.Label12.Text = "Nombre del ítem en inglés:"
         '
         'txtNombreIng
         '
@@ -302,11 +303,37 @@ Partial Class editMenu
         Me.PicBox.TabIndex = 27
         Me.PicBox.TabStop = False
         '
+        'BtnClose3
+        '
+        Me.BtnClose3.ActiveBorderThickness = 1
+        Me.BtnClose3.ActiveCornerRadius = 7
+        Me.BtnClose3.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose3.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnClose3.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose3.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnClose3.BackgroundImage = CType(resources.GetObject("BtnClose3.BackgroundImage"), System.Drawing.Image)
+        Me.BtnClose3.ButtonText = "CERRAR"
+        Me.BtnClose3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnClose3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClose3.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnClose3.IdleBorderThickness = 1
+        Me.BtnClose3.IdleCornerRadius = 7
+        Me.BtnClose3.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnClose3.IdleForecolor = System.Drawing.Color.White
+        Me.BtnClose3.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BtnClose3.Location = New System.Drawing.Point(843, 492)
+        Me.BtnClose3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnClose3.Name = "BtnClose3"
+        Me.BtnClose3.Size = New System.Drawing.Size(134, 50)
+        Me.BtnClose3.TabIndex = 68
+        Me.BtnClose3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'editMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1018, 557)
+        Me.Controls.Add(Me.BtnClose3)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.txtNombreIng)
         Me.Controls.Add(Me.Label11)
@@ -369,4 +396,5 @@ Partial Class editMenu
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents txtNombreIng As TextBox
+    Friend WithEvents BtnClose3 As Bunifu.Framework.UI.BunifuThinButton2
 End Class

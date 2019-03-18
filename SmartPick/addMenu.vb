@@ -474,8 +474,7 @@ Public Class addMenu
         txtNomENG.Text = Nothing
     End Sub
 
-
-    Private Sub BunifuCustomLabel1_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel1.Click
-
+    Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
+        Me.Close()
     End Sub
 End Class

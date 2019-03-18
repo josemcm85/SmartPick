@@ -94,17 +94,7 @@ Public Class DelMenu
         PicBox.Image = Image.FromStream(ms)
     End Sub
 
-
-
-    Private Sub txtDesIng_TextChanged(sender As Object, e As EventArgs) Handles txtDesIng.TextChanged
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
-
+    Private Sub BtnClose2_Click(sender As Object, e As EventArgs) Handles BtnClose2.Click
+        Me.Close()
     End Sub
 End Class

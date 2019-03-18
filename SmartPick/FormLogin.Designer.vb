@@ -25,6 +25,7 @@ Partial Class FormLogin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.btnWaiter = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.ButtonMenu = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.BtnLogin = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -33,7 +34,6 @@ Partial Class FormLogin
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnWaiter = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuGradientPanel2.SuspendLayout()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
@@ -71,6 +71,40 @@ Partial Class FormLogin
         Me.BunifuGradientPanel2.Size = New System.Drawing.Size(362, 376)
         Me.BunifuGradientPanel2.TabIndex = 13
         '
+        'btnWaiter
+        '
+        Me.btnWaiter.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnWaiter.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnWaiter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnWaiter.BorderRadius = 0
+        Me.btnWaiter.ButtonText = "Llamar al mesero"
+        Me.btnWaiter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnWaiter.DisabledColor = System.Drawing.Color.Gray
+        Me.btnWaiter.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnWaiter.Iconimage = CType(resources.GetObject("btnWaiter.Iconimage"), System.Drawing.Image)
+        Me.btnWaiter.Iconimage_right = Nothing
+        Me.btnWaiter.Iconimage_right_Selected = Nothing
+        Me.btnWaiter.Iconimage_Selected = Nothing
+        Me.btnWaiter.IconMarginLeft = 0
+        Me.btnWaiter.IconMarginRight = 0
+        Me.btnWaiter.IconRightVisible = True
+        Me.btnWaiter.IconRightZoom = 0R
+        Me.btnWaiter.IconVisible = True
+        Me.btnWaiter.IconZoom = 90.0R
+        Me.btnWaiter.IsTab = False
+        Me.btnWaiter.Location = New System.Drawing.Point(176, 323)
+        Me.btnWaiter.Name = "btnWaiter"
+        Me.btnWaiter.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnWaiter.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnWaiter.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnWaiter.selected = False
+        Me.btnWaiter.Size = New System.Drawing.Size(153, 32)
+        Me.btnWaiter.TabIndex = 19
+        Me.btnWaiter.Text = "Llamar al mesero"
+        Me.btnWaiter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnWaiter.Textcolor = System.Drawing.Color.White
+        Me.btnWaiter.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'ButtonMenu
         '
         Me.ButtonMenu.AutoSize = True
@@ -92,10 +126,10 @@ Partial Class FormLogin
         Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.LinkLabel1.Location = New System.Drawing.Point(32, 288)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(116, 15)
+        Me.LinkLabel1.Size = New System.Drawing.Size(144, 15)
         Me.LinkLabel1.TabIndex = 17
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Olvidaste tus datos?"
+        Me.LinkLabel1.Text = "¿Has olvidado tus datos?"
         '
         'BtnLogin
         '
@@ -201,40 +235,6 @@ Partial Class FormLogin
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'btnWaiter
-        '
-        Me.btnWaiter.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnWaiter.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btnWaiter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnWaiter.BorderRadius = 0
-        Me.btnWaiter.ButtonText = "Llamar al mesero"
-        Me.btnWaiter.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWaiter.DisabledColor = System.Drawing.Color.Gray
-        Me.btnWaiter.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnWaiter.Iconimage = CType(resources.GetObject("btnWaiter.Iconimage"), System.Drawing.Image)
-        Me.btnWaiter.Iconimage_right = Nothing
-        Me.btnWaiter.Iconimage_right_Selected = Nothing
-        Me.btnWaiter.Iconimage_Selected = Nothing
-        Me.btnWaiter.IconMarginLeft = 0
-        Me.btnWaiter.IconMarginRight = 0
-        Me.btnWaiter.IconRightVisible = True
-        Me.btnWaiter.IconRightZoom = 0R
-        Me.btnWaiter.IconVisible = True
-        Me.btnWaiter.IconZoom = 90.0R
-        Me.btnWaiter.IsTab = False
-        Me.btnWaiter.Location = New System.Drawing.Point(176, 323)
-        Me.btnWaiter.Name = "btnWaiter"
-        Me.btnWaiter.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnWaiter.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.btnWaiter.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnWaiter.selected = False
-        Me.btnWaiter.Size = New System.Drawing.Size(153, 32)
-        Me.btnWaiter.TabIndex = 19
-        Me.btnWaiter.Text = "Llamar al mesero"
-        Me.btnWaiter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWaiter.Textcolor = System.Drawing.Color.White
-        Me.btnWaiter.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormLogin
         '

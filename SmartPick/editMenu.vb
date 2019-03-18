@@ -28,7 +28,7 @@ Public Class editMenu
 
         If txtrandom.Text = Nothing Or txtNombre.Text = Nothing Or TxtDesEsp.Text = Nothing Or txtDesIng.Text = Nothing Or txtPrecio.Text = Nothing Or txtCal.Text = Nothing Or CombCate.SelectedItem.ToString = Nothing Or CombComida.SelectedItem.ToString = Nothing Or PicBox.Image Is Nothing Or txtNombreIng.Text = Nothing Then
 
-            MsgBox("Verifique que los espacios no esten vacios!")
+            MsgBox("Verifique que los espacios no esten vacios.")
         Else
 
             Try
@@ -82,11 +82,11 @@ Public Class editMenu
 
                 End If
 
-                MsgBox("Datos guardados con éxito!")
+                MsgBox("Los datos se guardaron con éxito")
 
             Catch ex As Exception
 
-                MsgBox("Error en guardar los datos")
+                MsgBox("Error al guardar los datos")
 
             End Try
 
@@ -157,5 +157,9 @@ Public Class editMenu
         CombComida.Text = ""
         PicBox.Image = Nothing
         txtNombreIng.Text = ""
+    End Sub
+
+    Private Sub BtnClose2_Click(sender As Object, e As EventArgs) Handles BtnClose3.Click
+        Me.Close()
     End Sub
 End Class

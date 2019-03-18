@@ -121,6 +121,18 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnClose3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIYAAAAyCAYAAACZIqPyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVHhe7dwxSgNBFIdx7ey8gSews7TzKJYew1YQK22C
+        hegFBFtbG8FCCWFNyJKsI4Els8FkiTbPnR0JGv83mK/4Vfummo+d7m1UVWXAOsKARBiQCAMSYUAiDEh/
+        wijLD8vGtTn3hcSEe3+fzM37tTBemw/Xj972rwa2efKMxIR7P76fWG9Ut3G0YbimlPOHUh5AWg5vCxu6
+        eQwjayrZ7WRyEGnZPutaXix//hjNG6OGkKbQA2HgH8KARBiQCAMSYUAiDEiEAYkwIBEGJMKARBiQCAMS
+        YUAiDEiEAYkwIBEGJMKARBiQCAMSYUAiDEiEAYkwIBEGJMKARBiQCAMSYUAiDEirMPqjpe1c9OQQ0rJ1
+        +mLjt88YRu4WdnRXyEGkJaxcCvu42jC8n1k3r+3ghv1bKdu77NvTYGHT6SyGEeOIK5fC+4I0hfsPUYQe
+        VmEAvxEGJMKARBiQCANCZd91bGVB/aIp6QAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAAiRwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAARulJ

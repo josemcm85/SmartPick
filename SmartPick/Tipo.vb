@@ -13,6 +13,4 @@
         Me.TypesTableAdapter.Fill(Me.MenuTTSDataSet1.Types)
 
     End Sub
-
-
 End Class

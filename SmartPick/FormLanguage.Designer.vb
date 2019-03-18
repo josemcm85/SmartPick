@@ -144,9 +144,9 @@ Partial Class FormLanguage
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(514, 57)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(233, 42)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(243, 42)
         Me.BunifuCustomLabel1.TabIndex = 26
-        Me.BunifuCustomLabel1.Text = "Bienvenidos!"
+        Me.BunifuCustomLabel1.Text = "¡Bienvenidos!"
         '
         'BunifuCustomLabel2
         '
@@ -162,7 +162,7 @@ Partial Class FormLanguage
         '
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(415, 271)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(418, 268)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(411, 25)
         Me.BunifuCustomLabel3.TabIndex = 28

@@ -42,11 +42,5 @@
 
     End Sub
 
-    Private Sub FormLanguage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles btWaiter.Click
-
-    End Sub
 End Class
