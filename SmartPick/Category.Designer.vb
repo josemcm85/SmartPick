@@ -75,6 +75,7 @@ Partial Class Category
         Me.TableAdapterManager.MenuEspTableAdapter = Nothing
         Me.TableAdapterManager.TypesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SmartPick.MenuTTSDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UserTableShowTableAdapter = Nothing
         Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
         'CategoriesBindingNavigator
@@ -92,7 +93,7 @@ Partial Class Category
         Me.CategoriesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CategoriesBindingNavigator.Name = "CategoriesBindingNavigator"
         Me.CategoriesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CategoriesBindingNavigator.Size = New System.Drawing.Size(1165, 27)
+        Me.CategoriesBindingNavigator.Size = New System.Drawing.Size(874, 27)
         Me.CategoriesBindingNavigator.TabIndex = 0
         Me.CategoriesBindingNavigator.Text = "BindingNavigator1"
         '
@@ -108,8 +109,8 @@ Partial Class Category
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 24)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
@@ -149,7 +150,7 @@ Partial Class Category
         Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
@@ -197,10 +198,9 @@ Partial Class Category
         Me.CategoriesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CategoriesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.CategoriesDataGridView.DataSource = Me.CategoriesBindingSource
-        Me.CategoriesDataGridView.Location = New System.Drawing.Point(0, 34)
-        Me.CategoriesDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CategoriesDataGridView.Location = New System.Drawing.Point(0, 28)
         Me.CategoriesDataGridView.Name = "CategoriesDataGridView"
-        Me.CategoriesDataGridView.Size = New System.Drawing.Size(1165, 564)
+        Me.CategoriesDataGridView.Size = New System.Drawing.Size(874, 458)
         Me.CategoriesDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -224,12 +224,11 @@ Partial Class Category
         '
         'Category
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1165, 699)
+        Me.ClientSize = New System.Drawing.Size(874, 568)
         Me.Controls.Add(Me.CategoriesDataGridView)
         Me.Controls.Add(Me.CategoriesBindingNavigator)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Category"
         Me.Text = "Category"
         CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).EndInit()

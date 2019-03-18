@@ -62,16 +62,16 @@ Partial Class Recuperar
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(17, 201)
+        Me.Label3.Location = New System.Drawing.Point(5, 201)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 13)
+        Me.Label3.Size = New System.Drawing.Size(120, 13)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Te llegará un correo de"
+        Me.Label3.Text = "Te llegará un correo de:"
         '
         'lblCorreo
         '
         Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Location = New System.Drawing.Point(131, 201)
+        Me.lblCorreo.Location = New System.Drawing.Point(126, 201)
         Me.lblCorreo.Name = "lblCorreo"
         Me.lblCorreo.Size = New System.Drawing.Size(128, 13)
         Me.lblCorreo.TabIndex = 4
@@ -82,18 +82,18 @@ Partial Class Recuperar
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(257, 201)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 13)
+        Me.Label4.Size = New System.Drawing.Size(74, 13)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "con el asunto"
+        Me.Label4.Text = "con el asunto:"
         '
         'lblasunto
         '
         Me.lblasunto.AutoSize = True
-        Me.lblasunto.Location = New System.Drawing.Point(324, 201)
+        Me.lblasunto.Location = New System.Drawing.Point(328, 201)
         Me.lblasunto.Name = "lblasunto"
-        Me.lblasunto.Size = New System.Drawing.Size(56, 13)
+        Me.lblasunto.Size = New System.Drawing.Size(66, 13)
         Me.lblasunto.TabIndex = 6
-        Me.lblasunto.Text = "Tus Datos"
+        Me.lblasunto.Text = """Tus Datos"""
         '
         'txtto
         '
@@ -108,13 +108,13 @@ Partial Class Recuperar
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(12, 90)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 13)
+        Me.Label5.Size = New System.Drawing.Size(85, 13)
         Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Tu Correo: "
+        Me.Label5.Text = "Ingresar Correo: "
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(162, 165)
+        Me.Button1.Location = New System.Drawing.Point(162, 159)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 9

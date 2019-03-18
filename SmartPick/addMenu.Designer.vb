@@ -29,6 +29,7 @@ Partial Class addMenu
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ButtonClose = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BtnDespejar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BtnIngresar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BtnBuscar = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -90,6 +91,7 @@ Partial Class addMenu
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.ButtonClose)
         Me.Panel1.Controls.Add(Me.BtnDespejar)
         Me.Panel1.Controls.Add(Me.BtnIngresar)
         Me.Panel1.Controls.Add(Me.BtnBuscar)
@@ -124,6 +126,31 @@ Partial Class addMenu
         Me.Panel1.Size = New System.Drawing.Size(1160, 628)
         Me.Panel1.TabIndex = 45
         '
+        'ButtonClose
+        '
+        Me.ButtonClose.ActiveBorderThickness = 1
+        Me.ButtonClose.ActiveCornerRadius = 7
+        Me.ButtonClose.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ButtonClose.ActiveForecolor = System.Drawing.Color.White
+        Me.ButtonClose.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ButtonClose.BackColor = System.Drawing.Color.Snow
+        Me.ButtonClose.BackgroundImage = CType(resources.GetObject("ButtonClose.BackgroundImage"), System.Drawing.Image)
+        Me.ButtonClose.ButtonText = "CERRAR"
+        Me.ButtonClose.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonClose.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonClose.ForeColor = System.Drawing.Color.SeaGreen
+        Me.ButtonClose.IdleBorderThickness = 1
+        Me.ButtonClose.IdleCornerRadius = 7
+        Me.ButtonClose.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.ButtonClose.IdleForecolor = System.Drawing.Color.White
+        Me.ButtonClose.IdleLineColor = System.Drawing.Color.Lavender
+        Me.ButtonClose.Location = New System.Drawing.Point(1011, 552)
+        Me.ButtonClose.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ButtonClose.Name = "ButtonClose"
+        Me.ButtonClose.Size = New System.Drawing.Size(134, 50)
+        Me.ButtonClose.TabIndex = 54
+        Me.ButtonClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'BtnDespejar
         '
         Me.BtnDespejar.ActiveBorderThickness = 1
@@ -142,7 +169,7 @@ Partial Class addMenu
         Me.BtnDespejar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnDespejar.IdleForecolor = System.Drawing.Color.White
         Me.BtnDespejar.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnDespejar.Location = New System.Drawing.Point(944, 552)
+        Me.BtnDespejar.Location = New System.Drawing.Point(851, 552)
         Me.BtnDespejar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnDespejar.Name = "BtnDespejar"
         Me.BtnDespejar.Size = New System.Drawing.Size(134, 50)
@@ -167,7 +194,7 @@ Partial Class addMenu
         Me.BtnIngresar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnIngresar.IdleForecolor = System.Drawing.Color.White
         Me.BtnIngresar.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnIngresar.Location = New System.Drawing.Point(720, 552)
+        Me.BtnIngresar.Location = New System.Drawing.Point(681, 552)
         Me.BtnIngresar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnIngresar.Name = "BtnIngresar"
         Me.BtnIngresar.Size = New System.Drawing.Size(134, 50)
@@ -256,9 +283,9 @@ Partial Class addMenu
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(678, 32)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(117, 16)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(116, 16)
         Me.BunifuCustomLabel1.TabIndex = 47
-        Me.BunifuCustomLabel1.Text = "Código del item:"
+        Me.BunifuCustomLabel1.Text = "Código del ítem:"
         '
         'BunifuSeparator1
         '
@@ -335,9 +362,9 @@ Partial Class addMenu
         Me.Label4.Location = New System.Drawing.Point(678, 296)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(134, 16)
+        Me.Label4.Size = New System.Drawing.Size(133, 16)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Categoría del item:"
+        Me.Label4.Text = "Categoría del ítem:"
         '
         'txtPrecio
         '
@@ -452,9 +479,9 @@ Partial Class addMenu
         Me.Label11.Location = New System.Drawing.Point(918, 95)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(184, 16)
+        Me.Label11.Size = New System.Drawing.Size(183, 16)
         Me.Label11.TabIndex = 27
-        Me.Label11.Text = "Nombre del item en inglés:"
+        Me.Label11.Text = "Nombre del ítem en inglés:"
         '
         'Label9
         '
@@ -465,9 +492,9 @@ Partial Class addMenu
         Me.Label9.Location = New System.Drawing.Point(679, 481)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(124, 16)
+        Me.Label9.Size = New System.Drawing.Size(122, 16)
         Me.Label9.TabIndex = 20
-        Me.Label9.Text = "Calorias del item:"
+        Me.Label9.Text = "Calorías del ítem:"
         '
         'txtNombre
         '
@@ -523,9 +550,9 @@ Partial Class addMenu
         Me.Label6.Location = New System.Drawing.Point(679, 418)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(109, 16)
+        Me.Label6.Size = New System.Drawing.Size(108, 16)
         Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Precio del item:"
+        Me.Label6.Text = "Precio del ítem:"
         '
         'Label8
         '
@@ -536,9 +563,9 @@ Partial Class addMenu
         Me.Label8.Location = New System.Drawing.Point(918, 296)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(119, 16)
+        Me.Label8.Size = New System.Drawing.Size(118, 16)
         Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Imagen del item:"
+        Me.Label8.Text = "Imagen del ítem:"
         '
         'Label2
         '
@@ -652,9 +679,9 @@ Partial Class addMenu
         Me.Label7.Location = New System.Drawing.Point(918, 158)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(209, 16)
+        Me.Label7.Size = New System.Drawing.Size(208, 16)
         Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Descripción del item en Inglés:"
+        Me.Label7.Text = "Descripción del ítem en Inglés:"
         '
         'CombComida
         '
@@ -701,16 +728,11 @@ Partial Class addMenu
     Friend WithEvents selecIdiom As ComboBox
     Friend WithEvents CombCate As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtrandom As MetroFramework.Controls.MetroTextBox
     Friend WithEvents DataGridMenu As DataGridView
     Friend WithEvents CombComida As ComboBox
-    Friend WithEvents txtNomENG As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtNombre As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtCal As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtPrecio As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label6 As Label
@@ -729,4 +751,10 @@ Partial Class addMenu
     Friend WithEvents BtnBuscar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BtnIngresar As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BtnDespejar As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents ButtonClose As Bunifu.Framework.UI.BunifuThinButton2
+    Private WithEvents txtrandom As MetroFramework.Controls.MetroTextBox
+    Private WithEvents txtNomENG As MetroFramework.Controls.MetroTextBox
+    Private WithEvents txtNombre As MetroFramework.Controls.MetroTextBox
+    Private WithEvents txtCal As MetroFramework.Controls.MetroTextBox
+    Private WithEvents txtPrecio As MetroFramework.Controls.MetroTextBox
 End Class

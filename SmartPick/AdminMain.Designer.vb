@@ -31,13 +31,13 @@ Partial Class AdminMain
         Me.EliminarPlatoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarTipoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarEliminarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.AgregarEliminarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -65,7 +65,7 @@ Partial Class AdminMain
         Me.AdministrarMenuToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.Name = "AdministrarMenuToolStripMenuItem"
         Me.AdministrarMenuToolStripMenuItem.Size = New System.Drawing.Size(160, 25)
-        Me.AdministrarMenuToolStripMenuItem.Text = "Administrar Menu"
+        Me.AdministrarMenuToolStripMenuItem.Text = "Administrar Menú"
         '
         'AgregarPlatoToolStripMenuItem
         '
@@ -101,6 +101,12 @@ Partial Class AdminMain
         Me.ModificarTipoToolStripMenuItem.Name = "ModificarTipoToolStripMenuItem"
         Me.ModificarTipoToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
         Me.ModificarTipoToolStripMenuItem.Text = "Modificar Tipo"
+        '
+        'AgregarEliminarUsuarioToolStripMenuItem
+        '
+        Me.AgregarEliminarUsuarioToolStripMenuItem.Name = "AgregarEliminarUsuarioToolStripMenuItem"
+        Me.AgregarEliminarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
+        Me.AgregarEliminarUsuarioToolStripMenuItem.Text = "Agregar / Eliminar Usuario"
         '
         'PictureBox1
         '
@@ -152,12 +158,6 @@ Partial Class AdminMain
         Me.BunifuDragControl1.Horizontal = True
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
-        '
-        'AgregarEliminarUsuarioToolStripMenuItem
-        '
-        Me.AgregarEliminarUsuarioToolStripMenuItem.Name = "AgregarEliminarUsuarioToolStripMenuItem"
-        Me.AgregarEliminarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
-        Me.AgregarEliminarUsuarioToolStripMenuItem.Text = "Agregar / Eliminar Usuario"
         '
         'AdminMain
         '

@@ -330,7 +330,7 @@ Partial Class FormMenu
         '
         Me.TextBoxSum.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxSum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.TextBoxSum.Location = New System.Drawing.Point(838, 641)
+        Me.TextBoxSum.Location = New System.Drawing.Point(850, 636)
         Me.TextBoxSum.Name = "TextBoxSum"
         Me.TextBoxSum.Size = New System.Drawing.Size(118, 19)
         Me.TextBoxSum.TabIndex = 30
@@ -391,9 +391,9 @@ Partial Class FormMenu
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label1.Location = New System.Drawing.Point(785, 636)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 20)
+        Me.Label1.Size = New System.Drawing.Size(65, 20)
         Me.Label1.TabIndex = 32
-        Me.Label1.Text = "Total:"
+        Me.Label1.Text = "Total ¢:"
         '
         'LabelOrder
         '

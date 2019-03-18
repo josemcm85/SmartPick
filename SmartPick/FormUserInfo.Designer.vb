@@ -26,23 +26,23 @@ Partial Class FormUserInfo
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormUserInfo))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BtnUser = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.lbl1 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBoxemail = New System.Windows.Forms.TextBox()
+        Me.TextBoxtitle = New System.Windows.Forms.TextBox()
+        Me.TextBoxPass = New System.Windows.Forms.TextBox()
+        Me.TextBoxUserName = New System.Windows.Forms.TextBox()
+        Me.TextBoxLastN = New System.Windows.Forms.TextBox()
+        Me.TextBoxName = New System.Windows.Forms.TextBox()
+        Me.TextBoxIdUser = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBoxIdUser = New System.Windows.Forms.TextBox()
-        Me.TextBoxName = New System.Windows.Forms.TextBox()
-        Me.TextBoxLastN = New System.Windows.Forms.TextBox()
-        Me.TextBoxUserName = New System.Windows.Forms.TextBox()
-        Me.TextBoxPass = New System.Windows.Forms.TextBox()
-        Me.TextBoxtitle = New System.Windows.Forms.TextBox()
-        Me.TextBoxemail = New System.Windows.Forms.TextBox()
-        Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl1 = New System.Windows.Forms.Label()
+        Me.BtnUser = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BtnCancel = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -75,6 +75,125 @@ Partial Class FormUserInfo
         Me.Panel1.Size = New System.Drawing.Size(382, 401)
         Me.Panel1.TabIndex = 0
         '
+        'TextBoxemail
+        '
+        Me.TextBoxemail.Location = New System.Drawing.Point(133, 263)
+        Me.TextBoxemail.Name = "TextBoxemail"
+        Me.TextBoxemail.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxemail.TabIndex = 69
+        '
+        'TextBoxtitle
+        '
+        Me.TextBoxtitle.Location = New System.Drawing.Point(133, 224)
+        Me.TextBoxtitle.Name = "TextBoxtitle"
+        Me.TextBoxtitle.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxtitle.TabIndex = 68
+        '
+        'TextBoxPass
+        '
+        Me.TextBoxPass.Location = New System.Drawing.Point(133, 185)
+        Me.TextBoxPass.Name = "TextBoxPass"
+        Me.TextBoxPass.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxPass.TabIndex = 67
+        '
+        'TextBoxUserName
+        '
+        Me.TextBoxUserName.Location = New System.Drawing.Point(133, 146)
+        Me.TextBoxUserName.Name = "TextBoxUserName"
+        Me.TextBoxUserName.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxUserName.TabIndex = 66
+        '
+        'TextBoxLastN
+        '
+        Me.TextBoxLastN.Location = New System.Drawing.Point(133, 107)
+        Me.TextBoxLastN.Name = "TextBoxLastN"
+        Me.TextBoxLastN.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxLastN.TabIndex = 65
+        '
+        'TextBoxName
+        '
+        Me.TextBoxName.Location = New System.Drawing.Point(133, 68)
+        Me.TextBoxName.Name = "TextBoxName"
+        Me.TextBoxName.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxName.TabIndex = 64
+        '
+        'TextBoxIdUser
+        '
+        Me.TextBoxIdUser.Location = New System.Drawing.Point(133, 29)
+        Me.TextBoxIdUser.Name = "TextBoxIdUser"
+        Me.TextBoxIdUser.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxIdUser.TabIndex = 63
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label5.Location = New System.Drawing.Point(75, 263)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(56, 16)
+        Me.Label5.TabIndex = 62
+        Me.Label5.Text = "Correo:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label6.Location = New System.Drawing.Point(78, 225)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(53, 16)
+        Me.Label6.TabIndex = 61
+        Me.Label6.Text = "Puesto:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label4.Location = New System.Drawing.Point(44, 186)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(87, 16)
+        Me.Label4.TabIndex = 60
+        Me.Label4.Text = "Contraseña:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Location = New System.Drawing.Point(71, 147)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(60, 16)
+        Me.Label3.TabIndex = 59
+        Me.Label3.Text = "Usuario:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(57, 108)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(74, 16)
+        Me.Label2.TabIndex = 58
+        Me.Label2.Text = "Apellidos:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(67, 68)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(64, 16)
+        Me.Label1.TabIndex = 57
+        Me.Label1.Text = "Nombre:"
+        '
+        'lbl1
+        '
+        Me.lbl1.AutoSize = True
+        Me.lbl1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lbl1.Location = New System.Drawing.Point(54, 29)
+        Me.lbl1.Name = "lbl1"
+        Me.lbl1.Size = New System.Drawing.Size(77, 16)
+        Me.lbl1.TabIndex = 56
+        Me.lbl1.Text = "Id Usuario:"
+        '
         'BtnUser
         '
         Me.BtnUser.ActiveBorderThickness = 1
@@ -100,130 +219,6 @@ Partial Class FormUserInfo
         Me.BtnUser.TabIndex = 55
         Me.BtnUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lbl1
-        '
-        Me.lbl1.AutoSize = True
-        Me.lbl1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lbl1.Location = New System.Drawing.Point(54, 29)
-        Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(73, 16)
-        Me.lbl1.TabIndex = 56
-        Me.lbl1.Text = "Id Usuario"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(67, 68)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 16)
-        Me.Label1.TabIndex = 57
-        Me.Label1.Text = "Nombre"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(57, 108)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 16)
-        Me.Label2.TabIndex = 58
-        Me.Label2.Text = "Apellidos"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(71, 147)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 16)
-        Me.Label3.TabIndex = 59
-        Me.Label3.Text = "Usuario"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(44, 186)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 16)
-        Me.Label4.TabIndex = 60
-        Me.Label4.Text = "Contraseña"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(75, 263)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 16)
-        Me.Label5.TabIndex = 62
-        Me.Label5.Text = "Correo"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label6.Location = New System.Drawing.Point(78, 225)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(49, 16)
-        Me.Label6.TabIndex = 61
-        Me.Label6.Text = "Puesto"
-        '
-        'TextBoxIdUser
-        '
-        Me.TextBoxIdUser.Location = New System.Drawing.Point(133, 29)
-        Me.TextBoxIdUser.Name = "TextBoxIdUser"
-        Me.TextBoxIdUser.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxIdUser.TabIndex = 63
-        '
-        'TextBoxName
-        '
-        Me.TextBoxName.Location = New System.Drawing.Point(133, 68)
-        Me.TextBoxName.Name = "TextBoxName"
-        Me.TextBoxName.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxName.TabIndex = 64
-        '
-        'TextBoxLastN
-        '
-        Me.TextBoxLastN.Location = New System.Drawing.Point(133, 107)
-        Me.TextBoxLastN.Name = "TextBoxLastN"
-        Me.TextBoxLastN.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxLastN.TabIndex = 65
-        '
-        'TextBoxUserName
-        '
-        Me.TextBoxUserName.Location = New System.Drawing.Point(133, 146)
-        Me.TextBoxUserName.Name = "TextBoxUserName"
-        Me.TextBoxUserName.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxUserName.TabIndex = 66
-        '
-        'TextBoxPass
-        '
-        Me.TextBoxPass.Location = New System.Drawing.Point(133, 185)
-        Me.TextBoxPass.Name = "TextBoxPass"
-        Me.TextBoxPass.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxPass.TabIndex = 67
-        '
-        'TextBoxtitle
-        '
-        Me.TextBoxtitle.Location = New System.Drawing.Point(133, 224)
-        Me.TextBoxtitle.Name = "TextBoxtitle"
-        Me.TextBoxtitle.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxtitle.TabIndex = 68
-        '
-        'TextBoxemail
-        '
-        Me.TextBoxemail.Location = New System.Drawing.Point(133, 263)
-        Me.TextBoxemail.Name = "TextBoxemail"
-        Me.TextBoxemail.Size = New System.Drawing.Size(210, 20)
-        Me.TextBoxemail.TabIndex = 69
-        '
-        'BunifuElipse2
-        '
-        Me.BunifuElipse2.ElipseRadius = 20
-        Me.BunifuElipse2.TargetControl = Me.Panel1
-        '
         'BtnCancel
         '
         Me.BtnCancel.ActiveBorderThickness = 1
@@ -248,6 +243,11 @@ Partial Class FormUserInfo
         Me.BtnCancel.Size = New System.Drawing.Size(134, 50)
         Me.BtnCancel.TabIndex = 54
         Me.BtnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'BunifuElipse2
+        '
+        Me.BunifuElipse2.ElipseRadius = 20
+        Me.BunifuElipse2.TargetControl = Me.Panel1
         '
         'FormUserInfo
         '

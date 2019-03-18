@@ -46,6 +46,7 @@ Partial Class DelMenu
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreIng = New System.Windows.Forms.TextBox()
+        Me.BtnClose2 = New Bunifu.Framework.UI.BunifuThinButton2()
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -66,9 +67,9 @@ Partial Class DelMenu
         Me.Label10.Location = New System.Drawing.Point(494, 10)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(82, 13)
+        Me.Label10.Size = New System.Drawing.Size(84, 13)
         Me.Label10.TabIndex = 59
-        Me.Label10.Text = "Codigo del item:"
+        Me.Label10.Text = "Código del ítem:"
         '
         'Label7
         '
@@ -76,9 +77,9 @@ Partial Class DelMenu
         Me.Label7.Location = New System.Drawing.Point(741, 119)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(151, 13)
+        Me.Label7.Size = New System.Drawing.Size(153, 13)
         Me.Label7.TabIndex = 58
-        Me.Label7.Text = "Descripción del item en Inglés:"
+        Me.Label7.Text = "Descripción del ítem en Inglés:"
         '
         'txtDesIng
         '
@@ -105,9 +106,9 @@ Partial Class DelMenu
         Me.Label2.Location = New System.Drawing.Point(506, 76)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 13)
+        Me.Label2.Size = New System.Drawing.Size(88, 13)
         Me.Label2.TabIndex = 55
-        Me.Label2.Text = "Nombre del item:"
+        Me.Label2.Text = "Nombre del ítem:"
         '
         'TxtDesEsp
         '
@@ -132,9 +133,9 @@ Partial Class DelMenu
         Me.Label8.Location = New System.Drawing.Point(741, 245)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(84, 13)
+        Me.Label8.Size = New System.Drawing.Size(86, 13)
         Me.Label8.TabIndex = 51
-        Me.Label8.Text = "Imagen del item:"
+        Me.Label8.Text = "Imagen del ítem:"
         '
         'PicBox
         '
@@ -153,9 +154,9 @@ Partial Class DelMenu
         Me.Label6.Location = New System.Drawing.Point(513, 351)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(79, 13)
+        Me.Label6.Size = New System.Drawing.Size(81, 13)
         Me.Label6.TabIndex = 49
-        Me.Label6.Text = "Precio del item:"
+        Me.Label6.Text = "Precio del ítem:"
         '
         'Label5
         '
@@ -173,9 +174,9 @@ Partial Class DelMenu
         Me.Label4.Location = New System.Drawing.Point(513, 251)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(96, 13)
+        Me.Label4.Size = New System.Drawing.Size(98, 13)
         Me.Label4.TabIndex = 47
-        Me.Label4.Text = "Categoría del item:"
+        Me.Label4.Text = "Categoría del ítem:"
         '
         'txtPrecio
         '
@@ -235,9 +236,9 @@ Partial Class DelMenu
         Me.Label9.Location = New System.Drawing.Point(510, 396)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(86, 13)
+        Me.Label9.Size = New System.Drawing.Size(90, 13)
         Me.Label9.TabIndex = 62
-        Me.Label9.Text = "Calorias del item:"
+        Me.Label9.Text = "Calorías del ítem:"
         '
         'txtCal
         '
@@ -253,9 +254,9 @@ Partial Class DelMenu
         Me.Label11.Location = New System.Drawing.Point(7, 33)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(144, 13)
+        Me.Label11.Size = New System.Drawing.Size(145, 13)
         Me.Label11.TabIndex = 64
-        Me.Label11.Text = "Seleccione el item a Eliminar:"
+        Me.Label11.Text = "Seleccione el ítem a eliminar:"
         '
         'Label12
         '
@@ -263,9 +264,9 @@ Partial Class DelMenu
         Me.Label12.Location = New System.Drawing.Point(741, 76)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(131, 13)
+        Me.Label12.Size = New System.Drawing.Size(133, 13)
         Me.Label12.TabIndex = 66
-        Me.Label12.Text = "Nombre del item en inglés:"
+        Me.Label12.Text = "Nombre del ítem en inglés:"
         '
         'txtNombreIng
         '
@@ -275,11 +276,37 @@ Partial Class DelMenu
         Me.txtNombreIng.Size = New System.Drawing.Size(202, 20)
         Me.txtNombreIng.TabIndex = 65
         '
+        'BtnClose2
+        '
+        Me.BtnClose2.ActiveBorderThickness = 1
+        Me.BtnClose2.ActiveCornerRadius = 7
+        Me.BtnClose2.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose2.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnClose2.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose2.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnClose2.BackgroundImage = CType(resources.GetObject("BtnClose2.BackgroundImage"), System.Drawing.Image)
+        Me.BtnClose2.ButtonText = "CERRAR"
+        Me.BtnClose2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnClose2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClose2.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnClose2.IdleBorderThickness = 1
+        Me.BtnClose2.IdleCornerRadius = 7
+        Me.BtnClose2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnClose2.IdleForecolor = System.Drawing.Color.White
+        Me.BtnClose2.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BtnClose2.Location = New System.Drawing.Point(811, 457)
+        Me.BtnClose2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnClose2.Name = "BtnClose2"
+        Me.BtnClose2.Size = New System.Drawing.Size(134, 50)
+        Me.BtnClose2.TabIndex = 67
+        Me.BtnClose2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'DelMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(977, 521)
+        Me.Controls.Add(Me.BtnClose2)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.txtNombreIng)
         Me.Controls.Add(Me.Label11)
@@ -337,4 +364,5 @@ Partial Class DelMenu
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents txtNombreIng As TextBox
+    Friend WithEvents BtnClose2 As Bunifu.Framework.UI.BunifuThinButton2
 End Class

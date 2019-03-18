@@ -1,17 +1,18 @@
 ﻿Public Class AdminMain
-    Private Sub AgregarPlatoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarPlatoToolStripMenuItem.Click
-        addMenu.Show()
-
-
-    End Sub
 
     Private Sub EditarPlatoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarPlatoToolStripMenuItem.Click
+        Loading.Show()
+        For index As Integer = 1 To 1000000
+        Next
         editMenu.Show()
+        Loading.Close()
 
     End Sub
 
     Private Sub EliminarPlatoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarPlatoToolStripMenuItem.Click
+        Loading.Show()
         DelMenu.Show()
+        Loading.Close()
 
     End Sub
 
@@ -20,15 +21,8 @@
     End Sub
 
     Private Sub ModificarTipoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarTipoToolStripMenuItem.Click
+
         Tipo.Show()
-
-    End Sub
-
-    Private Sub AdministrarMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarMenuToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub AdminMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -36,5 +30,17 @@
 
         FormAddUser.Show()
 
+    End Sub
+
+    Private Sub BtnCerrar_Click(sender As Object, e As EventArgs)
+        Me.Close()
+    End Sub
+
+    Private Sub AgregarPlatoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarPlatoToolStripMenuItem.Click
+        Loading.Show()
+
+        addMenu.Show()
+
+        Loading.Close()
     End Sub
 End Class
