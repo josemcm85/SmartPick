@@ -145,4 +145,8 @@ Public Class FormLogin
     Private Sub txtUser_OnValueChanged(sender As Object, e As EventArgs) Handles txtUser.OnValueChanged
         'Cambio test
     End Sub
+
+    Private Sub btnWaiter_Click(sender As Object, e As EventArgs) Handles btnWaiter.Click
+        MsgBox("En un Momento sera atenndido por alguno de nuestros meseros")
+    End Sub
 End Class
