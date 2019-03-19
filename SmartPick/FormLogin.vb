@@ -147,6 +147,7 @@ Public Class FormLogin
     End Sub
 
     Private Sub btnWaiter_Click(sender As Object, e As EventArgs) Handles btnWaiter.Click
-        MsgBox("En un Momento sera atenndido por alguno de nuestros meseros")
+        FormTable.Show()
+
     End Sub
 End Class

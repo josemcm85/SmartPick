@@ -1033,4 +1033,8 @@ Public Class FormMenu
 
     End Sub
 
+    Private Sub btnWaiter_Click(sender As Object, e As EventArgs) Handles btnWaiter.Click
+        FormTable.Show()
+    End Sub
+
 End Class
