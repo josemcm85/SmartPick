@@ -7,6 +7,7 @@ Public Class FormMenu
     Dim connectionString As String = "Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 "
     Dim connection As SqlConnection
     Dim Filtro As Integer
+    Dim NoOrden As Integer
     Public Property IsRepeated As Boolean
 
 
@@ -1033,4 +1034,66 @@ Public Class FormMenu
 
     End Sub
 
+    Private Sub DataGridViewOrder_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewOrder.CellContentClick
+
+    End Sub
+
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
+
+        Dim sourceGrid As DataGridView = Me.DataGridViewOrder
+        Dim targetGrid As DataGridView = Orden.DTGList
+
+        'Copy all rows and cells.
+
+        Dim targetRows = New List(Of DataGridViewRow)
+
+
+        Try
+
+
+
+
+
+
+            For Each sourceRow As DataGridViewRow In sourceGrid.Rows
+
+                If (Not sourceRow.IsNewRow) Then
+
+                    Dim targetRow = CType(sourceRow.Clone(), DataGridViewRow)
+
+                    'The Clone method do not copy the cell values so we must do this manually.
+
+                    For Each cell As DataGridViewCell In sourceRow.Cells
+                        targetRow.Cells(cell.ColumnIndex).Value = cell.Value
+                    Next
+
+                    targetRows.Add(targetRow)
+
+                End If
+
+            Next
+
+            'Clear target columns and then clone all source columns.
+
+            targetGrid.Columns.Clear()
+
+            For Each column As DataGridViewColumn In sourceGrid.Columns
+                targetGrid.Columns.Add(CType(column.Clone(), DataGridViewColumn))
+            Next
+
+            'It's recommended to use the AddRange method (if available)
+            'when adding multiple items to a collection.
+
+            targetGrid.Rows.AddRange(targetRows.ToArray())
+            Orden.Show()
+
+        Catch ex As Exception
+
+            MsgBox("Elige algún plato para continuar!")
+
+        End Try
+
+
+
+    End Sub
 End Class

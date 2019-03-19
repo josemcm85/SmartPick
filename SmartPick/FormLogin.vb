@@ -149,4 +149,8 @@ Public Class FormLogin
     Private Sub btnWaiter_Click(sender As Object, e As EventArgs) Handles btnWaiter.Click
         MsgBox("En un Momento sera atenndido por alguno de nuestros meseros")
     End Sub
+
+    Private Sub BunifuGradientPanel2_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel2.Paint
+
+    End Sub
 End Class
