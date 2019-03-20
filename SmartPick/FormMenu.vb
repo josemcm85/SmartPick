@@ -1051,10 +1051,6 @@ Public Class FormMenu
         Try
 
 
-
-
-
-
             For Each sourceRow As DataGridViewRow In sourceGrid.Rows
 
                 If (Not sourceRow.IsNewRow) Then
