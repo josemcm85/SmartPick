@@ -21,4 +21,10 @@
     Private Sub CategoriesDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles CategoriesDataGridView.CellContentClick
         Me.DataGridViewTextBoxColumn1.Visible = False
     End Sub
+
+    Private Sub BtnClose3_Click(sender As Object, e As EventArgs) Handles BtnClose3.Click
+
+        Me.Close()
+
+    End Sub
 End Class

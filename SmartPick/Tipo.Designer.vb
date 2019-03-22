@@ -56,6 +56,12 @@ Partial Class Tipo
         Me.BindingSourceCate = New System.Windows.Forms.BindingSource(Me.components)
         Me.MenuTTSDataSetCate1 = New SmartPick.MenuTTSDataSetCate()
         Me.CategoriesTableAdapter = New SmartPick.MenuTTSDataSetCateTableAdapters.CategoriesTableAdapter()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BtnClose = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         CType(Me.TypesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TypesBindingNavigator.SuspendLayout()
         CType(Me.TypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,6 +71,7 @@ Partial Class Tipo
         CType(Me.CategoriesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSourceCate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MenuTTSDataSetCate1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TypesBindingNavigator
@@ -73,16 +80,17 @@ Partial Class Tipo
         Me.TypesBindingNavigator.BindingSource = Me.TypesBindingSource
         Me.TypesBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.TypesBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.TypesBindingNavigator.Dock = System.Windows.Forms.DockStyle.None
         Me.TypesBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.TypesBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.TypesBindingNavigatorSaveItem})
-        Me.TypesBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.TypesBindingNavigator.Location = New System.Drawing.Point(54, 47)
         Me.TypesBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.TypesBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.TypesBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.TypesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.TypesBindingNavigator.Name = "TypesBindingNavigator"
         Me.TypesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.TypesBindingNavigator.Size = New System.Drawing.Size(994, 27)
+        Me.TypesBindingNavigator.Size = New System.Drawing.Size(285, 27)
         Me.TypesBindingNavigator.TabIndex = 0
         Me.TypesBindingNavigator.Text = "BindingNavigator1"
         '
@@ -108,8 +116,8 @@ Partial Class Tipo
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 24)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
@@ -194,11 +202,13 @@ Partial Class Tipo
         Me.TypesDataGridView.AllowUserToAddRows = False
         Me.TypesDataGridView.AutoGenerateColumns = False
         Me.TypesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.TypesDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.TypesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TypesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.idCategories})
         Me.TypesDataGridView.DataSource = Me.TypesBindingSource
-        Me.TypesDataGridView.Location = New System.Drawing.Point(10, 58)
+        Me.TypesDataGridView.Location = New System.Drawing.Point(30, 76)
         Me.TypesDataGridView.Name = "TypesDataGridView"
+        Me.TypesDataGridView.RowHeadersVisible = False
         Me.TypesDataGridView.Size = New System.Drawing.Size(605, 306)
         Me.TypesDataGridView.TabIndex = 1
         '
@@ -246,20 +256,22 @@ Partial Class Tipo
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 41)
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(27, 57)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(173, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Listado de tipos de plato:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(660, 41)
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(687, 57)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(113, 13)
+        Me.Label2.Size = New System.Drawing.Size(152, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Listado de categorías:"
         '
@@ -268,15 +280,17 @@ Partial Class Tipo
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdCategoryDataGridViewTextBoxColumn, Me.CategorySpaDataGridViewTextBoxColumn, Me.CategoryEngDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.CategoriesBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(662, 58)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(714, 99)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(292, 306)
+        Me.DataGridView1.Size = New System.Drawing.Size(304, 306)
         Me.DataGridView1.TabIndex = 4
         '
         'IdCategoryDataGridViewTextBoxColumn
@@ -319,16 +333,82 @@ Partial Class Tipo
         '
         Me.CategoriesTableAdapter.ClearBeforeFill = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.TypesDataGridView)
+        Me.Panel1.Controls.Add(Me.BtnClose)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(24, 23)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1030, 432)
+        Me.Panel1.TabIndex = 5
+        '
+        'BtnClose
+        '
+        Me.BtnClose.ActiveBorderThickness = 1
+        Me.BtnClose.ActiveCornerRadius = 7
+        Me.BtnClose.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnClose.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose.BackColor = System.Drawing.Color.Snow
+        Me.BtnClose.BackgroundImage = CType(resources.GetObject("BtnClose.BackgroundImage"), System.Drawing.Image)
+        Me.BtnClose.ButtonText = "Cerrar"
+        Me.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnClose.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClose.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnClose.IdleBorderThickness = 1
+        Me.BtnClose.IdleCornerRadius = 7
+        Me.BtnClose.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnClose.IdleForecolor = System.Drawing.Color.White
+        Me.BtnClose.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BtnClose.Location = New System.Drawing.Point(860, 382)
+        Me.BtnClose.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(134, 50)
+        Me.BtnClose.TabIndex = 72
+        Me.BtnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label11.Location = New System.Drawing.Point(27, 8)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(161, 16)
+        Me.Label11.TabIndex = 73
+        Me.Label11.Text = "Agregar / Eliminar Tipo"
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me
+        '
+        'BunifuElipse2
+        '
+        Me.BunifuElipse2.ElipseRadius = 20
+        Me.BunifuElipse2.TargetControl = Me.Panel1
+        '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me
+        Me.BunifuDragControl1.Vertical = True
+        '
         'Tipo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(994, 450)
+        Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS2
+        Me.ClientSize = New System.Drawing.Size(1091, 479)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TypesDataGridView)
         Me.Controls.Add(Me.TypesBindingNavigator)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Tipo"
         Me.Text = "Tipo"
         CType(Me.TypesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -341,6 +421,8 @@ Partial Class Tipo
         CType(Me.CategoriesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingSourceCate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MenuTTSDataSetCate1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -378,4 +460,10 @@ Partial Class Tipo
     Friend WithEvents IdCategoryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CategorySpaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CategoryEngDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents BtnClose As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents Label11 As Label
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
 End Class

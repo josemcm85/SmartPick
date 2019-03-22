@@ -20,9 +20,32 @@ Public Class DelMenu
         Conn.Close()
     End Sub
 
-    Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
+    Private Sub DatagridMenu_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridMenu.CellContentClick
+        RowIndex = e.RowIndex
+
+        Dim row As DataGridViewRow = DatagridMenu.Rows(RowIndex)
+        item = row.Cells(0).Value
+
+        MsgBox("Plato seleccionado: " & row.Cells(1).Value)
+        txtrandom.Text = item
+
+        txtNombre.Text = row.Cells(1).Value
+        txtNombreIng.Text = row.Cells(2).Value
+        TxtDesEsp.Text = row.Cells(3).Value
+        txtDesIng.Text = row.Cells(4).Value
+        CombCate.Text = row.Cells(5).Value
+        CombComida.Text = row.Cells(6).Value
+        txtPrecio.Text = row.Cells(7).Value
+        txtCal.Text = row.Cells(8).Value
+
+        'Pasa el mapa de Bytes a una imagen 
+        Dim Bytes As [Byte]() = row.Cells(9).Value
+        Dim ms As New MemoryStream(Bytes)
+        PicBox.Image = Image.FromStream(ms)
+    End Sub
 
 
+    Private Sub BtnEliminar_Click_1(sender As Object, e As EventArgs) Handles BtnEliminar.Click
 
         Select Case MsgBox("Seguro?", MsgBoxStyle.YesNo, "Eliminar Elemento")
             Case MsgBoxResult.Yes
@@ -63,38 +86,11 @@ Public Class DelMenu
         End Select
 
 
-
-
-
-
-
     End Sub
 
-    Private Sub DatagridMenu_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridMenu.CellContentClick
-        RowIndex = e.RowIndex
+    Private Sub BtnClose2_Click_1(sender As Object, e As EventArgs) Handles BtnClose2.Click
 
-        Dim row As DataGridViewRow = DatagridMenu.Rows(RowIndex)
-        item = row.Cells(0).Value
-
-        MsgBox("Plato seleccionado: " & row.Cells(1).Value)
-        txtrandom.Text = item
-
-        txtNombre.Text = row.Cells(1).Value
-        txtNombreIng.Text = row.Cells(2).Value
-        TxtDesEsp.Text = row.Cells(3).Value
-        txtDesIng.Text = row.Cells(4).Value
-        CombCate.Text = row.Cells(5).Value
-        CombComida.Text = row.Cells(6).Value
-        txtPrecio.Text = row.Cells(7).Value
-        txtCal.Text = row.Cells(8).Value
-
-        'Pasa el mapa de Bytes a una imagen 
-        Dim Bytes As [Byte]() = row.Cells(9).Value
-        Dim ms As New MemoryStream(Bytes)
-        PicBox.Image = Image.FromStream(ms)
-    End Sub
-
-    Private Sub BtnClose2_Click(sender As Object, e As EventArgs) Handles BtnClose2.Click
         Me.Close()
+
     End Sub
 End Class

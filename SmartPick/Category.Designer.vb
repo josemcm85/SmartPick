@@ -45,11 +45,18 @@ Partial Class Category
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BtnClose3 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CategoriesBindingNavigator.SuspendLayout()
         CType(Me.CategoriesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuTTSDataSet1
@@ -84,16 +91,17 @@ Partial Class Category
         Me.CategoriesBindingNavigator.BindingSource = Me.CategoriesBindingSource
         Me.CategoriesBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.CategoriesBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.CategoriesBindingNavigator.Dock = System.Windows.Forms.DockStyle.None
         Me.CategoriesBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.CategoriesBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.CategoriesBindingNavigatorSaveItem})
-        Me.CategoriesBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.CategoriesBindingNavigator.Location = New System.Drawing.Point(35, 39)
         Me.CategoriesBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.CategoriesBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.CategoriesBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.CategoriesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CategoriesBindingNavigator.Name = "CategoriesBindingNavigator"
         Me.CategoriesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CategoriesBindingNavigator.Size = New System.Drawing.Size(874, 27)
+        Me.CategoriesBindingNavigator.Size = New System.Drawing.Size(285, 27)
         Me.CategoriesBindingNavigator.TabIndex = 0
         Me.CategoriesBindingNavigator.Text = "BindingNavigator1"
         '
@@ -109,8 +117,8 @@ Partial Class Category
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 24)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
@@ -195,12 +203,14 @@ Partial Class Category
         Me.CategoriesDataGridView.AllowUserToAddRows = False
         Me.CategoriesDataGridView.AutoGenerateColumns = False
         Me.CategoriesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.CategoriesDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.CategoriesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CategoriesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.CategoriesDataGridView.DataSource = Me.CategoriesBindingSource
-        Me.CategoriesDataGridView.Location = New System.Drawing.Point(0, 28)
+        Me.CategoriesDataGridView.Location = New System.Drawing.Point(35, 69)
         Me.CategoriesDataGridView.Name = "CategoriesDataGridView"
-        Me.CategoriesDataGridView.Size = New System.Drawing.Size(874, 458)
+        Me.CategoriesDataGridView.RowHeadersVisible = False
+        Me.CategoriesDataGridView.Size = New System.Drawing.Size(874, 437)
         Me.CategoriesDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -222,13 +232,80 @@ Partial Class Category
         Me.DataGridViewTextBoxColumn3.HeaderText = "CategoryEng"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.BtnClose3)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.CategoriesDataGridView)
+        Me.Panel1.Controls.Add(Me.CategoriesBindingNavigator)
+        Me.Panel1.Location = New System.Drawing.Point(25, 27)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(957, 551)
+        Me.Panel1.TabIndex = 2
+        '
+        'BtnClose3
+        '
+        Me.BtnClose3.ActiveBorderThickness = 1
+        Me.BtnClose3.ActiveCornerRadius = 7
+        Me.BtnClose3.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose3.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnClose3.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose3.BackColor = System.Drawing.Color.Snow
+        Me.BtnClose3.BackgroundImage = CType(resources.GetObject("BtnClose3.BackgroundImage"), System.Drawing.Image)
+        Me.BtnClose3.ButtonText = "Cerrar"
+        Me.BtnClose3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnClose3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClose3.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnClose3.IdleBorderThickness = 1
+        Me.BtnClose3.IdleCornerRadius = 7
+        Me.BtnClose3.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnClose3.IdleForecolor = System.Drawing.Color.White
+        Me.BtnClose3.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BtnClose3.Location = New System.Drawing.Point(775, 509)
+        Me.BtnClose3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnClose3.Name = "BtnClose3"
+        Me.BtnClose3.Size = New System.Drawing.Size(134, 37)
+        Me.BtnClose3.TabIndex = 72
+        Me.BtnClose3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label11.Location = New System.Drawing.Point(32, 10)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(199, 16)
+        Me.Label11.TabIndex = 43
+        Me.Label11.Text = "Agregar / Eliminar Categoría"
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me
+        '
+        'BunifuElipse2
+        '
+        Me.BunifuElipse2.ElipseRadius = 20
+        Me.BunifuElipse2.TargetControl = Me.Panel1
+        '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me
+        Me.BunifuDragControl1.Vertical = True
+        '
         'Category
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(874, 568)
-        Me.Controls.Add(Me.CategoriesDataGridView)
-        Me.Controls.Add(Me.CategoriesBindingNavigator)
+        Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1014, 602)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Category"
         Me.Text = "Category"
         CType(Me.MenuTTSDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -237,8 +314,9 @@ Partial Class Category
         Me.CategoriesBindingNavigator.ResumeLayout(False)
         Me.CategoriesBindingNavigator.PerformLayout()
         CType(Me.CategoriesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -263,4 +341,10 @@ Partial Class Category
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label11 As Label
+    Friend WithEvents BtnClose3 As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
 End Class
