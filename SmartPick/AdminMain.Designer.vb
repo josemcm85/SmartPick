@@ -38,6 +38,7 @@ Partial Class AdminMain
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.CrearCuponesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -60,7 +61,7 @@ Partial Class AdminMain
         '
         Me.AdministrarMenuToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.AdministrarMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPlatoToolStripMenuItem, Me.EditarPlatoToolStripMenuItem, Me.EliminarPlatoToolStripMenuItem, Me.CategoriaToolStripMenuItem, Me.ModificarTipoToolStripMenuItem, Me.AgregarEliminarUsuarioToolStripMenuItem})
+        Me.AdministrarMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPlatoToolStripMenuItem, Me.EditarPlatoToolStripMenuItem, Me.EliminarPlatoToolStripMenuItem, Me.CategoriaToolStripMenuItem, Me.ModificarTipoToolStripMenuItem, Me.AgregarEliminarUsuarioToolStripMenuItem, Me.CrearCuponesToolStripMenuItem})
         Me.AdministrarMenuToolStripMenuItem.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdministrarMenuToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.Name = "AdministrarMenuToolStripMenuItem"
@@ -159,6 +160,12 @@ Partial Class AdminMain
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
         '
+        'CrearCuponesToolStripMenuItem
+        '
+        Me.CrearCuponesToolStripMenuItem.Name = "CrearCuponesToolStripMenuItem"
+        Me.CrearCuponesToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
+        Me.CrearCuponesToolStripMenuItem.Text = "Crear cupones"
+        '
         'AdminMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -195,4 +202,5 @@ Partial Class AdminMain
     Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents AgregarEliminarUsuarioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CrearCuponesToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -124,6 +124,12 @@
     <Compile Include="FormAddUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormCoupons.Designer.vb">
+      <DependentUpon>FormCoupons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCoupons.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLanguage.Designer.vb">
       <DependentUpon>FormLanguage.vb</DependentUpon>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddUser.resx">
       <DependentUpon>FormAddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCoupons.resx">
+      <DependentUpon>FormCoupons.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLanguage.resx">
       <DependentUpon>FormLanguage.vb</DependentUpon>
@@ -339,6 +348,7 @@
     <Content Include="icons8_language_48px_1.png" />
     <Content Include="icons8_minus_64px.png" />
     <Content Include="icons8_nonya_kueh_100px_1.png" />
+    <Content Include="icons8_percentage_26px_5.png" />
     <Content Include="icons8_plus_64px.png" />
     <Content Include="icons8_plus_math_52px_2.png" />
     <Content Include="icons8_street_food_100px_1.png" />
@@ -353,6 +363,7 @@
     <Content Include="minusSign.png" />
     <Content Include="plussign 3.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\icons8_percentage_26px_5.png" />
     <None Include="Resources\icons8_delete_databasesmall_48px_5.png" />
     <None Include="Resources\icons8_delete_database_48px_5.png" />
     <None Include="Resources\icons8_-1_50px.png" />

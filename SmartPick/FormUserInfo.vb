@@ -40,4 +40,8 @@ Public Class FormUserInfo
         FormAddUser.UserTableShowTableAdapter.Fill(FormAddUser.MenuTTSDataSet11.UserTableShow)
 
     End Sub
+
+    Private Sub FormUserInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

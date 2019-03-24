@@ -36,13 +36,10 @@ Partial Class FormMenu
         Me.ButtonMainDish = New System.Windows.Forms.Button()
         Me.ButtonAppetizer = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.DataGridViewMenu = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.DataGridViewDescription = New System.Windows.Forms.DataGridView()
-        Me.PictureBoxItem = New System.Windows.Forms.PictureBox()
         Me.LblTitle = New System.Windows.Forms.Label()
         Me.lblSec = New System.Windows.Forms.Label()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
@@ -63,22 +60,25 @@ Partial Class FormMenu
         Me.lblleng = New System.Windows.Forms.Label()
         Me.BunifuDropdown3 = New Bunifu.Framework.UI.BunifuDropdown()
         Me.ButtonDelete = New System.Windows.Forms.Button()
+        Me.lblNoorden = New System.Windows.Forms.Label()
+        Me.LblTotal = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnWaiter = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.lblNoorden = New System.Windows.Forms.Label()
-        Me.LblTotal = New System.Windows.Forms.Label()
+        Me.PictureBoxItem = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMenu.SuspendLayout()
         CType(Me.DataGridViewMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.DataGridViewDescription, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonToShare
@@ -156,26 +156,6 @@ Partial Class FormMenu
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1090, 31)
         Me.Panel2.TabIndex = 21
-        '
-        'PictureBoxClose
-        '
-        Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(1026, 3)
-        Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxClose.TabIndex = 1
-        Me.PictureBoxClose.TabStop = False
-        '
-        'PictureBoxMinimize
-        '
-        Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(996, 3)
-        Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxMinimize.TabIndex = 0
-        Me.PictureBoxMinimize.TabStop = False
         '
         'PanelMenu
         '
@@ -268,17 +248,6 @@ Partial Class FormMenu
         Me.DataGridViewDescription.RowHeadersVisible = False
         Me.DataGridViewDescription.Size = New System.Drawing.Size(321, 125)
         Me.DataGridViewDescription.TabIndex = 1
-        '
-        'PictureBoxItem
-        '
-        Me.PictureBoxItem.BackColor = System.Drawing.Color.White
-        Me.PictureBoxItem.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxItem.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBoxItem.Name = "PictureBoxItem"
-        Me.PictureBoxItem.Size = New System.Drawing.Size(321, 409)
-        Me.PictureBoxItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxItem.TabIndex = 0
-        Me.PictureBoxItem.TabStop = False
         '
         'LblTitle
         '
@@ -461,7 +430,7 @@ Partial Class FormMenu
         Me.BunifuDropdown3.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown3.Items = New String() {"1", "2", "3", "4", "5", "6", "7", "8", "9"}
         Me.BunifuDropdown3.Location = New System.Drawing.Point(827, 659)
-        Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuDropdown3.Name = "BunifuDropdown3"
         Me.BunifuDropdown3.NomalColor = System.Drawing.Color.LimeGreen
         Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.LimeGreen
@@ -488,6 +457,24 @@ Partial Class FormMenu
         Me.ButtonDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ButtonDelete.UseVisualStyleBackColor = False
         '
+        'lblNoorden
+        '
+        Me.lblNoorden.AutoSize = True
+        Me.lblNoorden.Location = New System.Drawing.Point(427, 752)
+        Me.lblNoorden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNoorden.Name = "lblNoorden"
+        Me.lblNoorden.Size = New System.Drawing.Size(0, 13)
+        Me.lblNoorden.TabIndex = 48
+        '
+        'LblTotal
+        '
+        Me.LblTotal.AutoSize = True
+        Me.LblTotal.Location = New System.Drawing.Point(494, 752)
+        Me.LblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblTotal.Name = "LblTotal"
+        Me.LblTotal.Size = New System.Drawing.Size(0, 13)
+        Me.LblTotal.TabIndex = 49
+        '
         'BunifuFlatButton1
         '
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
@@ -510,7 +497,7 @@ Partial Class FormMenu
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
         Me.BunifuFlatButton1.Location = New System.Drawing.Point(957, 671)
-        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -545,7 +532,7 @@ Partial Class FormMenu
         Me.btnWaiter.IconZoom = 90.0R
         Me.btnWaiter.IsTab = False
         Me.btnWaiter.Location = New System.Drawing.Point(789, 60)
-        Me.btnWaiter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnWaiter.Margin = New System.Windows.Forms.Padding(4)
         Me.btnWaiter.Name = "btnWaiter"
         Me.btnWaiter.Normalcolor = System.Drawing.Color.DodgerBlue
         Me.btnWaiter.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -596,23 +583,36 @@ Partial Class FormMenu
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'lblNoorden
+        'PictureBoxItem
         '
-        Me.lblNoorden.AutoSize = True
-        Me.lblNoorden.Location = New System.Drawing.Point(427, 752)
-        Me.lblNoorden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblNoorden.Name = "lblNoorden"
-        Me.lblNoorden.Size = New System.Drawing.Size(0, 13)
-        Me.lblNoorden.TabIndex = 48
+        Me.PictureBoxItem.BackColor = System.Drawing.Color.White
+        Me.PictureBoxItem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBoxItem.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBoxItem.Name = "PictureBoxItem"
+        Me.PictureBoxItem.Size = New System.Drawing.Size(321, 409)
+        Me.PictureBoxItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxItem.TabIndex = 0
+        Me.PictureBoxItem.TabStop = False
         '
-        'LblTotal
+        'PictureBoxClose
         '
-        Me.LblTotal.AutoSize = True
-        Me.LblTotal.Location = New System.Drawing.Point(494, 752)
-        Me.LblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LblTotal.Name = "LblTotal"
-        Me.LblTotal.Size = New System.Drawing.Size(0, 13)
-        Me.LblTotal.TabIndex = 49
+        Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1026, 3)
+        Me.PictureBoxClose.Name = "PictureBoxClose"
+        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxClose.TabIndex = 1
+        Me.PictureBoxClose.TabStop = False
+        '
+        'PictureBoxMinimize
+        '
+        Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(996, 3)
+        Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxMinimize.TabIndex = 0
+        Me.PictureBoxMinimize.TabStop = False
         '
         'FormMenu
         '
@@ -654,15 +654,15 @@ Partial Class FormMenu
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelMenu.ResumeLayout(False)
         CType(Me.DataGridViewMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.DataGridViewDescription, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

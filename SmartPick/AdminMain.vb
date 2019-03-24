@@ -43,4 +43,10 @@
 
         Loading.Close()
     End Sub
+
+    Private Sub CrearCuponesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearCuponesToolStripMenuItem.Click
+
+        FormCoupons.Show()
+
+    End Sub
 End Class

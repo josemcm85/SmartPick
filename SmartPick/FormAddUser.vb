@@ -56,4 +56,12 @@ Public Class FormAddUser
 
 
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub DGUsers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGUsers.CellContentClick
+
+    End Sub
 End Class
