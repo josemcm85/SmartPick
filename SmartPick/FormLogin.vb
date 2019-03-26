@@ -146,7 +146,7 @@ Public Class FormLogin
         'Cambio test
     End Sub
 
-    Private Sub btnWaiter_Click(sender As Object, e As EventArgs) Handles btnWaiter.Click
+    Private Sub btnWaiter_Click(sender As Object, e As EventArgs) 
         FormTable.Show()
 
     End Sub

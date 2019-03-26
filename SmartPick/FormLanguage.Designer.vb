@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormLanguage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,25 +20,24 @@ Partial Class FormLanguage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLanguage))
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.btWaiter = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.ButtonEngMenu = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.ButtonSpaMenu = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -51,6 +50,26 @@ Partial Class FormLanguage
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(857, 31)
         Me.Panel2.TabIndex = 22
+        '
+        'PictureBoxClose
+        '
+        Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
+        Me.PictureBoxClose.Location = New System.Drawing.Point(821, 3)
+        Me.PictureBoxClose.Name = "PictureBoxClose"
+        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxClose.TabIndex = 1
+        Me.PictureBoxClose.TabStop = False
+        '
+        'PictureBoxMinimize
+        '
+        Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(791, 3)
+        Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxMinimize.TabIndex = 0
+        Me.PictureBoxMinimize.TabStop = False
         '
         'BunifuElipse1
         '
@@ -86,40 +105,6 @@ Partial Class FormLanguage
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(411, 25)
         Me.BunifuCustomLabel3.TabIndex = 28
         Me.BunifuCustomLabel3.Text = "Please choose the language of the Menu."
-        '
-        'btWaiter
-        '
-        Me.btWaiter.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btWaiter.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btWaiter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btWaiter.BorderRadius = 0
-        Me.btWaiter.ButtonText = "Llamar al mesero"
-        Me.btWaiter.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btWaiter.DisabledColor = System.Drawing.Color.Gray
-        Me.btWaiter.Iconcolor = System.Drawing.Color.Transparent
-        Me.btWaiter.Iconimage = CType(resources.GetObject("btWaiter.Iconimage"), System.Drawing.Image)
-        Me.btWaiter.Iconimage_right = Nothing
-        Me.btWaiter.Iconimage_right_Selected = Nothing
-        Me.btWaiter.Iconimage_Selected = Nothing
-        Me.btWaiter.IconMarginLeft = 0
-        Me.btWaiter.IconMarginRight = 0
-        Me.btWaiter.IconRightVisible = True
-        Me.btWaiter.IconRightZoom = 0R
-        Me.btWaiter.IconVisible = True
-        Me.btWaiter.IconZoom = 90.0R
-        Me.btWaiter.IsTab = False
-        Me.btWaiter.Location = New System.Drawing.Point(645, 656)
-        Me.btWaiter.Name = "btWaiter"
-        Me.btWaiter.Normalcolor = System.Drawing.Color.DodgerBlue
-        Me.btWaiter.OnHovercolor = System.Drawing.Color.Yellow
-        Me.btWaiter.OnHoverTextColor = System.Drawing.Color.White
-        Me.btWaiter.selected = False
-        Me.btWaiter.Size = New System.Drawing.Size(181, 37)
-        Me.btWaiter.TabIndex = 29
-        Me.btWaiter.Text = "Llamar al mesero"
-        Me.btWaiter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btWaiter.Textcolor = System.Drawing.Color.White
-        Me.btWaiter.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'ButtonEngMenu
         '
@@ -182,26 +167,6 @@ Partial Class FormLanguage
         Me.PictureBox1.TabIndex = 23
         Me.PictureBox1.TabStop = False
         '
-        'PictureBoxClose
-        '
-        Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(821, 3)
-        Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxClose.TabIndex = 1
-        Me.PictureBoxClose.TabStop = False
-        '
-        'PictureBoxMinimize
-        '
-        Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(791, 3)
-        Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxMinimize.TabIndex = 0
-        Me.PictureBoxMinimize.TabStop = False
-        '
         'FormLanguage
         '
         Me.AllowDrop = True
@@ -209,7 +174,6 @@ Partial Class FormLanguage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(857, 743)
-        Me.Controls.Add(Me.btWaiter)
         Me.Controls.Add(Me.BunifuCustomLabel3)
         Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.BunifuCustomLabel1)
@@ -222,9 +186,9 @@ Partial Class FormLanguage
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -240,5 +204,4 @@ Partial Class FormLanguage
     Friend WithEvents ButtonEngMenu As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents ButtonSpaMenu As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents btWaiter As Bunifu.Framework.UI.BunifuFlatButton
 End Class

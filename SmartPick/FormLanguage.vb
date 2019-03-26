@@ -42,7 +42,7 @@
 
     End Sub
 
-    Private Sub btWaiter_Click(sender As Object, e As EventArgs) Handles btWaiter.Click
+    Private Sub btWaiter_Click(sender As Object, e As EventArgs) 
         FormTable.Show()
     End Sub
 End Class
