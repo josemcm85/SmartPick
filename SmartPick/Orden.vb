@@ -54,37 +54,44 @@ Public Class Orden
         Try
             connection = New SqlConnection(connectionString)
             connection.Open()
-            Dim CreateOrder As New SqlCommand("Exec addOrden '" & NoOrden.Text & "','" & ComboMesa.SelectedItem.ToString & "','" & lblTotal.Text & "';", connection)
+            Dim CreateOrder As New SqlCommand("Exec addOrden '" & ComboMesa.SelectedItem.ToString & "','" & lblTotal.Text & "';", connection)
             Dim dataAdapter As New SqlDataAdapter(CreateOrder)
             CreateOrder.ExecuteNonQuery()
-            connection.Close()
 
+            Dim LastOrderId As New SqlCommand("SELECT IDENT_CURRENT('ListaOrdenes')", connection)
 
+            LastOrderId.ExecuteNonQuery()
+            Dim reader As SqlDataReader = LastOrderId.ExecuteReader()
 
-            Dim ListaOrder As New SqlCommand("Exec listaOrden @id,@linea,@Nombre,@Cant,@Precio ", connection)
+            reader.Read()
+            Dim idLastOrder As Integer
+            idLastOrder = Integer.Parse(reader.GetDecimal(0))
+
+            reader.Close()
+
+            Dim ListaOrder As New SqlCommand("Exec listaOrden @id,@Nombre,@Cant,@Precio ", connection)
             ListaOrder.Parameters.Add("@id", SqlDbType.Int)
-            ListaOrder.Parameters.Add("@Linea", SqlDbType.Int)
             ListaOrder.Parameters.Add("@Nombre", SqlDbType.VarChar)
             ListaOrder.Parameters.Add("@Cant", SqlDbType.Int)
             ListaOrder.Parameters.Add("@Precio", SqlDbType.Float)
 
-            connection.Open()
             ListaOrder.Connection = connection
+
+
+
             For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
-                ListaOrder.Parameters(0).Value = NoOrden.Text
-                ListaOrder.Parameters(1).Value = Linea
-                ListaOrder.Parameters(2).Value = DTGList.Rows(i).Cells(1).Value
-                ListaOrder.Parameters(3).Value = DTGList.Rows(i).Cells(4).Value
-                ListaOrder.Parameters(4).Value = DTGList.Rows(i).Cells(2).Value
+                ListaOrder.Parameters(0).Value = idLastOrder
+                ListaOrder.Parameters(1).Value = DTGList.Rows(i).Cells(1).Value
+                ListaOrder.Parameters(2).Value = Integer.Parse(DTGList.Rows(i).Cells(4).Value)
+                ListaOrder.Parameters(3).Value = Double.Parse(DTGList.Rows(i).Cells(2).Value)
                 ListaOrder.ExecuteNonQuery()
-                Linea = Linea + 1
+
 
 
             Next
             connection.Close()
             MsgBox("Orden Realizada!")
-            NumeroOrden = NumeroOrden + 1
-            Linea = 1
+
 
 
         Catch ex As Exception
