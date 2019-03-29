@@ -149,6 +149,12 @@
       <DependentUpon>FormMenu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormOrderDetails.Designer.vb">
+      <DependentUpon>FormOrderDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormUserInfo.Designer.vb">
       <DependentUpon>FormUserInfo.vb</DependentUpon>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDetails.resx">
+      <DependentUpon>FormOrderDetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUserInfo.resx">
       <DependentUpon>FormUserInfo.vb</DependentUpon>

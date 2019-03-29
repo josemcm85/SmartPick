@@ -102,7 +102,7 @@ Partial Class FormLogin
         Me.BtnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnLogin.ActiveForecolor = System.Drawing.Color.White
         Me.BtnLogin.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.BtnLogin.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnLogin.BackColor = System.Drawing.Color.White
         Me.BtnLogin.BackgroundImage = CType(resources.GetObject("BtnLogin.BackgroundImage"), System.Drawing.Image)
         Me.BtnLogin.ButtonText = "Login"
         Me.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand

@@ -707,6 +707,8 @@ Public Class FormMenu
 
             'Gives description of item selected.
 
+            If (e.RowIndex = -1) Then Return
+
             Dim rowIndexMenu As Integer
             rowIndexMenu = e.RowIndex
 
@@ -733,6 +735,8 @@ Public Class FormMenu
         Else
             'Spanish was selected
             'Gives description of item selected.
+
+            If (e.RowIndex = -1) Then Return
 
             Dim rowIndexMenu As Integer
             rowIndexMenu = e.RowIndex

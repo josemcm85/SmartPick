@@ -49,4 +49,23 @@
         FormCoupons.Show()
 
     End Sub
+
+    Private Sub OrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenesToolStripMenuItem.Click
+
+        FormOrderDetails.Show()
+
+
+    End Sub
+
+    Private Sub CerrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarToolStripMenuItem.Click
+
+        Me.Close()
+
+        FormLogin.Show()
+
+        FormLogin.txtUser.Text = Nothing
+        FormLogin.txtPass.Text = Nothing
+
+
+    End Sub
 End Class
