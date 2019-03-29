@@ -451,6 +451,7 @@ Partial Class FormMenu
         Me.lblleng.Name = "lblleng"
         Me.lblleng.Size = New System.Drawing.Size(0, 13)
         Me.lblleng.TabIndex = 40
+        Me.lblleng.Visible = False
         '
         'BunifuDropdown3
         '

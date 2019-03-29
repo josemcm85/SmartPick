@@ -22,8 +22,8 @@ Partial Class Orden
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orden))
         Me.NoOrden = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -67,32 +67,36 @@ Partial Class Orden
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(123, 13)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Tu numero de orden es: "
+        Me.Label1.Text = "Tu número de orden es: "
         '
         'DTGList
         '
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        Me.DTGList.AllowUserToAddRows = False
+        Me.DTGList.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DTGList.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.DTGList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DTGList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTGList.DoubleBuffered = True
         Me.DTGList.EnableHeadersVisualStyles = False
         Me.DTGList.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.DTGList.HeaderForeColor = System.Drawing.Color.SeaGreen
         Me.DTGList.Location = New System.Drawing.Point(20, 103)
-        Me.DTGList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DTGList.Margin = New System.Windows.Forms.Padding(2)
         Me.DTGList.Name = "DTGList"
+        Me.DTGList.ReadOnly = True
         Me.DTGList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DTGList.RowHeadersVisible = False
         Me.DTGList.RowTemplate.Height = 24
         Me.DTGList.Size = New System.Drawing.Size(319, 295)
         Me.DTGList.TabIndex = 3
@@ -121,7 +125,7 @@ Partial Class Orden
         '
         Me.ComboMesa.FormattingEnabled = True
         Me.ComboMesa.Location = New System.Drawing.Point(368, 129)
-        Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboMesa.Name = "ComboMesa"
         Me.ComboMesa.Size = New System.Drawing.Size(100, 21)
         Me.ComboMesa.TabIndex = 6
@@ -184,7 +188,7 @@ Partial Class Orden
         '
         Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
         Me.textboxCoupon.Location = New System.Drawing.Point(511, 131)
-        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
         Me.textboxCoupon.Name = "textboxCoupon"
         Me.textboxCoupon.Size = New System.Drawing.Size(94, 20)
         Me.textboxCoupon.TabIndex = 10
@@ -202,7 +206,7 @@ Partial Class Orden
         'buttonValidateCpn
         '
         Me.buttonValidateCpn.Location = New System.Drawing.Point(609, 129)
-        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonValidateCpn.Name = "buttonValidateCpn"
         Me.buttonValidateCpn.Size = New System.Drawing.Size(56, 20)
         Me.buttonValidateCpn.TabIndex = 12
@@ -328,7 +332,7 @@ Partial Class Orden
         Me.Controls.Add(Me.DTGList)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.NoOrden)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Orden"
         Me.Text = "Orden"
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).EndInit()
