@@ -23,14 +23,12 @@ Partial Class Orden
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orden))
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DTGList = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.ComboMesa = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.textboxCoupon = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.lblNotice = New System.Windows.Forms.Label()
         Me.lblPriceTotalDiscount = New System.Windows.Forms.Label()
@@ -53,6 +51,7 @@ Partial Class Orden
         Me.Label2 = New System.Windows.Forms.Label()
         Me.buttonValidateCpn = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,19 +62,19 @@ Partial Class Orden
         '
         Me.DTGList.AllowUserToAddRows = False
         Me.DTGList.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.DTGList.BackgroundColor = System.Drawing.Color.White
         Me.DTGList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DTGList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTGList.DoubleBuffered = True
         Me.DTGList.EnableHeadersVisualStyles = False
@@ -126,40 +125,6 @@ Partial Class Orden
         Me.lblTotal.TabIndex = 8
         Me.lblTotal.Text = "Label5"
         '
-        'BunifuFlatButton1
-        '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Ok"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(426, 417)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(128, 32)
-        Me.BunifuFlatButton1.TabIndex = 9
-        Me.BunifuFlatButton1.Text = "Ok"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
         'textboxCoupon
         '
         Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
@@ -189,7 +154,7 @@ Partial Class Orden
         Me.lblPriceTotalDiscount.BackColor = System.Drawing.Color.Transparent
         Me.lblPriceTotalDiscount.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblPriceTotalDiscount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(404, 366)
+        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(404, 363)
         Me.lblPriceTotalDiscount.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPriceTotalDiscount.Name = "lblPriceTotalDiscount"
         Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(14, 19)
@@ -203,7 +168,7 @@ Partial Class Orden
         Me.lblTax.BackColor = System.Drawing.Color.Transparent
         Me.lblTax.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblTax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblTax.Location = New System.Drawing.Point(440, 332)
+        Me.lblTax.Location = New System.Drawing.Point(440, 329)
         Me.lblTax.Name = "lblTax"
         Me.lblTax.Size = New System.Drawing.Size(14, 19)
         Me.lblTax.TabIndex = 16
@@ -216,7 +181,7 @@ Partial Class Orden
         Me.lblSum.BackColor = System.Drawing.Color.Transparent
         Me.lblSum.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblSum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblSum.Location = New System.Drawing.Point(415, 272)
+        Me.lblSum.Location = New System.Drawing.Point(415, 269)
         Me.lblSum.Name = "lblSum"
         Me.lblSum.Size = New System.Drawing.Size(14, 19)
         Me.lblSum.TabIndex = 17
@@ -229,7 +194,7 @@ Partial Class Orden
         Me.lblDiscount.BackColor = System.Drawing.Color.Transparent
         Me.lblDiscount.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblDiscount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblDiscount.Location = New System.Drawing.Point(446, 302)
+        Me.lblDiscount.Location = New System.Drawing.Point(446, 299)
         Me.lblDiscount.Name = "lblDiscount"
         Me.lblDiscount.Size = New System.Drawing.Size(14, 19)
         Me.lblDiscount.TabIndex = 18
@@ -242,7 +207,7 @@ Partial Class Orden
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(346, 302)
+        Me.Label6.Location = New System.Drawing.Point(346, 299)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(101, 19)
         Me.Label6.TabIndex = 22
@@ -255,7 +220,7 @@ Partial Class Orden
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(346, 272)
+        Me.Label7.Location = New System.Drawing.Point(346, 269)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(69, 19)
         Me.Label7.TabIndex = 21
@@ -268,7 +233,7 @@ Partial Class Orden
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(346, 332)
+        Me.Label8.Location = New System.Drawing.Point(346, 329)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(95, 19)
         Me.Label8.TabIndex = 20
@@ -281,7 +246,7 @@ Partial Class Orden
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(347, 366)
+        Me.Label9.Location = New System.Drawing.Point(347, 363)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(59, 19)
@@ -330,7 +295,7 @@ Partial Class Orden
         Me.NoOrden.BackColor = System.Drawing.Color.Transparent
         Me.NoOrden.Font = New System.Drawing.Font("Century Gothic", 11.0!)
         Me.NoOrden.ForeColor = System.Drawing.Color.Black
-        Me.NoOrden.Location = New System.Drawing.Point(141, 2)
+        Me.NoOrden.Location = New System.Drawing.Point(75, 2)
         Me.NoOrden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.NoOrden.Name = "NoOrden"
         Me.NoOrden.Size = New System.Drawing.Size(20, 20)
@@ -356,9 +321,9 @@ Partial Class Orden
         Me.Label10.Location = New System.Drawing.Point(0, 2)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(147, 20)
+        Me.Label10.Size = New System.Drawing.Size(84, 20)
         Me.Label10.TabIndex = 24
-        Me.Label10.Text = "Número de orden: "
+        Me.Label10.Text = "ORDEN #: "
         '
         'Label11
         '
@@ -429,6 +394,24 @@ Partial Class Orden
         Me.Label3.TabIndex = 53
         Me.Label3.Text = "Precio ₡:"
         '
+        'BunifuFlatButton1
+        '
+        Me.BunifuFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.Orange
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuFlatButton1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BunifuFlatButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.Snow
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(392, 416)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(147, 32)
+        Me.BunifuFlatButton1.TabIndex = 54
+        Me.BunifuFlatButton1.Text = "COMPLETAR ORDEN"
+        Me.BunifuFlatButton1.UseVisualStyleBackColor = False
+        '
         'Orden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -436,6 +419,7 @@ Partial Class Orden
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(689, 504)
+        Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.buttonValidateCpn)
         Me.Controls.Add(Me.Label2)
@@ -452,7 +436,6 @@ Partial Class Orden
         Me.Controls.Add(Me.lblPriceTotalDiscount)
         Me.Controls.Add(Me.lblNotice)
         Me.Controls.Add(Me.textboxCoupon)
-        Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboMesa)
@@ -475,7 +458,6 @@ Partial Class Orden
     Friend WithEvents ComboMesa As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents lblTotal As Label
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents textboxCoupon As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents lblNotice As Label
     Friend WithEvents lblPriceTotalDiscount As Label
@@ -498,4 +480,5 @@ Partial Class Orden
     Friend WithEvents Label11 As Label
     Friend WithEvents buttonValidateCpn As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents BunifuFlatButton1 As Button
 End Class
