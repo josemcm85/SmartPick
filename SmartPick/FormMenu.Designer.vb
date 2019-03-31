@@ -469,8 +469,8 @@ Partial Class FormMenu
         Me.BunifuDropdown3.Location = New System.Drawing.Point(823, 629)
         Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuDropdown3.Name = "BunifuDropdown3"
-        Me.BunifuDropdown3.NomalColor = System.Drawing.Color.LimeGreen
-        Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.LimeGreen
+        Me.BunifuDropdown3.NomalColor = System.Drawing.Color.SeaGreen
+        Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.SeaGreen
         Me.BunifuDropdown3.selectedIndex = 0
         Me.BunifuDropdown3.Size = New System.Drawing.Size(61, 30)
         Me.BunifuDropdown3.TabIndex = 44
@@ -478,11 +478,11 @@ Partial Class FormMenu
         'ButtonDelete
         '
         Me.ButtonDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ButtonDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.ButtonDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ButtonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ButtonDelete.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.ButtonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed
-        Me.ButtonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed
+        Me.ButtonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato
+        Me.ButtonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato
         Me.ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDelete.ForeColor = System.Drawing.Color.Snow
@@ -515,12 +515,12 @@ Partial Class FormMenu
         'Button2
         '
         Me.Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.Button2.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_delete_databasesmall_48px_5
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Snow
@@ -533,12 +533,12 @@ Partial Class FormMenu
         'Button1
         '
         Me.Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Button1.BackColor = System.Drawing.Color.LimeGreen
+        Me.Button1.BackColor = System.Drawing.Color.SeaGreen
         Me.Button1.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_plus_64px
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 45.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
@@ -557,8 +557,8 @@ Partial Class FormMenu
         Me.Button3.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_add_rule_962px
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Snow
