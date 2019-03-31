@@ -342,6 +342,7 @@
   <ItemGroup>
     <Content Include="14650771_10157489166520161_9089602778382653312_n.png" />
     <Content Include="Bunifu_UI_v1.5.3.dll" />
+    <Content Include="fondo.png" />
     <Content Include="gradient-01-01.png" />
     <Content Include="gradient-01.png" />
     <Content Include="gradient.png" />
@@ -372,6 +373,7 @@
     <Content Include="minusSign.png" />
     <Content Include="plussign 3.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\fondo.png" />
     <None Include="Resources\icons8_percentage_26px_5.png" />
     <None Include="Resources\icons8_delete_databasesmall_48px_5.png" />
     <None Include="Resources\icons8_delete_database_48px_5.png" />
