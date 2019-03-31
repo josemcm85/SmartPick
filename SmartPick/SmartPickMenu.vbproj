@@ -348,6 +348,8 @@
     <Content Include="gradient.png" />
     <Content Include="gradiente-01.png" />
     <Content Include="icons8_-1_50px.png" />
+    <Content Include="icons8_add_rule_962px.png" />
+    <Content Include="icons8_add_rule_96px.png" />
     <Content Include="icons8_caloric_energy_100px_3.png" />
     <Content Include="icons8_caloric_energy_25px_2.png" />
     <Content Include="icons8_caloric_energy_50px_1.png" />
@@ -371,8 +373,12 @@
     <Content Include="MANDALAS2.jpg" />
     <Content Include="MetroFramework.dll" />
     <Content Include="minusSign.png" />
+    <Content Include="order_48.png" />
     <Content Include="plussign 3.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\icons8_add_rule_962px.png" />
+    <None Include="Resources\icons8_add_rule_96px.png" />
+    <None Include="Resources\order_48.png" />
     <None Include="Resources\fondo.png" />
     <None Include="Resources\icons8_percentage_26px_5.png" />
     <None Include="Resources\icons8_delete_databasesmall_48px_5.png" />

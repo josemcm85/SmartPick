@@ -1041,7 +1041,7 @@ Public Class FormMenu
         FormTable.Show()
     End Sub
 
-    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs)
 
         Try
             Dim sourceGrid As DataGridView = Me.DataGridViewOrder
@@ -1090,6 +1090,52 @@ Public Class FormMenu
     End Sub
 
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Try
+            Dim sourceGrid As DataGridView = Me.DataGridViewOrder
+            Dim targetGrid As DataGridView = Orden.DTGList
+
+
+            Dim targetRows = New List(Of DataGridViewRow)
+
+            For Each sourceRow As DataGridViewRow In sourceGrid.Rows
+
+                If (Not sourceRow.IsNewRow) Then
+
+                    Dim targetRow = CType(sourceRow.Clone(), DataGridViewRow)
+
+
+
+                    For Each cell As DataGridViewCell In sourceRow.Cells
+                        targetRow.Cells(cell.ColumnIndex).Value = cell.Value
+                    Next
+
+                    targetRows.Add(targetRow)
+
+                End If
+
+            Next
+
+
+
+            targetGrid.Columns.Clear()
+
+            For Each column As DataGridViewColumn In sourceGrid.Columns
+                targetGrid.Columns.Add(CType(column.Clone(), DataGridViewColumn))
+            Next
+
+
+
+            targetGrid.Rows.AddRange(targetRows.ToArray())
+            Orden.Show()
+
+
+        Catch ex As Exception
+            MsgBox("Verifica que seleccionaras contenidos!")
+        End Try
 
     End Sub
 End Class
