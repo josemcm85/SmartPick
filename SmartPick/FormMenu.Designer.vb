@@ -82,10 +82,13 @@ Partial Class FormMenu
         '
         'ButtonToShare
         '
-        Me.ButtonToShare.BackColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.ButtonToShare.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ButtonToShare.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.ButtonToShare.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ButtonToShare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.ButtonToShare.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.ButtonToShare.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonToShare.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonToShare.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonToShare.ForeColor = System.Drawing.Color.White
         Me.ButtonToShare.Location = New System.Drawing.Point(635, 660)
         Me.ButtonToShare.Name = "ButtonToShare"
         Me.ButtonToShare.Size = New System.Drawing.Size(146, 50)
@@ -95,10 +98,13 @@ Partial Class FormMenu
         '
         'ButtonDessert
         '
-        Me.ButtonDessert.BackColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(162, Byte), Integer))
-        Me.ButtonDessert.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ButtonDessert.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.ButtonDessert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ButtonDessert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ButtonDessert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ButtonDessert.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDessert.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDessert.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDessert.ForeColor = System.Drawing.Color.White
         Me.ButtonDessert.Location = New System.Drawing.Point(486, 660)
         Me.ButtonDessert.Name = "ButtonDessert"
         Me.ButtonDessert.Size = New System.Drawing.Size(143, 50)
@@ -108,10 +114,13 @@ Partial Class FormMenu
         '
         'ButtonDrinks
         '
-        Me.ButtonDrinks.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.ButtonDrinks.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ButtonDrinks.BackColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ButtonDrinks.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ButtonDrinks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ButtonDrinks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.ButtonDrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDrinks.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDrinks.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDrinks.ForeColor = System.Drawing.Color.White
         Me.ButtonDrinks.Location = New System.Drawing.Point(336, 660)
         Me.ButtonDrinks.Name = "ButtonDrinks"
         Me.ButtonDrinks.Size = New System.Drawing.Size(143, 50)
@@ -121,10 +130,13 @@ Partial Class FormMenu
         '
         'ButtonMainDish
         '
-        Me.ButtonMainDish.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(17, Byte), Integer))
-        Me.ButtonMainDish.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ButtonMainDish.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.ButtonMainDish.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ButtonMainDish.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.ButtonMainDish.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ButtonMainDish.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonMainDish.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMainDish.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMainDish.ForeColor = System.Drawing.Color.White
         Me.ButtonMainDish.Location = New System.Drawing.Point(187, 660)
         Me.ButtonMainDish.Name = "ButtonMainDish"
         Me.ButtonMainDish.Size = New System.Drawing.Size(143, 50)
@@ -134,10 +146,13 @@ Partial Class FormMenu
         '
         'ButtonAppetizer
         '
-        Me.ButtonAppetizer.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(209, Byte), Integer))
-        Me.ButtonAppetizer.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ButtonAppetizer.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.ButtonAppetizer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ButtonAppetizer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.ButtonAppetizer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.ButtonAppetizer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonAppetizer.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonAppetizer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonAppetizer.ForeColor = System.Drawing.Color.White
         Me.ButtonAppetizer.Location = New System.Drawing.Point(36, 660)
         Me.ButtonAppetizer.Name = "ButtonAppetizer"
         Me.ButtonAppetizer.Size = New System.Drawing.Size(143, 50)
@@ -481,8 +496,8 @@ Partial Class FormMenu
         Me.ButtonDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ButtonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ButtonDelete.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.ButtonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato
-        Me.ButtonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato
+        Me.ButtonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ButtonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDelete.ForeColor = System.Drawing.Color.Snow
@@ -519,8 +534,8 @@ Partial Class FormMenu
         Me.Button2.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_delete_databasesmall_48px_5
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Snow
@@ -537,8 +552,8 @@ Partial Class FormMenu
         Me.Button1.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_plus_64px
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 45.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
@@ -557,8 +572,8 @@ Partial Class FormMenu
         Me.Button3.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_add_rule_962px
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(22, Byte), Integer))
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(22, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Snow

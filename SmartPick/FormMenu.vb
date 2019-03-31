@@ -140,11 +140,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information.
 
@@ -172,11 +172,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -269,11 +269,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.FromArgb(247, 198, 17)
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.FromArgb(247, 198, 17)
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -298,11 +298,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.FromArgb(247, 198, 17)
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.FromArgb(247, 198, 17)
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -398,11 +398,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.FromArgb(24, 68, 219)
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.FromArgb(24, 68, 219)
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -428,11 +428,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.FromArgb(24, 68, 219)
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.FromArgb(24, 68, 219)
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -527,11 +527,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.FromArgb(207, 27, 162)
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.FromArgb(207, 27, 162)
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -554,11 +554,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.FromArgb(207, 27, 162)
-            ButtonToShare.BackColor = Color.White
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.FromArgb(207, 27, 162)
+            'ButtonToShare.BackColor = Color.White
 
             'Hides Column with Picture information
 
@@ -654,11 +654,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.FromArgb(153, 255, 78)
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.FromArgb(153, 255, 78)
 
             'Hides Column with Picture information
 
@@ -683,11 +683,11 @@ Public Class FormMenu
 
             DataGridViewMenu.DataSource = menuTable
 
-            ButtonAppetizer.BackColor = Color.White
-            ButtonMainDish.BackColor = Color.White
-            ButtonDrinks.BackColor = Color.White
-            ButtonDessert.BackColor = Color.White
-            ButtonToShare.BackColor = Color.FromArgb(153, 255, 78)
+            'ButtonAppetizer.BackColor = Color.White
+            'ButtonMainDish.BackColor = Color.White
+            'ButtonDrinks.BackColor = Color.White
+            'ButtonDessert.BackColor = Color.White
+            'ButtonToShare.BackColor = Color.FromArgb(153, 255, 78)
 
             'Hides Column with Picture information
 
