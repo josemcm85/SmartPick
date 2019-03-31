@@ -34,10 +34,12 @@ Partial Class FormLanguage
         Me.ButtonEngMenu = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.ButtonSpaMenu = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -47,16 +49,18 @@ Partial Class FormLanguage
         Me.Panel2.Controls.Add(Me.PictureBoxMinimize)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(857, 31)
+        Me.Panel2.Size = New System.Drawing.Size(1143, 38)
         Me.Panel2.TabIndex = 22
         '
         'PictureBoxClose
         '
         Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(821, 3)
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1095, 4)
+        Me.PictureBoxClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxClose.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxClose.TabIndex = 1
         Me.PictureBoxClose.TabStop = False
@@ -64,9 +68,10 @@ Partial Class FormLanguage
         'PictureBoxMinimize
         '
         Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(791, 3)
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(1055, 4)
+        Me.PictureBoxMinimize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxMinimize.TabIndex = 0
         Me.PictureBoxMinimize.TabStop = False
@@ -80,9 +85,10 @@ Partial Class FormLanguage
         '
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(514, 57)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(685, 70)
+        Me.BunifuCustomLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(243, 42)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(304, 54)
         Me.BunifuCustomLabel1.TabIndex = 26
         Me.BunifuCustomLabel1.Text = "¡Bienvenidos!"
         '
@@ -90,9 +96,10 @@ Partial Class FormLanguage
         '
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(451, 230)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(601, 283)
+        Me.BunifuCustomLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(351, 25)
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(436, 31)
         Me.BunifuCustomLabel2.TabIndex = 27
         Me.BunifuCustomLabel2.Text = "Por favor elegir el idioma del Menú."
         '
@@ -100,9 +107,10 @@ Partial Class FormLanguage
         '
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(418, 268)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(557, 330)
+        Me.BunifuCustomLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(411, 25)
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(512, 31)
         Me.BunifuCustomLabel3.TabIndex = 28
         Me.BunifuCustomLabel3.Text = "Please choose the language of the Menu."
         '
@@ -124,10 +132,10 @@ Partial Class FormLanguage
         Me.ButtonEngMenu.IdleFillColor = System.Drawing.Color.White
         Me.ButtonEngMenu.IdleForecolor = System.Drawing.Color.SeaGreen
         Me.ButtonEngMenu.IdleLineColor = System.Drawing.Color.SeaGreen
-        Me.ButtonEngMenu.Location = New System.Drawing.Point(669, 361)
-        Me.ButtonEngMenu.Margin = New System.Windows.Forms.Padding(5)
+        Me.ButtonEngMenu.Location = New System.Drawing.Point(892, 444)
+        Me.ButtonEngMenu.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ButtonEngMenu.Name = "ButtonEngMenu"
-        Me.ButtonEngMenu.Size = New System.Drawing.Size(146, 46)
+        Me.ButtonEngMenu.Size = New System.Drawing.Size(195, 57)
         Me.ButtonEngMenu.TabIndex = 25
         Me.ButtonEngMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -149,10 +157,10 @@ Partial Class FormLanguage
         Me.ButtonSpaMenu.IdleFillColor = System.Drawing.Color.White
         Me.ButtonSpaMenu.IdleForecolor = System.Drawing.Color.SeaGreen
         Me.ButtonSpaMenu.IdleLineColor = System.Drawing.Color.SeaGreen
-        Me.ButtonSpaMenu.Location = New System.Drawing.Point(465, 361)
-        Me.ButtonSpaMenu.Margin = New System.Windows.Forms.Padding(5)
+        Me.ButtonSpaMenu.Location = New System.Drawing.Point(620, 444)
+        Me.ButtonSpaMenu.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ButtonSpaMenu.Name = "ButtonSpaMenu"
-        Me.ButtonSpaMenu.Size = New System.Drawing.Size(146, 46)
+        Me.ButtonSpaMenu.Size = New System.Drawing.Size(195, 57)
         Me.ButtonSpaMenu.TabIndex = 24
         Me.ButtonSpaMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -160,20 +168,35 @@ Partial Class FormLanguage
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 38)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(412, 712)
+        Me.PictureBox1.Size = New System.Drawing.Size(549, 876)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 23
         Me.PictureBox1.TabStop = False
         '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(1064, 843)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 29
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
         'FormLanguage
         '
         Me.AllowDrop = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(857, 743)
+        Me.ClientSize = New System.Drawing.Size(1143, 914)
+        Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.BunifuCustomLabel3)
         Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.BunifuCustomLabel1)
@@ -182,6 +205,7 @@ Partial Class FormLanguage
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormLanguage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -189,6 +213,7 @@ Partial Class FormLanguage
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -204,4 +229,5 @@ Partial Class FormLanguage
     Friend WithEvents ButtonEngMenu As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents ButtonSpaMenu As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
 End Class

@@ -9,7 +9,7 @@ Public Class Orden
 
 
     Private Sub Orden_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        NoOrden.Text = NumeroOrden
+
         Me.lblTotal.Text = FormMenu.LblTotal.Text
 
         'lblTotal.Text = (From row As DataGridViewRow In DTGList.Rows Where row.Cells(1).FormattedValue.ToString() <> String.Empty Select Convert.ToInt32(row.Cells(1).FormattedValue)).Sum().ToString()
@@ -51,54 +51,65 @@ Public Class Orden
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         Dim Linea As Integer = 1
-        Try
-            connection = New SqlConnection(connectionString)
-            connection.Open()
-            Dim CreateOrder As New SqlCommand("Exec addOrden '" & ComboMesa.SelectedItem.ToString & "','" & lblTotal.Text & "';", connection)
-            Dim dataAdapter As New SqlDataAdapter(CreateOrder)
-            CreateOrder.ExecuteNonQuery()
 
-            Dim LastOrderId As New SqlCommand("SELECT IDENT_CURRENT('ListaOrdenes')", connection)
+        If ComboMesa.Text = "" Then
 
-            LastOrderId.ExecuteNonQuery()
-            Dim reader As SqlDataReader = LastOrderId.ExecuteReader()
+            MsgBox("No se te olvide llenar la mesa en que estas!")
 
-            reader.Read()
-            Dim idLastOrder As Integer
-            idLastOrder = Integer.Parse(reader.GetDecimal(0))
-
-            reader.Close()
-
-            Dim ListaOrder As New SqlCommand("Exec listaOrden @id,@Nombre,@Cant,@Precio ", connection)
-            ListaOrder.Parameters.Add("@id", SqlDbType.Int)
-            ListaOrder.Parameters.Add("@Nombre", SqlDbType.VarChar)
-            ListaOrder.Parameters.Add("@Cant", SqlDbType.Int)
-            ListaOrder.Parameters.Add("@Precio", SqlDbType.Float)
-
-            ListaOrder.Connection = connection
+        Else
 
 
+            Try
+                connection = New SqlConnection(connectionString)
+                connection.Open()
+                Dim CreateOrder As New SqlCommand("Exec addOrden '" & ComboMesa.SelectedItem.ToString & "','" & lblTotal.Text & "';", connection)
+                Dim dataAdapter As New SqlDataAdapter(CreateOrder)
+                CreateOrder.ExecuteNonQuery()
 
-            For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
-                ListaOrder.Parameters(0).Value = idLastOrder
-                ListaOrder.Parameters(1).Value = DTGList.Rows(i).Cells(1).Value
-                ListaOrder.Parameters(2).Value = Integer.Parse(DTGList.Rows(i).Cells(4).Value)
-                ListaOrder.Parameters(3).Value = Double.Parse(DTGList.Rows(i).Cells(2).Value)
-                ListaOrder.ExecuteNonQuery()
+                Dim LastOrderId As New SqlCommand("SELECT IDENT_CURRENT('ListaOrdenes')", connection)
 
+                LastOrderId.ExecuteNonQuery()
+                Dim reader As SqlDataReader = LastOrderId.ExecuteReader()
 
+                reader.Read()
+                Dim idLastOrder As Integer
+                idLastOrder = Integer.Parse(reader.GetDecimal(0))
 
-            Next
-            connection.Close()
-            MsgBox("Orden Realizada!")
+                reader.Close()
+
+                Dim ListaOrder As New SqlCommand("Exec listaOrden @id,@Nombre,@Cant,@Precio ", connection)
+                ListaOrder.Parameters.Add("@id", SqlDbType.Int)
+                ListaOrder.Parameters.Add("@Nombre", SqlDbType.VarChar)
+                ListaOrder.Parameters.Add("@Cant", SqlDbType.Int)
+                ListaOrder.Parameters.Add("@Precio", SqlDbType.Float)
+
+                ListaOrder.Connection = connection
 
 
 
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            NumeroOrden = NumeroOrden
+                For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
+                    ListaOrder.Parameters(0).Value = idLastOrder
+                    ListaOrder.Parameters(1).Value = DTGList.Rows(i).Cells(1).Value
+                    ListaOrder.Parameters(2).Value = Integer.Parse(DTGList.Rows(i).Cells(4).Value)
+                    ListaOrder.Parameters(3).Value = Double.Parse(DTGList.Rows(i).Cells(2).Value)
+                    ListaOrder.ExecuteNonQuery()
 
-        End Try
+
+
+                Next
+                connection.Close()
+                MsgBox("Orden Realizada!, Tu numero de orden es el: " & idLastOrder)
+
+
+
+            Catch ex As Exception
+                MsgBox(ex.Message)
+                NumeroOrden = NumeroOrden
+
+            End Try
+
+        End If
+
     End Sub
 
     Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
@@ -180,7 +191,16 @@ Public Class Orden
 
     End Sub
 
-    Private Sub NoOrden_Click(sender As Object, e As EventArgs) Handles NoOrden.Click
+    Private Sub NoOrden_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ComboMesa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboMesa.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+        CallMesero.Show()
 
     End Sub
 End Class

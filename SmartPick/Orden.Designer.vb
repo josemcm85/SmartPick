@@ -26,8 +26,6 @@ Partial Class Orden
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orden))
-        Me.NoOrden = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.DTGList = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -52,31 +50,13 @@ Partial Class Orden
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
         Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'NoOrden
-        '
-        Me.NoOrden.AutoSize = True
-        Me.NoOrden.Location = New System.Drawing.Point(31, 106)
-        Me.NoOrden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.NoOrden.Name = "NoOrden"
-        Me.NoOrden.Size = New System.Drawing.Size(104, 13)
-        Me.NoOrden.TabIndex = 0
-        Me.NoOrden.Text = "BunifuCustomLabel1"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 83)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Tu número de orden es: "
         '
         'DTGList
         '
@@ -100,62 +80,58 @@ Partial Class Orden
         Me.DTGList.EnableHeadersVisualStyles = False
         Me.DTGList.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.DTGList.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.DTGList.Location = New System.Drawing.Point(33, 156)
-        Me.DTGList.Margin = New System.Windows.Forms.Padding(2)
+        Me.DTGList.Location = New System.Drawing.Point(44, 192)
+        Me.DTGList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DTGList.Name = "DTGList"
         Me.DTGList.ReadOnly = True
         Me.DTGList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DTGList.RowHeadersVisible = False
         Me.DTGList.RowTemplate.Height = 24
-        Me.DTGList.Size = New System.Drawing.Size(319, 270)
+        Me.DTGList.Size = New System.Drawing.Size(425, 332)
         Me.DTGList.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(33, 137)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(44, 169)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(71, 17)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Desglose:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(378, 156)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(504, 192)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(103, 13)
+        Me.Label3.Size = New System.Drawing.Size(135, 17)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Selecciona tu mesa:"
         '
         'ComboMesa
         '
         Me.ComboMesa.FormattingEnabled = True
-        Me.ComboMesa.Location = New System.Drawing.Point(381, 182)
-        Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2)
+        Me.ComboMesa.Location = New System.Drawing.Point(508, 224)
+        Me.ComboMesa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboMesa.Name = "ComboMesa"
-        Me.ComboMesa.Size = New System.Drawing.Size(100, 21)
+        Me.ComboMesa.Size = New System.Drawing.Size(132, 24)
         Me.ComboMesa.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(378, 260)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(504, 320)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(165, 13)
+        Me.Label4.Size = New System.Drawing.Size(220, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "El precio total es de (incluye IVA):"
         '
         'lblTotal
         '
         Me.lblTotal.AutoSize = True
-        Me.lblTotal.Location = New System.Drawing.Point(378, 283)
-        Me.lblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTotal.Location = New System.Drawing.Point(504, 348)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(39, 13)
+        Me.lblTotal.Size = New System.Drawing.Size(51, 17)
         Me.lblTotal.TabIndex = 8
         Me.lblTotal.Text = "Label5"
         '
@@ -180,13 +156,14 @@ Partial Class Orden
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(439, 407)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(585, 501)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
         Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(128, 41)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(183, 50)
         Me.BunifuFlatButton1.TabIndex = 9
         Me.BunifuFlatButton1.Text = "Ok"
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -196,28 +173,27 @@ Partial Class Orden
         'textboxCoupon
         '
         Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
-        Me.textboxCoupon.Location = New System.Drawing.Point(524, 184)
-        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
+        Me.textboxCoupon.Location = New System.Drawing.Point(699, 226)
+        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.textboxCoupon.Name = "textboxCoupon"
-        Me.textboxCoupon.Size = New System.Drawing.Size(94, 20)
+        Me.textboxCoupon.Size = New System.Drawing.Size(124, 22)
         Me.textboxCoupon.TabIndex = 10
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(521, 161)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(695, 198)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(90, 13)
+        Me.Label5.Size = New System.Drawing.Size(118, 17)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Ingresa tu cupón:"
         '
         'buttonValidateCpn
         '
-        Me.buttonValidateCpn.Location = New System.Drawing.Point(622, 182)
-        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2)
+        Me.buttonValidateCpn.Location = New System.Drawing.Point(829, 224)
+        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.buttonValidateCpn.Name = "buttonValidateCpn"
-        Me.buttonValidateCpn.Size = New System.Drawing.Size(56, 20)
+        Me.buttonValidateCpn.Size = New System.Drawing.Size(75, 25)
         Me.buttonValidateCpn.TabIndex = 12
         Me.buttonValidateCpn.Text = "Validar"
         Me.buttonValidateCpn.UseVisualStyleBackColor = True
@@ -225,10 +201,9 @@ Partial Class Orden
         'lblNotice
         '
         Me.lblNotice.AutoSize = True
-        Me.lblNotice.Location = New System.Drawing.Point(378, 306)
-        Me.lblNotice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNotice.Location = New System.Drawing.Point(504, 377)
         Me.lblNotice.Name = "lblNotice"
-        Me.lblNotice.Size = New System.Drawing.Size(105, 13)
+        Me.lblNotice.Size = New System.Drawing.Size(137, 17)
         Me.lblNotice.TabIndex = 14
         Me.lblNotice.Text = "Descuento aplicado:"
         Me.lblNotice.Visible = False
@@ -236,10 +211,9 @@ Partial Class Orden
         'lblPriceTotalDiscount
         '
         Me.lblPriceTotalDiscount.AutoSize = True
-        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(420, 378)
-        Me.lblPriceTotalDiscount.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(560, 465)
         Me.lblPriceTotalDiscount.Name = "lblPriceTotalDiscount"
-        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(10, 13)
+        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(13, 17)
         Me.lblPriceTotalDiscount.TabIndex = 15
         Me.lblPriceTotalDiscount.Text = "-"
         Me.lblPriceTotalDiscount.Visible = False
@@ -247,9 +221,10 @@ Partial Class Orden
         'lblTax
         '
         Me.lblTax.AutoSize = True
-        Me.lblTax.Location = New System.Drawing.Point(446, 359)
+        Me.lblTax.Location = New System.Drawing.Point(595, 442)
+        Me.lblTax.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTax.Name = "lblTax"
-        Me.lblTax.Size = New System.Drawing.Size(10, 13)
+        Me.lblTax.Size = New System.Drawing.Size(13, 17)
         Me.lblTax.TabIndex = 16
         Me.lblTax.Text = "-"
         Me.lblTax.Visible = False
@@ -257,9 +232,10 @@ Partial Class Orden
         'lblSum
         '
         Me.lblSum.AutoSize = True
-        Me.lblSum.Location = New System.Drawing.Point(427, 325)
+        Me.lblSum.Location = New System.Drawing.Point(569, 400)
+        Me.lblSum.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSum.Name = "lblSum"
-        Me.lblSum.Size = New System.Drawing.Size(10, 13)
+        Me.lblSum.Size = New System.Drawing.Size(13, 17)
         Me.lblSum.TabIndex = 17
         Me.lblSum.Text = "-"
         Me.lblSum.Visible = False
@@ -267,9 +243,10 @@ Partial Class Orden
         'lblDiscount
         '
         Me.lblDiscount.AutoSize = True
-        Me.lblDiscount.Location = New System.Drawing.Point(450, 343)
+        Me.lblDiscount.Location = New System.Drawing.Point(600, 422)
+        Me.lblDiscount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDiscount.Name = "lblDiscount"
-        Me.lblDiscount.Size = New System.Drawing.Size(10, 13)
+        Me.lblDiscount.Size = New System.Drawing.Size(13, 17)
         Me.lblDiscount.TabIndex = 18
         Me.lblDiscount.Text = "-"
         Me.lblDiscount.Visible = False
@@ -277,9 +254,10 @@ Partial Class Orden
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(378, 343)
+        Me.Label6.Location = New System.Drawing.Point(504, 422)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(73, 13)
+        Me.Label6.Size = New System.Drawing.Size(94, 17)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "Descuento ₡:"
         Me.Label6.Visible = False
@@ -287,9 +265,10 @@ Partial Class Orden
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(378, 325)
+        Me.Label7.Location = New System.Drawing.Point(504, 400)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 13)
+        Me.Label7.Size = New System.Drawing.Size(66, 17)
         Me.Label7.TabIndex = 21
         Me.Label7.Text = "Precio ₡:"
         Me.Label7.Visible = False
@@ -297,9 +276,10 @@ Partial Class Orden
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(378, 359)
+        Me.Label8.Location = New System.Drawing.Point(504, 442)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 13)
+        Me.Label8.Size = New System.Drawing.Size(90, 17)
         Me.Label8.TabIndex = 20
         Me.Label8.Text = "Impuestos ₡:"
         Me.Label8.Visible = False
@@ -307,10 +287,9 @@ Partial Class Orden
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(378, 378)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(504, 465)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(45, 13)
+        Me.Label9.Size = New System.Drawing.Size(58, 17)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Total ₡:"
         Me.Label9.Visible = False
@@ -334,16 +313,18 @@ Partial Class Orden
         Me.Panel2.Controls.Add(Me.PictureBoxMinimize)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(709, 21)
+        Me.Panel2.Size = New System.Drawing.Size(969, 26)
         Me.Panel2.TabIndex = 23
         '
         'PictureBoxClose
         '
         Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(1026, 3)
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1368, 4)
+        Me.PictureBoxClose.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxClose.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxClose.TabIndex = 1
         Me.PictureBoxClose.TabStop = False
@@ -351,20 +332,35 @@ Partial Class Orden
         'PictureBoxMinimize
         '
         Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(996, 3)
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(1328, 4)
+        Me.PictureBoxMinimize.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxMinimize.TabIndex = 0
         Me.PictureBoxMinimize.TabStop = False
         '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(853, 501)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 24
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
         'Orden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(709, 522)
+        Me.ClientSize = New System.Drawing.Size(969, 642)
+        Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
@@ -385,23 +381,19 @@ Partial Class Orden
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DTGList)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.NoOrden)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Orden"
         Me.Text = "Orden"
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents NoOrden As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents Label1 As Label
     Friend WithEvents DTGList As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -426,4 +418,5 @@ Partial Class Orden
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBoxClose As PictureBox
     Friend WithEvents PictureBoxMinimize As PictureBox
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
 End Class

@@ -68,6 +68,7 @@ Partial Class FormMenu
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +79,7 @@ Partial Class FormMenu
         CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonToShare
@@ -89,9 +91,10 @@ Partial Class FormMenu
         Me.ButtonToShare.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonToShare.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonToShare.ForeColor = System.Drawing.Color.White
-        Me.ButtonToShare.Location = New System.Drawing.Point(635, 660)
+        Me.ButtonToShare.Location = New System.Drawing.Point(847, 812)
+        Me.ButtonToShare.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonToShare.Name = "ButtonToShare"
-        Me.ButtonToShare.Size = New System.Drawing.Size(146, 50)
+        Me.ButtonToShare.Size = New System.Drawing.Size(195, 62)
         Me.ButtonToShare.TabIndex = 4
         Me.ButtonToShare.Text = "Para Compartir"
         Me.ButtonToShare.UseVisualStyleBackColor = False
@@ -105,9 +108,10 @@ Partial Class FormMenu
         Me.ButtonDessert.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDessert.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDessert.ForeColor = System.Drawing.Color.White
-        Me.ButtonDessert.Location = New System.Drawing.Point(486, 660)
+        Me.ButtonDessert.Location = New System.Drawing.Point(648, 812)
+        Me.ButtonDessert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonDessert.Name = "ButtonDessert"
-        Me.ButtonDessert.Size = New System.Drawing.Size(143, 50)
+        Me.ButtonDessert.Size = New System.Drawing.Size(191, 62)
         Me.ButtonDessert.TabIndex = 3
         Me.ButtonDessert.Text = "Postre"
         Me.ButtonDessert.UseVisualStyleBackColor = False
@@ -121,9 +125,10 @@ Partial Class FormMenu
         Me.ButtonDrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDrinks.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDrinks.ForeColor = System.Drawing.Color.White
-        Me.ButtonDrinks.Location = New System.Drawing.Point(336, 660)
+        Me.ButtonDrinks.Location = New System.Drawing.Point(448, 812)
+        Me.ButtonDrinks.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonDrinks.Name = "ButtonDrinks"
-        Me.ButtonDrinks.Size = New System.Drawing.Size(143, 50)
+        Me.ButtonDrinks.Size = New System.Drawing.Size(191, 62)
         Me.ButtonDrinks.TabIndex = 2
         Me.ButtonDrinks.Text = "Bebidas"
         Me.ButtonDrinks.UseVisualStyleBackColor = False
@@ -137,9 +142,10 @@ Partial Class FormMenu
         Me.ButtonMainDish.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonMainDish.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonMainDish.ForeColor = System.Drawing.Color.White
-        Me.ButtonMainDish.Location = New System.Drawing.Point(187, 660)
+        Me.ButtonMainDish.Location = New System.Drawing.Point(249, 812)
+        Me.ButtonMainDish.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonMainDish.Name = "ButtonMainDish"
-        Me.ButtonMainDish.Size = New System.Drawing.Size(143, 50)
+        Me.ButtonMainDish.Size = New System.Drawing.Size(191, 62)
         Me.ButtonMainDish.TabIndex = 1
         Me.ButtonMainDish.Text = "Plato Principal"
         Me.ButtonMainDish.UseVisualStyleBackColor = False
@@ -153,9 +159,10 @@ Partial Class FormMenu
         Me.ButtonAppetizer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAppetizer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAppetizer.ForeColor = System.Drawing.Color.White
-        Me.ButtonAppetizer.Location = New System.Drawing.Point(36, 660)
+        Me.ButtonAppetizer.Location = New System.Drawing.Point(48, 812)
+        Me.ButtonAppetizer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonAppetizer.Name = "ButtonAppetizer"
-        Me.ButtonAppetizer.Size = New System.Drawing.Size(143, 50)
+        Me.ButtonAppetizer.Size = New System.Drawing.Size(191, 62)
         Me.ButtonAppetizer.TabIndex = 0
         Me.ButtonAppetizer.Text = "Entrada"
         Me.ButtonAppetizer.UseVisualStyleBackColor = False
@@ -167,16 +174,18 @@ Partial Class FormMenu
         Me.Panel2.Controls.Add(Me.PictureBoxMinimize)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1090, 31)
+        Me.Panel2.Size = New System.Drawing.Size(1453, 38)
         Me.Panel2.TabIndex = 21
         '
         'PictureBoxClose
         '
         Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(1026, 3)
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1368, 4)
+        Me.PictureBoxClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxClose.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxClose.TabIndex = 1
         Me.PictureBoxClose.TabStop = False
@@ -184,9 +193,10 @@ Partial Class FormMenu
         'PictureBoxMinimize
         '
         Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(996, 3)
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(1328, 4)
+        Me.PictureBoxMinimize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxMinimize.TabIndex = 0
         Me.PictureBoxMinimize.TabStop = False
@@ -194,9 +204,10 @@ Partial Class FormMenu
         'PanelMenu
         '
         Me.PanelMenu.Controls.Add(Me.DataGridViewMenu)
-        Me.PanelMenu.Location = New System.Drawing.Point(36, 156)
+        Me.PanelMenu.Location = New System.Drawing.Point(48, 192)
+        Me.PanelMenu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(412, 494)
+        Me.PanelMenu.Size = New System.Drawing.Size(549, 608)
         Me.PanelMenu.TabIndex = 22
         '
         'DataGridViewMenu
@@ -228,6 +239,7 @@ Partial Class FormMenu
         Me.DataGridViewMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridViewMenu.GridColor = System.Drawing.Color.White
         Me.DataGridViewMenu.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridViewMenu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridViewMenu.MultiSelect = False
         Me.DataGridViewMenu.Name = "DataGridViewMenu"
         Me.DataGridViewMenu.ReadOnly = True
@@ -235,22 +247,23 @@ Partial Class FormMenu
         Me.DataGridViewMenu.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.DataGridViewMenu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewMenu.ShowRowErrors = False
-        Me.DataGridViewMenu.Size = New System.Drawing.Size(412, 494)
+        Me.DataGridViewMenu.Size = New System.Drawing.Size(549, 608)
         Me.DataGridViewMenu.TabIndex = 0
         '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.DataGridViewDescription, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBoxItem, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(454, 156)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(605, 192)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.00733!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.99267!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(327, 494)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(436, 608)
         Me.TableLayoutPanel1.TabIndex = 23
         '
         'DataGridViewDescription
@@ -269,7 +282,8 @@ Partial Class FormMenu
         Me.DataGridViewDescription.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewDescription.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridViewDescription.GridColor = System.Drawing.Color.White
-        Me.DataGridViewDescription.Location = New System.Drawing.Point(3, 378)
+        Me.DataGridViewDescription.Location = New System.Drawing.Point(4, 466)
+        Me.DataGridViewDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridViewDescription.Name = "DataGridViewDescription"
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
@@ -280,16 +294,17 @@ Partial Class FormMenu
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewDescription.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewDescription.RowHeadersVisible = False
-        Me.DataGridViewDescription.Size = New System.Drawing.Size(321, 113)
+        Me.DataGridViewDescription.Size = New System.Drawing.Size(428, 138)
         Me.DataGridViewDescription.TabIndex = 1
         '
         'PictureBoxItem
         '
         Me.PictureBoxItem.BackColor = System.Drawing.Color.White
         Me.PictureBoxItem.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxItem.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBoxItem.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBoxItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxItem.Name = "PictureBoxItem"
-        Me.PictureBoxItem.Size = New System.Drawing.Size(321, 369)
+        Me.PictureBoxItem.Size = New System.Drawing.Size(428, 454)
         Me.PictureBoxItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxItem.TabIndex = 0
         Me.PictureBoxItem.TabStop = False
@@ -299,20 +314,18 @@ Partial Class FormMenu
         Me.LblTitle.AutoSize = True
         Me.LblTitle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.LblTitle.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTitle.Location = New System.Drawing.Point(35, 125)
-        Me.LblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblTitle.Location = New System.Drawing.Point(47, 154)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(0, 21)
+        Me.LblTitle.Size = New System.Drawing.Size(0, 27)
         Me.LblTitle.TabIndex = 24
         '
         'lblSec
         '
         Me.lblSec.AutoSize = True
         Me.lblSec.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblSec.Location = New System.Drawing.Point(19, 106)
-        Me.lblSec.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSec.Location = New System.Drawing.Point(25, 130)
         Me.lblSec.Name = "lblSec"
-        Me.lblSec.Size = New System.Drawing.Size(0, 13)
+        Me.lblSec.Size = New System.Drawing.Size(0, 17)
         Me.lblSec.TabIndex = 25
         '
         'BunifuElipse1
@@ -350,9 +363,10 @@ Partial Class FormMenu
         Me.TextBoxSum.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.TextBoxSum.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxSum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.TextBoxSum.Location = New System.Drawing.Point(858, 600)
+        Me.TextBoxSum.Location = New System.Drawing.Point(1144, 738)
+        Me.TextBoxSum.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxSum.Name = "TextBoxSum"
-        Me.TextBoxSum.Size = New System.Drawing.Size(118, 19)
+        Me.TextBoxSum.Size = New System.Drawing.Size(157, 24)
         Me.TextBoxSum.TabIndex = 30
         '
         'TableLayoutPanel2
@@ -360,12 +374,13 @@ Partial Class FormMenu
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.DataGridViewOrder, 0, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(790, 154)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(1053, 190)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 435.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(241, 432)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 535.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(321, 532)
         Me.TableLayoutPanel2.TabIndex = 31
         '
         'DataGridViewOrder
@@ -395,14 +410,15 @@ Partial Class FormMenu
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridViewOrder.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewOrder.GridColor = System.Drawing.Color.White
-        Me.DataGridViewOrder.Location = New System.Drawing.Point(3, 3)
+        Me.DataGridViewOrder.Location = New System.Drawing.Point(4, 4)
+        Me.DataGridViewOrder.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridViewOrder.MultiSelect = False
         Me.DataGridViewOrder.Name = "DataGridViewOrder"
         Me.DataGridViewOrder.RowHeadersVisible = False
         Me.DataGridViewOrder.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.DataGridViewOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewOrder.ShowRowErrors = False
-        Me.DataGridViewOrder.Size = New System.Drawing.Size(235, 429)
+        Me.DataGridViewOrder.Size = New System.Drawing.Size(313, 528)
         Me.DataGridViewOrder.TabIndex = 26
         '
         'Label1
@@ -410,9 +426,10 @@ Partial Class FormMenu
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label1.Location = New System.Drawing.Point(793, 600)
+        Me.Label1.Location = New System.Drawing.Point(1057, 738)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 20)
+        Me.Label1.Size = New System.Drawing.Size(84, 25)
         Me.Label1.TabIndex = 32
         Me.Label1.Text = "Total ¢:"
         '
@@ -421,35 +438,35 @@ Partial Class FormMenu
         Me.LabelOrder.AutoSize = True
         Me.LabelOrder.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.LabelOrder.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelOrder.Location = New System.Drawing.Point(790, 125)
-        Me.LabelOrder.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelOrder.Location = New System.Drawing.Point(1053, 154)
         Me.LabelOrder.Name = "LabelOrder"
-        Me.LabelOrder.Size = New System.Drawing.Size(0, 21)
+        Me.LabelOrder.Size = New System.Drawing.Size(0, 27)
         Me.LabelOrder.TabIndex = 35
         '
         'LblFiltro
         '
         Me.LblFiltro.AutoSize = True
-        Me.LblFiltro.Location = New System.Drawing.Point(46, 752)
-        Me.LblFiltro.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblFiltro.Location = New System.Drawing.Point(61, 926)
         Me.LblFiltro.Name = "LblFiltro"
-        Me.LblFiltro.Size = New System.Drawing.Size(0, 13)
+        Me.LblFiltro.Size = New System.Drawing.Size(0, 17)
         Me.LblFiltro.TabIndex = 36
         Me.LblFiltro.Visible = False
         '
         'ComboFiltro
         '
         Me.ComboFiltro.FormattingEnabled = True
-        Me.ComboFiltro.Location = New System.Drawing.Point(187, 124)
+        Me.ComboFiltro.Location = New System.Drawing.Point(249, 153)
+        Me.ComboFiltro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboFiltro.Name = "ComboFiltro"
-        Me.ComboFiltro.Size = New System.Drawing.Size(221, 21)
+        Me.ComboFiltro.Size = New System.Drawing.Size(293, 24)
         Me.ComboFiltro.TabIndex = 37
         '
         'Btnfiltrar
         '
-        Me.Btnfiltrar.Location = New System.Drawing.Point(414, 124)
+        Me.Btnfiltrar.Location = New System.Drawing.Point(552, 153)
+        Me.Btnfiltrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Btnfiltrar.Name = "Btnfiltrar"
-        Me.Btnfiltrar.Size = New System.Drawing.Size(30, 22)
+        Me.Btnfiltrar.Size = New System.Drawing.Size(40, 27)
         Me.Btnfiltrar.TabIndex = 38
         Me.Btnfiltrar.Text = "Ok"
         Me.Btnfiltrar.UseVisualStyleBackColor = True
@@ -458,19 +475,19 @@ Partial Class FormMenu
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblTitulo.Location = New System.Drawing.Point(184, 108)
+        Me.lblTitulo.Location = New System.Drawing.Point(245, 133)
+        Me.lblTitulo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(35, 13)
+        Me.lblTitulo.Size = New System.Drawing.Size(48, 17)
         Me.lblTitulo.TabIndex = 39
         Me.lblTitulo.Text = "Filtrar:"
         '
         'lblleng
         '
         Me.lblleng.AutoSize = True
-        Me.lblleng.Location = New System.Drawing.Point(187, 731)
-        Me.lblleng.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblleng.Location = New System.Drawing.Point(249, 900)
         Me.lblleng.Name = "lblleng"
-        Me.lblleng.Size = New System.Drawing.Size(0, 13)
+        Me.lblleng.Size = New System.Drawing.Size(0, 17)
         Me.lblleng.TabIndex = 40
         Me.lblleng.Visible = False
         '
@@ -481,13 +498,13 @@ Partial Class FormMenu
         Me.BunifuDropdown3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuDropdown3.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown3.Items = New String() {"1", "2", "3", "4", "5", "6", "7", "8", "9"}
-        Me.BunifuDropdown3.Location = New System.Drawing.Point(823, 629)
-        Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuDropdown3.Location = New System.Drawing.Point(1097, 774)
+        Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.BunifuDropdown3.Name = "BunifuDropdown3"
         Me.BunifuDropdown3.NomalColor = System.Drawing.Color.SeaGreen
         Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.SeaGreen
         Me.BunifuDropdown3.selectedIndex = 0
-        Me.BunifuDropdown3.Size = New System.Drawing.Size(61, 30)
+        Me.BunifuDropdown3.Size = New System.Drawing.Size(81, 37)
         Me.BunifuDropdown3.TabIndex = 44
         '
         'ButtonDelete
@@ -501,9 +518,10 @@ Partial Class FormMenu
         Me.ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDelete.ForeColor = System.Drawing.Color.Snow
-        Me.ButtonDelete.Location = New System.Drawing.Point(886, 628)
+        Me.ButtonDelete.Location = New System.Drawing.Point(1181, 773)
+        Me.ButtonDelete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonDelete.Name = "ButtonDelete"
-        Me.ButtonDelete.Size = New System.Drawing.Size(62, 30)
+        Me.ButtonDelete.Size = New System.Drawing.Size(83, 37)
         Me.ButtonDelete.TabIndex = 28
         Me.ButtonDelete.Text = "-1"
         Me.ButtonDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -512,19 +530,17 @@ Partial Class FormMenu
         'lblNoorden
         '
         Me.lblNoorden.AutoSize = True
-        Me.lblNoorden.Location = New System.Drawing.Point(427, 752)
-        Me.lblNoorden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNoorden.Location = New System.Drawing.Point(569, 926)
         Me.lblNoorden.Name = "lblNoorden"
-        Me.lblNoorden.Size = New System.Drawing.Size(0, 13)
+        Me.lblNoorden.Size = New System.Drawing.Size(0, 17)
         Me.lblNoorden.TabIndex = 48
         '
         'LblTotal
         '
         Me.LblTotal.AutoSize = True
-        Me.LblTotal.Location = New System.Drawing.Point(494, 752)
-        Me.LblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblTotal.Location = New System.Drawing.Point(659, 926)
         Me.LblTotal.Name = "LblTotal"
-        Me.LblTotal.Size = New System.Drawing.Size(0, 13)
+        Me.LblTotal.Size = New System.Drawing.Size(0, 17)
         Me.LblTotal.TabIndex = 49
         '
         'Button2
@@ -539,9 +555,10 @@ Partial Class FormMenu
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Snow
-        Me.Button2.Location = New System.Drawing.Point(886, 660)
+        Me.Button2.Location = New System.Drawing.Point(1181, 812)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(62, 44)
+        Me.Button2.Size = New System.Drawing.Size(83, 54)
         Me.Button2.TabIndex = 45
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -557,10 +574,11 @@ Partial Class FormMenu
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 45.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
-        Me.Button1.Location = New System.Drawing.Point(822, 660)
+        Me.Button1.Location = New System.Drawing.Point(1096, 812)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button1.Size = New System.Drawing.Size(62, 44)
+        Me.Button1.Size = New System.Drawing.Size(83, 54)
         Me.Button1.TabIndex = 27
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
         Me.Button1.UseVisualStyleBackColor = False
@@ -577,20 +595,35 @@ Partial Class FormMenu
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Snow
-        Me.Button3.Location = New System.Drawing.Point(950, 629)
+        Me.Button3.Location = New System.Drawing.Point(1267, 774)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(62, 74)
+        Me.Button3.Size = New System.Drawing.Size(83, 91)
         Me.Button3.TabIndex = 50
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(1359, 900)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 51
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
         'FormMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
-        Me.ClientSize = New System.Drawing.Size(1090, 798)
+        Me.ClientSize = New System.Drawing.Size(1453, 982)
+        Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.LblTotal)
         Me.Controls.Add(Me.lblNoorden)
@@ -619,6 +652,7 @@ Partial Class FormMenu
         Me.Controls.Add(Me.ButtonToShare)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -632,6 +666,7 @@ Partial Class FormMenu
         CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -674,4 +709,5 @@ Partial Class FormMenu
     Friend WithEvents lblNoorden As Label
     Friend WithEvents LblTotal As Label
     Friend WithEvents Button3 As Button
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
 End Class
