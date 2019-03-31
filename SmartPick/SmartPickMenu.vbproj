@@ -358,6 +358,7 @@
     <Content Include="icons8_delete_databasesmall_48px_5.png" />
     <Content Include="icons8_delete_database_48px_5.png" />
     <Content Include="icons8_language_48px_1.png" />
+    <Content Include="icons8_loyalty_card_48px.png" />
     <Content Include="icons8_minus_64px.png" />
     <Content Include="icons8_nonya_kueh_100px_1.png" />
     <Content Include="icons8_percentage_26px_5.png" />
@@ -376,6 +377,7 @@
     <Content Include="order_48.png" />
     <Content Include="plussign 3.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\icons8_loyalty_card_48px.png" />
     <None Include="Resources\icons8_add_rule_962px.png" />
     <None Include="Resources\icons8_add_rule_96px.png" />
     <None Include="Resources\order_48.png" />
