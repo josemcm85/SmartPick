@@ -49,7 +49,7 @@ Partial Class FormLanguage
         Me.Panel2.Controls.Add(Me.PictureBoxMinimize)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1143, 38)
         Me.Panel2.TabIndex = 22
@@ -58,7 +58,7 @@ Partial Class FormLanguage
         '
         Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
         Me.PictureBoxClose.Location = New System.Drawing.Point(1095, 4)
-        Me.PictureBoxClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBoxClose.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBoxClose.Name = "PictureBoxClose"
         Me.PictureBoxClose.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -69,7 +69,7 @@ Partial Class FormLanguage
         '
         Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
         Me.PictureBoxMinimize.Location = New System.Drawing.Point(1055, 4)
-        Me.PictureBoxMinimize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBoxMinimize.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
         Me.PictureBoxMinimize.Size = New System.Drawing.Size(32, 27)
         Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -169,7 +169,7 @@ Partial Class FormLanguage
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 38)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(549, 876)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -181,7 +181,7 @@ Partial Class FormLanguage
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
         Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
         Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(1064, 843)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(1006, 771)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
         Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -205,7 +205,7 @@ Partial Class FormLanguage
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormLanguage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
