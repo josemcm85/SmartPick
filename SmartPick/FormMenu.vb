@@ -308,7 +308,7 @@ Public Class FormMenu
 
             DataGridViewMenu.Columns("Photo").Visible = False
 
-            '
+
 
         End If
 
