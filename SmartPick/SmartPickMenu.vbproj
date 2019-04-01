@@ -100,6 +100,12 @@
     <Compile Include="AdminMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CallMesero.Designer.vb">
+      <DependentUpon>CallMesero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallMesero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Category.Designer.vb">
       <DependentUpon>Category.vb</DependentUpon>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMain.resx">
       <DependentUpon>AdminMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallMesero.resx">
+      <DependentUpon>CallMesero.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.vb</DependentUpon>
