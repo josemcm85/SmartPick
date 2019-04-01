@@ -99,7 +99,7 @@ Partial Class Orden
         Me.ComboMesa.Location = New System.Drawing.Point(315, 126)
         Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboMesa.Name = "ComboMesa"
-        Me.ComboMesa.Size = New System.Drawing.Size(116, 25)
+        Me.ComboMesa.Size = New System.Drawing.Size(116, 23)
         Me.ComboMesa.TabIndex = 6
         '
         'Label4
@@ -111,7 +111,7 @@ Partial Class Orden
         Me.Label4.Location = New System.Drawing.Point(325, 172)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(290, 21)
+        Me.Label4.Size = New System.Drawing.Size(238, 19)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "El precio total es de (incluye IVA):"
         '
@@ -124,7 +124,7 @@ Partial Class Orden
         Me.lblTotal.Location = New System.Drawing.Point(415, 200)
         Me.lblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(65, 21)
+        Me.lblTotal.Size = New System.Drawing.Size(55, 19)
         Me.lblTotal.TabIndex = 8
         Me.lblTotal.Text = "Label5"
         '
@@ -134,7 +134,7 @@ Partial Class Orden
         Me.textboxCoupon.Location = New System.Drawing.Point(457, 127)
         Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
         Me.textboxCoupon.Name = "textboxCoupon"
-        Me.textboxCoupon.Size = New System.Drawing.Size(109, 24)
+        Me.textboxCoupon.Size = New System.Drawing.Size(109, 21)
         Me.textboxCoupon.TabIndex = 10
         '
         'lblNotice
@@ -146,7 +146,7 @@ Partial Class Orden
         Me.lblNotice.Location = New System.Drawing.Point(326, 238)
         Me.lblNotice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNotice.Name = "lblNotice"
-        Me.lblNotice.Size = New System.Drawing.Size(187, 21)
+        Me.lblNotice.Size = New System.Drawing.Size(155, 19)
         Me.lblNotice.TabIndex = 14
         Me.lblNotice.Text = "Descuento aplicado:"
         Me.lblNotice.Visible = False
@@ -160,7 +160,7 @@ Partial Class Orden
         Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(404, 363)
         Me.lblPriceTotalDiscount.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPriceTotalDiscount.Name = "lblPriceTotalDiscount"
-        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(16, 21)
+        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(14, 19)
         Me.lblPriceTotalDiscount.TabIndex = 15
         Me.lblPriceTotalDiscount.Text = "-"
         Me.lblPriceTotalDiscount.Visible = False
@@ -173,7 +173,7 @@ Partial Class Orden
         Me.lblTax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lblTax.Location = New System.Drawing.Point(440, 329)
         Me.lblTax.Name = "lblTax"
-        Me.lblTax.Size = New System.Drawing.Size(16, 21)
+        Me.lblTax.Size = New System.Drawing.Size(14, 19)
         Me.lblTax.TabIndex = 16
         Me.lblTax.Text = "-"
         Me.lblTax.Visible = False
@@ -186,7 +186,7 @@ Partial Class Orden
         Me.lblSum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lblSum.Location = New System.Drawing.Point(415, 269)
         Me.lblSum.Name = "lblSum"
-        Me.lblSum.Size = New System.Drawing.Size(16, 21)
+        Me.lblSum.Size = New System.Drawing.Size(14, 19)
         Me.lblSum.TabIndex = 17
         Me.lblSum.Text = "-"
         Me.lblSum.Visible = False
@@ -199,7 +199,7 @@ Partial Class Orden
         Me.lblDiscount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lblDiscount.Location = New System.Drawing.Point(446, 299)
         Me.lblDiscount.Name = "lblDiscount"
-        Me.lblDiscount.Size = New System.Drawing.Size(16, 21)
+        Me.lblDiscount.Size = New System.Drawing.Size(14, 19)
         Me.lblDiscount.TabIndex = 18
         Me.lblDiscount.Text = "-"
         Me.lblDiscount.Visible = False
@@ -212,7 +212,7 @@ Partial Class Orden
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(346, 299)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(123, 21)
+        Me.Label6.Size = New System.Drawing.Size(101, 19)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "Descuento ₡:"
         Me.Label6.Visible = False
@@ -225,7 +225,7 @@ Partial Class Orden
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(346, 269)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(83, 21)
+        Me.Label7.Size = New System.Drawing.Size(69, 19)
         Me.Label7.TabIndex = 21
         Me.Label7.Text = "Precio ₡:"
         Me.Label7.Visible = False
@@ -238,7 +238,7 @@ Partial Class Orden
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(346, 329)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(117, 21)
+        Me.Label8.Size = New System.Drawing.Size(95, 19)
         Me.Label8.TabIndex = 20
         Me.Label8.Text = "Impuestos ₡:"
         Me.Label8.Visible = False
@@ -252,7 +252,7 @@ Partial Class Orden
         Me.Label9.Location = New System.Drawing.Point(347, 363)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(73, 21)
+        Me.Label9.Size = New System.Drawing.Size(59, 19)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Total ₡:"
         Me.Label9.Visible = False
@@ -279,7 +279,7 @@ Partial Class Orden
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(716, 24)
+        Me.Panel2.Size = New System.Drawing.Size(688, 24)
         Me.Panel2.TabIndex = 23
         '
         'PictureBoxClose
@@ -301,7 +301,7 @@ Partial Class Orden
         Me.NoOrden.Location = New System.Drawing.Point(75, 2)
         Me.NoOrden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.NoOrden.Name = "NoOrden"
-        Me.NoOrden.Size = New System.Drawing.Size(24, 22)
+        Me.NoOrden.Size = New System.Drawing.Size(20, 20)
         Me.NoOrden.TabIndex = 25
         Me.NoOrden.Text = "#"
         '
@@ -324,7 +324,7 @@ Partial Class Orden
         Me.Label10.Location = New System.Drawing.Point(0, 2)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(106, 22)
+        Me.Label10.Size = New System.Drawing.Size(84, 20)
         Me.Label10.TabIndex = 24
         Me.Label10.Text = "ORDEN #: "
         '
@@ -337,7 +337,7 @@ Partial Class Orden
         Me.Label11.Location = New System.Drawing.Point(33, 69)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(100, 22)
+        Me.Label11.Size = New System.Drawing.Size(83, 20)
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Desglose: "
         '
@@ -350,7 +350,7 @@ Partial Class Orden
         Me.Label1.Location = New System.Drawing.Point(311, 94)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 22)
+        Me.Label1.Size = New System.Drawing.Size(58, 20)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Mesa: "
         '
@@ -363,7 +363,7 @@ Partial Class Orden
         Me.Label2.Location = New System.Drawing.Point(456, 94)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 22)
+        Me.Label2.Size = New System.Drawing.Size(83, 20)
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "Cupones: "
         '
@@ -393,7 +393,7 @@ Partial Class Orden
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(346, 201)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 21)
+        Me.Label3.Size = New System.Drawing.Size(69, 19)
         Me.Label3.TabIndex = 53
         Me.Label3.Text = "Precio ₡:"
         '
@@ -420,7 +420,7 @@ Partial Class Orden
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
         Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
         Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(626, 374)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(613, 374)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
         Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -430,11 +430,11 @@ Partial Class Orden
         '
         'Orden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(716, 504)
+        Me.ClientSize = New System.Drawing.Size(688, 504)
         Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.Label3)
