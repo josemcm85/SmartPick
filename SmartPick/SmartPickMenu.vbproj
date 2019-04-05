@@ -215,6 +215,12 @@
     <Compile Include="Orden.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PagoCliente.Designer.vb">
+      <DependentUpon>PagoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Recuperar.Designer.vb">
       <DependentUpon>Recuperar.vb</DependentUpon>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Orden.resx">
       <DependentUpon>Orden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoCliente.resx">
+      <DependentUpon>PagoCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recuperar.resx">
       <DependentUpon>Recuperar.vb</DependentUpon>

@@ -109,211 +109,18 @@ Public Class Orden
 
     End Sub
 
-    Private Sub BunifuCustomTextbox1_TextChanged(sender As Object, e As EventArgs) Handles textboxCoupon.TextChanged
+    Private Sub BunifuCustomTextbox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
-
-        Dim sqlConn = New SqlConnection(connectionString)
-        sqlConn.Open()
-
-
-        Dim Sum As Integer = 0
-        For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
-            Sum = Sum + DTGList.Rows(i).Cells(2).Value
-        Next
-
-
-        'Dim input = textboxCoupon.Text
-
-        Dim cmd0 As New SqlCommand("Select * FROM dbo.Coupons WHERE Coupon =@CUPON", sqlConn)
-        cmd0.Parameters.AddWithValue("@CUPON", SqlDbType.NChar).Value = textboxCoupon.Text
-
-        Dim adapter As New SqlDataAdapter(cmd0)
-
-        Dim table As New DataTable()
-
-        adapter.Fill(table)
-
-        Dim discount As String
-
-        Dim reader0 As SqlDataReader = cmd0.ExecuteReader()
-        If (reader0.HasRows) Then
-
-            'TextBoxPrueba.Text = table.Rows(0)(1).ToString()
-
-            discount = table.Rows(0)(1).ToString()
-            MsgBox("Se aplicará un descuento del " + discount + " %.")
-
-            lblNotice.Visible = True
-            lblPriceTotalDiscount.Visible = True
-            lblSum.Visible = True
-            lblTax.Visible = True
-            lblDiscount.Visible = True
-            Label4.Visible = False
-            Label6.Visible = True
-            Label7.Visible = True
-            Label8.Visible = True
-            Label9.Visible = True
-            lblTotal.Visible = False
-
-            Dim appliedDiscount As Double
-            Dim taxAfterDiscount As Double
-
-            appliedDiscount = Sum * CDbl(discount) / 100
-            taxAfterDiscount = (Sum - (Sum * CDbl(discount) / 100)) * 0.13
-
-            lblPriceTotalDiscount.Text = Sum - appliedDiscount + taxAfterDiscount
-            lblSum.Text = Sum
-            lblDiscount.Text = appliedDiscount
-            lblTax.Text = taxAfterDiscount
-
-            textboxCoupon.Enabled = False
-        Else
-
-            MsgBox("Cupón no válido.")
-            sqlConn.Close()
-            sqlConn.Open()
-        End If
-
-    End Sub
 
     Private Sub NoOrden_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnGenerar_Click(sender As Object, e As EventArgs)
-
-        Dim sqlConn = New SqlConnection(connectionString)
-        sqlConn.Open()
 
 
-        Dim Sum As Integer = 0
-        For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
-            Sum = Sum + DTGList.Rows(i).Cells(2).Value
-        Next
-
-
-        'Dim input = textboxCoupon.Text
-
-        Dim cmd0 As New SqlCommand("Select * FROM dbo.Coupons WHERE Coupon =@CUPON", sqlConn)
-        cmd0.Parameters.AddWithValue("@CUPON", SqlDbType.NChar).Value = textboxCoupon.Text
-
-        Dim adapter As New SqlDataAdapter(cmd0)
-
-        Dim table As New DataTable()
-
-        adapter.Fill(table)
-
-        Dim discount As String
-
-        Dim reader0 As SqlDataReader = cmd0.ExecuteReader()
-        If (reader0.HasRows) Then
-
-            'TextBoxPrueba.Text = table.Rows(0)(1).ToString()
-
-            discount = table.Rows(0)(1).ToString()
-            MsgBox("Se aplicará un descuento del " + discount + " %.")
-
-            lblNotice.Visible = True
-            lblPriceTotalDiscount.Visible = True
-            lblSum.Visible = True
-            lblTax.Visible = True
-            lblDiscount.Visible = True
-            Label4.Visible = False
-            Label6.Visible = True
-            Label7.Visible = True
-            Label8.Visible = True
-            Label9.Visible = True
-            lblTotal.Visible = False
-
-            Dim appliedDiscount As Double
-            Dim taxAfterDiscount As Double
-
-            appliedDiscount = Sum * CDbl(discount) / 100
-            taxAfterDiscount = (Sum - (Sum * CDbl(discount) / 100)) * 0.13
-
-            lblPriceTotalDiscount.Text = Sum - appliedDiscount + taxAfterDiscount
-            lblSum.Text = Sum
-            lblDiscount.Text = appliedDiscount
-            lblTax.Text = taxAfterDiscount
-
-            textboxCoupon.Enabled = False
-        Else
-
-            MsgBox("Cupón no válido.")
-            sqlConn.Close()
-            sqlConn.Open()
-        End If
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles buttonValidateCpn.Click
-        Dim sqlConn = New SqlConnection(connectionString)
-        sqlConn.Open()
-
-
-        Dim Sum As Integer = 0
-        For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
-            Sum = Sum + DTGList.Rows(i).Cells(2).Value
-        Next
-
-
-        'Dim input = textboxCoupon.Text
-
-        Dim cmd0 As New SqlCommand("Select * FROM dbo.Coupons WHERE Coupon =@CUPON", sqlConn)
-        cmd0.Parameters.AddWithValue("@CUPON", SqlDbType.NChar).Value = textboxCoupon.Text
-
-        Dim adapter As New SqlDataAdapter(cmd0)
-
-        Dim table As New DataTable()
-
-        adapter.Fill(table)
-
-        Dim discount As String
-
-        Dim reader0 As SqlDataReader = cmd0.ExecuteReader()
-        If (reader0.HasRows) Then
-
-            'TextBoxPrueba.Text = table.Rows(0)(1).ToString()
-
-            discount = table.Rows(0)(1).ToString()
-            MsgBox("Se aplicará un descuento del " + discount + " %.")
-
-            lblNotice.Visible = True
-            lblPriceTotalDiscount.Visible = True
-            lblSum.Visible = True
-            lblTax.Visible = True
-            lblDiscount.Visible = True
-            Label4.Visible = False
-            Label6.Visible = True
-            Label7.Visible = True
-            Label8.Visible = True
-            Label9.Visible = True
-            lblTotal.Visible = False
-            Label3.Visible = False
-
-            Dim appliedDiscount As Double
-            Dim taxAfterDiscount As Double
-
-            appliedDiscount = Sum * CDbl(discount) / 100
-            taxAfterDiscount = (Sum - (Sum * CDbl(discount) / 100)) * 0.13
-
-            lblPriceTotalDiscount.Text = Sum - appliedDiscount + taxAfterDiscount
-            lblSum.Text = Sum
-            lblDiscount.Text = appliedDiscount
-            lblTax.Text = taxAfterDiscount
-
-            textboxCoupon.Enabled = False
-        Else
-
-            MsgBox("Cupón no válido.")
-            sqlConn.Close()
-            sqlConn.Open()
-        End If
-
-    End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
@@ -366,8 +173,8 @@ Public Class Orden
 
                 Next
                 connection.Close()
-                MsgBox("Orden Realizada!")
-
+                MsgBox("Orden Realizada, tu número de orden es: " & idLastOrder)
+                PagoCliente.txtNoOrden.Text = idLastOrder
 
 
             Catch ex As Exception
@@ -381,6 +188,15 @@ Public Class Orden
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         CallMesero.Show()
+
+    End Sub
+
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

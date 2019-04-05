@@ -29,6 +29,8 @@ Partial Class CallMesero
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtComentario = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BunifuCustomLabel1
@@ -85,18 +87,37 @@ Partial Class CallMesero
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(265, 319)
+        Me.Button1.Location = New System.Drawing.Point(265, 307)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(83, 29)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Ok"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(115, 346)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(112, 39)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Pagar cuenta"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(507, 296)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(0, 17)
+        Me.Label1.TabIndex = 8
+        '
         'CallMesero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(629, 377)
+        Me.ClientSize = New System.Drawing.Size(618, 410)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtComentario)
         Me.Controls.Add(Me.BunifuCustomLabel4)
@@ -118,4 +139,6 @@ Partial Class CallMesero
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtComentario As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label1 As Label
 End Class

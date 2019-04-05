@@ -23,23 +23,13 @@ Partial Class Orden
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orden))
         Me.DTGList = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.ComboMesa = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.textboxCoupon = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.lblNotice = New System.Windows.Forms.Label()
-        Me.lblPriceTotalDiscount = New System.Windows.Forms.Label()
-        Me.lblTax = New System.Windows.Forms.Label()
-        Me.lblSum = New System.Windows.Forms.Label()
-        Me.lblDiscount = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -49,11 +39,10 @@ Partial Class Orden
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.buttonValidateCpn = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,19 +54,19 @@ Partial Class Orden
         '
         Me.DTGList.AllowUserToAddRows = False
         Me.DTGList.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.DTGList.BackgroundColor = System.Drawing.Color.White
         Me.DTGList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DTGList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTGList.DoubleBuffered = True
         Me.DTGList.EnableHeadersVisualStyles = False
@@ -96,10 +85,10 @@ Partial Class Orden
         'ComboMesa
         '
         Me.ComboMesa.FormattingEnabled = True
-        Me.ComboMesa.Location = New System.Drawing.Point(315, 126)
+        Me.ComboMesa.Location = New System.Drawing.Point(314, 194)
         Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboMesa.Name = "ComboMesa"
-        Me.ComboMesa.Size = New System.Drawing.Size(116, 23)
+        Me.ComboMesa.Size = New System.Drawing.Size(116, 25)
         Me.ComboMesa.TabIndex = 6
         '
         'Label4
@@ -108,10 +97,10 @@ Partial Class Orden
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(325, 172)
+        Me.Label4.Location = New System.Drawing.Point(324, 240)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(238, 19)
+        Me.Label4.Size = New System.Drawing.Size(290, 21)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "El precio total es de (incluye IVA):"
         '
@@ -121,141 +110,12 @@ Partial Class Orden
         Me.lblTotal.BackColor = System.Drawing.Color.Transparent
         Me.lblTotal.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblTotal.Location = New System.Drawing.Point(415, 200)
+        Me.lblTotal.Location = New System.Drawing.Point(414, 268)
         Me.lblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(55, 19)
+        Me.lblTotal.Size = New System.Drawing.Size(65, 21)
         Me.lblTotal.TabIndex = 8
         Me.lblTotal.Text = "Label5"
-        '
-        'textboxCoupon
-        '
-        Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
-        Me.textboxCoupon.Location = New System.Drawing.Point(457, 127)
-        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
-        Me.textboxCoupon.Name = "textboxCoupon"
-        Me.textboxCoupon.Size = New System.Drawing.Size(109, 21)
-        Me.textboxCoupon.TabIndex = 10
-        '
-        'lblNotice
-        '
-        Me.lblNotice.AutoSize = True
-        Me.lblNotice.BackColor = System.Drawing.Color.Transparent
-        Me.lblNotice.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.lblNotice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblNotice.Location = New System.Drawing.Point(326, 238)
-        Me.lblNotice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblNotice.Name = "lblNotice"
-        Me.lblNotice.Size = New System.Drawing.Size(155, 19)
-        Me.lblNotice.TabIndex = 14
-        Me.lblNotice.Text = "Descuento aplicado:"
-        Me.lblNotice.Visible = False
-        '
-        'lblPriceTotalDiscount
-        '
-        Me.lblPriceTotalDiscount.AutoSize = True
-        Me.lblPriceTotalDiscount.BackColor = System.Drawing.Color.Transparent
-        Me.lblPriceTotalDiscount.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.lblPriceTotalDiscount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(404, 363)
-        Me.lblPriceTotalDiscount.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblPriceTotalDiscount.Name = "lblPriceTotalDiscount"
-        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(14, 19)
-        Me.lblPriceTotalDiscount.TabIndex = 15
-        Me.lblPriceTotalDiscount.Text = "-"
-        Me.lblPriceTotalDiscount.Visible = False
-        '
-        'lblTax
-        '
-        Me.lblTax.AutoSize = True
-        Me.lblTax.BackColor = System.Drawing.Color.Transparent
-        Me.lblTax.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.lblTax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblTax.Location = New System.Drawing.Point(440, 329)
-        Me.lblTax.Name = "lblTax"
-        Me.lblTax.Size = New System.Drawing.Size(14, 19)
-        Me.lblTax.TabIndex = 16
-        Me.lblTax.Text = "-"
-        Me.lblTax.Visible = False
-        '
-        'lblSum
-        '
-        Me.lblSum.AutoSize = True
-        Me.lblSum.BackColor = System.Drawing.Color.Transparent
-        Me.lblSum.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.lblSum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblSum.Location = New System.Drawing.Point(415, 269)
-        Me.lblSum.Name = "lblSum"
-        Me.lblSum.Size = New System.Drawing.Size(14, 19)
-        Me.lblSum.TabIndex = 17
-        Me.lblSum.Text = "-"
-        Me.lblSum.Visible = False
-        '
-        'lblDiscount
-        '
-        Me.lblDiscount.AutoSize = True
-        Me.lblDiscount.BackColor = System.Drawing.Color.Transparent
-        Me.lblDiscount.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.lblDiscount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblDiscount.Location = New System.Drawing.Point(446, 299)
-        Me.lblDiscount.Name = "lblDiscount"
-        Me.lblDiscount.Size = New System.Drawing.Size(14, 19)
-        Me.lblDiscount.TabIndex = 18
-        Me.lblDiscount.Text = "-"
-        Me.lblDiscount.Visible = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(346, 299)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(101, 19)
-        Me.Label6.TabIndex = 22
-        Me.Label6.Text = "Descuento ₡:"
-        Me.Label6.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(346, 269)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(69, 19)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "Precio ₡:"
-        Me.Label7.Visible = False
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(346, 329)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 19)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "Impuestos ₡:"
-        Me.Label8.Visible = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 10.0!)
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(347, 363)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(59, 19)
-        Me.Label9.TabIndex = 19
-        Me.Label9.Text = "Total ₡:"
-        Me.Label9.Visible = False
         '
         'BunifuElipse1
         '
@@ -279,7 +139,7 @@ Partial Class Orden
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(688, 24)
+        Me.Panel2.Size = New System.Drawing.Size(698, 24)
         Me.Panel2.TabIndex = 23
         '
         'PictureBoxClose
@@ -301,7 +161,7 @@ Partial Class Orden
         Me.NoOrden.Location = New System.Drawing.Point(75, 2)
         Me.NoOrden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.NoOrden.Name = "NoOrden"
-        Me.NoOrden.Size = New System.Drawing.Size(20, 20)
+        Me.NoOrden.Size = New System.Drawing.Size(24, 22)
         Me.NoOrden.TabIndex = 25
         Me.NoOrden.Text = "#"
         '
@@ -324,7 +184,7 @@ Partial Class Orden
         Me.Label10.Location = New System.Drawing.Point(0, 2)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(84, 20)
+        Me.Label10.Size = New System.Drawing.Size(106, 22)
         Me.Label10.TabIndex = 24
         Me.Label10.Text = "ORDEN #: "
         '
@@ -337,7 +197,7 @@ Partial Class Orden
         Me.Label11.Location = New System.Drawing.Point(33, 69)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 20)
+        Me.Label11.Size = New System.Drawing.Size(100, 22)
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Desglose: "
         '
@@ -347,43 +207,12 @@ Partial Class Orden
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.0!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(311, 94)
+        Me.Label1.Location = New System.Drawing.Point(310, 162)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 20)
+        Me.Label1.Size = New System.Drawing.Size(69, 22)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Mesa: "
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.0!)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(456, 94)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 20)
-        Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Cupones: "
-        '
-        'buttonValidateCpn
-        '
-        Me.buttonValidateCpn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.buttonValidateCpn.BackColor = System.Drawing.Color.Orange
-        Me.buttonValidateCpn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.buttonValidateCpn.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.buttonValidateCpn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.buttonValidateCpn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.buttonValidateCpn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonValidateCpn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.buttonValidateCpn.ForeColor = System.Drawing.Color.Snow
-        Me.buttonValidateCpn.Location = New System.Drawing.Point(573, 123)
-        Me.buttonValidateCpn.Name = "buttonValidateCpn"
-        Me.buttonValidateCpn.Size = New System.Drawing.Size(80, 27)
-        Me.buttonValidateCpn.TabIndex = 52
-        Me.buttonValidateCpn.Text = "Validar"
-        Me.buttonValidateCpn.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -391,9 +220,9 @@ Partial Class Orden
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(346, 201)
+        Me.Label3.Location = New System.Drawing.Point(345, 269)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 19)
+        Me.Label3.Size = New System.Drawing.Size(83, 21)
         Me.Label3.TabIndex = 53
         Me.Label3.Text = "Precio ₡:"
         '
@@ -408,9 +237,9 @@ Partial Class Orden
         Me.BunifuFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BunifuFlatButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.Snow
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(392, 416)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(315, 412)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(147, 32)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(130, 34)
         Me.BunifuFlatButton1.TabIndex = 54
         Me.BunifuFlatButton1.Text = "COMPLETAR ORDEN"
         Me.BunifuFlatButton1.UseVisualStyleBackColor = False
@@ -420,7 +249,7 @@ Partial Class Orden
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
         Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
         Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(613, 374)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(476, 396)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
         Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -428,31 +257,38 @@ Partial Class Orden
         Me.BunifuImageButton1.TabStop = False
         Me.BunifuImageButton1.Zoom = 10
         '
+        'Button1
+        '
+        Me.Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Button1.BackColor = System.Drawing.Color.Orange
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Snow
+        Me.Button1.Location = New System.Drawing.Point(573, 412)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(110, 34)
+        Me.Button1.TabIndex = 56
+        Me.Button1.Text = "Devolverse"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Orden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(688, 504)
+        Me.ClientSize = New System.Drawing.Size(698, 504)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.buttonValidateCpn)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.lblDiscount)
-        Me.Controls.Add(Me.lblSum)
-        Me.Controls.Add(Me.lblTax)
-        Me.Controls.Add(Me.lblPriceTotalDiscount)
-        Me.Controls.Add(Me.lblNotice)
-        Me.Controls.Add(Me.textboxCoupon)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboMesa)
@@ -476,16 +312,6 @@ Partial Class Orden
     Friend WithEvents ComboMesa As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents lblTotal As Label
-    Friend WithEvents textboxCoupon As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents lblNotice As Label
-    Friend WithEvents lblPriceTotalDiscount As Label
-    Friend WithEvents lblTax As Label
-    Friend WithEvents lblSum As Label
-    Friend WithEvents lblDiscount As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents Panel2 As Panel
@@ -493,11 +319,10 @@ Partial Class Orden
     Friend WithEvents PictureBoxMinimize As PictureBox
     Friend WithEvents NoOrden As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents buttonValidateCpn As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents BunifuFlatButton1 As Button
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents Button1 As Button
 End Class

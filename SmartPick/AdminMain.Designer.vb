@@ -34,13 +34,14 @@ Partial Class AdminMain
         Me.CrearCuponesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarOrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarPersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.AdministrarPersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -124,12 +125,18 @@ Partial Class AdminMain
         Me.AdministrarOrdenesToolStripMenuItem.Size = New System.Drawing.Size(256, 27)
         Me.AdministrarOrdenesToolStripMenuItem.Text = "| Administrar Ordenes |"
         '
+        'AdministrarPersonalToolStripMenuItem
+        '
+        Me.AdministrarPersonalToolStripMenuItem.Name = "AdministrarPersonalToolStripMenuItem"
+        Me.AdministrarPersonalToolStripMenuItem.Size = New System.Drawing.Size(256, 27)
+        Me.AdministrarPersonalToolStripMenuItem.Text = "| Administrar Personal |"
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources._14650771_10157489166520161_9089602778382653312_n
         Me.PictureBox1.Location = New System.Drawing.Point(43, 73)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(413, 281)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -142,7 +149,7 @@ Partial Class AdminMain
         Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.BunifuSeparator1.LineThickness = 3
         Me.BunifuSeparator1.Location = New System.Drawing.Point(469, 78)
-        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuSeparator1.Name = "BunifuSeparator1"
         Me.BunifuSeparator1.Size = New System.Drawing.Size(25, 272)
         Me.BunifuSeparator1.TabIndex = 2
@@ -152,11 +159,12 @@ Partial Class AdminMain
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.BunifuFlatButton1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.BunifuSeparator1)
         Me.Panel1.Controls.Add(Me.MenuStrip1)
         Me.Panel1.Location = New System.Drawing.Point(44, 31)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1315, 398)
         Me.Panel1.TabIndex = 46
@@ -178,11 +186,23 @@ Partial Class AdminMain
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
         '
-        'AdministrarPersonalToolStripMenuItem
+        'BunifuFlatButton1
         '
-        Me.AdministrarPersonalToolStripMenuItem.Name = "AdministrarPersonalToolStripMenuItem"
-        Me.AdministrarPersonalToolStripMenuItem.Size = New System.Drawing.Size(256, 27)
-        Me.AdministrarPersonalToolStripMenuItem.Text = "| Administrar Personal |"
+        Me.BunifuFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.BackgroundImage = CType(resources.GetObject("BunifuFlatButton1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuFlatButton1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BunifuFlatButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.Snow
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(1255, 12)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(57, 35)
+        Me.BunifuFlatButton1.TabIndex = 55
+        Me.BunifuFlatButton1.UseVisualStyleBackColor = False
         '
         'AdminMain
         '
@@ -223,4 +243,5 @@ Partial Class AdminMain
     Friend WithEvents CerrarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarOrdenesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarPersonalToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BunifuFlatButton1 As Button
 End Class
