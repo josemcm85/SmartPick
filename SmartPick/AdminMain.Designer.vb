@@ -34,13 +34,14 @@ Partial Class AdminMain
         Me.AgregarEliminarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearCuponesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarOrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -50,12 +51,13 @@ Partial Class AdminMain
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarMenuToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarMenuToolStripMenuItem, Me.AdministrarOrdenesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(390, 159)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(286, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(392, 29)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -67,8 +69,8 @@ Partial Class AdminMain
         Me.AdministrarMenuToolStripMenuItem.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdministrarMenuToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.Name = "AdministrarMenuToolStripMenuItem"
-        Me.AdministrarMenuToolStripMenuItem.Size = New System.Drawing.Size(160, 25)
-        Me.AdministrarMenuToolStripMenuItem.Text = "Administrar Menú"
+        Me.AdministrarMenuToolStripMenuItem.Size = New System.Drawing.Size(175, 25)
+        Me.AdministrarMenuToolStripMenuItem.Text = "| Administrar Menú"
         '
         'AgregarPlatoToolStripMenuItem
         '
@@ -123,6 +125,12 @@ Partial Class AdminMain
         Me.OrdenesToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
         Me.OrdenesToolStripMenuItem.Text = "Ordenes"
         '
+        'CerrarToolStripMenuItem
+        '
+        Me.CerrarToolStripMenuItem.Name = "CerrarToolStripMenuItem"
+        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
+        Me.CerrarToolStripMenuItem.Text = "Cerrar"
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
@@ -154,7 +162,7 @@ Partial Class AdminMain
         Me.Panel1.Controls.Add(Me.MenuStrip1)
         Me.Panel1.Location = New System.Drawing.Point(33, 25)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(620, 323)
+        Me.Panel1.Size = New System.Drawing.Size(785, 323)
         Me.Panel1.TabIndex = 46
         '
         'BunifuElipse1
@@ -174,18 +182,18 @@ Partial Class AdminMain
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
         '
-        'CerrarToolStripMenuItem
+        'AdministrarOrdenesToolStripMenuItem
         '
-        Me.CerrarToolStripMenuItem.Name = "CerrarToolStripMenuItem"
-        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(280, 26)
-        Me.CerrarToolStripMenuItem.Text = "Cerrar"
+        Me.AdministrarOrdenesToolStripMenuItem.Name = "AdministrarOrdenesToolStripMenuItem"
+        Me.AdministrarOrdenesToolStripMenuItem.Size = New System.Drawing.Size(211, 25)
+        Me.AdministrarOrdenesToolStripMenuItem.Text = "| Administrar Ordenes |"
         '
         'AdminMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS22
-        Me.ClientSize = New System.Drawing.Size(688, 375)
+        Me.ClientSize = New System.Drawing.Size(830, 375)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -219,4 +227,5 @@ Partial Class AdminMain
     Friend WithEvents CrearCuponesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OrdenesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AdministrarOrdenesToolStripMenuItem As ToolStripMenuItem
 End Class

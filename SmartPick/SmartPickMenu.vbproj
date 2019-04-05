@@ -94,6 +94,12 @@
     <Compile Include="addMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AdministrarOrdenes.Designer.vb">
+      <DependentUpon>AdministrarOrdenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarOrdenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AdminMain.Designer.vb">
       <DependentUpon>AdminMain.vb</DependentUpon>
     </Compile>
@@ -231,6 +237,9 @@
   <ItemGroup>
     <EmbeddedResource Include="addMenu.resx">
       <DependentUpon>addMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarOrdenes.resx">
+      <DependentUpon>AdministrarOrdenes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMain.resx">
       <DependentUpon>AdminMain.vb</DependentUpon>

@@ -68,4 +68,8 @@
 
 
     End Sub
+
+    Private Sub AdministrarOrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarOrdenesToolStripMenuItem.Click
+        AdministrarOrdenes.Show()
+    End Sub
 End Class

@@ -10,14 +10,6 @@ Public Class FormMenu
     Public Property IsRepeated As Boolean
 
 
-
-
-
-
-
-
-
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Filtro = 0
 
@@ -26,10 +18,6 @@ Public Class FormMenu
 
         lblSec.Text = ""
         LblTitle.Text = ""
-
-
-
-
 
     End Sub
 
@@ -771,12 +759,6 @@ Public Class FormMenu
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-
-
-
-
-
         Dim quantity As Integer
         quantity = 0
         Do Until (quantity = BunifuDropdown3.selectedIndex + 1)
