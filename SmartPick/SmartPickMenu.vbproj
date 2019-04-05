@@ -173,6 +173,12 @@
     <Compile Include="FormUserInfo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ListaDellamadas.Designer.vb">
+      <DependentUpon>ListaDellamadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDellamadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Loading.Designer.vb">
       <DependentUpon>Loading.vb</DependentUpon>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUserInfo.resx">
       <DependentUpon>FormUserInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDellamadas.resx">
+      <DependentUpon>ListaDellamadas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.vb</DependentUpon>

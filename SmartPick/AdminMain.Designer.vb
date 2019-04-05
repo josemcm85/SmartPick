@@ -38,10 +38,11 @@ Partial Class AdminMain
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
+        Me.VerSolicitudesDePersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -57,7 +58,7 @@ Partial Class AdminMain
         Me.MenuStrip1.Location = New System.Drawing.Point(520, 196)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(727, 31)
+        Me.MenuStrip1.Size = New System.Drawing.Size(877, 31)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -127,6 +128,7 @@ Partial Class AdminMain
         '
         'AdministrarPersonalToolStripMenuItem
         '
+        Me.AdministrarPersonalToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VerSolicitudesDePersonalToolStripMenuItem})
         Me.AdministrarPersonalToolStripMenuItem.Name = "AdministrarPersonalToolStripMenuItem"
         Me.AdministrarPersonalToolStripMenuItem.Size = New System.Drawing.Size(256, 27)
         Me.AdministrarPersonalToolStripMenuItem.Text = "| Administrar Personal |"
@@ -169,23 +171,6 @@ Partial Class AdminMain
         Me.Panel1.Size = New System.Drawing.Size(1315, 398)
         Me.Panel1.TabIndex = 46
         '
-        'BunifuElipse1
-        '
-        Me.BunifuElipse1.ElipseRadius = 5
-        Me.BunifuElipse1.TargetControl = Me
-        '
-        'BunifuElipse2
-        '
-        Me.BunifuElipse2.ElipseRadius = 15
-        Me.BunifuElipse2.TargetControl = Me.Panel1
-        '
-        'BunifuDragControl1
-        '
-        Me.BunifuDragControl1.Fixed = True
-        Me.BunifuDragControl1.Horizontal = True
-        Me.BunifuDragControl1.TargetControl = Me
-        Me.BunifuDragControl1.Vertical = True
-        '
         'BunifuFlatButton1
         '
         Me.BunifuFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
@@ -203,6 +188,29 @@ Partial Class AdminMain
         Me.BunifuFlatButton1.Size = New System.Drawing.Size(57, 35)
         Me.BunifuFlatButton1.TabIndex = 55
         Me.BunifuFlatButton1.UseVisualStyleBackColor = False
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 5
+        Me.BunifuElipse1.TargetControl = Me
+        '
+        'BunifuElipse2
+        '
+        Me.BunifuElipse2.ElipseRadius = 15
+        Me.BunifuElipse2.TargetControl = Me.Panel1
+        '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me
+        Me.BunifuDragControl1.Vertical = True
+        '
+        'VerSolicitudesDePersonalToolStripMenuItem
+        '
+        Me.VerSolicitudesDePersonalToolStripMenuItem.Name = "VerSolicitudesDePersonalToolStripMenuItem"
+        Me.VerSolicitudesDePersonalToolStripMenuItem.Size = New System.Drawing.Size(349, 28)
+        Me.VerSolicitudesDePersonalToolStripMenuItem.Text = "Ver solicitudes de personal"
         '
         'AdminMain
         '
@@ -244,4 +252,5 @@ Partial Class AdminMain
     Friend WithEvents AdministrarOrdenesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarPersonalToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BunifuFlatButton1 As Button
+    Friend WithEvents VerSolicitudesDePersonalToolStripMenuItem As ToolStripMenuItem
 End Class

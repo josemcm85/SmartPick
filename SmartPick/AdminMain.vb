@@ -80,4 +80,9 @@
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         Me.Close()
     End Sub
+
+    Private Sub VerSolicitudesDePersonalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerSolicitudesDePersonalToolStripMenuItem.Click
+        ListaDellamadas.Show()
+
+    End Sub
 End Class
