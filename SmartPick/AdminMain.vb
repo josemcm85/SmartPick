@@ -26,7 +26,7 @@
 
     End Sub
 
-    Private Sub AgregarEliminarUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarEliminarUsuarioToolStripMenuItem.Click
+    Private Sub AgregarEliminarUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
         FormAddUser.Show()
 
@@ -50,7 +50,7 @@
 
     End Sub
 
-    Private Sub OrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenesToolStripMenuItem.Click
+    Private Sub OrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
         FormOrderDetails.Show()
 
@@ -70,6 +70,10 @@
     End Sub
 
     Private Sub AdministrarOrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarOrdenesToolStripMenuItem.Click
-        AdministrarOrdenes.Show()
+        FormOrderDetails.Show()
+    End Sub
+
+    Private Sub AdministrarPersonalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarPersonalToolStripMenuItem.Click
+        FormAddUser.Show()
     End Sub
 End Class

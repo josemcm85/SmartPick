@@ -40,21 +40,48 @@ Public Class AdministrarOrdenes
 
         Conn.Open()
         Dim Command2 As New SqlCommand("Select * from OrdenesCompletas where NoOrden=" & NoOrden & ";", Conn)
-        Dim Adapter2 As New SqlDataAdapter(Command)
-        If Adapter2 Is Nothing Then
-            TextBox1.Text = "Orden Pendiente!"
-        Else
+        Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
+
+        If Adapter2.HasRows Then
             TextBox1.Text = "Orden finalizada!"
+        Else
+            TextBox1.Text = "Orden Pendiente!"
         End If
         Conn.Close()
 
     End Sub
 
     Private Sub BtnFinalizar_Click(sender As Object, e As EventArgs) Handles BtnFinalizar.Click
-        Conn.Open()
-        Dim CommandInsert As New SqlCommand("Insert into OrdenesCompletas values('" & NoOrden & "');", Conn)
-        Dim Adapter As New SqlDataAdapter(CommandInsert)
-        CommandInsert.ExecuteNonQuery()
-        Conn.Close()
+
+
+
+        Dim Result As Integer = MessageBox.Show("Está seguro que quiere cerrar la orden" & NoOrden & "?", "Cerrar Orden", MessageBoxButtons.YesNo)
+        If Result = DialogResult.No Then
+            MessageBox.Show("Función cancelada")
+        ElseIf Result = DialogResult.Yes Then
+            Conn.Open()
+            Try
+                Dim CommandInsert As New SqlCommand("Exec CompletarOrden'" & NoOrden & "';", Conn)
+                Dim Adapter As New SqlDataAdapter(CommandInsert)
+                CommandInsert.ExecuteNonQuery()
+
+                Dim Command2 As New SqlCommand("Select * from OrdenesCompletas where NoOrden=" & NoOrden & ";", Conn)
+                Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
+
+                If Adapter2.HasRows Then
+                    TextBox1.Text = "Orden finalizada!"
+                Else
+                    TextBox1.Text = "Orden Pendiente!"
+                End If
+
+
+                MsgBox("Orden se ha marcado como finalizada")
+
+            Catch ex As Exception
+                MsgBox("Error al cerrar orden")
+            End Try
+
+            Conn.Close()
+        End If
     End Sub
 End Class
