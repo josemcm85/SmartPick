@@ -89,6 +89,16 @@ Public Class PagoCliente
         txtImpuesto.Text = "Impuestos ₡: "
         txtTotal.Text = "Total ₡: "
 
+        'Dim sqlConn = New SqlConnection(connectionString)
+        'sqlConn.Open()
+
+
+        Dim Sum As Integer = 0
+        For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
+            Sum = Sum + DTGList.Rows(i).Cells(4).Value
+        Next
+
+
 
 
         Conn.Open()
@@ -123,7 +133,7 @@ Public Class PagoCliente
             lblSum.Text += Convert.ToString(Sum)
             txtDescuento.Text += Convert.ToString(appliedDiscount)
             txtImpuesto.Text += Convert.ToString(taxAfterDiscount)
-            txtTotal.Text = Convert.ToString(Sum + taxAfterDiscount)
+            txtTotal.Text += Convert.ToString(Sum - appliedDiscount + taxAfterDiscount)
 
             textboxCoupon.Enabled = False
         Else
@@ -131,7 +141,10 @@ Public Class PagoCliente
             MsgBox("Cupón no válido.")
             Conn.Close()
             Conn.Open()
+
         End If
+        Conn.Close()
+
     End Sub
 
     Private Sub txtDescuento_Click(sender As Object, e As EventArgs) Handles txtDescuento.Click
