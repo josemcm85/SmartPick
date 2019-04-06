@@ -171,5 +171,11 @@ Public Class PagoCliente
         Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
         Conn.Close()
 
+        FormCustomerSatisfaction.Show()
+
+    End Sub
+
+    Private Sub txtNoOrden_TextChanged(sender As Object, e As EventArgs) Handles txtNoOrden.TextChanged
+
     End Sub
 End Class

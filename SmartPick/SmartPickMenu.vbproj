@@ -142,6 +142,12 @@
     <Compile Include="FormCoupons.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormCustomerSatisfaction.Designer.vb">
+      <DependentUpon>FormCustomerSatisfaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerSatisfaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLanguage.Designer.vb">
       <DependentUpon>FormLanguage.vb</DependentUpon>
     </Compile>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCoupons.resx">
       <DependentUpon>FormCoupons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerSatisfaction.resx">
+      <DependentUpon>FormCustomerSatisfaction.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLanguage.resx">
       <DependentUpon>FormLanguage.vb</DependentUpon>
