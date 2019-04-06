@@ -70,7 +70,7 @@
     End Sub
 
     Private Sub AdministrarOrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarOrdenesToolStripMenuItem.Click
-        FormOrderDetails.Show()
+
     End Sub
 
     Private Sub AdministrarPersonalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarPersonalToolStripMenuItem.Click
@@ -84,5 +84,13 @@
     Private Sub VerSolicitudesDePersonalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerSolicitudesDePersonalToolStripMenuItem.Click
         ListaDellamadas.Show()
 
+    End Sub
+
+    Private Sub SatisfacciónAlClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SatisfacciónAlClienteToolStripMenuItem.Click
+        AdminCustomerSatisfaction.Show()
+    End Sub
+
+    Private Sub AdministrarOrdenesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AdministrarOrdenesToolStripMenuItem1.Click
+        FormOrderDetails.Show()
     End Sub
 End Class

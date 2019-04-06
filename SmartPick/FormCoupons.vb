@@ -112,4 +112,12 @@ Public Class FormCoupons
     Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
         Me.Close()
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub dgvCoupons_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCoupons.CellContentClick
+
+    End Sub
 End Class

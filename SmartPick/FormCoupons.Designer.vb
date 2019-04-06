@@ -26,6 +26,10 @@ Partial Class FormCoupons
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormCoupons))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtCoupon = New MetroFramework.Controls.MetroTextBox()
+        Me.txtPercentage = New MetroFramework.Controls.MetroTextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
         Me.dgvCoupons = New System.Windows.Forms.DataGridView()
         Me.BtnCancel = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -33,10 +37,6 @@ Partial Class FormCoupons
         Me.BtnAddCoupon = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbltitle = New System.Windows.Forms.Label()
-        Me.txtPercentage = New MetroFramework.Controls.MetroTextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtCoupon = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.BunifuCards1.SuspendLayout()
         CType(Me.dgvCoupons, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +64,98 @@ Partial Class FormCoupons
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(576, 551)
         Me.Panel1.TabIndex = 1
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(390, 93)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(55, 16)
+        Me.BunifuCustomLabel1.TabIndex = 60
+        Me.BunifuCustomLabel1.Text = "Cupón:"
+        '
+        'txtCoupon
+        '
+        Me.txtCoupon.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtCoupon.CustomButton.Image = Nothing
+        Me.txtCoupon.CustomButton.Location = New System.Drawing.Point(108, 1)
+        Me.txtCoupon.CustomButton.Name = ""
+        Me.txtCoupon.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtCoupon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtCoupon.CustomButton.TabIndex = 1
+        Me.txtCoupon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtCoupon.CustomButton.UseSelectable = True
+        Me.txtCoupon.CustomButton.Visible = False
+        Me.txtCoupon.DisplayIcon = True
+        Me.txtCoupon.Icon = Global.SmartPick.My.Resources.Resources.icons8_price_tag_50px_11
+        Me.txtCoupon.IconRight = True
+        Me.txtCoupon.Lines = New String(-1) {}
+        Me.txtCoupon.Location = New System.Drawing.Point(394, 123)
+        Me.txtCoupon.MaxLength = 32767
+        Me.txtCoupon.Name = "txtCoupon"
+        Me.txtCoupon.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCoupon.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtCoupon.SelectedText = ""
+        Me.txtCoupon.SelectionLength = 0
+        Me.txtCoupon.SelectionStart = 0
+        Me.txtCoupon.ShortcutsEnabled = True
+        Me.txtCoupon.Size = New System.Drawing.Size(130, 23)
+        Me.txtCoupon.TabIndex = 59
+        Me.txtCoupon.UseSelectable = True
+        Me.txtCoupon.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtCoupon.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'txtPercentage
+        '
+        Me.txtPercentage.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.txtPercentage.CustomButton.Image = Nothing
+        Me.txtPercentage.CustomButton.Location = New System.Drawing.Point(110, 1)
+        Me.txtPercentage.CustomButton.Name = ""
+        Me.txtPercentage.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtPercentage.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtPercentage.CustomButton.TabIndex = 1
+        Me.txtPercentage.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtPercentage.CustomButton.UseSelectable = True
+        Me.txtPercentage.CustomButton.Visible = False
+        Me.txtPercentage.DisplayIcon = True
+        Me.txtPercentage.Icon = Global.SmartPick.My.Resources.Resources.icons8_percentage_26px_5
+        Me.txtPercentage.IconRight = True
+        Me.txtPercentage.Lines = New String(-1) {}
+        Me.txtPercentage.Location = New System.Drawing.Point(393, 192)
+        Me.txtPercentage.MaxLength = 32767
+        Me.txtPercentage.Name = "txtPercentage"
+        Me.txtPercentage.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPercentage.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtPercentage.SelectedText = ""
+        Me.txtPercentage.SelectionLength = 0
+        Me.txtPercentage.SelectionStart = 0
+        Me.txtPercentage.ShortcutsEnabled = True
+        Me.txtPercentage.Size = New System.Drawing.Size(132, 23)
+        Me.txtPercentage.TabIndex = 58
+        Me.txtPercentage.UseSelectable = True
+        Me.txtPercentage.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtPercentage.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(390, 163)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(81, 16)
+        Me.Label2.TabIndex = 57
+        Me.Label2.Text = "Porcentaje:"
         '
         'BunifuCards1
         '
@@ -188,98 +280,6 @@ Partial Class FormCoupons
         Me.lbltitle.Size = New System.Drawing.Size(106, 16)
         Me.lbltitle.TabIndex = 0
         Me.lbltitle.Text = "Crear Cupones"
-        '
-        'txtPercentage
-        '
-        Me.txtPercentage.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.txtPercentage.CustomButton.Image = Nothing
-        Me.txtPercentage.CustomButton.Location = New System.Drawing.Point(110, 1)
-        Me.txtPercentage.CustomButton.Name = ""
-        Me.txtPercentage.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtPercentage.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtPercentage.CustomButton.TabIndex = 1
-        Me.txtPercentage.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtPercentage.CustomButton.UseSelectable = True
-        Me.txtPercentage.CustomButton.Visible = False
-        Me.txtPercentage.DisplayIcon = True
-        Me.txtPercentage.Icon = Global.SmartPick.My.Resources.Resources.icons8_percentage_26px_5
-        Me.txtPercentage.IconRight = True
-        Me.txtPercentage.Lines = New String(-1) {}
-        Me.txtPercentage.Location = New System.Drawing.Point(393, 192)
-        Me.txtPercentage.MaxLength = 32767
-        Me.txtPercentage.Name = "txtPercentage"
-        Me.txtPercentage.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtPercentage.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtPercentage.SelectedText = ""
-        Me.txtPercentage.SelectionLength = 0
-        Me.txtPercentage.SelectionStart = 0
-        Me.txtPercentage.ShortcutsEnabled = True
-        Me.txtPercentage.Size = New System.Drawing.Size(132, 23)
-        Me.txtPercentage.TabIndex = 58
-        Me.txtPercentage.UseSelectable = True
-        Me.txtPercentage.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtPercentage.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(390, 163)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 16)
-        Me.Label2.TabIndex = 57
-        Me.Label2.Text = "Porcentaje:"
-        '
-        'BunifuCustomLabel1
-        '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(390, 93)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(55, 16)
-        Me.BunifuCustomLabel1.TabIndex = 60
-        Me.BunifuCustomLabel1.Text = "Cupón:"
-        '
-        'txtCoupon
-        '
-        Me.txtCoupon.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.txtCoupon.CustomButton.Image = Nothing
-        Me.txtCoupon.CustomButton.Location = New System.Drawing.Point(108, 1)
-        Me.txtCoupon.CustomButton.Name = ""
-        Me.txtCoupon.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtCoupon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtCoupon.CustomButton.TabIndex = 1
-        Me.txtCoupon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtCoupon.CustomButton.UseSelectable = True
-        Me.txtCoupon.CustomButton.Visible = False
-        Me.txtCoupon.DisplayIcon = True
-        Me.txtCoupon.Icon = Global.SmartPick.My.Resources.Resources.icons8_price_tag_50px_11
-        Me.txtCoupon.IconRight = True
-        Me.txtCoupon.Lines = New String(-1) {}
-        Me.txtCoupon.Location = New System.Drawing.Point(394, 123)
-        Me.txtCoupon.MaxLength = 32767
-        Me.txtCoupon.Name = "txtCoupon"
-        Me.txtCoupon.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCoupon.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtCoupon.SelectedText = ""
-        Me.txtCoupon.SelectionLength = 0
-        Me.txtCoupon.SelectionStart = 0
-        Me.txtCoupon.ShortcutsEnabled = True
-        Me.txtCoupon.Size = New System.Drawing.Size(130, 23)
-        Me.txtCoupon.TabIndex = 59
-        Me.txtCoupon.UseSelectable = True
-        Me.txtCoupon.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtCoupon.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'FormCoupons
         '
