@@ -88,7 +88,7 @@ Partial Class Orden
         Me.ComboMesa.Location = New System.Drawing.Point(314, 194)
         Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboMesa.Name = "ComboMesa"
-        Me.ComboMesa.Size = New System.Drawing.Size(116, 25)
+        Me.ComboMesa.Size = New System.Drawing.Size(116, 23)
         Me.ComboMesa.TabIndex = 6
         '
         'Label4
@@ -100,7 +100,7 @@ Partial Class Orden
         Me.Label4.Location = New System.Drawing.Point(324, 240)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(290, 21)
+        Me.Label4.Size = New System.Drawing.Size(238, 19)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "El precio total es de (incluye IVA):"
         '
@@ -113,7 +113,7 @@ Partial Class Orden
         Me.lblTotal.Location = New System.Drawing.Point(414, 268)
         Me.lblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(65, 21)
+        Me.lblTotal.Size = New System.Drawing.Size(55, 19)
         Me.lblTotal.TabIndex = 8
         Me.lblTotal.Text = "Label5"
         '
@@ -161,7 +161,7 @@ Partial Class Orden
         Me.NoOrden.Location = New System.Drawing.Point(75, 2)
         Me.NoOrden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.NoOrden.Name = "NoOrden"
-        Me.NoOrden.Size = New System.Drawing.Size(24, 22)
+        Me.NoOrden.Size = New System.Drawing.Size(20, 20)
         Me.NoOrden.TabIndex = 25
         Me.NoOrden.Text = "#"
         '
@@ -184,7 +184,7 @@ Partial Class Orden
         Me.Label10.Location = New System.Drawing.Point(0, 2)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(106, 22)
+        Me.Label10.Size = New System.Drawing.Size(84, 20)
         Me.Label10.TabIndex = 24
         Me.Label10.Text = "ORDEN #: "
         '
@@ -197,7 +197,7 @@ Partial Class Orden
         Me.Label11.Location = New System.Drawing.Point(33, 69)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(100, 22)
+        Me.Label11.Size = New System.Drawing.Size(83, 20)
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Desglose: "
         '
@@ -210,7 +210,7 @@ Partial Class Orden
         Me.Label1.Location = New System.Drawing.Point(310, 162)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 22)
+        Me.Label1.Size = New System.Drawing.Size(58, 20)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Mesa: "
         '
@@ -222,7 +222,7 @@ Partial Class Orden
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(345, 269)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 21)
+        Me.Label3.Size = New System.Drawing.Size(69, 19)
         Me.Label3.TabIndex = 53
         Me.Label3.Text = "Precio ₡:"
         '
@@ -277,7 +277,7 @@ Partial Class Orden
         '
         'Orden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom

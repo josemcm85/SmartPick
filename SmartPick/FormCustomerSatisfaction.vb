@@ -3,9 +3,9 @@
 Public Class FormCustomerSatisfaction
 
     Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim NumeroOrden As Integer = 1
 
     Private Sub FormCustomerSatisfaction_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
 
 
 
@@ -14,11 +14,11 @@ Public Class FormCustomerSatisfaction
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSend.Click
 
 
-        Dim insertQuery As String = "INSERT INTO customerSatisfaction (rating,comments) VALUES(" & ratingStars.Value & ",'" & TextBoxComments.Text & "')"
+        Dim insertQuery As String = "INSERT INTO customerSatisfaction (rating,comments,idOrden) VALUES(" & ratingStars.Value & ",'" & TextBoxComments.Text & "'," & CInt(txtNoOrden.Text) & ")"
 
         ExecuteQuery(insertQuery)
 
-        MessageBox.Show("Gracias por valorarnos.Lo esperamos pronto!")
+        MessageBox.Show("Gracias por valorarnos. Lo esperamos pronto!")
 
 
 

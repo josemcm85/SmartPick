@@ -175,6 +175,7 @@ Public Class Orden
                 connection.Close()
                 MsgBox("Orden Realizada, tu número de orden es: " & idLastOrder)
                 PagoCliente.txtNoOrden.Text = idLastOrder
+                FormCustomerSatisfaction.txtNoOrden.Text = idLastOrder
 
 
             Catch ex As Exception

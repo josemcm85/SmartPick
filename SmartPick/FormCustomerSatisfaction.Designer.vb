@@ -35,6 +35,8 @@ Partial Class FormCustomerSatisfaction
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.txtNoOrden = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -176,6 +178,27 @@ Partial Class FormCustomerSatisfaction
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
         '
+        'txtNoOrden
+        '
+        Me.txtNoOrden.Enabled = False
+        Me.txtNoOrden.Location = New System.Drawing.Point(396, 125)
+        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNoOrden.Name = "txtNoOrden"
+        Me.txtNoOrden.Size = New System.Drawing.Size(39, 20)
+        Me.txtNoOrden.TabIndex = 60
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Label3.Location = New System.Drawing.Point(267, 125)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(125, 19)
+        Me.Label3.TabIndex = 61
+        Me.Label3.Text = "Número de orden: "
+        '
         'FormCustomerSatisfaction
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -183,6 +206,8 @@ Partial Class FormCustomerSatisfaction
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(515, 465)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtNoOrden)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSend)
@@ -214,4 +239,6 @@ Partial Class FormCustomerSatisfaction
     Friend WithEvents Label1 As Label
     Friend WithEvents btnClose As Button
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents txtNoOrden As TextBox
+    Friend WithEvents Label3 As Label
 End Class

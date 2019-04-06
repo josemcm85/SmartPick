@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class PagoCliente
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class PagoCliente
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PagoCliente))
         Me.Label1 = New System.Windows.Forms.Label()
@@ -69,7 +69,7 @@ Partial Class PagoCliente
         '
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(9, 128)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(164, 30)
@@ -88,7 +88,7 @@ Partial Class PagoCliente
         'txtNoOrden
         '
         Me.txtNoOrden.Location = New System.Drawing.Point(9, 63)
-        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoOrden.Name = "txtNoOrden"
         Me.txtNoOrden.Size = New System.Drawing.Size(164, 20)
         Me.txtNoOrden.TabIndex = 5
@@ -96,7 +96,7 @@ Partial Class PagoCliente
         'Btn
         '
         Me.Btn.Location = New System.Drawing.Point(177, 62)
-        Me.Btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn.Name = "Btn"
         Me.Btn.Size = New System.Drawing.Size(56, 19)
         Me.Btn.TabIndex = 6
@@ -115,7 +115,7 @@ Partial Class PagoCliente
         Me.buttonValidateCpn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.buttonValidateCpn.ForeColor = System.Drawing.Color.Snow
         Me.buttonValidateCpn.Location = New System.Drawing.Point(597, 174)
-        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonValidateCpn.Name = "buttonValidateCpn"
         Me.buttonValidateCpn.Size = New System.Drawing.Size(68, 27)
         Me.buttonValidateCpn.TabIndex = 55
@@ -241,7 +241,7 @@ Partial Class PagoCliente
         '
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTGList.Location = New System.Drawing.Point(11, 172)
-        Me.DTGList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DTGList.Margin = New System.Windows.Forms.Padding(2)
         Me.DTGList.Name = "DTGList"
         Me.DTGList.RowTemplate.Height = 24
         Me.DTGList.Size = New System.Drawing.Size(316, 184)
@@ -250,7 +250,7 @@ Partial Class PagoCliente
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(496, 385)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(65, 26)
         Me.Button1.TabIndex = 64
@@ -315,7 +315,7 @@ Partial Class PagoCliente
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "PagoCliente"
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

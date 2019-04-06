@@ -71,6 +71,8 @@ Partial Class AdminCustomerSatisfaction
         '
         Me.dgvSatisfaction.AllowUserToAddRows = False
         Me.dgvSatisfaction.AllowUserToDeleteRows = False
+        Me.dgvSatisfaction.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvSatisfaction.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvSatisfaction.BackgroundColor = System.Drawing.Color.Snow
         Me.dgvSatisfaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSatisfaction.Location = New System.Drawing.Point(0, 4)
