@@ -32,8 +32,10 @@ Partial Class AdminMain
         Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarTipoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearCuponesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarOrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarOrdenesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SatisfacciónAlClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarPersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerSolicitudesDePersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -43,8 +45,6 @@ Partial Class AdminMain
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.SatisfacciónAlClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministrarOrdenesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class AdminMain
         '
         Me.AdministrarMenuToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.AdministrarMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPlatoToolStripMenuItem, Me.EditarPlatoToolStripMenuItem, Me.EliminarPlatoToolStripMenuItem, Me.CategoriaToolStripMenuItem, Me.ModificarTipoToolStripMenuItem, Me.CrearCuponesToolStripMenuItem, Me.CerrarToolStripMenuItem})
+        Me.AdministrarMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPlatoToolStripMenuItem, Me.EditarPlatoToolStripMenuItem, Me.EliminarPlatoToolStripMenuItem, Me.CategoriaToolStripMenuItem, Me.ModificarTipoToolStripMenuItem, Me.CrearCuponesToolStripMenuItem})
         Me.AdministrarMenuToolStripMenuItem.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdministrarMenuToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.Name = "AdministrarMenuToolStripMenuItem"
@@ -116,18 +116,30 @@ Partial Class AdminMain
         Me.CrearCuponesToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
         Me.CrearCuponesToolStripMenuItem.Text = "Crear cupones"
         '
-        'CerrarToolStripMenuItem
-        '
-        Me.CerrarToolStripMenuItem.Name = "CerrarToolStripMenuItem"
-        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
-        Me.CerrarToolStripMenuItem.Text = "Cerrar"
-        '
         'AdministrarOrdenesToolStripMenuItem
         '
-        Me.AdministrarOrdenesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarOrdenesToolStripMenuItem1, Me.SatisfacciónAlClienteToolStripMenuItem})
+        Me.AdministrarOrdenesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarOrdenesToolStripMenuItem1, Me.SatisfacciónAlClienteToolStripMenuItem, Me.ReporteToolStripMenuItem})
         Me.AdministrarOrdenesToolStripMenuItem.Name = "AdministrarOrdenesToolStripMenuItem"
         Me.AdministrarOrdenesToolStripMenuItem.Size = New System.Drawing.Size(122, 25)
         Me.AdministrarOrdenesToolStripMenuItem.Text = "|  Ordenes |"
+        '
+        'AdministrarOrdenesToolStripMenuItem1
+        '
+        Me.AdministrarOrdenesToolStripMenuItem1.Name = "AdministrarOrdenesToolStripMenuItem1"
+        Me.AdministrarOrdenesToolStripMenuItem1.Size = New System.Drawing.Size(249, 26)
+        Me.AdministrarOrdenesToolStripMenuItem1.Text = "Administrar Ordenes"
+        '
+        'SatisfacciónAlClienteToolStripMenuItem
+        '
+        Me.SatisfacciónAlClienteToolStripMenuItem.Name = "SatisfacciónAlClienteToolStripMenuItem"
+        Me.SatisfacciónAlClienteToolStripMenuItem.Size = New System.Drawing.Size(249, 26)
+        Me.SatisfacciónAlClienteToolStripMenuItem.Text = "Satisfacción al cliente"
+        '
+        'ReporteToolStripMenuItem
+        '
+        Me.ReporteToolStripMenuItem.Name = "ReporteToolStripMenuItem"
+        Me.ReporteToolStripMenuItem.Size = New System.Drawing.Size(249, 26)
+        Me.ReporteToolStripMenuItem.Text = "Reporte"
         '
         'AdministrarPersonalToolStripMenuItem
         '
@@ -159,7 +171,7 @@ Partial Class AdminMain
         Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.BunifuSeparator1.LineThickness = 3
         Me.BunifuSeparator1.Location = New System.Drawing.Point(352, 63)
-        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuSeparator1.Name = "BunifuSeparator1"
         Me.BunifuSeparator1.Size = New System.Drawing.Size(19, 221)
         Me.BunifuSeparator1.TabIndex = 2
@@ -191,7 +203,7 @@ Partial Class AdminMain
         Me.BunifuFlatButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.Snow
         Me.BunifuFlatButton1.Location = New System.Drawing.Point(941, 10)
-        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(2)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Size = New System.Drawing.Size(43, 28)
         Me.BunifuFlatButton1.TabIndex = 55
@@ -214,18 +226,6 @@ Partial Class AdminMain
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
         '
-        'SatisfacciónAlClienteToolStripMenuItem
-        '
-        Me.SatisfacciónAlClienteToolStripMenuItem.Name = "SatisfacciónAlClienteToolStripMenuItem"
-        Me.SatisfacciónAlClienteToolStripMenuItem.Size = New System.Drawing.Size(249, 26)
-        Me.SatisfacciónAlClienteToolStripMenuItem.Text = "Satisfacción al cliente"
-        '
-        'AdministrarOrdenesToolStripMenuItem1
-        '
-        Me.AdministrarOrdenesToolStripMenuItem1.Name = "AdministrarOrdenesToolStripMenuItem1"
-        Me.AdministrarOrdenesToolStripMenuItem1.Size = New System.Drawing.Size(249, 26)
-        Me.AdministrarOrdenesToolStripMenuItem1.Text = "Administrar Ordenes"
-        '
         'AdminMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -236,8 +236,9 @@ Partial Class AdminMain
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "AdminMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administrar Menu"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -262,11 +263,11 @@ Partial Class AdminMain
     Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents CrearCuponesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarOrdenesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarPersonalToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BunifuFlatButton1 As Button
     Friend WithEvents VerSolicitudesDePersonalToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SatisfacciónAlClienteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarOrdenesToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ReporteToolStripMenuItem As ToolStripMenuItem
 End Class

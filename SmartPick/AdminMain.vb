@@ -57,18 +57,6 @@
 
     End Sub
 
-    Private Sub CerrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarToolStripMenuItem.Click
-
-        Me.Close()
-
-        FormLogin.Show()
-
-        FormLogin.txtUser.Text = Nothing
-        FormLogin.txtPass.Text = Nothing
-
-
-    End Sub
-
     Private Sub AdministrarOrdenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarOrdenesToolStripMenuItem.Click
 
     End Sub
@@ -79,6 +67,11 @@
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         Me.Close()
+
+        FormLogin.Show()
+
+        FormLogin.txtUser.Text = Nothing
+        FormLogin.txtPass.Text = Nothing
     End Sub
 
     Private Sub VerSolicitudesDePersonalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerSolicitudesDePersonalToolStripMenuItem.Click
@@ -92,5 +85,12 @@
 
     Private Sub AdministrarOrdenesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AdministrarOrdenesToolStripMenuItem1.Click
         FormOrderDetails.Show()
+    End Sub
+
+    Private Sub ReporteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteToolStripMenuItem.Click
+
+        FormReport.Show()
+
+
     End Sub
 End Class
