@@ -28,7 +28,8 @@
         'Close the Application
 
         Me.Close()
-        FormLogin.Close()
+        FormLogin.Show()
+
 
 
     End Sub

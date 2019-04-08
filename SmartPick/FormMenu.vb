@@ -26,7 +26,8 @@ Public Class FormMenu
         'Close the Application
 
         Me.Close()
-        FormLogin.Close()
+        FormLanguage.Show()
+
 
     End Sub
 
