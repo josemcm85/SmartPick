@@ -816,14 +816,6 @@ Public Class FormMenu
                            Where rowA.Cells(2).FormattedValue.ToString() <> String.Empty
                            Select Convert.ToInt32(rowA.Cells(2).FormattedValue)).Sum().ToString()
 
-        ''suma total y lo manda al textbox
-        'Dim sum As Double = 0
-        'For i As Integer = 0 To DataGridViewOrder.Rows.Count() - 1 Step +1
-        '    sum = sum + DataGridViewOrder.Rows(i).Cells(2).Value
-        'Next
-        'TextBoxSum.Text = sum.ToString()
-
-
 
     End Sub
 
@@ -851,16 +843,6 @@ Public Class FormMenu
         End If
 
 
-        'Dim index As Integer
-        'index = DataGridViewOrder.CurrentCell.RowIndex
-        ''borra fila seleccionada
-        'DataGridViewOrder.Rows.RemoveAt(index)
-
-
-        'DataGridViewOrder.Rows.Clear()
-        'TextBoxSum.Text = 0
-
-
     End Sub
 
     Private Sub PictureBoxItem_Click(sender As Object, e As EventArgs) Handles PictureBoxItem.Click
@@ -872,6 +854,11 @@ Public Class FormMenu
     End Sub
 
     Private Sub Btnfiltrar_Click(sender As Object, e As EventArgs) Handles Btnfiltrar.Click
+
+
+        DataGridViewMenu.DataSource = Nothing
+
+        DataGridViewDescription.DataSource = Nothing
 
         If lblleng.Text = "2" Then
 
@@ -939,68 +926,7 @@ Public Class FormMenu
 
         End If
 
-        'If ButtonAppetizer.Text.Equals("Appetizers") Then
-        '    Try
 
-        '        connection = New SqlConnection(connectionString)
-
-        '        Dim menuTable As New DataTable
-        '        Dim commandSelect As New SqlCommand("Exec searchEng '" & ComboFiltro.Text & "';", connection)
-
-        '        Dim dataAdapter As New SqlDataAdapter(commandSelect)
-        '        dataAdapter.Fill(menuTable)
-
-        '        DataGridViewMenu.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(4, 172, 209)
-
-        '        DataGridViewMenu.DataSource = menuTable
-
-        '        ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
-        '        ButtonMainDish.BackColor = Color.White
-        '        ButtonDrinks.BackColor = Color.White
-        '        ButtonDessert.BackColor = Color.White
-        '        ButtonToShare.BackColor = Color.White
-
-        '        'Hides Column with Picture information
-
-        '        DataGridViewMenu.Columns("Photo").Visible = False
-        '    Catch ex As Exception
-
-        '        MsgBox("Error en filtro")
-        '    End Try
-
-
-        'Else
-
-        '    Try
-        '        connection = New SqlConnection(connectionString)
-
-        '        Dim menuTable As New DataTable
-        '        Dim commandSelect As New SqlCommand("Exec SearchEsp '" & ComboFiltro.Text & "';", connection)
-
-        '        Dim dataAdapter As New SqlDataAdapter(commandSelect)
-        '        dataAdapter.Fill(menuTable)
-
-        '        DataGridViewMenu.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(4, 172, 209)
-
-        '        DataGridViewMenu.DataSource = menuTable
-
-        '        ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
-        '        ButtonMainDish.BackColor = Color.White
-        '        ButtonDrinks.BackColor = Color.White
-        '        ButtonDessert.BackColor = Color.White
-        '        ButtonToShare.BackColor = Color.White
-
-        '        'Hides Column with Picture information
-
-        '        DataGridViewMenu.Columns("Photo").Visible = False
-
-
-        '    Catch ex As Exception
-
-        '        MsgBox("Error Filtro")
-        '    End Try
-
-        'End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

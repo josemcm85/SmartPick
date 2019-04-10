@@ -55,7 +55,7 @@ Public Class PagoCliente
 
 
 
-
+        Btn.Enabled = False
 
 
 
