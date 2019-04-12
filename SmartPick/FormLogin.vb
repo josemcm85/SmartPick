@@ -11,6 +11,17 @@ Public Class FormLogin
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        If txtPass.isPassword = True Then
+
+            txtPass.isPassword = False
+
+        Else
+
+            txtPass.isPassword = True
+
+        End If
+
+
     End Sub
 
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs)

@@ -47,10 +47,10 @@ Partial Class DelMenu
         Me.txtPrecio = New MetroFramework.Controls.MetroTextBox()
         Me.txtCal = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.BtnClose2 = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.BtnEliminar = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BtnEliminar = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BtnClose2 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,9 +100,9 @@ Partial Class DelMenu
         Me.Label3.Location = New System.Drawing.Point(528, 156)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(146, 16)
+        Me.Label3.Size = New System.Drawing.Size(145, 16)
         Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Descripción del item:"
+        Me.Label3.Text = "Descripción del ítem:"
         '
         'Label2
         '
@@ -437,35 +437,20 @@ Partial Class DelMenu
         Me.Panel1.Size = New System.Drawing.Size(1029, 577)
         Me.Panel1.TabIndex = 79
         '
-        'BunifuElipse1
+        'BunifuCards1
         '
-        Me.BunifuElipse1.ElipseRadius = 20
-        Me.BunifuElipse1.TargetControl = Me.Panel1
-        '
-        'BtnClose2
-        '
-        Me.BtnClose2.ActiveBorderThickness = 1
-        Me.BtnClose2.ActiveCornerRadius = 7
-        Me.BtnClose2.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BtnClose2.ActiveForecolor = System.Drawing.Color.White
-        Me.BtnClose2.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BtnClose2.BackColor = System.Drawing.Color.Snow
-        Me.BtnClose2.BackgroundImage = CType(resources.GetObject("BtnClose2.BackgroundImage"), System.Drawing.Image)
-        Me.BtnClose2.ButtonText = "Cerrar"
-        Me.BtnClose2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnClose2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnClose2.ForeColor = System.Drawing.Color.SeaGreen
-        Me.BtnClose2.IdleBorderThickness = 1
-        Me.BtnClose2.IdleCornerRadius = 7
-        Me.BtnClose2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.BtnClose2.IdleForecolor = System.Drawing.Color.White
-        Me.BtnClose2.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnClose2.Location = New System.Drawing.Point(810, 484)
-        Me.BtnClose2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnClose2.Name = "BtnClose2"
-        Me.BtnClose2.Size = New System.Drawing.Size(134, 50)
-        Me.BtnClose2.TabIndex = 80
-        Me.BtnClose2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuCards1.BackColor = System.Drawing.Color.White
+        Me.BunifuCards1.BorderRadius = 5
+        Me.BunifuCards1.BottomSahddow = True
+        Me.BunifuCards1.color = System.Drawing.Color.Tomato
+        Me.BunifuCards1.Controls.Add(Me.DatagridMenu)
+        Me.BunifuCards1.LeftSahddow = False
+        Me.BunifuCards1.Location = New System.Drawing.Point(9, 39)
+        Me.BunifuCards1.Name = "BunifuCards1"
+        Me.BunifuCards1.RightSahddow = True
+        Me.BunifuCards1.ShadowDepth = 20
+        Me.BunifuCards1.Size = New System.Drawing.Size(472, 416)
+        Me.BunifuCards1.TabIndex = 82
         '
         'BtnEliminar
         '
@@ -492,20 +477,35 @@ Partial Class DelMenu
         Me.BtnEliminar.TabIndex = 81
         Me.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'BunifuCards1
+        'BtnClose2
         '
-        Me.BunifuCards1.BackColor = System.Drawing.Color.White
-        Me.BunifuCards1.BorderRadius = 5
-        Me.BunifuCards1.BottomSahddow = True
-        Me.BunifuCards1.color = System.Drawing.Color.Tomato
-        Me.BunifuCards1.Controls.Add(Me.DatagridMenu)
-        Me.BunifuCards1.LeftSahddow = False
-        Me.BunifuCards1.Location = New System.Drawing.Point(9, 39)
-        Me.BunifuCards1.Name = "BunifuCards1"
-        Me.BunifuCards1.RightSahddow = True
-        Me.BunifuCards1.ShadowDepth = 20
-        Me.BunifuCards1.Size = New System.Drawing.Size(472, 416)
-        Me.BunifuCards1.TabIndex = 82
+        Me.BtnClose2.ActiveBorderThickness = 1
+        Me.BtnClose2.ActiveCornerRadius = 7
+        Me.BtnClose2.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose2.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnClose2.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnClose2.BackColor = System.Drawing.Color.Snow
+        Me.BtnClose2.BackgroundImage = CType(resources.GetObject("BtnClose2.BackgroundImage"), System.Drawing.Image)
+        Me.BtnClose2.ButtonText = "Cerrar"
+        Me.BtnClose2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnClose2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClose2.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnClose2.IdleBorderThickness = 1
+        Me.BtnClose2.IdleCornerRadius = 7
+        Me.BtnClose2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnClose2.IdleForecolor = System.Drawing.Color.White
+        Me.BtnClose2.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BtnClose2.Location = New System.Drawing.Point(810, 484)
+        Me.BtnClose2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnClose2.Name = "BtnClose2"
+        Me.BtnClose2.Size = New System.Drawing.Size(134, 50)
+        Me.BtnClose2.TabIndex = 80
+        Me.BtnClose2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me.Panel1
         '
         'BunifuElipse2
         '

@@ -283,9 +283,9 @@ Partial Class addMenu
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(678, 32)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(116, 16)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(122, 16)
         Me.BunifuCustomLabel1.TabIndex = 47
-        Me.BunifuCustomLabel1.Text = "Código del ítem:"
+        Me.BunifuCustomLabel1.Text = "Código del ítem:*"
         '
         'BunifuSeparator1
         '
@@ -362,9 +362,9 @@ Partial Class addMenu
         Me.Label4.Location = New System.Drawing.Point(678, 296)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(133, 16)
+        Me.Label4.Size = New System.Drawing.Size(139, 16)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Categoría del ítem:"
+        Me.Label4.Text = "Categoría del ítem:*"
         '
         'txtPrecio
         '
@@ -443,9 +443,9 @@ Partial Class addMenu
         Me.Label5.Location = New System.Drawing.Point(679, 357)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(114, 16)
+        Me.Label5.Size = New System.Drawing.Size(120, 16)
         Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Tipo de comida:"
+        Me.Label5.Text = "Tipo de comida:*"
         '
         'TxtDesEsp
         '
@@ -466,9 +466,9 @@ Partial Class addMenu
         Me.Label3.Location = New System.Drawing.Point(679, 158)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(146, 16)
+        Me.Label3.Size = New System.Drawing.Size(151, 16)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Descripción del item:"
+        Me.Label3.Text = "Descripción del ítem:*"
         '
         'Label11
         '
@@ -479,9 +479,9 @@ Partial Class addMenu
         Me.Label11.Location = New System.Drawing.Point(918, 95)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(183, 16)
+        Me.Label11.Size = New System.Drawing.Size(189, 16)
         Me.Label11.TabIndex = 27
-        Me.Label11.Text = "Nombre del ítem en inglés:"
+        Me.Label11.Text = "Nombre del ítem en inglés:*"
         '
         'Label9
         '
@@ -492,9 +492,9 @@ Partial Class addMenu
         Me.Label9.Location = New System.Drawing.Point(679, 481)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(122, 16)
+        Me.Label9.Size = New System.Drawing.Size(128, 16)
         Me.Label9.TabIndex = 20
-        Me.Label9.Text = "Calorías del ítem:"
+        Me.Label9.Text = "Calorías del ítem:*"
         '
         'txtNombre
         '
@@ -550,9 +550,9 @@ Partial Class addMenu
         Me.Label6.Location = New System.Drawing.Point(679, 418)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(108, 16)
+        Me.Label6.Size = New System.Drawing.Size(114, 16)
         Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Precio del ítem:"
+        Me.Label6.Text = "Precio del ítem:*"
         '
         'Label8
         '
@@ -563,9 +563,9 @@ Partial Class addMenu
         Me.Label8.Location = New System.Drawing.Point(918, 296)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(118, 16)
+        Me.Label8.Size = New System.Drawing.Size(124, 16)
         Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Imagen del ítem:"
+        Me.Label8.Text = "Imagen del ítem:*"
         '
         'Label2
         '
@@ -576,9 +576,9 @@ Partial Class addMenu
         Me.Label2.Location = New System.Drawing.Point(678, 95)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(197, 16)
+        Me.Label2.Size = New System.Drawing.Size(202, 16)
         Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Nombre del item en español:"
+        Me.Label2.Text = "Nombre del ítem en español:*"
         '
         'PicBox
         '
@@ -679,9 +679,9 @@ Partial Class addMenu
         Me.Label7.Location = New System.Drawing.Point(918, 158)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(208, 16)
+        Me.Label7.Size = New System.Drawing.Size(214, 16)
         Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Descripción del ítem en Inglés:"
+        Me.Label7.Text = "Descripción del ítem en Inglés:*"
         '
         'CombComida
         '

@@ -199,9 +199,9 @@ Partial Class editMenu
         Me.Label3.Location = New System.Drawing.Point(491, 112)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(146, 16)
+        Me.Label3.Size = New System.Drawing.Size(145, 16)
         Me.Label3.TabIndex = 35
-        Me.Label3.Text = "Descripción del item:"
+        Me.Label3.Text = "Descripción del ítem:"
         '
         'Label2
         '

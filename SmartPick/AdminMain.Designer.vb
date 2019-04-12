@@ -101,7 +101,7 @@ Partial Class AdminMain
         Me.CategoriaToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
         Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
-        Me.CategoriaToolStripMenuItem.Text = "Modificar Categoria"
+        Me.CategoriaToolStripMenuItem.Text = "Modificar Categoría"
         '
         'ModificarTipoToolStripMenuItem
         '
@@ -121,13 +121,13 @@ Partial Class AdminMain
         Me.AdministrarOrdenesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarOrdenesToolStripMenuItem1, Me.SatisfacciónAlClienteToolStripMenuItem, Me.ReporteToolStripMenuItem})
         Me.AdministrarOrdenesToolStripMenuItem.Name = "AdministrarOrdenesToolStripMenuItem"
         Me.AdministrarOrdenesToolStripMenuItem.Size = New System.Drawing.Size(122, 25)
-        Me.AdministrarOrdenesToolStripMenuItem.Text = "|  Ordenes |"
+        Me.AdministrarOrdenesToolStripMenuItem.Text = "|  Órdenes |"
         '
         'AdministrarOrdenesToolStripMenuItem1
         '
         Me.AdministrarOrdenesToolStripMenuItem1.Name = "AdministrarOrdenesToolStripMenuItem1"
         Me.AdministrarOrdenesToolStripMenuItem1.Size = New System.Drawing.Size(249, 26)
-        Me.AdministrarOrdenesToolStripMenuItem1.Text = "Administrar Ordenes"
+        Me.AdministrarOrdenesToolStripMenuItem1.Text = "Administrar Órdenes"
         '
         'SatisfacciónAlClienteToolStripMenuItem
         '

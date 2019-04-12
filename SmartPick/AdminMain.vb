@@ -37,11 +37,11 @@
     End Sub
 
     Private Sub AgregarPlatoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarPlatoToolStripMenuItem.Click
-        Loading.Show()
+
 
         addMenu.Show()
 
-        Loading.Close()
+
     End Sub
 
     Private Sub CrearCuponesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearCuponesToolStripMenuItem.Click

@@ -51,9 +51,9 @@ Partial Class PagoCliente
         Me.Label1.Location = New System.Drawing.Point(9, 18)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(232, 13)
+        Me.Label1.Size = New System.Drawing.Size(235, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Porfavor espera a que tu orden esté terminada: "
+        Me.Label1.Text = "Por favor espera a que tu orden esté terminada: "
         '
         'Label2
         '

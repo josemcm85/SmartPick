@@ -40,7 +40,7 @@ Partial Class AdministrarOrdenes
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(146, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Lista de ordenes pendientes: "
+        Me.Label1.Text = "Lista de órdenes pendientes: "
         '
         'ListaOrdenes
         '
