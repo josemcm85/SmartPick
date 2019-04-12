@@ -24,134 +24,207 @@ Partial Class Recuperar
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Recuperar))
         Me.txtID = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblCorreo = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblasunto = New System.Windows.Forms.Label()
         Me.txtto = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lblcorreo = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lblasunto = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BtnSend = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtID
         '
-        Me.txtID.Location = New System.Drawing.Point(12, 34)
+        Me.txtID.Location = New System.Drawing.Point(168, 108)
         Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(242, 20)
+        Me.txtID.Size = New System.Drawing.Size(340, 20)
         Me.txtID.TabIndex = 0
         '
-        'Label1
+        'txtto
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Inserta tu ID: "
+        Me.txtto.BackColor = System.Drawing.Color.White
+        Me.txtto.Location = New System.Drawing.Point(127, 152)
+        Me.txtto.Name = "txtto"
+        Me.txtto.ReadOnly = True
+        Me.txtto.Size = New System.Drawing.Size(337, 20)
+        Me.txtto.TabIndex = 7
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(159, 47)
+        Me.Label2.Location = New System.Drawing.Point(315, 121)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 2
         '
-        'Label3
+        'Panel1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 201)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 13)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Te llegará un correo de:"
+        Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.BunifuThinButton21)
+        Me.Panel1.Controls.Add(Me.BtnSend)
+        Me.Panel1.Controls.Add(Me.lblasunto)
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel5)
+        Me.Panel1.Controls.Add(Me.lblcorreo)
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel3)
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
+        Me.Panel1.Controls.Add(Me.txtto)
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
+        Me.Panel1.Location = New System.Drawing.Point(44, 31)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(639, 339)
+        Me.Panel1.TabIndex = 10
         '
-        'lblCorreo
+        'BunifuCustomLabel1
         '
-        Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Location = New System.Drawing.Point(126, 201)
-        Me.lblCorreo.Name = "lblCorreo"
-        Me.lblCorreo.Size = New System.Drawing.Size(128, 13)
-        Me.lblCorreo.TabIndex = 4
-        Me.lblCorreo.Text = "SmartPickCo@Gmail.com"
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(124, 58)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(95, 16)
+        Me.BunifuCustomLabel1.TabIndex = 48
+        Me.BunifuCustomLabel1.Text = "Inserta tu ID:*"
         '
-        'Label4
+        'BunifuCustomLabel2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(257, 201)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(74, 13)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "con el asunto:"
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(124, 133)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(120, 16)
+        Me.BunifuCustomLabel2.TabIndex = 49
+        Me.BunifuCustomLabel2.Text = "Ingresar Correo:*"
+        '
+        'BunifuCustomLabel3
+        '
+        Me.BunifuCustomLabel3.AutoSize = True
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(68, 267)
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(165, 16)
+        Me.BunifuCustomLabel3.TabIndex = 50
+        Me.BunifuCustomLabel3.Text = "Te llegará un correo de:"
+        '
+        'lblcorreo
+        '
+        Me.lblcorreo.AutoSize = True
+        Me.lblcorreo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcorreo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblcorreo.Location = New System.Drawing.Point(229, 267)
+        Me.lblcorreo.Name = "lblcorreo"
+        Me.lblcorreo.Size = New System.Drawing.Size(172, 16)
+        Me.lblcorreo.TabIndex = 51
+        Me.lblcorreo.Text = "SmartPickCo@Gmail.com"
+        '
+        'BunifuCustomLabel5
+        '
+        Me.BunifuCustomLabel5.AutoSize = True
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(407, 267)
+        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(99, 16)
+        Me.BunifuCustomLabel5.TabIndex = 52
+        Me.BunifuCustomLabel5.Text = "con el asunto:"
         '
         'lblasunto
         '
         Me.lblasunto.AutoSize = True
-        Me.lblasunto.Location = New System.Drawing.Point(328, 201)
+        Me.lblasunto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblasunto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lblasunto.Location = New System.Drawing.Point(509, 267)
         Me.lblasunto.Name = "lblasunto"
-        Me.lblasunto.Size = New System.Drawing.Size(66, 13)
-        Me.lblasunto.TabIndex = 6
+        Me.lblasunto.Size = New System.Drawing.Size(78, 16)
+        Me.lblasunto.TabIndex = 53
         Me.lblasunto.Text = """Tus Datos"""
         '
-        'txtto
+        'BtnSend
         '
-        Me.txtto.Location = New System.Drawing.Point(12, 109)
-        Me.txtto.Name = "txtto"
-        Me.txtto.ReadOnly = True
-        Me.txtto.Size = New System.Drawing.Size(242, 20)
-        Me.txtto.TabIndex = 7
+        Me.BtnSend.ActiveBorderThickness = 1
+        Me.BtnSend.ActiveCornerRadius = 7
+        Me.BtnSend.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnSend.ActiveForecolor = System.Drawing.Color.White
+        Me.BtnSend.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BtnSend.BackColor = System.Drawing.Color.Snow
+        Me.BtnSend.BackgroundImage = CType(resources.GetObject("BtnSend.BackgroundImage"), System.Drawing.Image)
+        Me.BtnSend.ButtonText = "Enviar"
+        Me.BtnSend.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnSend.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSend.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BtnSend.IdleBorderThickness = 1
+        Me.BtnSend.IdleCornerRadius = 7
+        Me.BtnSend.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BtnSend.IdleForecolor = System.Drawing.Color.White
+        Me.BtnSend.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BtnSend.Location = New System.Drawing.Point(330, 193)
+        Me.BtnSend.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnSend.Name = "BtnSend"
+        Me.BtnSend.Size = New System.Drawing.Size(134, 50)
+        Me.BtnSend.TabIndex = 55
+        Me.BtnSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
+        'BunifuThinButton21
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 90)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 13)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Ingresar Correo: "
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(162, 159)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Enviar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BunifuThinButton21.ActiveBorderThickness = 1
+        Me.BunifuThinButton21.ActiveCornerRadius = 7
+        Me.BunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.ActiveForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.BackColor = System.Drawing.Color.Snow
+        Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuThinButton21.ButtonText = "Cancelar"
+        Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuThinButton21.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuThinButton21.IdleBorderThickness = 1
+        Me.BunifuThinButton21.IdleCornerRadius = 7
+        Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.Lavender
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(127, 193)
+        Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuThinButton21.Name = "BunifuThinButton21"
+        Me.BunifuThinButton21.Size = New System.Drawing.Size(134, 50)
+        Me.BunifuThinButton21.TabIndex = 56
+        Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Recuperar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(424, 314)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtto)
-        Me.Controls.Add(Me.lblasunto)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lblCorreo)
-        Me.Controls.Add(Me.Label3)
+        Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS2
+        Me.ClientSize = New System.Drawing.Size(733, 408)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtID)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Recuperar"
         Me.Text = "Recuperar Contraseña"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents txtID As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lblCorreo As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents lblasunto As Label
     Friend WithEvents txtto As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblasunto As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lblcorreo As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BtnSend As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
 End Class

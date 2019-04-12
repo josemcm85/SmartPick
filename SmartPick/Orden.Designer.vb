@@ -34,7 +34,6 @@ Partial Class Orden
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBoxClose = New System.Windows.Forms.PictureBox()
-        Me.NoOrden = New System.Windows.Forms.Label()
         Me.PictureBoxMinimize = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -133,7 +132,6 @@ Partial Class Orden
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Panel2.Controls.Add(Me.PictureBoxClose)
-        Me.Panel2.Controls.Add(Me.NoOrden)
         Me.Panel2.Controls.Add(Me.PictureBoxMinimize)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -151,19 +149,6 @@ Partial Class Orden
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxClose.TabIndex = 1
         Me.PictureBoxClose.TabStop = False
-        '
-        'NoOrden
-        '
-        Me.NoOrden.AutoSize = True
-        Me.NoOrden.BackColor = System.Drawing.Color.Transparent
-        Me.NoOrden.Font = New System.Drawing.Font("Century Gothic", 11.0!)
-        Me.NoOrden.ForeColor = System.Drawing.Color.Black
-        Me.NoOrden.Location = New System.Drawing.Point(75, 2)
-        Me.NoOrden.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.NoOrden.Name = "NoOrden"
-        Me.NoOrden.Size = New System.Drawing.Size(20, 20)
-        Me.NoOrden.TabIndex = 25
-        Me.NoOrden.Text = "#"
         '
         'PictureBoxMinimize
         '
@@ -184,9 +169,9 @@ Partial Class Orden
         Me.Label10.Location = New System.Drawing.Point(0, 2)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(84, 20)
+        Me.Label10.Size = New System.Drawing.Size(61, 20)
         Me.Label10.TabIndex = 24
-        Me.Label10.Text = "ORDEN #: "
+        Me.Label10.Text = "ORDEN"
         '
         'Label11
         '
@@ -317,7 +302,6 @@ Partial Class Orden
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBoxClose As PictureBox
     Friend WithEvents PictureBoxMinimize As PictureBox
-    Friend WithEvents NoOrden As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label11 As Label

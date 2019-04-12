@@ -13,7 +13,8 @@ Public Class Recuperar
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    Private Sub BtnSend_Click(sender As Object, e As EventArgs) Handles BtnSend.Click
 
         'El procedimiento extrae la informacion del usuario como: Correo, Nombre Usuario y password por medio del ID de empleado ingresado'
         Try
@@ -58,9 +59,9 @@ Public Class Recuperar
             Smtp_Server.Host = "smtp.gmail.com" 'Host especifico de Gmail'
             'Cuerpo del correo'
             e_mail = New MailMessage()
-            e_mail.From = New MailAddress(lblCorreo.Text)
+            e_mail.From = New MailAddress(lblcorreo.Text)
             e_mail.To.Add(txtto.Text)
-            e_mail.Subject = lblasunto.Text
+            e_mail.Subject = lblcorreo.Text
             e_mail.IsBodyHtml = False
             e_mail.Body = Linea
             Smtp_Server.Send(e_mail)
@@ -73,5 +74,10 @@ Public Class Recuperar
 
             ''!!!!!!En caso de que de error ir a este video https://www.youtube.com/watch?v=y3cotIr41PQ!!!!!!!!!!'
         End Try
+
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+        Me.Close()
     End Sub
 End Class

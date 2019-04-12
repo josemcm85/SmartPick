@@ -9,7 +9,7 @@ Public Class Orden
 
 
     Private Sub Orden_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        NoOrden.Text = NumeroOrden
+
         Me.lblTotal.Text = FormMenu.LblTotal.Text
 
         'lblTotal.Text = (From row As DataGridViewRow In DTGList.Rows Where row.Cells(1).FormattedValue.ToString() <> String.Empty Select Convert.ToInt32(row.Cells(1).FormattedValue)).Sum().ToString()
@@ -197,7 +197,5 @@ Public Class Orden
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
-    End Sub
 End Class

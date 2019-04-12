@@ -51,9 +51,7 @@ Public Class AdministrarOrdenes
 
     End Sub
 
-    Private Sub BtnFinalizar_Click(sender As Object, e As EventArgs) Handles BtnFinalizar.Click
-
-
+    Private Sub BtnFinalizar_Click_1(sender As Object, e As EventArgs) Handles BtnFinalizar.Click
 
         Dim Result As Integer = MessageBox.Show("Está seguro que quiere cerrar la orden" & NoOrden & "?", "Cerrar Orden", MessageBoxButtons.YesNo)
         If Result = DialogResult.No Then
@@ -83,5 +81,13 @@ Public Class AdministrarOrdenes
 
             Conn.Close()
         End If
+
+
+    End Sub
+
+    Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
+
+        Me.Close()
+
     End Sub
 End Class

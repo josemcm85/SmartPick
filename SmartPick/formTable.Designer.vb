@@ -77,6 +77,7 @@ Partial Class FormTable
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.tableComboBox)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormTable"
         Me.Text = "Seleccion Mesa"
         Me.ResumeLayout(False)
