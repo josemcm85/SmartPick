@@ -128,7 +128,7 @@ Partial Class FormLogin
         Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtPass.HintForeColor = System.Drawing.Color.Black
         Me.txtPass.HintText = "Password"
-        Me.txtPass.isPassword = True
+        Me.txtPass.isPassword = False
         Me.txtPass.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.txtPass.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))

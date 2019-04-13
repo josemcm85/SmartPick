@@ -84,7 +84,10 @@ Public Class FormLogin
     End Sub
 
     Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass.OnValueChanged
-        txtPass.isPassword = True
+
+        If String.IsNullOrEmpty(txtPass.Text) Then
+            txtPass.isPassword = True
+        End If
     End Sub
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
@@ -158,6 +161,8 @@ Public Class FormLogin
 
     Private Sub txtUser_OnValueChanged(sender As Object, e As EventArgs) Handles txtUser.OnValueChanged
         'Cambio test
+
+
     End Sub
 
     Private Sub btnWaiter_Click(sender As Object, e As EventArgs) 
