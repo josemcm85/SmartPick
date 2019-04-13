@@ -102,7 +102,7 @@ Partial Class FormLogin
         Me.BtnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnLogin.ActiveForecolor = System.Drawing.Color.White
         Me.BtnLogin.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.BtnLogin.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnLogin.BackColor = System.Drawing.Color.White
         Me.BtnLogin.BackgroundImage = CType(resources.GetObject("BtnLogin.BackgroundImage"), System.Drawing.Image)
         Me.BtnLogin.ButtonText = "Login"
         Me.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand
@@ -134,7 +134,7 @@ Partial Class FormLogin
         Me.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.txtPass.LineThickness = 3
         Me.txtPass.Location = New System.Drawing.Point(59, 138)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(201, 33)
         Me.txtPass.TabIndex = 10
@@ -154,7 +154,7 @@ Partial Class FormLogin
         Me.txtUser.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.txtUser.LineThickness = 3
         Me.txtUser.Location = New System.Drawing.Point(61, 60)
-        Me.txtUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(201, 33)
         Me.txtUser.TabIndex = 9

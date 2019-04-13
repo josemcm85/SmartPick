@@ -11,7 +11,7 @@ Public Class PagoCliente
 
     End Sub
 
-    Private Sub Btn_Click(sender As Object, e As EventArgs) Handles Btn.Click
+    Private Sub Btn_Click(sender As Object, e As EventArgs)
         Dim item As Integer = Convert.ToInt64(txtNoOrden.Text)
 
         Try
@@ -151,7 +151,7 @@ Public Class PagoCliente
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Conn.Open()
         Dim NoMesa As String
         Dim menuTable As New DataTable
@@ -176,6 +176,77 @@ Public Class PagoCliente
     End Sub
 
     Private Sub txtNoOrden_TextChanged(sender As Object, e As EventArgs) Handles txtNoOrden.TextChanged
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Conn.Open()
+        Dim NoMesa As String
+        Dim menuTable As New DataTable
+        Dim Command As New SqlCommand("Select NoTable from ListaOrdenes where idOrden=" & txtNoOrden.Text & ";", Conn)
+        Command.ExecuteNonQuery()
+        Dim reader As SqlDataReader = Command.ExecuteReader()
+        reader.Read()
+        NoMesa = Convert.ToString(reader.GetString(0))
+        reader.Close()
+        MsgBox(NoMesa)
+
+
+        Conn.Close()
+
+        Conn.Open()
+        Dim Command2 As New SqlCommand("exec addSoli '" & NoMesa & "','Pago de Cuenta';", Conn)
+        Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
+        Conn.Close()
+
+        FormCustomerSatisfaction.Show()
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Btn.Click
+        Dim item As Integer = Convert.ToInt64(txtNoOrden.Text)
+
+        Try
+            Conn.Open()
+            Dim Command2 As New SqlCommand("Select * from OrdenesCompletas where NoOrden=" & item & ";", Conn)
+            Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
+
+            If Adapter2.HasRows Then
+                TextBox1.Text = "Orden finalizada!"
+            Else
+                TextBox1.Text = "Orden Pendiente!"
+
+            End If
+            Conn.Close()
+        Catch ex As Exception
+
+            MsgBox("Numero de orden no encontrado")
+        End Try
+
+        Conn.Open()
+        Dim menuTable As New DataTable
+        Dim Command As New SqlCommand("Select * from Orden where Orden=" & item & ";", Conn)
+        Dim Adapter As New SqlDataAdapter(Command)
+        Adapter.Fill(menuTable)
+        DTGList.DataSource = menuTable
+        Conn.Close()
+
+
+
+        For i As Integer = 0 To DTGList.Rows.Count() - 1 Step +1
+            Sum = Sum + DTGList.Rows(i).Cells(4).Value
+        Next
+
+        Impuesto = Sum * 0.013
+        Total = Sum + Impuesto
+
+        txtPrecio.Text += Convert.ToString(Sum)
+        txtDescuento.Text += "0%"
+        txtImpuesto.Text += Convert.ToString(Impuesto)
+        txtTotal.Text += Convert.ToString(Total)
+
+
+
+        Btn.Enabled = False
 
     End Sub
 End Class
