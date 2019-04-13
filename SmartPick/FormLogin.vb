@@ -11,15 +11,18 @@ Public Class FormLogin
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        If txtPass.isPassword = True Then
 
-            txtPass.isPassword = False
+        'txtPass.isPassword = True
 
-        Else
+        'If txtPass.isPassword = True Then
 
-            txtPass.isPassword = True
+        '    txtPass.isPassword = False
 
-        End If
+        'Else
+
+        '    txtPass.isPassword = True
+
+        'End If
 
 
     End Sub
@@ -81,7 +84,7 @@ Public Class FormLogin
     End Sub
 
     Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass.OnValueChanged
-
+        txtPass.isPassword = True
     End Sub
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
@@ -159,6 +162,10 @@ Public Class FormLogin
 
     Private Sub btnWaiter_Click(sender As Object, e As EventArgs) 
         FormTable.Show()
+
+    End Sub
+
+    Private Sub BunifuGradientPanel2_Paint(sender As Object, e As PaintEventArgs) Handles BunifuGradientPanel2.Paint
 
     End Sub
 End Class
