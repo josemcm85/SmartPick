@@ -49,6 +49,7 @@ Partial Class PagoCliente
         Me.Label10 = New System.Windows.Forms.Label()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,10 +61,9 @@ Partial Class PagoCliente
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(7, 73)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(9, 90)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(269, 15)
+        Me.Label1.Size = New System.Drawing.Size(325, 18)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Por favor espera a que tu orden esté terminada: "
         '
@@ -72,21 +72,20 @@ Partial Class PagoCliente
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(9, 157)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(12, 193)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 15)
+        Me.Label2.Size = New System.Drawing.Size(125, 18)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Estado de orden: "
         '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(11, 183)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.Location = New System.Drawing.Point(15, 225)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(164, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(217, 36)
         Me.TextBox1.TabIndex = 2
         '
         'Label3
@@ -94,19 +93,18 @@ Partial Class PagoCliente
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(7, 100)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(9, 123)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(165, 15)
+        Me.Label3.Size = New System.Drawing.Size(197, 18)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Ingresa tu número de orden: "
         '
         'txtNoOrden
         '
-        Me.txtNoOrden.Location = New System.Drawing.Point(11, 118)
-        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNoOrden.Location = New System.Drawing.Point(15, 145)
+        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNoOrden.Name = "txtNoOrden"
-        Me.txtNoOrden.Size = New System.Drawing.Size(164, 20)
+        Me.txtNoOrden.Size = New System.Drawing.Size(217, 22)
         Me.txtNoOrden.TabIndex = 5
         '
         'buttonValidateCpn
@@ -120,10 +118,10 @@ Partial Class PagoCliente
         Me.buttonValidateCpn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonValidateCpn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.buttonValidateCpn.ForeColor = System.Drawing.Color.Snow
-        Me.buttonValidateCpn.Location = New System.Drawing.Point(614, 291)
-        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2)
+        Me.buttonValidateCpn.Location = New System.Drawing.Point(819, 358)
+        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.buttonValidateCpn.Name = "buttonValidateCpn"
-        Me.buttonValidateCpn.Size = New System.Drawing.Size(68, 27)
+        Me.buttonValidateCpn.Size = New System.Drawing.Size(91, 33)
         Me.buttonValidateCpn.TabIndex = 55
         Me.buttonValidateCpn.Text = "Validar"
         Me.buttonValidateCpn.UseVisualStyleBackColor = False
@@ -134,20 +132,19 @@ Partial Class PagoCliente
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(527, 269)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(703, 331)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 19)
+        Me.Label4.Size = New System.Drawing.Size(95, 21)
         Me.Label4.TabIndex = 54
         Me.Label4.Text = "Cupones: "
         '
         'textboxCoupon
         '
         Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
-        Me.textboxCoupon.Location = New System.Drawing.Point(524, 296)
-        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
+        Me.textboxCoupon.Location = New System.Drawing.Point(699, 364)
+        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.textboxCoupon.Name = "textboxCoupon"
-        Me.textboxCoupon.Size = New System.Drawing.Size(86, 20)
+        Me.textboxCoupon.Size = New System.Drawing.Size(113, 22)
         Me.textboxCoupon.TabIndex = 53
         '
         'txtDescuento
@@ -156,10 +153,9 @@ Partial Class PagoCliente
         Me.txtDescuento.BackColor = System.Drawing.Color.Transparent
         Me.txtDescuento.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.txtDescuento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtDescuento.Location = New System.Drawing.Point(406, 175)
-        Me.txtDescuento.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtDescuento.Location = New System.Drawing.Point(541, 215)
         Me.txtDescuento.Name = "txtDescuento"
-        Me.txtDescuento.Size = New System.Drawing.Size(101, 19)
+        Me.txtDescuento.Size = New System.Drawing.Size(123, 21)
         Me.txtDescuento.TabIndex = 62
         Me.txtDescuento.Text = "Descuento ₡:"
         '
@@ -169,10 +165,9 @@ Partial Class PagoCliente
         Me.txtPrecio.BackColor = System.Drawing.Color.Transparent
         Me.txtPrecio.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.txtPrecio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtPrecio.Location = New System.Drawing.Point(406, 151)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtPrecio.Location = New System.Drawing.Point(541, 186)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(69, 19)
+        Me.txtPrecio.Size = New System.Drawing.Size(83, 21)
         Me.txtPrecio.TabIndex = 61
         Me.txtPrecio.Text = "Precio ₡:"
         '
@@ -182,10 +177,9 @@ Partial Class PagoCliente
         Me.txtImpuesto.BackColor = System.Drawing.Color.Transparent
         Me.txtImpuesto.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.txtImpuesto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtImpuesto.Location = New System.Drawing.Point(406, 200)
-        Me.txtImpuesto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtImpuesto.Location = New System.Drawing.Point(541, 246)
         Me.txtImpuesto.Name = "txtImpuesto"
-        Me.txtImpuesto.Size = New System.Drawing.Size(95, 19)
+        Me.txtImpuesto.Size = New System.Drawing.Size(117, 21)
         Me.txtImpuesto.TabIndex = 60
         Me.txtImpuesto.Text = "Impuestos ₡:"
         '
@@ -195,10 +189,9 @@ Partial Class PagoCliente
         Me.txtTotal.BackColor = System.Drawing.Color.Transparent
         Me.txtTotal.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.txtTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtTotal.Location = New System.Drawing.Point(407, 227)
-        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtTotal.Location = New System.Drawing.Point(543, 279)
         Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.Size = New System.Drawing.Size(59, 19)
+        Me.txtTotal.Size = New System.Drawing.Size(73, 21)
         Me.txtTotal.TabIndex = 59
         Me.txtTotal.Text = "Total ₡:"
         '
@@ -208,10 +201,9 @@ Partial Class PagoCliente
         Me.lblSum.BackColor = System.Drawing.Color.Transparent
         Me.lblSum.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblSum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblSum.Location = New System.Drawing.Point(458, 151)
-        Me.lblSum.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSum.Location = New System.Drawing.Point(611, 186)
         Me.lblSum.Name = "lblSum"
-        Me.lblSum.Size = New System.Drawing.Size(14, 19)
+        Me.lblSum.Size = New System.Drawing.Size(16, 21)
         Me.lblSum.TabIndex = 58
         Me.lblSum.Text = "-"
         Me.lblSum.Visible = False
@@ -222,10 +214,9 @@ Partial Class PagoCliente
         Me.lblPriceTotalDiscount.BackColor = System.Drawing.Color.Transparent
         Me.lblPriceTotalDiscount.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblPriceTotalDiscount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(449, 227)
-        Me.lblPriceTotalDiscount.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPriceTotalDiscount.Location = New System.Drawing.Point(599, 279)
         Me.lblPriceTotalDiscount.Name = "lblPriceTotalDiscount"
-        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(14, 19)
+        Me.lblPriceTotalDiscount.Size = New System.Drawing.Size(16, 21)
         Me.lblPriceTotalDiscount.TabIndex = 57
         Me.lblPriceTotalDiscount.Text = "-"
         Me.lblPriceTotalDiscount.Visible = False
@@ -236,10 +227,9 @@ Partial Class PagoCliente
         Me.lblNotice.BackColor = System.Drawing.Color.Transparent
         Me.lblNotice.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.lblNotice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblNotice.Location = New System.Drawing.Point(406, 126)
-        Me.lblNotice.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNotice.Location = New System.Drawing.Point(541, 155)
         Me.lblNotice.Name = "lblNotice"
-        Me.lblNotice.Size = New System.Drawing.Size(76, 19)
+        Me.lblNotice.Size = New System.Drawing.Size(89, 21)
         Me.lblNotice.TabIndex = 56
         Me.lblNotice.Text = "Resumen:"
         '
@@ -247,11 +237,11 @@ Partial Class PagoCliente
         '
         Me.DTGList.BackgroundColor = System.Drawing.Color.White
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DTGList.Location = New System.Drawing.Point(13, 227)
-        Me.DTGList.Margin = New System.Windows.Forms.Padding(2)
+        Me.DTGList.Location = New System.Drawing.Point(17, 279)
+        Me.DTGList.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DTGList.Name = "DTGList"
         Me.DTGList.RowTemplate.Height = 24
-        Me.DTGList.Size = New System.Drawing.Size(316, 184)
+        Me.DTGList.Size = New System.Drawing.Size(421, 226)
         Me.DTGList.TabIndex = 63
         '
         'BunifuFlatButton1
@@ -276,13 +266,14 @@ Partial Class PagoCliente
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(186, 183)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(248, 225)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
         Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(32, 29)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(43, 36)
         Me.BunifuFlatButton1.TabIndex = 3
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
@@ -299,10 +290,10 @@ Partial Class PagoCliente
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
-        Me.Button1.Location = New System.Drawing.Point(474, 366)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Location = New System.Drawing.Point(632, 450)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(78, 34)
+        Me.Button1.Size = New System.Drawing.Size(104, 42)
         Me.Button1.TabIndex = 65
         Me.Button1.Text = "Pagar"
         Me.Button1.UseVisualStyleBackColor = False
@@ -318,10 +309,10 @@ Partial Class PagoCliente
         Me.Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn.ForeColor = System.Drawing.Color.Snow
-        Me.Btn.Location = New System.Drawing.Point(186, 114)
-        Me.Btn.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btn.Location = New System.Drawing.Point(248, 140)
+        Me.Btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn.Name = "Btn"
-        Me.Btn.Size = New System.Drawing.Size(62, 25)
+        Me.Btn.Size = New System.Drawing.Size(83, 31)
         Me.Btn.TabIndex = 66
         Me.Btn.Text = "Ok"
         Me.Btn.UseVisualStyleBackColor = False
@@ -334,16 +325,18 @@ Partial Class PagoCliente
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(702, 24)
+        Me.Panel2.Size = New System.Drawing.Size(936, 30)
         Me.Panel2.TabIndex = 67
         '
         'PictureBoxClose
         '
         Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(1197, 3)
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1596, 4)
+        Me.PictureBoxClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxClose.Name = "PictureBoxClose"
-        Me.PictureBoxClose.Size = New System.Drawing.Size(28, 25)
+        Me.PictureBoxClose.Size = New System.Drawing.Size(37, 31)
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxClose.TabIndex = 1
         Me.PictureBoxClose.TabStop = False
@@ -351,9 +344,10 @@ Partial Class PagoCliente
         'PictureBoxMinimize
         '
         Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(1162, 3)
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(1549, 4)
+        Me.PictureBoxMinimize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
-        Me.PictureBoxMinimize.Size = New System.Drawing.Size(28, 25)
+        Me.PictureBoxMinimize.Size = New System.Drawing.Size(37, 31)
         Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxMinimize.TabIndex = 0
         Me.PictureBoxMinimize.TabStop = False
@@ -365,9 +359,8 @@ Partial Class PagoCliente
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 11.0!)
         Me.Label10.ForeColor = System.Drawing.Color.Black
         Me.Label10.Location = New System.Drawing.Point(0, 2)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(0, 20)
+        Me.Label10.Size = New System.Drawing.Size(0, 22)
         Me.Label10.TabIndex = 24
         '
         'BunifuDragControl1
@@ -382,13 +375,24 @@ Partial Class PagoCliente
         Me.BunifuElipse1.ElipseRadius = 5
         Me.BunifuElipse1.TargetControl = Me
         '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button3.Location = New System.Drawing.Point(899, 85)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(25, 23)
+        Me.Button3.TabIndex = 68
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'PagoCliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(702, 490)
+        Me.ClientSize = New System.Drawing.Size(936, 603)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Btn)
         Me.Controls.Add(Me.Button1)
@@ -410,7 +414,7 @@ Partial Class PagoCliente
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "PagoCliente"
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
@@ -447,4 +451,5 @@ Partial Class PagoCliente
     Friend WithEvents Label10 As Label
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents Button3 As Button
 End Class
