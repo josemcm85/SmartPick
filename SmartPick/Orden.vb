@@ -10,6 +10,18 @@ Public Class Orden
 
     Private Sub Orden_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+            Label1.Text = "Table"
+            Label11.Text = "Details"
+            Label4.Text = "Total price (ATI):"
+            Label3.Text = "Price ₡:"
+            BunifuFlatButton1.Text = "COMPLETE"
+            Button1.Text = "Back"
+        End If
+
+
+
+
         Me.lblTotal.Text = FormMenu.LblTotal.Text
 
         'lblTotal.Text = (From row As DataGridViewRow In DTGList.Rows Where row.Cells(1).FormattedValue.ToString() <> String.Empty Select Convert.ToInt32(row.Cells(1).FormattedValue)).Sum().ToString()
@@ -130,11 +142,15 @@ Public Class Orden
         Dim Linea As Integer = 1
 
         If ComboMesa.Text = "" Then
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("Please select your table!")
+            Else
+                MsgBox("Por favor selecciona tu mesa!")
+            End If
 
-            MsgBox("Verifica que seleccionaras una mesa!")
         Else
 
-            Try
+                Try
                 connection = New SqlConnection(connectionString)
                 connection.Open()
                 Dim CreateOrder As New SqlCommand("Exec addOrden '" & ComboMesa.SelectedItem.ToString & "','" & lblTotal.Text & "';", connection)
@@ -173,7 +189,13 @@ Public Class Orden
 
                 Next
                 connection.Close()
-                MsgBox("Orden Realizada, tu número de orden es: " & idLastOrder)
+
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    MsgBox("Order placed, your order number is: " & idLastOrder)
+                Else
+                    MsgBox("Orden Realizada, tu número de orden es: " & idLastOrder)
+
+                End If
                 PagoCliente.txtNoOrden.Text = idLastOrder
                 FormCustomerSatisfaction.txtNoOrden.Text = idLastOrder
 
