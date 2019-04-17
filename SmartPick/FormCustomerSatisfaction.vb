@@ -6,7 +6,13 @@ Public Class FormCustomerSatisfaction
     Dim NumeroOrden As Integer = 1
 
     Private Sub FormCustomerSatisfaction_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+            Label1.Text = "Your opinion matters to us!"
+            Label3.Text = "Order number:"
+            Label11.Text = "Comments:"
+            btnSend.Text = "Send"
+            btnClose.Text = "Close"
+        End If
 
 
     End Sub
@@ -18,7 +24,11 @@ Public Class FormCustomerSatisfaction
 
         ExecuteQuery(insertQuery)
 
-        MessageBox.Show("Gracias por valorarnos. Lo esperamos pronto!")
+        If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+            MessageBox.Show("Thank you for your comments. We hope to see you back!")
+        Else
+            MessageBox.Show("Gracias por valorarnos. Lo esperamos pronto!")
+        End If
 
 
 
