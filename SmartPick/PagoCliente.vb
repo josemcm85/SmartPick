@@ -7,7 +7,20 @@ Public Class PagoCliente
 
 
     Private Sub PagoCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+            Label1.Text = "Please wait until your order is finished."
+            Label3.Text = "Please enter your order number."
+            Label2.Text = "Order status."
+            Label4.Text = "Coupons."
+            lblNotice.Text = "Summary"
+            txtDescuento.Text = "Price ₡:"
+            txtDescuento.Text = "Discount ₡:"
+            txtImpuesto.Text = "Tax ₡:"
+            txtTotal.Text = "Total"
+            buttonValidateCpn.Text = "Validate"
+            Button1.Text = "Pay"
 
+        End If
 
     End Sub
 
@@ -20,15 +33,27 @@ Public Class PagoCliente
             Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
 
             If Adapter2.HasRows Then
-                TextBox1.Text = "Orden finalizada!"
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    TextBox1.Text = "Order finalized!"
+                Else
+                    TextBox1.Text = "Orden finalizada!"
+                End If
             Else
-                TextBox1.Text = "Orden Pendiente!"
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    TextBox1.Text = "Pending order!"
+                Else
+                    TextBox1.Text = "Orden Pendiente!"
+                End If
 
             End If
             Conn.Close()
         Catch ex As Exception
 
-            MsgBox("Numero de orden no encontrado")
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("Order number not found")
+            Else
+                MsgBox("Numero de orden no encontrado")
+            End If
         End Try
 
         Conn.Open()
@@ -70,20 +95,38 @@ Public Class PagoCliente
             Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
 
             If Adapter2.HasRows Then
-                TextBox1.Text = "Orden finalizada!"
-            Else
-                TextBox1.Text = "Orden Pendiente!"
-            End If
-            Conn.Close()
-        Catch ex As Exception
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    TextBox1.Text = "Order finalized!"
+                Else
+                    TextBox1.Text = "Orden finalizada!"
+                End If
 
-            MsgBox("Numero de orden no encontrado")
+            Else
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    TextBox1.Text = "Pending order!"
+                Else
+                    TextBox1.Text = "Orden Pendiente!"
+                End If
+
+            End If
+                Conn.Close()
+        Catch ex As Exception
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("Order number not found")
+            Else
+                MsgBox("Numero de orden no encontrado")
+            End If
         End Try
     End Sub
 
     Private Sub buttonValidateCpn_Click(sender As Object, e As EventArgs) Handles buttonValidateCpn.Click
 
+        If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+            txtDescuento.Text = "Discount ₡: "
+            txtImpuesto.Text = "Tax ₡: "
+            txtTotal.Text = "Total ₡: "
 
+        End If
 
         txtDescuento.Text = "Descuento ₡: "
         txtImpuesto.Text = "Impuestos ₡: "
@@ -121,29 +164,37 @@ Public Class PagoCliente
             'TextBoxPrueba.Text = table.Rows(0)(1).ToString()
 
             discount = table.Rows(0)(1).ToString()
-            MsgBox("Se aplicará un descuento del " + discount + " %.")
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("A " + discount + " %  discount will be applied.")
+            Else
+                MsgBox("Se aplicará un descuento del " + discount + " %.")
+            End If
 
             Dim appliedDiscount As Double
-            Dim taxAfterDiscount As Double
+                Dim taxAfterDiscount As Double
 
-            appliedDiscount = Sum * CDbl(discount) / 100
-            taxAfterDiscount = (Sum - (Sum * CDbl(discount) / 100)) * 0.13
+                appliedDiscount = Sum * CDbl(discount) / 100
+                taxAfterDiscount = (Sum - (Sum * CDbl(discount) / 100)) * 0.13
 
-            lblPriceTotalDiscount.Text += Convert.ToString(Sum - appliedDiscount + taxAfterDiscount)
-            lblSum.Text += Convert.ToString(Sum)
-            txtDescuento.Text += Convert.ToString(appliedDiscount)
-            txtImpuesto.Text += Convert.ToString(taxAfterDiscount)
-            txtTotal.Text += Convert.ToString(Sum - appliedDiscount + taxAfterDiscount)
+                lblPriceTotalDiscount.Text += Convert.ToString(Sum - appliedDiscount + taxAfterDiscount)
+                lblSum.Text += Convert.ToString(Sum)
+                txtDescuento.Text += Convert.ToString(appliedDiscount)
+                txtImpuesto.Text += Convert.ToString(taxAfterDiscount)
+                txtTotal.Text += Convert.ToString(Sum - appliedDiscount + taxAfterDiscount)
 
-            textboxCoupon.Enabled = False
-        Else
+                textboxCoupon.Enabled = False
+            Else
 
-            MsgBox("Cupón no válido.")
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("Invalid coupon.")
+            Else
+                MsgBox("Cupón no válido.")
+            End If
             Conn.Close()
-            Conn.Open()
+                Conn.Open()
 
-        End If
-        Conn.Close()
+            End If
+            Conn.Close()
 
     End Sub
 
@@ -211,15 +262,27 @@ Public Class PagoCliente
             Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
 
             If Adapter2.HasRows Then
-                TextBox1.Text = "Orden finalizada!"
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    TextBox1.Text = "Order finalized!"
+                Else
+                    TextBox1.Text = "Orden finalizada!"
+                End If
             Else
-                TextBox1.Text = "Orden Pendiente!"
+                If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                    TextBox1.Text = "Pending order!"
+                Else
+                    TextBox1.Text = "Orden Pendiente!"
+                End If
 
             End If
-            Conn.Close()
+                Conn.Close()
         Catch ex As Exception
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("Order number not found")
+            Else
+                MsgBox("Numero de orden no encontrado")
+            End If
 
-            MsgBox("Numero de orden no encontrado")
         End Try
 
         Conn.Open()

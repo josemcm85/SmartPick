@@ -10,7 +10,14 @@ Public Class CallMesero
     End Sub
 
     Private Sub CallMesero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+            BunifuCustomLabel1.Text = "Please select your table:"
 
+            BunifuCustomLabel3.Text = "Leave a comment (Optional):"
+
+            Button2.Text = "Pay bill"
+
+        End If
 
 
         connection = New SqlConnection(connectionString)
@@ -62,7 +69,13 @@ Public Class CallMesero
             Dim dataAdapter As New SqlDataAdapter(llamarMesero)
             llamarMesero.ExecuteNonQuery()
             connection.Close()
-            MsgBox("Su mesero llegará pronto || Your waiter will be right with you")
+
+            If FormMenu.ButtonAppetizer.Text.Equals("Appetizers") Then
+                MsgBox("Your waiter will be right with you")
+            Else
+                MsgBox("Su mesero llegará pronto")
+            End If
+
 
         Catch ex As Exception
 

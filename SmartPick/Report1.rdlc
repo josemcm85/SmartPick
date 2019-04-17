@@ -214,7 +214,7 @@
         </RadialGauges>
         <GaugeLabels>
           <GaugeLabel Name="GaugeLabel1">
-            <Text>=Avg(Fields!rating.Value)</Text>
+            <Text>=FormatNumber(Avg(Fields!rating.Value),2)</Text>
             <TextShadowOffset>0pt</TextShadowOffset>
             <UseFontPercent>true</UseFontPercent>
             <Style>
