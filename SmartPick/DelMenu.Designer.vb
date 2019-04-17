@@ -64,32 +64,30 @@ Partial Class DelMenu
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Snow
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label10.Location = New System.Drawing.Point(528, 32)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(704, 39)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(116, 16)
+        Me.Label10.Size = New System.Drawing.Size(153, 19)
         Me.Label10.TabIndex = 59
-        Me.Label10.Text = "Código del ítem:"
+        Me.Label10.Text = "*Código del ítem:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Snow
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(765, 156)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(1020, 192)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(208, 16)
+        Me.Label7.Size = New System.Drawing.Size(270, 19)
         Me.Label7.TabIndex = 58
-        Me.Label7.Text = "Descripción del ítem en Inglés:"
+        Me.Label7.Text = "*Descripción del ítem en Inglés:"
         '
         'txtDesIng
         '
-        Me.txtDesIng.Location = New System.Drawing.Point(768, 175)
-        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDesIng.Location = New System.Drawing.Point(1024, 215)
+        Me.txtDesIng.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtDesIng.Multiline = True
         Me.txtDesIng.Name = "txtDesIng"
-        Me.txtDesIng.Size = New System.Drawing.Size(202, 98)
+        Me.txtDesIng.Size = New System.Drawing.Size(268, 120)
         Me.txtDesIng.TabIndex = 57
         '
         'Label3
@@ -97,32 +95,30 @@ Partial Class DelMenu
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Snow
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(528, 156)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(704, 192)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(145, 16)
+        Me.Label3.Size = New System.Drawing.Size(190, 19)
         Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Descripción del ítem:"
+        Me.Label3.Text = "*Descripción del ítem:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Snow
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(531, 98)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(708, 121)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 16)
+        Me.Label2.Size = New System.Drawing.Size(159, 19)
         Me.Label2.TabIndex = 55
-        Me.Label2.Text = "Nombre del ítem:"
+        Me.Label2.Text = "*Nombre del ítem:"
         '
         'TxtDesEsp
         '
-        Me.TxtDesEsp.Location = New System.Drawing.Point(531, 175)
-        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(2)
+        Me.TxtDesEsp.Location = New System.Drawing.Point(708, 215)
+        Me.TxtDesEsp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtDesEsp.Multiline = True
         Me.TxtDesEsp.Name = "TxtDesEsp"
-        Me.TxtDesEsp.Size = New System.Drawing.Size(202, 98)
+        Me.TxtDesEsp.Size = New System.Drawing.Size(268, 120)
         Me.TxtDesEsp.TabIndex = 54
         '
         'Label8
@@ -130,21 +126,20 @@ Partial Class DelMenu
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Snow
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label8.Location = New System.Drawing.Point(766, 289)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(1021, 356)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(118, 16)
+        Me.Label8.Size = New System.Drawing.Size(156, 19)
         Me.Label8.TabIndex = 51
-        Me.Label8.Text = "Imagen del ítem:"
+        Me.Label8.Text = "*Imagen del ítem:"
         '
         'PicBox
         '
         Me.PicBox.BackColor = System.Drawing.Color.White
         Me.PicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PicBox.Location = New System.Drawing.Point(769, 307)
-        Me.PicBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.PicBox.Location = New System.Drawing.Point(1025, 378)
+        Me.PicBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PicBox.Name = "PicBox"
-        Me.PicBox.Size = New System.Drawing.Size(210, 169)
+        Me.PicBox.Size = New System.Drawing.Size(279, 208)
         Me.PicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PicBox.TabIndex = 50
         Me.PicBox.TabStop = False
@@ -154,55 +149,52 @@ Partial Class DelMenu
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Snow
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label6.Location = New System.Drawing.Point(538, 384)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(717, 473)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(108, 16)
+        Me.Label6.Size = New System.Drawing.Size(144, 19)
         Me.Label6.TabIndex = 49
-        Me.Label6.Text = "Precio del ítem:"
+        Me.Label6.Text = "*Precio del ítem:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Snow
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(537, 333)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(716, 410)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(114, 16)
+        Me.Label5.Size = New System.Drawing.Size(150, 19)
         Me.Label5.TabIndex = 48
-        Me.Label5.Text = "Tipo de comida:"
+        Me.Label5.Text = "*Tipo de comida:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Snow
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(537, 289)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(716, 356)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(133, 16)
+        Me.Label4.Size = New System.Drawing.Size(173, 19)
         Me.Label4.TabIndex = 47
-        Me.Label4.Text = "Categoría del ítem:"
+        Me.Label4.Text = "*Categoría del ítem:"
         '
         'CombComida
         '
         Me.CombComida.FormattingEnabled = True
         Me.CombComida.Items.AddRange(New Object() {"Sopa", "Mariscos", "Tacos", "Carnes", "Vegetariano", "Untable", "Nachos", "Bebida Natural", "Gaseosa", "Con Alcohol", "Postre", "Para Compartir"})
-        Me.CombComida.Location = New System.Drawing.Point(540, 351)
-        Me.CombComida.Margin = New System.Windows.Forms.Padding(2)
+        Me.CombComida.Location = New System.Drawing.Point(720, 432)
+        Me.CombComida.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CombComida.Name = "CombComida"
-        Me.CombComida.Size = New System.Drawing.Size(202, 21)
+        Me.CombComida.Size = New System.Drawing.Size(268, 24)
         Me.CombComida.TabIndex = 45
         '
         'CombCate
         '
         Me.CombCate.FormattingEnabled = True
         Me.CombCate.Items.AddRange(New Object() {"Plato Fuerte", "Entrada", "Bebidas", "Postres", "Para Compartir "})
-        Me.CombCate.Location = New System.Drawing.Point(540, 307)
-        Me.CombCate.Margin = New System.Windows.Forms.Padding(2)
+        Me.CombCate.Location = New System.Drawing.Point(720, 378)
+        Me.CombCate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CombCate.Name = "CombCate"
-        Me.CombCate.Size = New System.Drawing.Size(202, 21)
+        Me.CombCate.Size = New System.Drawing.Size(268, 24)
         Me.CombCate.TabIndex = 44
         '
         'DatagridMenu
@@ -213,11 +205,11 @@ Partial Class DelMenu
         Me.DatagridMenu.BackgroundColor = System.Drawing.Color.Snow
         Me.DatagridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DatagridMenu.Location = New System.Drawing.Point(0, 2)
-        Me.DatagridMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.DatagridMenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DatagridMenu.Name = "DatagridMenu"
         Me.DatagridMenu.ReadOnly = True
         Me.DatagridMenu.RowTemplate.Height = 24
-        Me.DatagridMenu.Size = New System.Drawing.Size(470, 410)
+        Me.DatagridMenu.Size = New System.Drawing.Size(627, 505)
         Me.DatagridMenu.TabIndex = 40
         '
         'Label9
@@ -225,21 +217,19 @@ Partial Class DelMenu
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Snow
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label9.Location = New System.Drawing.Point(537, 438)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(716, 539)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(122, 16)
+        Me.Label9.Size = New System.Drawing.Size(159, 19)
         Me.Label9.TabIndex = 62
-        Me.Label9.Text = "Calorías del ítem:"
+        Me.Label9.Text = "*Calorías del ítem:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label11.Location = New System.Drawing.Point(6, 21)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Location = New System.Drawing.Point(8, 26)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(201, 16)
+        Me.Label11.Size = New System.Drawing.Size(253, 19)
         Me.Label11.TabIndex = 64
         Me.Label11.Text = "Seleccione el ítem a eliminar:"
         '
@@ -248,12 +238,11 @@ Partial Class DelMenu
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Snow
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label12.Location = New System.Drawing.Point(766, 98)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Location = New System.Drawing.Point(1021, 121)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(183, 16)
+        Me.Label12.Size = New System.Drawing.Size(238, 19)
         Me.Label12.TabIndex = 66
-        Me.Label12.Text = "Nombre del ítem en inglés:"
+        Me.Label12.Text = "*Nombre del ítem en inglés:"
         '
         'txtrandom
         '
@@ -262,9 +251,10 @@ Partial Class DelMenu
         '
         '
         Me.txtrandom.CustomButton.Image = Nothing
-        Me.txtrandom.CustomButton.Location = New System.Drawing.Point(98, 1)
+        Me.txtrandom.CustomButton.Location = New System.Drawing.Point(134, 2)
+        Me.txtrandom.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtrandom.CustomButton.Name = ""
-        Me.txtrandom.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtrandom.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtrandom.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtrandom.CustomButton.TabIndex = 1
         Me.txtrandom.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -274,7 +264,8 @@ Partial Class DelMenu
         Me.txtrandom.Icon = Global.SmartPick.My.Resources.Resources.icons8_price_tag_50px_11
         Me.txtrandom.IconRight = True
         Me.txtrandom.Lines = New String(-1) {}
-        Me.txtrandom.Location = New System.Drawing.Point(531, 49)
+        Me.txtrandom.Location = New System.Drawing.Point(708, 60)
+        Me.txtrandom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtrandom.MaxLength = 32767
         Me.txtrandom.Name = "txtrandom"
         Me.txtrandom.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -283,7 +274,7 @@ Partial Class DelMenu
         Me.txtrandom.SelectionLength = 0
         Me.txtrandom.SelectionStart = 0
         Me.txtrandom.ShortcutsEnabled = True
-        Me.txtrandom.Size = New System.Drawing.Size(120, 23)
+        Me.txtrandom.Size = New System.Drawing.Size(160, 28)
         Me.txtrandom.TabIndex = 73
         Me.txtrandom.UseSelectable = True
         Me.txtrandom.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -296,9 +287,10 @@ Partial Class DelMenu
         '
         '
         Me.txtNombre.CustomButton.Image = Nothing
-        Me.txtNombre.CustomButton.Location = New System.Drawing.Point(168, 1)
+        Me.txtNombre.CustomButton.Location = New System.Drawing.Point(227, 2)
+        Me.txtNombre.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombre.CustomButton.Name = ""
-        Me.txtNombre.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtNombre.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtNombre.CustomButton.TabIndex = 1
         Me.txtNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -308,7 +300,8 @@ Partial Class DelMenu
         Me.txtNombre.Icon = Global.SmartPick.My.Resources.Resources.icons8_language_48px_1
         Me.txtNombre.IconRight = True
         Me.txtNombre.Lines = New String(-1) {}
-        Me.txtNombre.Location = New System.Drawing.Point(531, 117)
+        Me.txtNombre.Location = New System.Drawing.Point(708, 144)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombre.MaxLength = 32767
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -317,7 +310,7 @@ Partial Class DelMenu
         Me.txtNombre.SelectionLength = 0
         Me.txtNombre.SelectionStart = 0
         Me.txtNombre.ShortcutsEnabled = True
-        Me.txtNombre.Size = New System.Drawing.Size(190, 23)
+        Me.txtNombre.Size = New System.Drawing.Size(253, 28)
         Me.txtNombre.TabIndex = 74
         Me.txtNombre.UseSelectable = True
         Me.txtNombre.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -330,9 +323,10 @@ Partial Class DelMenu
         '
         '
         Me.txtNombreIng.CustomButton.Image = Nothing
-        Me.txtNombreIng.CustomButton.Location = New System.Drawing.Point(168, 1)
+        Me.txtNombreIng.CustomButton.Location = New System.Drawing.Point(227, 2)
+        Me.txtNombreIng.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombreIng.CustomButton.Name = ""
-        Me.txtNombreIng.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtNombreIng.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtNombreIng.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtNombreIng.CustomButton.TabIndex = 1
         Me.txtNombreIng.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -342,7 +336,8 @@ Partial Class DelMenu
         Me.txtNombreIng.Icon = Global.SmartPick.My.Resources.Resources.icons8_language_48px_1
         Me.txtNombreIng.IconRight = True
         Me.txtNombreIng.Lines = New String(-1) {}
-        Me.txtNombreIng.Location = New System.Drawing.Point(768, 117)
+        Me.txtNombreIng.Location = New System.Drawing.Point(1024, 144)
+        Me.txtNombreIng.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombreIng.MaxLength = 32767
         Me.txtNombreIng.Name = "txtNombreIng"
         Me.txtNombreIng.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -351,7 +346,7 @@ Partial Class DelMenu
         Me.txtNombreIng.SelectionLength = 0
         Me.txtNombreIng.SelectionStart = 0
         Me.txtNombreIng.ShortcutsEnabled = True
-        Me.txtNombreIng.Size = New System.Drawing.Size(190, 23)
+        Me.txtNombreIng.Size = New System.Drawing.Size(253, 28)
         Me.txtNombreIng.TabIndex = 75
         Me.txtNombreIng.UseSelectable = True
         Me.txtNombreIng.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -364,9 +359,10 @@ Partial Class DelMenu
         '
         '
         Me.txtPrecio.CustomButton.Image = Nothing
-        Me.txtPrecio.CustomButton.Location = New System.Drawing.Point(169, 1)
+        Me.txtPrecio.CustomButton.Location = New System.Drawing.Point(229, 2)
+        Me.txtPrecio.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPrecio.CustomButton.Name = ""
-        Me.txtPrecio.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtPrecio.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtPrecio.CustomButton.TabIndex = 1
         Me.txtPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -376,7 +372,8 @@ Partial Class DelMenu
         Me.txtPrecio.Icon = Global.SmartPick.My.Resources.Resources.icons8_cheap_2_48px_3
         Me.txtPrecio.IconRight = True
         Me.txtPrecio.Lines = New String(-1) {}
-        Me.txtPrecio.Location = New System.Drawing.Point(540, 403)
+        Me.txtPrecio.Location = New System.Drawing.Point(720, 496)
+        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPrecio.MaxLength = 32767
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -385,7 +382,7 @@ Partial Class DelMenu
         Me.txtPrecio.SelectionLength = 0
         Me.txtPrecio.SelectionStart = 0
         Me.txtPrecio.ShortcutsEnabled = True
-        Me.txtPrecio.Size = New System.Drawing.Size(191, 23)
+        Me.txtPrecio.Size = New System.Drawing.Size(255, 28)
         Me.txtPrecio.TabIndex = 76
         Me.txtPrecio.UseSelectable = True
         Me.txtPrecio.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -398,9 +395,10 @@ Partial Class DelMenu
         '
         '
         Me.txtCal.CustomButton.Image = Nothing
-        Me.txtCal.CustomButton.Location = New System.Drawing.Point(169, 1)
+        Me.txtCal.CustomButton.Location = New System.Drawing.Point(229, 2)
+        Me.txtCal.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCal.CustomButton.Name = ""
-        Me.txtCal.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtCal.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtCal.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtCal.CustomButton.TabIndex = 1
         Me.txtCal.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -410,7 +408,8 @@ Partial Class DelMenu
         Me.txtCal.Icon = Global.SmartPick.My.Resources.Resources.icons8_caloric_energy_50px_11
         Me.txtCal.IconRight = True
         Me.txtCal.Lines = New String(-1) {}
-        Me.txtCal.Location = New System.Drawing.Point(540, 457)
+        Me.txtCal.Location = New System.Drawing.Point(720, 562)
+        Me.txtCal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCal.MaxLength = 32767
         Me.txtCal.Name = "txtCal"
         Me.txtCal.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -419,7 +418,7 @@ Partial Class DelMenu
         Me.txtCal.SelectionLength = 0
         Me.txtCal.SelectionStart = 0
         Me.txtCal.ShortcutsEnabled = True
-        Me.txtCal.Size = New System.Drawing.Size(191, 23)
+        Me.txtCal.Size = New System.Drawing.Size(255, 28)
         Me.txtCal.TabIndex = 77
         Me.txtCal.UseSelectable = True
         Me.txtCal.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -432,9 +431,10 @@ Partial Class DelMenu
         Me.Panel1.Controls.Add(Me.BtnEliminar)
         Me.Panel1.Controls.Add(Me.BtnClose2)
         Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Location = New System.Drawing.Point(26, 25)
+        Me.Panel1.Location = New System.Drawing.Point(35, 31)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1029, 577)
+        Me.Panel1.Size = New System.Drawing.Size(1372, 710)
         Me.Panel1.TabIndex = 79
         '
         'BunifuCards1
@@ -445,11 +445,12 @@ Partial Class DelMenu
         Me.BunifuCards1.color = System.Drawing.Color.Tomato
         Me.BunifuCards1.Controls.Add(Me.DatagridMenu)
         Me.BunifuCards1.LeftSahddow = False
-        Me.BunifuCards1.Location = New System.Drawing.Point(9, 39)
+        Me.BunifuCards1.Location = New System.Drawing.Point(12, 48)
+        Me.BunifuCards1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuCards1.Name = "BunifuCards1"
         Me.BunifuCards1.RightSahddow = True
         Me.BunifuCards1.ShadowDepth = 20
-        Me.BunifuCards1.Size = New System.Drawing.Size(472, 416)
+        Me.BunifuCards1.Size = New System.Drawing.Size(629, 512)
         Me.BunifuCards1.TabIndex = 82
         '
         'BtnEliminar
@@ -470,10 +471,10 @@ Partial Class DelMenu
         Me.BtnEliminar.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnEliminar.IdleForecolor = System.Drawing.Color.White
         Me.BtnEliminar.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnEliminar.Location = New System.Drawing.Point(535, 484)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnEliminar.Location = New System.Drawing.Point(713, 596)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(134, 50)
+        Me.BtnEliminar.Size = New System.Drawing.Size(179, 62)
         Me.BtnEliminar.TabIndex = 81
         Me.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -495,10 +496,10 @@ Partial Class DelMenu
         Me.BtnClose2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnClose2.IdleForecolor = System.Drawing.Color.White
         Me.BtnClose2.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnClose2.Location = New System.Drawing.Point(810, 484)
-        Me.BtnClose2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnClose2.Location = New System.Drawing.Point(1080, 596)
+        Me.BtnClose2.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.BtnClose2.Name = "BtnClose2"
-        Me.BtnClose2.Size = New System.Drawing.Size(134, 50)
+        Me.BtnClose2.Size = New System.Drawing.Size(179, 62)
         Me.BtnClose2.TabIndex = 80
         Me.BtnClose2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -521,10 +522,10 @@ Partial Class DelMenu
         '
         'DelMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS2
-        Me.ClientSize = New System.Drawing.Size(1084, 623)
+        Me.ClientSize = New System.Drawing.Size(1445, 767)
         Me.Controls.Add(Me.txtCal)
         Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.txtNombreIng)
@@ -548,7 +549,7 @@ Partial Class DelMenu
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "DelMenu"
         Me.Text = "Borrar del Menu"
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).EndInit()
