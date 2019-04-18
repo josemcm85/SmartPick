@@ -149,10 +149,10 @@ Partial Class AdminMain
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources._14650771_10157489166520161_9089602778382653312_n
-        Me.PictureBox1.Location = New System.Drawing.Point(32, 59)
+        Me.PictureBox1.Image = Global.SmartPick.My.Resources.Resources.logoRes
+        Me.PictureBox1.Location = New System.Drawing.Point(43, 21)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(310, 228)
+        Me.PictureBox1.Size = New System.Drawing.Size(276, 286)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False

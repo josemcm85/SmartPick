@@ -458,6 +458,7 @@
     <Content Include="icons8_visible_25px.png" />
     <Content Include="logoblack.ico" />
     <Content Include="logoblack.png" />
+    <Content Include="logoRes.png" />
     <Content Include="MANDALAS2.jpg" />
     <Content Include="MetroFramework.dll" />
     <Content Include="minusSign.png" />
@@ -468,6 +469,7 @@
     <None Include="Resources\icons8_restaurant_pickup_64px_3 - 2.png" />
     <None Include="Resources\icons8_restaurant_pickup_100px_4.png" />
     <None Include="Resources\icons8_restaurant_pickup_100px_5.png" />
+    <None Include="Resources\logoRes.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll" />
