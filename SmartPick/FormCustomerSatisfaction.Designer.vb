@@ -217,6 +217,7 @@ Partial Class FormCustomerSatisfaction
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormCustomerSatisfaction"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormCustomerSatisfaction"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()

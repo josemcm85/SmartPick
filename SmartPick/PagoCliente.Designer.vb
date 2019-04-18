@@ -49,7 +49,7 @@ Partial Class PagoCliente
         Me.Label10 = New System.Windows.Forms.Label()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,7 +84,7 @@ Partial Class PagoCliente
         '
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(11, 183)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(164, 30)
@@ -105,7 +105,7 @@ Partial Class PagoCliente
         'txtNoOrden
         '
         Me.txtNoOrden.Location = New System.Drawing.Point(11, 118)
-        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoOrden.Name = "txtNoOrden"
         Me.txtNoOrden.Size = New System.Drawing.Size(164, 20)
         Me.txtNoOrden.TabIndex = 5
@@ -122,7 +122,7 @@ Partial Class PagoCliente
         Me.buttonValidateCpn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.buttonValidateCpn.ForeColor = System.Drawing.Color.Snow
         Me.buttonValidateCpn.Location = New System.Drawing.Point(614, 291)
-        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.buttonValidateCpn.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonValidateCpn.Name = "buttonValidateCpn"
         Me.buttonValidateCpn.Size = New System.Drawing.Size(68, 27)
         Me.buttonValidateCpn.TabIndex = 55
@@ -146,7 +146,7 @@ Partial Class PagoCliente
         '
         Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
         Me.textboxCoupon.Location = New System.Drawing.Point(524, 296)
-        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
         Me.textboxCoupon.Name = "textboxCoupon"
         Me.textboxCoupon.Size = New System.Drawing.Size(86, 20)
         Me.textboxCoupon.TabIndex = 53
@@ -249,7 +249,7 @@ Partial Class PagoCliente
         Me.DTGList.BackgroundColor = System.Drawing.Color.White
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTGList.Location = New System.Drawing.Point(13, 227)
-        Me.DTGList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DTGList.Margin = New System.Windows.Forms.Padding(2)
         Me.DTGList.Name = "DTGList"
         Me.DTGList.RowTemplate.Height = 24
         Me.DTGList.Size = New System.Drawing.Size(316, 184)
@@ -278,7 +278,7 @@ Partial Class PagoCliente
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
         Me.BunifuFlatButton1.Location = New System.Drawing.Point(186, 183)
-        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -302,7 +302,7 @@ Partial Class PagoCliente
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
         Me.Button1.Location = New System.Drawing.Point(474, 366)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(78, 34)
         Me.Button1.TabIndex = 65
@@ -321,7 +321,7 @@ Partial Class PagoCliente
         Me.Btn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn.ForeColor = System.Drawing.Color.Snow
         Me.Btn.Location = New System.Drawing.Point(186, 114)
-        Me.Btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn.Name = "Btn"
         Me.Btn.Size = New System.Drawing.Size(62, 25)
         Me.Btn.TabIndex = 66
@@ -384,16 +384,23 @@ Partial Class PagoCliente
         Me.BunifuElipse1.ElipseRadius = 5
         Me.BunifuElipse1.TargetControl = Me
         '
-        'Button3
+        'btnClose
         '
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(674, 69)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(19, 19)
-        Me.Button3.TabIndex = 68
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnClose.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnClose.BackColor = System.Drawing.Color.Orange
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.Snow
+        Me.btnClose.Location = New System.Drawing.Point(568, 366)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(76, 34)
+        Me.btnClose.TabIndex = 69
+        Me.btnClose.Text = "Cerrar"
+        Me.btnClose.UseVisualStyleBackColor = False
         '
         'PagoCliente
         '
@@ -402,7 +409,7 @@ Partial Class PagoCliente
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(702, 490)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Btn)
         Me.Controls.Add(Me.Button1)
@@ -424,8 +431,9 @@ Partial Class PagoCliente
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "PagoCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -461,5 +469,5 @@ Partial Class PagoCliente
     Friend WithEvents Label10 As Label
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnClose As Button
 End Class
