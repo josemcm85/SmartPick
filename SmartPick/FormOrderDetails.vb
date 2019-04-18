@@ -3,8 +3,8 @@
 Public Class FormOrderDetails
 
     Dim item As String
-    Dim connectionString As String = "Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 "
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim connectionString As String = "Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True"
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
     Dim connection As SqlConnection
 
     Private Sub FormOrderDetails_Load(sender As Object, e As EventArgs) Handles MyBase.Load

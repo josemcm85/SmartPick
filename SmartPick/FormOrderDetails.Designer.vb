@@ -24,9 +24,16 @@ Partial Class FormOrderDetails
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormOrderDetails))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnClose3 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuCards2 = New Bunifu.Framework.UI.BunifuCards()
         Me.DGOrderDetails = New System.Windows.Forms.DataGridView()
@@ -44,9 +51,6 @@ Partial Class FormOrderDetails
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ListaOrdenesTableAdapter = New SmartPick.MenuTTSDataSet1TableAdapters.ListaOrdenesTableAdapter()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.BunifuCards2.SuspendLayout()
         CType(Me.DGOrderDetails, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,11 +85,42 @@ Partial Class FormOrderDetails
         Me.Panel1.Controls.Add(Me.BunifuCards1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Location = New System.Drawing.Point(35, 31)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Location = New System.Drawing.Point(26, 25)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1447, 699)
+        Me.Panel1.Size = New System.Drawing.Size(1085, 568)
         Me.Panel1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(250, 502)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(32, 30)
+        Me.Button1.TabIndex = 75
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(50, 502)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(196, 28)
+        Me.TextBox1.TabIndex = 74
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(47, 474)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(149, 19)
+        Me.Label2.TabIndex = 73
+        Me.Label2.Text = "Estado de la orden: "
         '
         'BtnClose3
         '
@@ -105,10 +140,10 @@ Partial Class FormOrderDetails
         Me.BtnClose3.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnClose3.IdleForecolor = System.Drawing.Color.White
         Me.BtnClose3.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnClose3.Location = New System.Drawing.Point(1157, 604)
-        Me.BtnClose3.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.BtnClose3.Location = New System.Drawing.Point(868, 491)
+        Me.BtnClose3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnClose3.Name = "BtnClose3"
-        Me.BtnClose3.Size = New System.Drawing.Size(179, 62)
+        Me.BtnClose3.Size = New System.Drawing.Size(134, 50)
         Me.BtnClose3.TabIndex = 72
         Me.BtnClose3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -120,12 +155,11 @@ Partial Class FormOrderDetails
         Me.BunifuCards2.color = System.Drawing.Color.Tomato
         Me.BunifuCards2.Controls.Add(Me.DGOrderDetails)
         Me.BunifuCards2.LeftSahddow = False
-        Me.BunifuCards2.Location = New System.Drawing.Point(761, 73)
-        Me.BunifuCards2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuCards2.Location = New System.Drawing.Point(571, 59)
         Me.BunifuCards2.Name = "BunifuCards2"
         Me.BunifuCards2.RightSahddow = True
         Me.BunifuCards2.ShadowDepth = 20
-        Me.BunifuCards2.Size = New System.Drawing.Size(575, 489)
+        Me.BunifuCards2.Size = New System.Drawing.Size(431, 397)
         Me.BunifuCards2.TabIndex = 46
         '
         'DGOrderDetails
@@ -135,13 +169,28 @@ Partial Class FormOrderDetails
         Me.DGOrderDetails.AllowUserToResizeRows = False
         Me.DGOrderDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGOrderDetails.BackgroundColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGOrderDetails.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DGOrderDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGOrderDetails.Location = New System.Drawing.Point(0, 5)
-        Me.DGOrderDetails.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGOrderDetails.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DGOrderDetails.Location = New System.Drawing.Point(0, 4)
         Me.DGOrderDetails.Name = "DGOrderDetails"
         Me.DGOrderDetails.ReadOnly = True
         Me.DGOrderDetails.RowHeadersVisible = False
-        Me.DGOrderDetails.Size = New System.Drawing.Size(571, 480)
+        Me.DGOrderDetails.Size = New System.Drawing.Size(428, 390)
         Me.DGOrderDetails.TabIndex = 1
         '
         'BunifuCards1
@@ -152,12 +201,11 @@ Partial Class FormOrderDetails
         Me.BunifuCards1.color = System.Drawing.Color.Tomato
         Me.BunifuCards1.Controls.Add(Me.DGOrders)
         Me.BunifuCards1.LeftSahddow = False
-        Me.BunifuCards1.Location = New System.Drawing.Point(67, 73)
-        Me.BunifuCards1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuCards1.Location = New System.Drawing.Point(50, 59)
         Me.BunifuCards1.Name = "BunifuCards1"
         Me.BunifuCards1.RightSahddow = True
         Me.BunifuCards1.ShadowDepth = 20
-        Me.BunifuCards1.Size = New System.Drawing.Size(575, 489)
+        Me.BunifuCards1.Size = New System.Drawing.Size(431, 397)
         Me.BunifuCards1.TabIndex = 45
         '
         'DGOrders
@@ -169,16 +217,31 @@ Partial Class FormOrderDetails
         Me.DGOrders.AutoGenerateColumns = False
         Me.DGOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGOrders.BackgroundColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGOrders.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DGOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGOrders.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdOrdenDataGridViewTextBoxColumn, Me.NoTableDataGridViewTextBoxColumn, Me.FechaHoraDataGridViewTextBoxColumn, Me.TotalDataGridViewTextBoxColumn})
         Me.DGOrders.DataSource = Me.ListaOrdenesBindingSource
-        Me.DGOrders.Location = New System.Drawing.Point(0, 4)
-        Me.DGOrders.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGOrders.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DGOrders.Location = New System.Drawing.Point(0, 3)
         Me.DGOrders.Name = "DGOrders"
         Me.DGOrders.ReadOnly = True
         Me.DGOrders.RowHeadersVisible = False
         Me.DGOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGOrders.Size = New System.Drawing.Size(571, 481)
+        Me.DGOrders.Size = New System.Drawing.Size(428, 391)
         Me.DGOrders.TabIndex = 1
         '
         'IdOrdenDataGridViewTextBoxColumn
@@ -228,9 +291,10 @@ Partial Class FormOrderDetails
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(757, 48)
+        Me.Label1.Location = New System.Drawing.Point(568, 39)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(171, 19)
+        Me.Label1.Size = New System.Drawing.Size(138, 16)
         Me.Label1.TabIndex = 44
         Me.Label1.Text = "Detalle de la orden:"
         '
@@ -238,9 +302,10 @@ Partial Class FormOrderDetails
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label11.Location = New System.Drawing.Point(63, 48)
+        Me.Label11.Location = New System.Drawing.Point(47, 39)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(180, 19)
+        Me.Label11.Size = New System.Drawing.Size(142, 16)
         Me.Label11.TabIndex = 43
         Me.Label11.Text = "Seleccione la orden:"
         '
@@ -253,45 +318,15 @@ Partial Class FormOrderDetails
         '
         Me.ListaOrdenesTableAdapter.ClearBeforeFill = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(63, 583)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(180, 21)
-        Me.Label2.TabIndex = 73
-        Me.Label2.Text = "Estado de la orden: "
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(67, 618)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(260, 34)
-        Me.TextBox1.TabIndex = 74
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(333, 618)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(43, 37)
-        Me.Button1.TabIndex = 75
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'FormOrderDetails
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS21
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1516, 762)
+        Me.ClientSize = New System.Drawing.Size(1137, 619)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormOrderDetails"
         Me.Text = "FormOrderDetails"
         Me.Panel1.ResumeLayout(False)

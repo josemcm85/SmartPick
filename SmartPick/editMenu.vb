@@ -2,7 +2,7 @@
 Imports System.IO
 
 Public Class editMenu
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
     Dim Objeto As String
     Dim item As String
     Dim RowIndex As Integer

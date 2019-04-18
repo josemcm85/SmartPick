@@ -3,7 +3,7 @@ Imports System.IO
 
 Public Class AdministrarOrdenes
 
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
     Dim NoOrden As Integer
 
     Private Sub AdministrarOrdenes_Load(sender As Object, e As EventArgs) Handles MyBase.Load

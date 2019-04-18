@@ -56,11 +56,12 @@ Partial Class CallMesero
         '
         'ComboMesa
         '
+        Me.ComboMesa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboMesa.FormattingEnabled = True
         Me.ComboMesa.Location = New System.Drawing.Point(161, 122)
-        Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboMesa.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboMesa.Name = "ComboMesa"
-        Me.ComboMesa.Size = New System.Drawing.Size(169, 21)
+        Me.ComboMesa.Size = New System.Drawing.Size(169, 24)
         Me.ComboMesa.TabIndex = 2
         '
         'BunifuCustomLabel3
@@ -77,8 +78,9 @@ Partial Class CallMesero
         '
         'txtComentario
         '
+        Me.txtComentario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtComentario.Location = New System.Drawing.Point(108, 216)
-        Me.txtComentario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtComentario.Margin = New System.Windows.Forms.Padding(2)
         Me.txtComentario.Multiline = True
         Me.txtComentario.Name = "txtComentario"
         Me.txtComentario.Size = New System.Drawing.Size(282, 51)
@@ -220,7 +222,7 @@ Partial Class CallMesero
         Me.Controls.Add(Me.ComboMesa)
         Me.Controls.Add(Me.BunifuCustomLabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "CallMesero"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CallMesero"

@@ -3,7 +3,7 @@
 Public Class FormCoupons
 
     Dim item As String
-    Dim connection As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim connection As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
 
     Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles BtnAddCoupon.Click
 

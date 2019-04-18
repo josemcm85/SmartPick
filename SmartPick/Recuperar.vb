@@ -3,7 +3,7 @@ Imports System.Net.Mail
 
 Public Class Recuperar
 
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
     Dim user As String
     Dim pass As String
     Dim Correo As String

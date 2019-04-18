@@ -2,7 +2,7 @@
 
 Public Class FormCustomerSatisfaction
 
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
     Dim NumeroOrden As Integer = 1
 
     Private Sub FormCustomerSatisfaction_Load(sender As Object, e As EventArgs) Handles MyBase.Load

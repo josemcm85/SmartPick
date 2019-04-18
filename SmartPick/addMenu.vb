@@ -3,7 +3,7 @@ Imports System.IO
 
 Public Class addMenu
 
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
     Dim ms As MemoryStream
 
     Private Sub BtnOkload_Click(sender As Object, e As EventArgs)
@@ -223,109 +223,7 @@ Public Class addMenu
         txtNomENG.Text = Nothing
     End Sub
 
-    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub BunifuMetroTextbox1_OnValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TxtDesEsp_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub txtNomEng_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TxtDesEsp_OnValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub txtPrecio_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub txtCal_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub txtNombre_OnValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub BunifuGradientPanel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub DataGridMenu_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridMenu.CellContentClick
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub BunifuSeparator1_Load(sender As Object, e As EventArgs) Handles BunifuSeparator1.Load
-
-    End Sub
-
-    Private Sub txtNombre_Click(sender As Object, e As EventArgs) Handles txtNombre.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub txtCal_Click(sender As Object, e As EventArgs) Handles txtCal.Click
-
-    End Sub
-
-    Private Sub TxtDesEsp_TextChanged_1(sender As Object, e As EventArgs) Handles TxtDesEsp.TextChanged
-
-    End Sub
-
-    Private Sub txtPrecio_Click(sender As Object, e As EventArgs) Handles txtPrecio.Click
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub CombCate_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CombCate.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub txtrandom_Click(sender As Object, e As EventArgs) Handles txtrandom.Click
-
-    End Sub
-
-    Private Sub CombComida_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CombComida.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub BtnLogin_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub BtnOkloadd_Click(sender As Object, e As EventArgs) Handles BtnOkload.Click
         'Procedimientos encargados de cargar el menu en ambos idiomas'

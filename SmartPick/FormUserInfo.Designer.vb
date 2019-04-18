@@ -77,51 +77,58 @@ Partial Class FormUserInfo
         '
         'TextBoxemail
         '
+        Me.TextBoxemail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxemail.Location = New System.Drawing.Point(133, 263)
         Me.TextBoxemail.Name = "TextBoxemail"
-        Me.TextBoxemail.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxemail.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxemail.TabIndex = 69
         '
         'TextBoxtitle
         '
+        Me.TextBoxtitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxtitle.Location = New System.Drawing.Point(133, 224)
         Me.TextBoxtitle.Name = "TextBoxtitle"
-        Me.TextBoxtitle.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxtitle.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxtitle.TabIndex = 68
         '
         'TextBoxPass
         '
+        Me.TextBoxPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxPass.Location = New System.Drawing.Point(133, 185)
         Me.TextBoxPass.Name = "TextBoxPass"
-        Me.TextBoxPass.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxPass.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxPass.TabIndex = 67
         '
         'TextBoxUserName
         '
+        Me.TextBoxUserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxUserName.Location = New System.Drawing.Point(133, 146)
         Me.TextBoxUserName.Name = "TextBoxUserName"
-        Me.TextBoxUserName.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxUserName.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxUserName.TabIndex = 66
         '
         'TextBoxLastN
         '
+        Me.TextBoxLastN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxLastN.Location = New System.Drawing.Point(133, 107)
         Me.TextBoxLastN.Name = "TextBoxLastN"
-        Me.TextBoxLastN.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxLastN.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxLastN.TabIndex = 65
         '
         'TextBoxName
         '
+        Me.TextBoxName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxName.Location = New System.Drawing.Point(133, 68)
         Me.TextBoxName.Name = "TextBoxName"
-        Me.TextBoxName.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxName.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxName.TabIndex = 64
         '
         'TextBoxIdUser
         '
+        Me.TextBoxIdUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxIdUser.Location = New System.Drawing.Point(133, 29)
         Me.TextBoxIdUser.Name = "TextBoxIdUser"
-        Me.TextBoxIdUser.Size = New System.Drawing.Size(210, 20)
+        Me.TextBoxIdUser.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxIdUser.TabIndex = 63
         '
         'Label5

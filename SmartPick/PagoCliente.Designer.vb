@@ -23,6 +23,8 @@ Partial Class PagoCliente
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PagoCliente))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -83,6 +85,7 @@ Partial Class PagoCliente
         'TextBox1
         '
         Me.TextBox1.Enabled = False
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(11, 183)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Multiline = True
@@ -104,10 +107,11 @@ Partial Class PagoCliente
         '
         'txtNoOrden
         '
+        Me.txtNoOrden.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoOrden.Location = New System.Drawing.Point(11, 118)
         Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoOrden.Name = "txtNoOrden"
-        Me.txtNoOrden.Size = New System.Drawing.Size(164, 20)
+        Me.txtNoOrden.Size = New System.Drawing.Size(164, 22)
         Me.txtNoOrden.TabIndex = 5
         '
         'buttonValidateCpn
@@ -145,10 +149,11 @@ Partial Class PagoCliente
         'textboxCoupon
         '
         Me.textboxCoupon.BorderColor = System.Drawing.Color.SeaGreen
+        Me.textboxCoupon.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textboxCoupon.Location = New System.Drawing.Point(524, 296)
         Me.textboxCoupon.Margin = New System.Windows.Forms.Padding(2)
         Me.textboxCoupon.Name = "textboxCoupon"
-        Me.textboxCoupon.Size = New System.Drawing.Size(86, 20)
+        Me.textboxCoupon.Size = New System.Drawing.Size(86, 22)
         Me.textboxCoupon.TabIndex = 53
         '
         'txtDescuento
@@ -247,7 +252,23 @@ Partial Class PagoCliente
         'DTGList
         '
         Me.DTGList.BackgroundColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGList.DefaultCellStyle = DataGridViewCellStyle2
         Me.DTGList.Location = New System.Drawing.Point(13, 227)
         Me.DTGList.Margin = New System.Windows.Forms.Padding(2)
         Me.DTGList.Name = "DTGList"

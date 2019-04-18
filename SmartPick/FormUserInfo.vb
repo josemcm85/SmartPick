@@ -2,7 +2,7 @@
 
 Public Class FormUserInfo
 
-    Dim Conn As New SqlClient.SqlConnection("Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 ")
+    Dim Conn As New SqlClient.SqlConnection("Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True")
 
 
     Private Sub BtnUser_Click(sender As Object, e As EventArgs) Handles BtnUser.Click

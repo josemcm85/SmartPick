@@ -2,14 +2,15 @@
 <xs:schema id="MenuTTSDataSet" targetNamespace="http://tempuri.org/MenuTTSDataSet.xsd" xmlns:mstns="http://tempuri.org/MenuTTSDataSet.xsd" xmlns="http://tempuri.org/MenuTTSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MenuTTSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MenuTTSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SmartPick.My.MySettings.GlobalReference.Default.MenuTTSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MenuTTSConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MenuTTSConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SmartPick.My.MySettings.GlobalReference.Default.MenuTTSConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CategoriesTableAdapter" GeneratorDataComponentClassName="CategoriesTableAdapter" Name="Categories" UserDataComponentName="CategoriesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="MenuTTSConnectionString (MySettings)" DbObjectName="MenuTTS.dbo.Categories" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="MenuTTSConnectionString1 (MySettings)" DbObjectName="MenuTTS.dbo.Categories" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Categories] WHERE (([IdCategory] = @Original_IdCategory) AND ([CategorySpa] = @Original_CategorySpa) AND ([CategoryEng] = @Original_CategoryEng))</CommandText>
@@ -31,7 +32,7 @@ SELECT IdCategory, CategorySpa, CategoryEng FROM Categories WHERE (IdCategory = 
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT IdCategory, CategorySpa, CategoryEng FROM dbo.Categories</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -61,7 +62,7 @@ SELECT IdCategory, CategorySpa, CategoryEng FROM Categories WHERE (IdCategory = 
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customerSatisfactionTableAdapter" GeneratorDataComponentClassName="customerSatisfactionTableAdapter" Name="customerSatisfaction" UserDataComponentName="customerSatisfactionTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="MenuTTSConnectionString (MySettings)" DbObjectName="MenuTTS.dbo.customerSatisfaction" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="MenuTTSConnectionString1 (MySettings)" DbObjectName="MenuTTS.dbo.customerSatisfaction" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [customerSatisfaction] ([rating], [comments]) VALUES (@rating, @comments)</CommandText>
@@ -88,7 +89,7 @@ FROM            customerSatisfaction</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrdenTableAdapter" GeneratorDataComponentClassName="OrdenTableAdapter" Name="Orden" UserDataComponentName="OrdenTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="MenuTTSConnectionString (MySettings)" DbObjectName="MenuTTS.dbo.Orden" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="MenuTTSConnectionString1 (MySettings)" DbObjectName="MenuTTS.dbo.Orden" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT [Nombreitem]
@@ -115,7 +116,7 @@ Order by VecesOrdenado DESC</CommandText>
   <xs:element name="MenuTTSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MenuTTSDataSet" msprop:Generator_UserDSName="MenuTTSDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Categories" msprop:Generator_TableClassName="CategoriesDataTable" msprop:Generator_TableVarName="tableCategories" msprop:Generator_RowChangedName="CategoriesRowChanged" msprop:Generator_TablePropName="Categories" msprop:Generator_RowDeletingName="CategoriesRowDeleting" msprop:Generator_RowChangingName="CategoriesRowChanging" msprop:Generator_RowEvHandlerName="CategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriesRowDeleted" msprop:Generator_RowClassName="CategoriesRow" msprop:Generator_UserTableName="Categories" msprop:Generator_RowEvArgName="CategoriesRowChangeEvent">
+        <xs:element name="Categories" msprop:Generator_TableClassName="CategoriesDataTable" msprop:Generator_TableVarName="tableCategories" msprop:Generator_TablePropName="Categories" msprop:Generator_RowDeletingName="CategoriesRowDeleting" msprop:Generator_RowChangingName="CategoriesRowChanging" msprop:Generator_RowEvHandlerName="CategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriesRowDeleted" msprop:Generator_UserTableName="Categories" msprop:Generator_RowChangedName="CategoriesRowChanged" msprop:Generator_RowEvArgName="CategoriesRowChangeEvent" msprop:Generator_RowClassName="CategoriesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdCategory" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdCategory" msprop:Generator_ColumnPropNameInRow="IdCategory" msprop:Generator_ColumnPropNameInTable="IdCategoryColumn" msprop:Generator_UserColumnName="IdCategory" type="xs:int" />
@@ -136,7 +137,7 @@ Order by VecesOrdenado DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="customerSatisfaction" msprop:Generator_TableClassName="customerSatisfactionDataTable" msprop:Generator_TableVarName="tablecustomerSatisfaction" msprop:Generator_TablePropName="customerSatisfaction" msprop:Generator_RowDeletingName="customerSatisfactionRowDeleting" msprop:Generator_RowChangingName="customerSatisfactionRowChanging" msprop:Generator_RowEvHandlerName="customerSatisfactionRowChangeEventHandler" msprop:Generator_RowDeletedName="customerSatisfactionRowDeleted" msprop:Generator_UserTableName="customerSatisfaction" msprop:Generator_RowChangedName="customerSatisfactionRowChanged" msprop:Generator_RowEvArgName="customerSatisfactionRowChangeEvent" msprop:Generator_RowClassName="customerSatisfactionRow">
+        <xs:element name="customerSatisfaction" msprop:Generator_TableClassName="customerSatisfactionDataTable" msprop:Generator_TableVarName="tablecustomerSatisfaction" msprop:Generator_RowChangedName="customerSatisfactionRowChanged" msprop:Generator_TablePropName="customerSatisfaction" msprop:Generator_RowDeletingName="customerSatisfactionRowDeleting" msprop:Generator_RowChangingName="customerSatisfactionRowChanging" msprop:Generator_RowEvHandlerName="customerSatisfactionRowChangeEventHandler" msprop:Generator_RowDeletedName="customerSatisfactionRowDeleted" msprop:Generator_RowClassName="customerSatisfactionRow" msprop:Generator_UserTableName="customerSatisfaction" msprop:Generator_RowEvArgName="customerSatisfactionRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="rating" msprop:Generator_ColumnVarNameInTable="columnrating" msprop:Generator_ColumnPropNameInRow="rating" msprop:Generator_ColumnPropNameInTable="ratingColumn" msprop:Generator_UserColumnName="rating" type="xs:int" minOccurs="0" />
@@ -150,7 +151,7 @@ Order by VecesOrdenado DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Orden" msprop:Generator_TableClassName="OrdenDataTable" msprop:Generator_TableVarName="tableOrden" msprop:Generator_TablePropName="Orden" msprop:Generator_RowDeletingName="OrdenRowDeleting" msprop:Generator_RowChangingName="OrdenRowChanging" msprop:Generator_RowEvHandlerName="OrdenRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenRowDeleted" msprop:Generator_UserTableName="Orden" msprop:Generator_RowChangedName="OrdenRowChanged" msprop:Generator_RowEvArgName="OrdenRowChangeEvent" msprop:Generator_RowClassName="OrdenRow">
+        <xs:element name="Orden" msprop:Generator_TableClassName="OrdenDataTable" msprop:Generator_TableVarName="tableOrden" msprop:Generator_RowChangedName="OrdenRowChanged" msprop:Generator_TablePropName="Orden" msprop:Generator_RowDeletingName="OrdenRowDeleting" msprop:Generator_RowChangingName="OrdenRowChanging" msprop:Generator_RowEvHandlerName="OrdenRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenRowDeleted" msprop:Generator_RowClassName="OrdenRow" msprop:Generator_UserTableName="Orden" msprop:Generator_RowEvArgName="OrdenRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Nombreitem" msprop:Generator_ColumnVarNameInTable="columnNombreitem" msprop:Generator_ColumnPropNameInRow="Nombreitem" msprop:Generator_ColumnPropNameInTable="NombreitemColumn" msprop:Generator_UserColumnName="Nombreitem" minOccurs="0">

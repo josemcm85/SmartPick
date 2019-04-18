@@ -40,10 +40,11 @@ Partial Class FormTable
         '
         'tableComboBox
         '
+        Me.tableComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tableComboBox.FormattingEnabled = True
         Me.tableComboBox.Location = New System.Drawing.Point(197, 90)
         Me.tableComboBox.Name = "tableComboBox"
-        Me.tableComboBox.Size = New System.Drawing.Size(121, 21)
+        Me.tableComboBox.Size = New System.Drawing.Size(121, 24)
         Me.tableComboBox.TabIndex = 1
         '
         'btnCancel

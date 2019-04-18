@@ -106,6 +106,7 @@ Partial Class FormCustomerSatisfaction
         '
         'TextBoxComments
         '
+        Me.TextBoxComments.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxComments.Location = New System.Drawing.Point(43, 201)
         Me.TextBoxComments.Multiline = True
         Me.TextBoxComments.Name = "TextBoxComments"
@@ -181,10 +182,11 @@ Partial Class FormCustomerSatisfaction
         'txtNoOrden
         '
         Me.txtNoOrden.Enabled = False
+        Me.txtNoOrden.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoOrden.Location = New System.Drawing.Point(396, 125)
         Me.txtNoOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoOrden.Name = "txtNoOrden"
-        Me.txtNoOrden.Size = New System.Drawing.Size(39, 20)
+        Me.txtNoOrden.Size = New System.Drawing.Size(39, 22)
         Me.txtNoOrden.TabIndex = 60
         '
         'Label3

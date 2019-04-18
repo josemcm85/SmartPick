@@ -4,7 +4,7 @@ Imports System.IO
 Public Class FormMenu
 
     Dim item As String
-    Dim connectionString As String = "Data Source=ulatina.database.windows.net;Initial Catalog=MenuTTS;User ID=josemcm85;Password=Pass1234 "
+    Dim connectionString As String = "Data Source=Desktop-Kbtk5sb;Initial Catalog=MenuTTS;Integrated Security=True"
     Dim connection As SqlConnection
     Dim Filtro As Integer
     Public Property IsRepeated As Boolean

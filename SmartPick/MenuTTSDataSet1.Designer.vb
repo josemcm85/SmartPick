@@ -4904,7 +4904,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5226,7 +5226,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5472,7 +5472,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5767,7 +5767,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -6185,7 +6185,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -6599,7 +6599,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7082,7 +7082,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7331,7 +7331,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7732,7 +7732,7 @@ Namespace MenuTTSDataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString
+            Me._connection.ConnectionString = Global.SmartPick.My.MySettings.Default.MenuTTSConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
