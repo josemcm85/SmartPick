@@ -1048,7 +1048,11 @@ Public Class FormMenu
 
     End Sub
 
-    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs)
+        CallMesero.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         CallMesero.Show()
     End Sub
 End Class

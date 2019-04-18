@@ -447,6 +447,10 @@
     <Content Include="icons8_percentage_26px_5.png" />
     <Content Include="icons8_plus_64px.png" />
     <Content Include="icons8_plus_math_52px_2.png" />
+    <Content Include="icons8_restaurant_pickup_100px_4.png" />
+    <Content Include="icons8_restaurant_pickup_100px_5.png" />
+    <Content Include="icons8_restaurant_pickup_64px_3 - 2.png" />
+    <Content Include="icons8_restaurant_pickup_64px_3.png" />
     <Content Include="icons8_street_food_100px_1.png" />
     <Content Include="icons8_timezone-1_50px.png" />
     <Content Include="icons8_us_dollar_100px_1.png" />
@@ -460,6 +464,10 @@
     <Content Include="order_48.png" />
     <Content Include="plussign 3.png" />
     <Content Include="plusSign.png" />
+    <None Include="Resources\icons8_restaurant_pickup_64px_3.png" />
+    <None Include="Resources\icons8_restaurant_pickup_64px_3 - 2.png" />
+    <None Include="Resources\icons8_restaurant_pickup_100px_4.png" />
+    <None Include="Resources\icons8_restaurant_pickup_100px_5.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll" />

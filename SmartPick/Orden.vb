@@ -209,7 +209,7 @@ Public Class Orden
         End If
     End Sub
 
-    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs)
         CallMesero.Show()
 
     End Sub
@@ -219,5 +219,7 @@ Public Class Orden
 
     End Sub
 
-
+    Private Sub BunifuImageButton_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+        CallMesero.Show()
+    End Sub
 End Class
