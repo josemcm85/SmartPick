@@ -120,7 +120,27 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price ¢',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Entrada'", connection)
+            Dim commandSelect As New SqlCommand("SELECT	
+		                                                t.TypeEng 'Type',
+		                                                e.Name 'Name' ,
+		                                                m.Price 'Price ¢',
+		                                                m.Calories 'Calories Kcal',
+		                                                m.Quantity 'Quantity',
+		                                                f.Photo 
+                                                    FROM 
+	                                                    MenuEsp m,
+	                                                    FotosMenu f,
+	                                                    MenuEng e,
+                                                        Types t,
+	                                                    Categories c
+	 
+                                                    WHERE 
+	                                                    m.CodPlato = f.CodPlato AND
+	                                                    m.CodPlato = e.NoPlato AND
+	                                                    m.Categories = c.CategorySpa AND
+	                                                    c.IdCategory = t.idCategories AND
+	                                                    m.TypeFood = t.TypeSpa AND
+	                                                    m.Categories = 'Entrada'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -251,7 +271,27 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price ¢',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Plato Fuerte'", connection)
+            Dim commandSelect As New SqlCommand("SELECT	
+		                                                t.TypeEng 'Type',
+		                                                e.Name 'Name' ,
+		                                                m.Price 'Price ¢',
+		                                                m.Calories 'Calories Kcal',
+		                                                m.Quantity 'Quantity',
+		                                                f.Photo 
+                                                    FROM 
+	                                                    MenuEsp m,
+	                                                    FotosMenu f,
+	                                                    MenuEng e,
+                                                        Types t,
+	                                                    Categories c
+	 
+                                                    WHERE 
+	                                                    m.CodPlato = f.CodPlato AND
+	                                                    m.CodPlato = e.NoPlato AND
+	                                                    m.Categories = c.CategorySpa AND
+	                                                    c.IdCategory = t.idCategories AND
+	                                                    m.TypeFood = t.TypeSpa AND
+	                                                    m.Categories = 'Plato Fuerte'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -380,7 +420,27 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price ¢',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Bebidas'", connection)
+            Dim commandSelect As New SqlCommand("SELECT	
+		                                                t.TypeEng 'Type',
+		                                                e.Name 'Name' ,
+		                                                m.Price 'Price ¢',
+		                                                m.Calories 'Calories Kcal',
+		                                                m.Quantity 'Quantity',
+		                                                f.Photo 
+                                                    FROM 
+	                                                    MenuEsp m,
+	                                                    FotosMenu f,
+	                                                    MenuEng e,
+                                                        Types t,
+	                                                    Categories c
+	 
+                                                    WHERE 
+	                                                    m.CodPlato = f.CodPlato AND
+	                                                    m.CodPlato = e.NoPlato AND
+	                                                    m.Categories = c.CategorySpa AND
+	                                                    c.IdCategory = t.idCategories AND
+	                                                    m.TypeFood = t.TypeSpa AND
+	                                                    m.Categories = 'Bebidas'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -509,7 +569,27 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price ¢',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Postres'", connection)
+            Dim commandSelect As New SqlCommand("SELECT	
+		                                            t.TypeEng 'Type',
+		                                            e.Name 'Name' ,
+		                                            m.Price 'Price ¢',
+		                                            m.Calories 'Calories Kcal',
+		                                            m.Quantity 'Quantity',
+		                                            f.Photo 
+                                                FROM 
+	                                                MenuEsp m,
+	                                                FotosMenu f,
+	                                                MenuEng e,
+                                                    Types t,
+	                                                Categories c
+	 
+                                                WHERE 
+	                                                m.CodPlato = f.CodPlato AND
+	                                                m.CodPlato = e.NoPlato AND
+	                                                m.Categories = c.CategorySpa AND
+	                                                c.IdCategory = t.idCategories AND
+	                                                m.TypeFood = t.TypeSpa AND
+	                                                m.Categories = 'Postres'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -562,12 +642,12 @@ Public Class FormMenu
     Private Sub ButtonToShare_Click(sender As Object, e As EventArgs) Handles ButtonToShare.Click
         ComboFiltro.Text = ""
         ComboFiltro.Items.Clear()
-        Filtro = 5
-        LblFiltro.Text = "5"
+        Filtro = 19
+        LblFiltro.Text = "19"
 
 
         If ButtonAppetizer.Text.Equals("Appetizers") Then
-            If LblFiltro.Text = 5 Then
+            If LblFiltro.Text = 19 Then
                 lblTitulo.Visible = True
                 Btnfiltrar.Visible = True
                 ComboFiltro.Visible = True
@@ -591,7 +671,7 @@ Public Class FormMenu
 
             End If
         Else
-            If LblFiltro.Text = 5 Then
+            If LblFiltro.Text = 19 Then
                 lblTitulo.Visible = True
                 Btnfiltrar.Visible = True
                 ComboFiltro.Visible = True
@@ -636,7 +716,27 @@ Public Class FormMenu
             connection = New SqlConnection(connectionString)
 
             Dim menuTable As New DataTable
-            Dim commandSelect As New SqlCommand("SELECT t.TypeEng 'Type',e.Name 'Name' ,m.Price 'Price ¢',m.Calories 'Calories Kcal',m.Quantity 'Quantity', f.Photo FROM MenuEsp m, FotosMenu f, MenuEng e, Types t WHERE m.CodPlato = f.CodPlato AND m.CodPlato = e.NoPlato AND m.TypeFood = t.TypeSpa AND Categories = 'Para Compartir'", connection)
+            Dim commandSelect As New SqlCommand("SELECT	
+		                                                t.TypeEng 'Type',
+		                                                e.Name 'Name' ,
+		                                                m.Price 'Price ¢',
+		                                                m.Calories 'Calories Kcal',
+		                                                m.Quantity 'Quantity',
+		                                                f.Photo 
+                                                    FROM 
+	                                                    MenuEsp m,
+	                                                    FotosMenu f,
+	                                                    MenuEng e,
+                                                        Types t,
+	                                                    Categories c
+	 
+                                                    WHERE 
+	                                                    m.CodPlato = f.CodPlato AND
+	                                                    m.CodPlato = e.NoPlato AND
+	                                                    m.Categories = c.CategorySpa AND
+	                                                    c.IdCategory = t.idCategories AND
+	                                                    m.TypeFood = t.TypeSpa AND
+	                                                    m.Categories = 'Para Compartir'", connection)
 
             Dim dataAdapter As New SqlDataAdapter(commandSelect)
             dataAdapter.Fill(menuTable)
@@ -854,7 +954,22 @@ Public Class FormMenu
     End Sub
 
     Private Sub Btnfiltrar_Click(sender As Object, e As EventArgs) Handles Btnfiltrar.Click
+        Dim Cat As String
 
+        If Filtro = 1 Then
+            Cat = "Plato Fuerte"
+
+        ElseIf Filtro = 2 Then
+            Cat = "Entrada"
+
+        ElseIf Filtro = 3 Then
+            Cat = "Bebidas"
+        ElseIf Filtro = 4 Then
+            Cat = "Postres"
+        Else
+            Cat = "Para Compartir"
+
+        End If
 
         DataGridViewMenu.DataSource = Nothing
 
@@ -867,7 +982,7 @@ Public Class FormMenu
                 connection = New SqlConnection(connectionString)
 
                 Dim menuTable As New DataTable
-                Dim commandSelect As New SqlCommand("Exec searchEng '" & ComboFiltro.Text & "';", connection)
+                Dim commandSelect As New SqlCommand("Exec searchEng '" & ComboFiltro.Text & "', '" & Cat & "';", connection)
 
                 Dim dataAdapter As New SqlDataAdapter(commandSelect)
                 dataAdapter.Fill(menuTable)
@@ -876,11 +991,6 @@ Public Class FormMenu
 
                 DataGridViewMenu.DataSource = menuTable
 
-                'ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
-                ''ButtonMainDish.BackColor = Color.White
-                ''ButtonDrinks.BackColor = Color.White
-                ''ButtonDessert.BackColor = Color.White
-                ''ButtonToShare.BackColor = Color.White
 
                 'Hides Column with Picture information
 
@@ -898,7 +1008,7 @@ Public Class FormMenu
                 connection = New SqlConnection(connectionString)
 
                 Dim menuTable As New DataTable
-                Dim commandSelect As New SqlCommand("Exec SearchEsp '" & ComboFiltro.Text & "';", connection)
+                Dim commandSelect As New SqlCommand("Exec SearchEsp '" & ComboFiltro.Text & "', '" & Cat & "';", connection)
 
                 Dim dataAdapter As New SqlDataAdapter(commandSelect)
                 dataAdapter.Fill(menuTable)
@@ -907,11 +1017,6 @@ Public Class FormMenu
 
                 DataGridViewMenu.DataSource = menuTable
 
-                'ButtonAppetizer.BackColor = Color.FromArgb(4, 172, 209)
-                ''ButtonMainDish.BackColor = Color.White
-                ''ButtonDrinks.BackColor = Color.White
-                ''ButtonDessert.BackColor = Color.White
-                ''ButtonToShare.BackColor = Color.White
 
                 'Hides Column with Picture information
 
@@ -998,9 +1103,7 @@ Public Class FormMenu
 
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
-    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
