@@ -45,7 +45,30 @@ Public Class addMenu
         Dim Adapter As New SqlDataAdapter(Command)
         Adapter.Fill(menuTable)
         DataGridMenu.DataSource = menuTable
+        Conn.Close()
 
+
+        Conn.Open()
+        Dim menuTable2 As New DataTable
+        Dim Command2 As New SqlCommand("Select CategorySpa from Categories;", Conn)
+        Dim reader2 As SqlDataReader
+        reader2 = Command2.ExecuteReader
+        CombCate.Items.Clear()
+        Do While reader2.Read
+            CombCate.Items.Add(reader2.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable3 As New DataTable
+        Dim Command3 As New SqlCommand("Select TypeSpa from Types;", Conn)
+        Dim reader3 As SqlDataReader
+        reader3 = Command3.ExecuteReader
+        CombComida.Items.Clear()
+        Do While reader3.Read
+            CombComida.Items.Add(reader3.GetValue(0).ToString)
+        Loop
         Conn.Close()
 
 
@@ -391,9 +414,11 @@ Public Class addMenu
                     Try
                         'Primero se inserta la informacion en la tabla MenuEsp que es la principal
                         'Luego, en la tabla MenuEng solo se ingresa la Descripcion en el idioma acorde. La tabla tiene la referencia de ID de la tabla MenuEsp, por ende ambas estan conectadas
+                        Dim Cant As Integer = 1
+
                         Conn.Open()
                         Dim Table As New DataTable
-                        Dim Command As New SqlCommand("Exec addPlato '" & txtrandom.Text & "','" & txtNombre.Text & "','" & TxtDesEsp.Text & "','" & CombCate.SelectedItem.ToString & "','" & CombComida.SelectedItem.ToString & "','" & txtPrecio.Text & "','" & txtCal.Text & "','" & txtDesIng.Text & "','" & txtNomENG.Text & "';", Conn)
+                        Dim Command As New SqlCommand("Exec addPlato '" & txtrandom.Text & "','" & txtNombre.Text & "','" & TxtDesEsp.Text & "','" & CombCate.SelectedItem.ToString & "','" & CombComida.SelectedItem.ToString & "','" & txtPrecio.Text & "','" & txtCal.Text & "','" & txtDesIng.Text & "','" & txtNomENG.Text & "','" & Cant & "';", Conn)
                         Dim Adapter As New SqlDataAdapter(Command)
                         Adapter.Fill(Table)
                         DataGridMenu.DataSource = Table
@@ -457,7 +482,7 @@ Public Class addMenu
             End Try
 
         End If
-
+        Conn.Close()
     End Sub
 
     Private Sub BunifuThinButton21_Click_3(sender As Object, e As EventArgs) Handles BtnDespejar.Click
@@ -476,5 +501,75 @@ Public Class addMenu
 
     Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
         Me.Close()
+    End Sub
+
+    Private Sub BunifuThinButton21_Click_4(sender As Object, e As EventArgs)
+        Conn.Open()
+        Dim menuTable As New DataTable
+        Dim Command As New SqlCommand("Exec loadMenuGeneral;", Conn)
+        Dim Adapter As New SqlDataAdapter(Command)
+        Adapter.Fill(menuTable)
+        DataGridMenu.DataSource = menuTable
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable2 As New DataTable
+        Dim Command2 As New SqlCommand("Select CategorySpa from Categories;", Conn)
+        Dim reader2 As SqlDataReader
+        reader2 = Command2.ExecuteReader
+        CombCate.Items.Clear()
+        Do While reader2.Read
+            CombCate.Items.Add(reader2.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable3 As New DataTable
+        Dim Command3 As New SqlCommand("Select TypeSpa from Types;", Conn)
+        Dim reader3 As SqlDataReader
+        reader3 = Command3.ExecuteReader
+        CombComida.Items.Clear()
+        Do While reader3.Read
+            CombComida.Items.Add(reader3.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Carga el menu en el idioma Esp por default'
+        Conn.Open()
+        Dim menuTable As New DataTable
+        Dim Command As New SqlCommand("Exec loadMenuGeneral;", Conn)
+        Dim Adapter As New SqlDataAdapter(Command)
+        Adapter.Fill(menuTable)
+        DataGridMenu.DataSource = menuTable
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable2 As New DataTable
+        Dim Command2 As New SqlCommand("Select CategorySpa from Categories;", Conn)
+        Dim reader2 As SqlDataReader
+        reader2 = Command2.ExecuteReader
+        CombCate.Items.Clear()
+        Do While reader2.Read
+            CombCate.Items.Add(reader2.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable3 As New DataTable
+        Dim Command3 As New SqlCommand("Select TypeSpa from Types;", Conn)
+        Dim reader3 As SqlDataReader
+        reader3 = Command3.ExecuteReader
+        CombComida.Items.Clear()
+        Do While reader3.Read
+            CombComida.Items.Add(reader3.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
     End Sub
 End Class

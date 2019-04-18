@@ -57,6 +57,7 @@ Partial Class editMenu
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -258,6 +259,7 @@ Partial Class editMenu
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.TxtDesEsp)
@@ -284,7 +286,7 @@ Partial Class editMenu
         Me.Panel1.Location = New System.Drawing.Point(39, 34)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1403, 692)
+        Me.Panel1.Size = New System.Drawing.Size(1403, 731)
         Me.Panel1.TabIndex = 69
         '
         'txtCal
@@ -294,10 +296,10 @@ Partial Class editMenu
         '
         '
         Me.txtCal.CustomButton.Image = Nothing
-        Me.txtCal.CustomButton.Location = New System.Drawing.Point(305, 2)
+        Me.txtCal.CustomButton.Location = New System.Drawing.Point(229, 2)
         Me.txtCal.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCal.CustomButton.Name = ""
-        Me.txtCal.CustomButton.Size = New System.Drawing.Size(31, 28)
+        Me.txtCal.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtCal.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtCal.CustomButton.TabIndex = 1
         Me.txtCal.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -330,10 +332,10 @@ Partial Class editMenu
         '
         '
         Me.txtPrecio.CustomButton.Image = Nothing
-        Me.txtPrecio.CustomButton.Location = New System.Drawing.Point(305, 2)
+        Me.txtPrecio.CustomButton.Location = New System.Drawing.Point(229, 2)
         Me.txtPrecio.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPrecio.CustomButton.Name = ""
-        Me.txtPrecio.CustomButton.Size = New System.Drawing.Size(31, 28)
+        Me.txtPrecio.CustomButton.Size = New System.Drawing.Size(23, 23)
         Me.txtPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtPrecio.CustomButton.TabIndex = 1
         Me.txtPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -595,12 +597,23 @@ Partial Class editMenu
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(1277, 665)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(61, 52)
+        Me.Button1.TabIndex = 78
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'editMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.MANDALAS2
-        Me.ClientSize = New System.Drawing.Size(1483, 762)
+        Me.ClientSize = New System.Drawing.Size(1483, 797)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.CombCate)
@@ -653,4 +666,5 @@ Partial Class editMenu
     Friend WithEvents BunifuCards1 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents Button1 As Button
 End Class

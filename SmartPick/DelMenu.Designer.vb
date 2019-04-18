@@ -53,6 +53,7 @@ Partial Class DelMenu
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -427,6 +428,7 @@ Partial Class DelMenu
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Snow
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.BunifuCards1)
         Me.Panel1.Controls.Add(Me.BtnEliminar)
         Me.Panel1.Controls.Add(Me.BtnClose2)
@@ -496,7 +498,7 @@ Partial Class DelMenu
         Me.BtnClose2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.BtnClose2.IdleForecolor = System.Drawing.Color.White
         Me.BtnClose2.IdleLineColor = System.Drawing.Color.Lavender
-        Me.BtnClose2.Location = New System.Drawing.Point(1080, 596)
+        Me.BtnClose2.Location = New System.Drawing.Point(963, 596)
         Me.BtnClose2.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.BtnClose2.Name = "BtnClose2"
         Me.BtnClose2.Size = New System.Drawing.Size(179, 62)
@@ -519,6 +521,17 @@ Partial Class DelMenu
         Me.BunifuDragControl1.Horizontal = True
         Me.BunifuDragControl1.TargetControl = Me
         Me.BunifuDragControl1.Vertical = True
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(1260, 646)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(57, 45)
+        Me.Button1.TabIndex = 83
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'DelMenu
         '
@@ -590,4 +603,5 @@ Partial Class DelMenu
     Friend WithEvents BunifuCards1 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents Button1 As Button
 End Class

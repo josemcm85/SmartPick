@@ -8,13 +8,37 @@ Public Class editMenu
     Dim RowIndex As Integer
 
     Private Sub editMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Carga el menu en el idioma Esp por default'
         Conn.Open()
         Dim menuTable As New DataTable
         Dim Command As New SqlCommand("Exec loadMenuGeneral;", Conn)
         Dim Adapter As New SqlDataAdapter(Command)
         Adapter.Fill(menuTable)
-        DataGridMenu.DataSource = menuTable
+        DatagridMenu.DataSource = menuTable
+        Conn.Close()
 
+
+        Conn.Open()
+        Dim menuTable2 As New DataTable
+        Dim Command2 As New SqlCommand("Select CategorySpa from Categories;", Conn)
+        Dim reader2 As SqlDataReader
+        reader2 = Command2.ExecuteReader
+        CombCate.Items.Clear()
+        Do While reader2.Read
+            CombCate.Items.Add(reader2.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable3 As New DataTable
+        Dim Command3 As New SqlCommand("Select TypeSpa from Types;", Conn)
+        Dim reader3 As SqlDataReader
+        reader3 = Command3.ExecuteReader
+        CombComida.Items.Clear()
+        Do While reader3.Read
+            CombComida.Items.Add(reader3.GetValue(0).ToString)
+        Loop
         Conn.Close()
 
     End Sub
@@ -267,6 +291,82 @@ Public Class editMenu
     End Sub
 
     Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs)
+        'Carga el menu en el idioma Esp por default'
+        Conn.Open()
+        Dim menuTable As New DataTable
+        Dim Command As New SqlCommand("Exec loadMenuGeneral;", Conn)
+        Dim Adapter As New SqlDataAdapter(Command)
+        Adapter.Fill(menuTable)
+        DatagridMenu.DataSource = menuTable
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable2 As New DataTable
+        Dim Command2 As New SqlCommand("Select CategorySpa from Categories;", Conn)
+        Dim reader2 As SqlDataReader
+        reader2 = Command2.ExecuteReader
+        CombCate.Items.Clear()
+        Do While reader2.Read
+            CombCate.Items.Add(reader2.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable3 As New DataTable
+        Dim Command3 As New SqlCommand("Select TypeSpa from Types;", Conn)
+        Dim reader3 As SqlDataReader
+        reader3 = Command3.ExecuteReader
+        CombComida.Items.Clear()
+        Do While reader3.Read
+            CombComida.Items.Add(reader3.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Carga el menu en el idioma Esp por default'
+        Conn.Open()
+        Dim menuTable As New DataTable
+        Dim Command As New SqlCommand("Exec loadMenuGeneral;", Conn)
+        Dim Adapter As New SqlDataAdapter(Command)
+        Adapter.Fill(menuTable)
+        DatagridMenu.DataSource = menuTable
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable2 As New DataTable
+        Dim Command2 As New SqlCommand("Select CategorySpa from Categories;", Conn)
+        Dim reader2 As SqlDataReader
+        reader2 = Command2.ExecuteReader
+        CombCate.Items.Clear()
+        Do While reader2.Read
+            CombCate.Items.Add(reader2.GetValue(0).ToString)
+        Loop
+        Conn.Close()
+
+
+        Conn.Open()
+        Dim menuTable3 As New DataTable
+        Dim Command3 As New SqlCommand("Select TypeSpa from Types;", Conn)
+        Dim reader3 As SqlDataReader
+        reader3 = Command3.ExecuteReader
+        CombComida.Items.Clear()
+        Do While reader3.Read
+            CombComida.Items.Add(reader3.GetValue(0).ToString)
+        Loop
+        Conn.Close()
 
     End Sub
 End Class
