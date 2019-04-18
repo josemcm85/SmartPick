@@ -68,7 +68,7 @@ Partial Class FormMenu
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuImageButton1 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,7 +79,6 @@ Partial Class FormMenu
         CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonToShare
@@ -116,7 +115,7 @@ Partial Class FormMenu
         '
         'ButtonDrinks
         '
-        Me.ButtonDrinks.BackColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ButtonDrinks.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.ButtonDrinks.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.ButtonDrinks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.ButtonDrinks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -176,7 +175,7 @@ Partial Class FormMenu
         'PictureBoxClose
         '
         Me.PictureBoxClose.Image = Global.SmartPick.My.Resources.Resources.Close
-        Me.PictureBoxClose.Location = New System.Drawing.Point(1026, 3)
+        Me.PictureBoxClose.Location = New System.Drawing.Point(1055, 3)
         Me.PictureBoxClose.Name = "PictureBoxClose"
         Me.PictureBoxClose.Size = New System.Drawing.Size(24, 22)
         Me.PictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -186,7 +185,7 @@ Partial Class FormMenu
         'PictureBoxMinimize
         '
         Me.PictureBoxMinimize.Image = Global.SmartPick.My.Resources.Resources.Minimize
-        Me.PictureBoxMinimize.Location = New System.Drawing.Point(996, 3)
+        Me.PictureBoxMinimize.Location = New System.Drawing.Point(1025, 3)
         Me.PictureBoxMinimize.Name = "PictureBoxMinimize"
         Me.PictureBoxMinimize.Size = New System.Drawing.Size(24, 22)
         Me.PictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -366,8 +365,8 @@ Partial Class FormMenu
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 436.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(241, 432)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 435.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(265, 432)
         Me.TableLayoutPanel2.TabIndex = 31
         '
         'DataGridViewOrder
@@ -404,7 +403,7 @@ Partial Class FormMenu
         Me.DataGridViewOrder.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.DataGridViewOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewOrder.ShowRowErrors = False
-        Me.DataGridViewOrder.Size = New System.Drawing.Size(235, 429)
+        Me.DataGridViewOrder.Size = New System.Drawing.Size(259, 429)
         Me.DataGridViewOrder.TabIndex = 26
         '
         'Label1
@@ -483,8 +482,8 @@ Partial Class FormMenu
         Me.BunifuDropdown3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuDropdown3.ForeColor = System.Drawing.Color.White
         Me.BunifuDropdown3.Items = New String() {"1", "2", "3", "4", "5", "6", "7", "8", "9"}
-        Me.BunifuDropdown3.Location = New System.Drawing.Point(823, 629)
-        Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuDropdown3.Location = New System.Drawing.Point(798, 637)
+        Me.BunifuDropdown3.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuDropdown3.Name = "BunifuDropdown3"
         Me.BunifuDropdown3.NomalColor = System.Drawing.Color.SeaGreen
         Me.BunifuDropdown3.onHoverColor = System.Drawing.Color.SeaGreen
@@ -503,7 +502,7 @@ Partial Class FormMenu
         Me.ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDelete.ForeColor = System.Drawing.Color.Snow
-        Me.ButtonDelete.Location = New System.Drawing.Point(886, 628)
+        Me.ButtonDelete.Location = New System.Drawing.Point(861, 636)
         Me.ButtonDelete.Name = "ButtonDelete"
         Me.ButtonDelete.Size = New System.Drawing.Size(62, 30)
         Me.ButtonDelete.TabIndex = 28
@@ -541,7 +540,7 @@ Partial Class FormMenu
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Snow
-        Me.Button2.Location = New System.Drawing.Point(886, 660)
+        Me.Button2.Location = New System.Drawing.Point(861, 668)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(62, 44)
         Me.Button2.TabIndex = 45
@@ -559,7 +558,7 @@ Partial Class FormMenu
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 45.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
-        Me.Button1.Location = New System.Drawing.Point(822, 660)
+        Me.Button1.Location = New System.Drawing.Point(797, 668)
         Me.Button1.Name = "Button1"
         Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Button1.Size = New System.Drawing.Size(62, 44)
@@ -579,25 +578,29 @@ Partial Class FormMenu
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Snow
-        Me.Button3.Location = New System.Drawing.Point(950, 629)
+        Me.Button3.Location = New System.Drawing.Point(925, 636)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(62, 74)
+        Me.Button3.Size = New System.Drawing.Size(62, 75)
         Me.Button3.TabIndex = 50
         Me.Button3.UseVisualStyleBackColor = False
         '
         'BunifuImageButton1
         '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(1026, 663)
-        Me.BunifuImageButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuImageButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BunifuImageButton1.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_restaurant_pickup_100px_5
+        Me.BunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BunifuImageButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BunifuImageButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BunifuImageButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BunifuImageButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuImageButton1.ForeColor = System.Drawing.Color.Snow
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(990, 635)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(47, 41)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 51
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(62, 75)
+        Me.BunifuImageButton1.TabIndex = 52
+        Me.BunifuImageButton1.UseVisualStyleBackColor = False
         '
         'FormMenu
         '
@@ -606,6 +609,7 @@ Partial Class FormMenu
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1090, 798)
         Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.Button3)
@@ -649,7 +653,6 @@ Partial Class FormMenu
         CType(Me.PictureBoxItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.DataGridViewOrder, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -692,5 +695,5 @@ Partial Class FormMenu
     Friend WithEvents lblNoorden As Label
     Friend WithEvents LblTotal As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuImageButton1 As Button
 End Class

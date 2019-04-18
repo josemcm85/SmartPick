@@ -19,7 +19,7 @@ Public Class PagoCliente
             txtTotal.Text = "Total"
             buttonValidateCpn.Text = "Validate"
             Button1.Text = "Pay"
-
+            btnClose.Text = "Close"
         End If
 
     End Sub
@@ -250,6 +250,7 @@ Public Class PagoCliente
         Dim Adapter2 As SqlDataReader = Command2.ExecuteReader
         Conn.Close()
 
+        Me.Close()
         FormCustomerSatisfaction.Show()
     End Sub
 
@@ -313,8 +314,12 @@ Public Class PagoCliente
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Me.Close()
 
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
     End Sub
 End Class

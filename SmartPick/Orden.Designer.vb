@@ -23,9 +23,8 @@ Partial Class Orden
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orden))
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DTGList = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.ComboMesa = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -40,32 +39,31 @@ Partial Class Orden
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New System.Windows.Forms.Button()
-        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.BunifuImageButton1 = New System.Windows.Forms.Button()
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DTGList
         '
         Me.DTGList.AllowUserToAddRows = False
         Me.DTGList.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.DTGList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         Me.DTGList.BackgroundColor = System.Drawing.Color.White
         Me.DTGList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DTGList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(167, Byte), Integer))
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.DTGList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTGList.DoubleBuffered = True
         Me.DTGList.EnableHeadersVisualStyles = False
@@ -137,7 +135,7 @@ Partial Class Orden
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(698, 24)
+        Me.Panel2.Size = New System.Drawing.Size(685, 24)
         Me.Panel2.TabIndex = 23
         '
         'PictureBoxClose
@@ -222,25 +220,12 @@ Partial Class Orden
         Me.BunifuFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BunifuFlatButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton1.ForeColor = System.Drawing.Color.Snow
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(315, 412)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(297, 412)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Size = New System.Drawing.Size(130, 34)
         Me.BunifuFlatButton1.TabIndex = 54
-        Me.BunifuFlatButton1.Text = "COMPLETAR ORDEN"
+        Me.BunifuFlatButton1.Text = "COMPLETAR "
         Me.BunifuFlatButton1.UseVisualStyleBackColor = False
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Yellow
-        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(476, 396)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(63, 50)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 55
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
         '
         'Button1
         '
@@ -253,12 +238,30 @@ Partial Class Orden
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Snow
-        Me.Button1.Location = New System.Drawing.Point(573, 412)
+        Me.Button1.Location = New System.Drawing.Point(555, 412)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(110, 34)
         Me.Button1.TabIndex = 56
-        Me.Button1.Text = "Devolverse"
+        Me.Button1.Text = "DEVOLVERSE"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BunifuImageButton1.BackgroundImage = Global.SmartPick.My.Resources.Resources.icons8_restaurant_pickup_100px_5
+        Me.BunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuImageButton1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BunifuImageButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BunifuImageButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BunifuImageButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BunifuImageButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuImageButton1.ForeColor = System.Drawing.Color.Snow
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(459, 381)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(62, 74)
+        Me.BunifuImageButton1.TabIndex = 57
+        Me.BunifuImageButton1.UseVisualStyleBackColor = False
         '
         'Orden
         '
@@ -266,9 +269,9 @@ Partial Class Orden
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SmartPick.My.Resources.Resources.fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(698, 504)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(685, 504)
         Me.Controls.Add(Me.BunifuImageButton1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -282,13 +285,13 @@ Partial Class Orden
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Orden"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Orden"
         CType(Me.DTGList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBoxClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxMinimize, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -307,6 +310,6 @@ Partial Class Orden
     Friend WithEvents Label11 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents BunifuFlatButton1 As Button
-    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents Button1 As Button
+    Friend WithEvents BunifuImageButton1 As Button
 End Class

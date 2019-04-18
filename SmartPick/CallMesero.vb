@@ -16,6 +16,7 @@ Public Class CallMesero
             BunifuCustomLabel3.Text = "Leave a comment (Optional):"
 
             Button2.Text = "Pay bill"
+            btnClose.Text = "Close"
 
         End If
 
@@ -84,11 +85,16 @@ Public Class CallMesero
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
         PagoCliente.Show()
     End Sub
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs)
         Me.Close()
 
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
     End Sub
 End Class
