@@ -16,7 +16,7 @@
 
     End Sub
 
-    Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem.Click
+    Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Category.Show()
     End Sub
 

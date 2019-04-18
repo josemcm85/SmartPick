@@ -29,7 +29,6 @@ Partial Class AdminMain
         Me.AgregarPlatoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditarPlatoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarPlatoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarTipoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearCuponesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarOrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -68,7 +67,7 @@ Partial Class AdminMain
         '
         Me.AdministrarMenuToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.AdministrarMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPlatoToolStripMenuItem, Me.EditarPlatoToolStripMenuItem, Me.EliminarPlatoToolStripMenuItem, Me.CategoriaToolStripMenuItem, Me.ModificarTipoToolStripMenuItem, Me.CrearCuponesToolStripMenuItem})
+        Me.AdministrarMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPlatoToolStripMenuItem, Me.EditarPlatoToolStripMenuItem, Me.EliminarPlatoToolStripMenuItem, Me.ModificarTipoToolStripMenuItem, Me.CrearCuponesToolStripMenuItem})
         Me.AdministrarMenuToolStripMenuItem.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdministrarMenuToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.AdministrarMenuToolStripMenuItem.Name = "AdministrarMenuToolStripMenuItem"
@@ -79,41 +78,34 @@ Partial Class AdminMain
         '
         Me.AgregarPlatoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.AgregarPlatoToolStripMenuItem.Name = "AgregarPlatoToolStripMenuItem"
-        Me.AgregarPlatoToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
+        Me.AgregarPlatoToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
         Me.AgregarPlatoToolStripMenuItem.Text = "Agregar Plato"
         '
         'EditarPlatoToolStripMenuItem
         '
         Me.EditarPlatoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.EditarPlatoToolStripMenuItem.Name = "EditarPlatoToolStripMenuItem"
-        Me.EditarPlatoToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
+        Me.EditarPlatoToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
         Me.EditarPlatoToolStripMenuItem.Text = "Editar Plato"
         '
         'EliminarPlatoToolStripMenuItem
         '
         Me.EliminarPlatoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.EliminarPlatoToolStripMenuItem.Name = "EliminarPlatoToolStripMenuItem"
-        Me.EliminarPlatoToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
+        Me.EliminarPlatoToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
         Me.EliminarPlatoToolStripMenuItem.Text = "Eliminar Plato"
-        '
-        'CategoriaToolStripMenuItem
-        '
-        Me.CategoriaToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
-        Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
-        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
-        Me.CategoriaToolStripMenuItem.Text = "Modificar Categoría"
         '
         'ModificarTipoToolStripMenuItem
         '
         Me.ModificarTipoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.ModificarTipoToolStripMenuItem.Name = "ModificarTipoToolStripMenuItem"
-        Me.ModificarTipoToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
+        Me.ModificarTipoToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
         Me.ModificarTipoToolStripMenuItem.Text = "Modificar Tipo"
         '
         'CrearCuponesToolStripMenuItem
         '
         Me.CrearCuponesToolStripMenuItem.Name = "CrearCuponesToolStripMenuItem"
-        Me.CrearCuponesToolStripMenuItem.Size = New System.Drawing.Size(238, 26)
+        Me.CrearCuponesToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
         Me.CrearCuponesToolStripMenuItem.Text = "Crear cupones"
         '
         'AdministrarOrdenesToolStripMenuItem
@@ -256,7 +248,6 @@ Partial Class AdminMain
     Friend WithEvents AgregarPlatoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditarPlatoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EliminarPlatoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ModificarTipoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Panel1 As Panel
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
