@@ -114,30 +114,6 @@ Public Class Orden
         End Try
     End Sub
 
-    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub BunifuCustomTextbox1_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-
-    Private Sub NoOrden_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         Dim Linea As Integer = 1
@@ -151,7 +127,7 @@ Public Class Orden
 
         Else
 
-                Try
+            Try
                 connection = New SqlConnection(connectionString)
                 connection.Open()
                 Dim CreateOrder As New SqlCommand("Exec addOrden '" & ComboMesa.SelectedItem.ToString & "','" & lblTotal.Text & "';", connection)
@@ -201,6 +177,13 @@ Public Class Orden
                 FormCustomerSatisfaction.txtNoOrden.Text = idLastOrder
 
 
+                FormMenu.DataGridViewMenu.DataSource = DBNull.Value
+                FormMenu.DataGridViewDescription.DataSource = DBNull.Value
+                FormMenu.DataGridViewOrder.Rows.Clear()
+                FormMenu.PictureBoxItem.Image = Nothing
+                FormMenu.TextBoxSum.Text = Nothing
+
+
             Catch ex As Exception
                 MsgBox(ex.Message)
                 NumeroOrden = NumeroOrden
@@ -208,6 +191,10 @@ Public Class Orden
             End Try
 
         End If
+
+
+
+
     End Sub
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs)

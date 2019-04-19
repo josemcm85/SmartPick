@@ -251,6 +251,13 @@ Public Class PagoCliente
         Conn.Close()
 
         Me.Close()
+
+        FormMenu.DataGridViewMenu.DataSource = DBNull.Value
+        FormMenu.DataGridViewDescription.DataSource = DBNull.Value
+        FormMenu.DataGridViewOrder.Rows.Clear()
+        FormMenu.PictureBoxItem.Image = Nothing
+        FormMenu.TextBoxSum.Text = Nothing
+
         FormCustomerSatisfaction.Show()
     End Sub
 
