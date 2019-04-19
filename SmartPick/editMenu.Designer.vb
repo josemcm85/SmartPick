@@ -644,6 +644,7 @@ Partial Class editMenu
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "editMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Editar Menu"
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).EndInit()

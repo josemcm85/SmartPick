@@ -80,6 +80,7 @@ Partial Class FormTable
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormTable"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Seleccion Mesa"
         Me.ResumeLayout(False)
         Me.PerformLayout()

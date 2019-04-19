@@ -448,6 +448,7 @@ Partial Class Tipo
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Tipo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tipo"
         CType(Me.TypesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TypesBindingNavigator.ResumeLayout(False)

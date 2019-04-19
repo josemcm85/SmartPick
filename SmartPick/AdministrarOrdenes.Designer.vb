@@ -213,6 +213,7 @@ Partial Class AdministrarOrdenes
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AdministrarOrdenes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AdministrarOrdenes"
         CType(Me.ListaOrdenes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Detalle, System.ComponentModel.ISupportInitialize).EndInit()

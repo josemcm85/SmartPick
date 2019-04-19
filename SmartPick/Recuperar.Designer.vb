@@ -209,6 +209,7 @@ Partial Class Recuperar
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Recuperar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Recuperar Contraseña"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

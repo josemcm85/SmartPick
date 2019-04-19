@@ -308,6 +308,7 @@ Partial Class FormCoupons
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormCoupons"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormCoupons"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

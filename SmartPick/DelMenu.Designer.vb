@@ -586,6 +586,7 @@ Partial Class DelMenu
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "DelMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Borrar del Menu"
         CType(Me.PicBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DatagridMenu, System.ComponentModel.ISupportInitialize).EndInit()
